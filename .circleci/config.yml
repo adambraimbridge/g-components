@@ -101,7 +101,7 @@ jobs:
       - *attach_workspace
       - run:
           name: Setup npm credentials
-          command: echo "registry=https://npm.pkg.github.com/\n//npm.pkg.github.com/:_authToken=${GHPR_AUTH_TOKEN}" > ${HOME}/.npmrc
+          command: printf "registry=https://npm.pkg.github.com/\n//npm.pkg.github.com/:_authToken=${GHPR_AUTH_TOKEN}" > ${HOME}/.npmrc
       - run:
           name: Publish npm package
           command: ./node_modules/.bin/npm-prepublish --verbose && npm publish
