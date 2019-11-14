@@ -3,6 +3,8 @@
  * g-components entry point
  */
 
+export * from './components/elections';
+
 export { TopAd, MiddleAd } from './components/ads';
 export { default as Analytics } from './components/analytics';
 export { default as ArticleHead, Byline } from './components/article-head';
