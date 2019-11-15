@@ -26,3 +26,4 @@ export { default as DataTable } from './components/data-table';
 export { default as DataFilter } from './components/data-filter';
 export { default as Sticky } from './components/sticky';
 export { default as LastUpdated } from './components/last-updated';
+export { default as AutosuggestSearch } from './components/autosuggest-search';
