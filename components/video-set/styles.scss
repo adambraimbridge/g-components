@@ -1,0 +1,35 @@
+@import 'o-grid/main';
+
+.g-videoset {
+  margin: 8px auto;
+
+  video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  &__small {
+    display: block;
+
+    @include oGridRespondTo(S) {
+      display: none;
+    }
+  }
+
+  &__medium {
+    display: none;
+
+    @include oGridRespondTo(S, L) {
+      display: block;
+    }
+  }
+
+  &__large {
+    display: none;
+
+    @include oGridRespondTo(L) {
+      display: block;
+    }
+  }
+}
