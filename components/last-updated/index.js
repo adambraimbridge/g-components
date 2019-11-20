@@ -13,7 +13,7 @@ const LastUpdated = ({ lastUpdated, live }) => (
     {live ? (
       <div className="o-teaser o-teaser--small" data-o-component="o-teaser">
         <div className="o-teaser__content">
-          Last updated <DateTime timestamp={lastUpdated} />
+          Last updated <DateTime datestamp={lastUpdated} />
           <div
             className="o-teaser__timestamp o-teaser__timestamp--inprogress"
             style={{ display: 'inline-block' }}
@@ -24,7 +24,7 @@ const LastUpdated = ({ lastUpdated, live }) => (
       </div>
     ) : (
       <span>
-        Last updated <DateTime timestamp={lastUpdated} />
+        Last updated <DateTime datestamp={lastUpdated} />
       </span>
     )}
   </div>
