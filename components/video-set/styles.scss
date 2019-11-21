@@ -1,7 +1,11 @@
 @import 'o-grid/main';
 
 .g-videoset {
-  margin: 8px auto;
+  margin: 8px auto 2em;
+
+  figure {
+    margin: 0;
+  }
 
   video {
     display: block;
