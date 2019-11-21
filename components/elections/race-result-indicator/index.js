@@ -11,15 +11,23 @@ import './styles.scss';
 
 const { getPartyInfo } = uk;
 
-const RaceResult = ({ incumbent, winner }) => {
+const RaceResult = ({ incumbent, winner, backgroundColor }) => {
   if (!incumbent || !winner) return null;
   const incumbentParty = getPartyInfo(incumbent);
   const winnerParty = getPartyInfo(winner);
-  const text = winner !== incumbent ? `${winner} gain from ${incumbent}` : `${winner} holds`;
+  const text =
+    winner !== incumbent
+      ? `${winnerParty.formattedName} gain`
+      : `${winnerParty.formattedName} hold`;
   return (
     <div className="race-result">
       <div className="race-result--incumbent" style={{ backgroundColor: incumbentParty.color }} />
-      <div className="race-result--triangle-background" />
+      <div
+        className="race-result--triangle-background"
+        style={{
+          borderColor: `transparent transparent transparent ${backgroundColor}`,
+        }}
+      />
       <div
         className="race-result--triangle"
         style={{
@@ -36,6 +44,11 @@ const RaceResult = ({ incumbent, winner }) => {
 RaceResult.propTypes = {
   winner: PropTypes.string.isRequired,
   incumbent: PropTypes.string.isRequired,
+  backgroundColor: PropTypes.string.isRequired,
+};
+
+RaceResult.defaultProps = {
+  backgroundColor: '#fff1e5',
 };
 
 export default RaceResult;
