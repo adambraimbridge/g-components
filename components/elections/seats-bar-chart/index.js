@@ -11,7 +11,15 @@ import './styles.scss';
 
 const { getPartyInfo } = uk;
 
-const SeatsBarChart = ({ className, title, keyText, tableHeaders, data, majority }) => {
+const SeatsBarChart = ({
+  className,
+  title,
+  keyText,
+  tableHeaders,
+  data,
+  majority,
+  showShortPartyNames,
+}) => {
   const tableData = [
     ...data
       .filter(({ isInTable, isOthers }) => isInTable && !isOthers)
@@ -28,19 +36,21 @@ const SeatsBarChart = ({ className, title, keyText, tableHeaders, data, majority
 
   return (
     <div className={className}>
-      <h3 className={`${className}__title`}>{title}</h3>
+      <div className={`${className}__header`}>
+        <h3 className={`${className}__title`}>{title}</h3>
 
-      <div className={`${className}__key`}>
-        <span className={`${className}__key-rect`}>
-          <span
-            className={`${className}__key-rect-overlay`}
-            style={{
-              backgroundImage: `repeating-linear-gradient(50deg, transparent, transparent 3px, ${'#fff1e5'} 3px, ${'#fff1e5'} 5px)`,
-            }}
-          />
-        </span>
+        <div className={`${className}__key`}>
+          <span className={`${className}__key-rect`}>
+            <span
+              className={`${className}__key-rect-overlay`}
+              style={{
+                backgroundImage: `repeating-linear-gradient(50deg, transparent, transparent 3px, ${'#fff1e5'} 3px, ${'#fff1e5'} 5px)`,
+              }}
+            />
+          </span>
 
-        <span className={`${className}__key-text`}>{`= ${keyText}`}</span>
+          <span className={`${className}__key-text`}>{`= ${keyText}`}</span>
+        </div>
       </div>
 
       <table className={`${className}__table`}>
@@ -99,7 +109,9 @@ const SeatsBarChart = ({ className, title, keyText, tableHeaders, data, majority
                             : 'rgba(255, 255, 255, 0.3)',
                       }}
                     />
-                    <span className="party-name party-name--desktop">{formattedName}</span>
+                    <span className="party-name party-name--desktop">
+                      {showShortPartyNames ? shortName : formattedName}
+                    </span>
                     <span className="party-name party-name--mobile">{shortName}</span>
                   </span>
                 </td>
@@ -142,12 +154,14 @@ SeatsBarChart.propTypes = {
     }),
   ).isRequired,
   majority: PropTypes.number,
+  showShortPartyNames: PropTypes.bool,
 };
 
 SeatsBarChart.defaultProps = {
   className: 'g-seats-bar-chart',
   title: 'Number of seats won',
   keyText: 'PA Projection',
+  showShortPartyNames: false,
 };
 
 export default SeatsBarChart;
