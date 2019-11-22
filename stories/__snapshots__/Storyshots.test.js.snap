@@ -4558,11 +4558,15 @@ exports[`Storyshots Elections|GE2019/Net Change Bar Chart Basic 1`] = `
 <div
   className="g-net-change-bar-chart"
 >
-  <h3
-    className="g-net-change-bar-chart__title"
+  <div
+    className="g-net-change-bar-chart__header"
   >
-    Net change in seats compared to outgoing parliament
-  </h3>
+    <h3
+      className="g-net-change-bar-chart__title"
+    >
+      Net change in seats compared to outgoing parliament
+    </h3>
+  </div>
   <table
     className="g-net-change-bar-chart__table"
   >
@@ -5305,31 +5309,35 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
 <div
   className="g-seats-bar-chart"
 >
-  <h3
-    className="g-seats-bar-chart__title"
-  >
-    Number of seats won
-  </h3>
   <div
-    className="g-seats-bar-chart__key"
+    className="g-seats-bar-chart__header"
   >
-    <span
-      className="g-seats-bar-chart__key-rect"
+    <h3
+      className="g-seats-bar-chart__title"
+    >
+      Number of seats won
+    </h3>
+    <div
+      className="g-seats-bar-chart__key"
     >
       <span
-        className="g-seats-bar-chart__key-rect-overlay"
-        style={
-          Object {
-            "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
+        className="g-seats-bar-chart__key-rect"
+      >
+        <span
+          className="g-seats-bar-chart__key-rect-overlay"
+          style={
+            Object {
+              "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
+            }
           }
-        }
-      />
-    </span>
-    <span
-      className="g-seats-bar-chart__key-text"
-    >
-      = PA Projection
-    </span>
+        />
+      </span>
+      <span
+        className="g-seats-bar-chart__key-text"
+      >
+        = PA Projection
+      </span>
+    </div>
   </div>
   <table
     className="g-seats-bar-chart__table"
@@ -5826,7 +5834,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
             <span
               className="party-name party-name--desktop"
             >
-              Brexit
+              Brexit party
             </span>
             <span
               className="party-name party-name--mobile"
@@ -6083,7 +6091,7 @@ exports[`Storyshots Elections|GE2019/Utilities Get Party Info Party String 1`] =
       <strong>
         formattedName: 
       </strong>
-      Brexit
+      Brexit party
     </div>
     <br />
   </div>
