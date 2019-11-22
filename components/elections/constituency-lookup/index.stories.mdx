@@ -1,81 +1,15 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 import '../../../shared/critical-path.scss';
 import ConstituencyLookup from './';
+import { csvParse } from 'd3-dsv';
+import candidates from 'raw-loader!../sample-data/candidates.csv';
+import constituencies from 'raw-loader!../sample-data/constituencies.csv';
+
+export const candidateList = csvParse(candidates);
+
+export const constituencyList = csvParse(constituencies);
 
 <Meta title="Elections|GE2019/Constituency Lookup" component={ConstituencyLookup} />
-
-export const constituencyList = [
-  { id: 'E14000739', name: 'Hemel Hempstead' },
-  { id: 'E14000887', name: 'Putney' },
-  { id: 'E14000763', name: 'Islington North' },
-  { id: 'E14000549', name: 'Battersea' },
-  { id: 'E14000768', name: 'Kensington' },
-];
-
-export const candidateList = [
-  // Hemel Hempstead
-  {
-    id: 'E14000739',
-    constituencyName: 'Hemel Hempstead',
-    partyName: 'Labour',
-    candidateName: 'Nabila Ahmed',
-  },
-  {
-    id: 'E14000739',
-    constituencyName: 'Hemel Hempstead',
-    partyName: 'Brexit',
-    candidateName: 'Shai Ahmed',
-  },
-  {
-    id: 'E14000739',
-    constituencyName: 'Hemel Hempstead',
-    partyName: 'Liberal Democrats',
-    candidateName: 'Sammy Barry',
-  },
-  {
-    id: 'E14000739',
-    constituencyName: 'Hemel Hempstead',
-    partyName: 'Green',
-    candidateName: 'Sherief Mamoun Hassan',
-  },
-  // Putney
-  {
-    id: 'E14000887',
-    constituencyName: 'Putney',
-    partyName: 'Labour',
-    candidateName: 'Fleur Anderson',
-  },
-  {
-    id: 'E14000887',
-    constituencyName: 'Putney',
-    partyName: 'Brexit',
-    candidateName: 'Teixeira Hambro',
-  },
-  {
-    id: 'E14000887',
-    constituencyName: 'Putney',
-    partyName: 'Green',
-    candidateName: 'Fergal McEntee',
-  },
-  {
-    id: 'E14000887',
-    constituencyName: 'Putney',
-    partyName: 'Conservative',
-    candidateName: 'Will Sweet',
-  },
-  {
-    id: 'E14000887',
-    constituencyName: 'Putney',
-    partyName: 'Liberal Democrats',
-    candidateName: 'Sue Wixley',
-  },
-  {
-    id: 'E14000887',
-    constituencyName: 'Putney',
-    partyName: 'Independent',
-    candidateName: 'Sam Hempstead',
-  },
-];
 
 # Constituency Lookup component
 
