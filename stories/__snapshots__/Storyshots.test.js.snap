@@ -5113,6 +5113,11 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
     />
     <div
       className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
     />
     <div
       className="race-result--triangle"
@@ -5130,7 +5135,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
         }
       }
     >
-      Labour holds
+      Labour hold
     </div>
   </div>
   <div
@@ -5146,6 +5151,11 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
     />
     <div
       className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
     />
     <div
       className="race-result--triangle"
@@ -5163,7 +5173,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
         }
       }
     >
-      Labour gain from Conservative
+      Labour gain
     </div>
   </div>
   <div
@@ -5179,6 +5189,11 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
     />
     <div
       className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
     />
     <div
       className="race-result--triangle"
@@ -5196,7 +5211,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
         }
       }
     >
-      Conservative gain from Labour
+      Conservative gain
     </div>
   </div>
   <div
@@ -5212,6 +5227,11 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
     />
     <div
       className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
     />
     <div
       className="race-result--triangle"
@@ -5229,7 +5249,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
         }
       }
     >
-      Liberal Democrats holds
+      Liberal Democrats hold
     </div>
   </div>
   <div
@@ -5245,6 +5265,11 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
     />
     <div
       className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
     />
     <div
       className="race-result--triangle"
@@ -5262,7 +5287,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
         }
       }
     >
-      Liberal Democrats gain from Conservative
+      Liberal Democrats gain
     </div>
   </div>
   <div
@@ -5278,6 +5303,11 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
     />
     <div
       className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
     />
     <div
       className="race-result--triangle"
@@ -5295,7 +5325,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
         }
       }
     >
-      Green holds
+      Green hold
     </div>
   </div>
 </div>
