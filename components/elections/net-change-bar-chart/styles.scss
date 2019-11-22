@@ -1,12 +1,19 @@
 @import 'o-grid/main';
 
 .g-net-change-bar-chart {
-  &__title {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.11;
-    color: #000000;
-    margin-bottom: 10px;
+  &__header {
+    @include oGridRespondTo(M) {
+      height: 60px;
+    }
+
+    h3.g-net-change-bar-chart__title {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.11;
+      color: #000000;
+      margin-bottom: 10px;
+      margin-top: 0px;
+    }
   }
 
   &__table {

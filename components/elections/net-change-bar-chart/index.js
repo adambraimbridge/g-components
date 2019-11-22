@@ -11,7 +11,7 @@ import './styles.scss';
 
 const { getPartyInfo } = uk;
 
-const NetChangeBarChart = ({ className, title, tableHeaders, data }) => {
+const NetChangeBarChart = ({ className, title, tableHeaders, data, showShortPartyNames }) => {
   const tableData = [
     ...data
       .filter(({ isInTable, isOthers }) => isInTable && !isOthers)
@@ -32,7 +32,9 @@ const NetChangeBarChart = ({ className, title, tableHeaders, data }) => {
 
   return (
     <div className={className}>
-      <h3 className={`${className}__title`}>{title}</h3>
+      <div className={`${className}__header`}>
+        <h3 className={`${className}__title`}>{title}</h3>
+      </div>
 
       <table className={`${className}__table`}>
         <thead>
@@ -56,7 +58,9 @@ const NetChangeBarChart = ({ className, title, tableHeaders, data }) => {
               <tr className={`row${isOthers ? ' row--others' : ''}`}>
                 <td className={`party${isOthers ? ' party--others' : ''}`}>
                   <span className="party-badge" style={{ backgroundColor: color }} />
-                  <span className="party-name party-name--desktop">{formattedName}</span>
+                  <span className="party-name party-name--desktop">
+                    {showShortPartyNames ? shortName : formattedName}
+                  </span>
                   <span className="party-name party-name--mobile">{shortName}</span>
                 </td>
                 <td className={`bar-change${isOthers ? ' bar-change--others' : ''}`}>
@@ -127,11 +131,13 @@ NetChangeBarChart.propTypes = {
       isInTable: PropTypes.bool,
     }),
   ).isRequired,
+  showShortPartyNames: PropTypes.bool,
 };
 
 NetChangeBarChart.defaultProps = {
   className: 'g-net-change-bar-chart',
   title: 'Net change in seats compared to outgoing parliament',
+  showShortPartyNames: false,
 };
 
 export default NetChangeBarChart;
