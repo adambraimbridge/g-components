@@ -66,7 +66,15 @@ GridChild.defaultProps = {
   span: '12 S11 Scenter M9 L8 XL7',
 };
 
-const Layout = ({ flags, ads, children, defaultContainer, customArticleHead, ...props }) => {
+const Layout = ({
+  flags,
+  ads,
+  children,
+  defaultContainer,
+  customArticleHead,
+  fullWidth,
+  ...props
+}) => {
   const [state, setState] = useState({
     breakpoint: 'default',
   });
@@ -147,7 +155,7 @@ const Layout = ({ flags, ads, children, defaultContainer, customArticleHead, ...
             ) : (
               <GridContainer>
                 <GridRow>
-                  <GridChild>
+                  <GridChild span={fullWidth ? 'full-width' : '12 S11 Scenter M9 L8 XL7'}>
                     <div>
                       {React.Children.map(children, child =>
                         React.cloneElement(
@@ -212,6 +220,7 @@ Layout.propTypes = {
   defaultContainer: PropTypes.bool,
   customArticleHead: PropTypes.node,
   wrapArticleHead: PropTypes.bool,
+  fullWidth: PropTypes.bool,
 };
 
 Layout.defaultProps = {
@@ -225,6 +234,7 @@ Layout.defaultProps = {
   defaultContainer: true,
   customArticleHead: null,
   wrapArticleHead: true,
+  fullWidth: false,
 };
 
 export default Layout;

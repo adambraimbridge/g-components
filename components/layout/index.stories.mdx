@@ -186,3 +186,25 @@ to maintain typographic styles.
     </Layout>
   </Story>
 </Preview>
+
+<Preview>
+  <Story name="Full-width">
+    <Layout
+      flags={{ ...DEFAULTS.flags, dark: true }}
+      headline={DEFAULTS.headline}
+      title={DEFAULTS.title}
+      topic={DEFAULTS.topic}
+      url={DEFAULTS.url}
+      publishedDate={DEFAULTS.pubdate}
+      buildTime={DEFAULTS.buildTime}
+      ads={DEFAULTS.ads}
+      id={DEFAULTS.id}
+      fullWidth={true}
+    >
+      {[
+        ...lorem.split(/\n\n/).map((par, idx) => <p key={idx /* eslint-disable-line */}>{par}</p>),
+        <MiddleAd />,
+      ]}
+    </Layout>
+  </Story>
+</Preview>
