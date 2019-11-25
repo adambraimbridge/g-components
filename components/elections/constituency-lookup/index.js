@@ -3,7 +3,7 @@
  * UK constituency lookup component
  */
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import AutosuggestSearch from '../../autosuggest-search';
 import { uk } from '@financial-times/politics';
@@ -25,20 +25,25 @@ const ConstituencyLookup = ({
   candidateList,
   setOpenConstituency,
 }) => {
-  const formattedConstituencyList = [
-    ...constituencyList.map(({ id, name }) => ({
-      value: id,
-      display: name,
-      type: 'constituency',
-    })),
-    ...candidateList.map(({ id, constituencyName, partyName, candidateName }) => ({
-      value: id,
-      display: candidateName,
-      displayConstituency: constituencyName,
-      partyName,
-      type: 'candidate',
-    })),
-  ];
+  const formattedConstituencyList = useMemo(
+    () => [
+      ...constituencyList.map(({ id, name }) => ({
+        value: id,
+        display: name,
+        type: 'constituency',
+        words: name.toLowerCase().split(' '),
+      })),
+      ...candidateList.map(({ id, constituencyName, partyName, candidateName }) => ({
+        value: id,
+        display: candidateName,
+        displayConstituency: constituencyName,
+        partyName,
+        type: 'candidate',
+        words: candidateName.toLowerCase().split(' '),
+      })),
+    ],
+    [constituencyList, candidateList],
+  );
 
   const RenderSuggestion = ({ display, type, displayConstituency, partyName }) => {
     const color = type === 'candidate' ? getPartyInfo(partyName).color : 'black';
@@ -58,6 +63,7 @@ const ConstituencyLookup = ({
       </div>
     );
   };
+
   const getSuggestionValue = ({ display, type, displayConstituency }) =>
     type === 'constituency' ? display : displayConstituency;
 
@@ -66,18 +72,37 @@ const ConstituencyLookup = ({
     const inputLength = inputValue.length;
     const inputValueWords = inputValue.split(' ');
 
-    // Match from the beginning of the string, after 3 characters
-    return inputLength < 3
-      ? []
-      : searchList.filter(({ display }) => {
-          const words = display.toLowerCase().split(' ');
-          return words.some(word =>
-            inputValueWords.some(
-              inputValueWord =>
-                word.toLowerCase().slice(0, inputValueWord.length) === inputValueWord,
-            ),
+    // Match from the beginning of the string, after N characters
+    const minimumInputLength = 2;
+    if (inputLength < minimumInputLength) {
+      return [];
+    } else {
+      const scoredList = formattedConstituencyList.map(({ display, words, ...d }) => {
+        const scores = words.reduce((acc, word) => {
+          const match = inputValueWords.find(
+            inputValueWord => word.toLowerCase().slice(0, inputValueWord.length) === inputValueWord,
           );
-        });
+          return [
+            ...acc,
+            {
+              matchLength: match ? match.length : 0,
+              wordLength: word.length,
+              pcMatch: match ? match.length / word.length : 0,
+            },
+          ];
+        }, []);
+
+        const score = scores.reduce((acc, { matchLength, pcMatch }) => acc + matchLength, 0);
+
+        return {
+          display,
+          ...d,
+          score,
+        };
+      });
+
+      return scoredList.filter(d => d.score > minimumInputLength).sort((a, b) => b.score - a.score);
+    }
   };
 
   const onSelectCallback = suggestion => {
@@ -123,6 +148,7 @@ const ConstituencyLookup = ({
         getSuggestions={getSuggestions}
         getSuggestionValue={getSuggestionValue}
         renderSuggestion={RenderSuggestion}
+        onClearFunction={() => setOpenConstituency('')}
       />
     </div>
   );
