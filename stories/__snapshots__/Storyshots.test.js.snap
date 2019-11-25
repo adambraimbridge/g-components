@@ -5335,7 +5335,662 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
 </div>
 `;
 
-exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
+exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic End 1`] = `
+<div
+  className="g-seats-bar-chart"
+>
+  <div
+    className="g-seats-bar-chart__header"
+  >
+    <h3
+      className="g-seats-bar-chart__title"
+    >
+      Number of seats won
+    </h3>
+  </div>
+  <table
+    className="g-seats-bar-chart__table"
+  >
+    <span
+      className="g-seats-bar-chart__majority-line-container"
+    >
+      <span
+        className="g-seats-bar-chart__majority-line"
+        style={
+          Object {
+            "left": "96.3855421686747%",
+          }
+        }
+      />
+      <span
+        className="g-seats-bar-chart__majority-text"
+        style={
+          Object {
+            "left": "96.3855421686747%",
+          }
+        }
+      >
+        Majority
+      </span>
+    </span>
+    <thead>
+      <tr>
+        <th>
+          Party
+        </th>
+        <th>
+          Seats
+        </th>
+        <th>
+          % of vote
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#149adb",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#149adb",
+                  "width": "100%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "width": "100%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Conservative
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Con
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          332
+        </td>
+        <td
+          className="voteshare"
+        >
+          37.3
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#cf4d3c",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#cf4d3c",
+                  "width": "53.6144578313253%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "width": "53.6144578313253%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Labour
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Lab
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          178
+        </td>
+        <td
+          className="voteshare"
+        >
+          29.0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#f09000",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#f09000",
+                  "width": "17.16867469879518%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "width": "17.16867469879518%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Liberal Democrats
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Lib Dem
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          57
+        </td>
+        <td
+          className="voteshare"
+        >
+          15.4
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#ffdf00",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#ffdf00",
+                  "width": "13.55421686746988%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0)",
+                  "width": "13.55421686746988%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Scottish National party
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              SNP
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          45
+        </td>
+        <td
+          className="voteshare"
+        >
+          4.0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#210066",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#210066",
+                  "width": "2.108433734939759%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.5)",
+                  "width": "2.108433734939759%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Democratic Unionist party
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              DUP
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          7
+        </td>
+        <td
+          className="voteshare"
+        >
+          0.8
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#006643",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#006643",
+                  "width": "2.108433734939759%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "2.108433734939759%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Sinn Féin
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              SF
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          7
+        </td>
+        <td
+          className="voteshare"
+        >
+          0.8
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#8deb9d",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#8deb9d",
+                  "width": "1.8072289156626504%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "1.8072289156626504%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Green
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Green
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          6
+        </td>
+        <td
+          className="voteshare"
+        >
+          5.5
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#80cfd6",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#80cfd6",
+                  "width": "0.9036144578313252%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "0.9036144578313252%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Brexit party
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Brexit
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          3
+        </td>
+        <td
+          className="voteshare"
+        >
+          2.8
+        </td>
+      </tr>
+      <tr
+        className="row row--others"
+      >
+        <td
+          className="party party--others"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#d9cace",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#d9cace",
+                  "width": "0%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "0%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Independent
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Ind
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          0
+        </td>
+        <td
+          className="voteshare"
+        >
+          2.0
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div
+    className="g-seats-bar-chart__footnote"
+  >
+    PC
+     (
+    <span
+      className="seats"
+    >
+      9
+    </span>
+    )
+    , 
+    SDLP
+     (
+    <span
+      className="seats"
+    >
+      3
+    </span>
+    )
+    , 
+    TIGfC
+     (
+    <span
+      className="seats"
+    >
+      1
+    </span>
+    )
+    , 
+    Speaker
+     (
+    <span
+      className="seats"
+    >
+      1
+    </span>
+    )
+    , 
+    UUP
+     (
+    <span
+      className="seats"
+    >
+      1
+    </span>
+    )
+    , 
+    APNI
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    Ind
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    Ukip
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic Middle 1`] = `
 <div
   className="g-seats-bar-chart"
 >
@@ -5368,6 +6023,711 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
         = PA Projection
       </span>
     </div>
+  </div>
+  <table
+    className="g-seats-bar-chart__table"
+  >
+    <span
+      className="g-seats-bar-chart__majority-line-container"
+    >
+      <span
+        className="g-seats-bar-chart__majority-line"
+        style={
+          Object {
+            "left": "95.52238805970148%",
+          }
+        }
+      />
+      <span
+        className="g-seats-bar-chart__majority-text"
+        style={
+          Object {
+            "left": "95.52238805970148%",
+          }
+        }
+      >
+        Majority
+      </span>
+    </span>
+    <thead>
+      <tr>
+        <th>
+          Party
+        </th>
+        <th>
+          Seats
+        </th>
+        <th>
+          % of vote
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#149adb",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#149adb",
+                  "width": "100%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--projected"
+              style={
+                Object {
+                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
+                  "left": "54.62686567164179%",
+                  "width": "45.37313432835821%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "width": "100%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Conservative
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Con
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          183
+        </td>
+        <td
+          className="voteshare"
+        >
+          37.5
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#cf4d3c",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#cf4d3c",
+                  "width": "55.223880597014926%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--projected"
+              style={
+                Object {
+                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
+                  "left": "25.671641791044774%",
+                  "width": "29.55223880597015%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "width": "55.223880597014926%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Labour
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Lab
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          86
+        </td>
+        <td
+          className="voteshare"
+        >
+          28.0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#ffdf00",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#ffdf00",
+                  "width": "14.925373134328357%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--projected"
+              style={
+                Object {
+                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
+                  "left": "7.761194029850746%",
+                  "width": "7.164179104477612%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0)",
+                  "width": "14.925373134328357%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Scottish National party
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              SNP
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          26
+        </td>
+        <td
+          className="voteshare"
+        >
+          4.2
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#f09000",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#f09000",
+                  "width": "14.328358208955224%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--projected"
+              style={
+                Object {
+                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
+                  "left": "10.44776119402985%",
+                  "width": "3.880597014925373%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "width": "14.328358208955224%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Liberal Democrats
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Lib Dem
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          35
+        </td>
+        <td
+          className="voteshare"
+        >
+          16.2
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#006643",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#006643",
+                  "width": "1.1940298507462688%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "1.1940298507462688%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Sinn Féin
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              SF
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          4
+        </td>
+        <td
+          className="voteshare"
+        >
+          0.7
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#210066",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#210066",
+                  "width": "0.8955223880597015%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.5)",
+                  "width": "0.8955223880597015%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Democratic Unionist party
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              DUP
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          3
+        </td>
+        <td
+          className="voteshare"
+        >
+          0.7
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#8deb9d",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#8deb9d",
+                  "width": "0.8955223880597015%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--projected"
+              style={
+                Object {
+                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
+                  "left": "0.5970149253731344%",
+                  "width": "0.2985074626865672%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "0.8955223880597015%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Green
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Green
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          2
+        </td>
+        <td
+          className="voteshare"
+        >
+          5.0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#80cfd6",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#80cfd6",
+                  "width": "0.2985074626865672%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "0.2985074626865672%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Brexit party
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Brexit
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          1
+        </td>
+        <td
+          className="voteshare"
+        >
+          3.0
+        </td>
+      </tr>
+      <tr
+        className="row row--others"
+      >
+        <td
+          className="party party--others"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#d9cace",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#d9cace",
+                  "width": "0.2985074626865672%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "0.2985074626865672%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Independent
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Ind
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          1
+        </td>
+        <td
+          className="voteshare"
+        >
+          2.2
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div
+    className="g-seats-bar-chart__footnote"
+  >
+    PC
+     (
+    <span
+      className="seats"
+    >
+      7
+    </span>
+    )
+    , 
+    TIGfC
+     (
+    <span
+      className="seats"
+    >
+      1
+    </span>
+    )
+    , 
+    Ind
+     (
+    <span
+      className="seats"
+    >
+      1
+    </span>
+    )
+    , 
+    SDLP
+     (
+    <span
+      className="seats"
+    >
+      1
+    </span>
+    )
+    , 
+    Speaker
+     (
+    <span
+      className="seats"
+    >
+      1
+    </span>
+    )
+    , 
+    APNI
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    Ukip
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    UUP
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic Start 1`] = `
+<div
+  className="g-seats-bar-chart"
+>
+  <div
+    className="g-seats-bar-chart__header"
+  >
+    <h3
+      className="g-seats-bar-chart__title"
+    >
+      Number of seats won
+    </h3>
   </div>
   <table
     className="g-seats-bar-chart__table"
@@ -5430,17 +6790,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "#149adb",
-                  "width": "99.0625%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--projected"
-              style={
-                Object {
-                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-                  "left": "31.25%",
-                  "width": "67.8125%",
+                  "width": "1.5625%",
                 }
               }
             />
@@ -5449,7 +6799,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "rgba(255, 255, 255, 0.2)",
-                  "width": "99.0625%",
+                  "width": "1.5625%",
                 }
               }
             />
@@ -5468,80 +6818,12 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
         <td
           className="seats"
         >
-          100
+          5
         </td>
         <td
           className="voteshare"
         >
-          42.4
-        </td>
-      </tr>
-      <tr
-        className="row"
-      >
-        <td
-          className="party"
-        >
-          <span
-            className="party-badge"
-            style={
-              Object {
-                "backgroundColor": "#cf4d3c",
-              }
-            }
-          />
-          <span
-            className="party-bar-container"
-          >
-            <span
-              className="party-bar"
-              style={
-                Object {
-                  "backgroundColor": "#cf4d3c",
-                  "width": "81.875%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--projected"
-              style={
-                Object {
-                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-                  "left": "21.875%",
-                  "width": "60%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--overlay"
-              style={
-                Object {
-                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
-                  "width": "81.875%",
-                }
-              }
-            />
-            <span
-              className="party-name party-name--desktop"
-            >
-              Labour
-            </span>
-            <span
-              className="party-name party-name--mobile"
-            >
-              Lab
-            </span>
-          </span>
-        </td>
-        <td
-          className="seats"
-        >
-          70
-        </td>
-        <td
-          className="voteshare"
-        >
-          40.0
+          -
         </td>
       </tr>
       <tr
@@ -5566,17 +6848,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "#ffdf00",
-                  "width": "10.9375%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--projected"
-              style={
-                Object {
-                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-                  "left": "3.125%",
-                  "width": "7.8125%",
+                  "width": "1.25%",
                 }
               }
             />
@@ -5585,7 +6857,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "rgba(255, 255, 255, 0)",
-                  "width": "10.9375%",
+                  "width": "1.25%",
                 }
               }
             />
@@ -5604,12 +6876,70 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
         <td
           className="seats"
         >
-          10
+          4
         </td>
         <td
           className="voteshare"
         >
-          3.0
+          -
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#cf4d3c",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#cf4d3c",
+                  "width": "0.3125%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "width": "0.3125%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Labour
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Lab
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          1
+        </td>
+        <td
+          className="voteshare"
+        >
+          -
         </td>
       </tr>
       <tr
@@ -5634,17 +6964,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "#f09000",
-                  "width": "7.187499999999999%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--projected"
-              style={
-                Object {
-                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-                  "left": "2.5%",
-                  "width": "4.6875%",
+                  "width": "0.3125%",
                 }
               }
             />
@@ -5653,7 +6973,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "rgba(255, 255, 255, 0.2)",
-                  "width": "7.187499999999999%",
+                  "width": "0.3125%",
                 }
               }
             />
@@ -5672,80 +6992,12 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
         <td
           className="seats"
         >
-          8
+          1
         </td>
         <td
           className="voteshare"
         >
-          7.4
-        </td>
-      </tr>
-      <tr
-        className="row"
-      >
-        <td
-          className="party"
-        >
-          <span
-            className="party-badge"
-            style={
-              Object {
-                "backgroundColor": "#210066",
-              }
-            }
-          />
-          <span
-            className="party-bar-container"
-          >
-            <span
-              className="party-bar"
-              style={
-                Object {
-                  "backgroundColor": "#210066",
-                  "width": "3.125%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--projected"
-              style={
-                Object {
-                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-                  "left": "0.9375%",
-                  "width": "2.1875%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--overlay"
-              style={
-                Object {
-                  "backgroundColor": "rgba(255, 255, 255, 0.5)",
-                  "width": "3.125%",
-                }
-              }
-            />
-            <span
-              className="party-name party-name--desktop"
-            >
-              Democratic Unionist party
-            </span>
-            <span
-              className="party-name party-name--mobile"
-            >
-              DUP
-            </span>
-          </span>
-        </td>
-        <td
-          className="seats"
-        >
-          3
-        </td>
-        <td
-          className="voteshare"
-        >
-          0.7
+          -
         </td>
       </tr>
       <tr
@@ -5770,17 +7022,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "#006643",
-                  "width": "2.1875%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--projected"
-              style={
-                Object {
-                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-                  "left": "0.9375%",
-                  "width": "1.25%",
+                  "width": "0.3125%",
                 }
               }
             />
@@ -5789,7 +7031,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "rgba(255, 255, 255, 0.3)",
-                  "width": "2.1875%",
+                  "width": "0.3125%",
                 }
               }
             />
@@ -5808,12 +7050,12 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
         <td
           className="seats"
         >
-          3
+          1
         </td>
         <td
           className="voteshare"
         >
-          0.6
+          -
         </td>
       </tr>
       <tr
@@ -5838,16 +7080,6 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "#80cfd6",
-                  "width": "0.3125%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--projected"
-              style={
-                Object {
-                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-                  "left": "0.3125%",
                   "width": "0%",
                 }
               }
@@ -5857,7 +7089,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "rgba(255, 255, 255, 0.3)",
-                  "width": "0.3125%",
+                  "width": "0%",
                 }
               }
             />
@@ -5876,12 +7108,128 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
         <td
           className="seats"
         >
-          1
+          0
         </td>
         <td
           className="voteshare"
         >
-          7.0
+          -
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#210066",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#210066",
+                  "width": "0%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.5)",
+                  "width": "0%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Democratic Unionist party
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              DUP
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          0
+        </td>
+        <td
+          className="voteshare"
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#8deb9d",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#8deb9d",
+                  "width": "0%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "0%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Green
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Green
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          0
+        </td>
+        <td
+          className="voteshare"
+        >
+          -
         </td>
       </tr>
       <tr
@@ -5894,7 +7242,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
             className="party-badge"
             style={
               Object {
-                "backgroundColor": "#ffffff",
+                "backgroundColor": "#d9cace",
               }
             }
           />
@@ -5905,18 +7253,8 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               className="party-bar"
               style={
                 Object {
-                  "backgroundColor": "#ffffff",
-                  "width": "9.375%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--projected"
-              style={
-                Object {
-                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-                  "left": "2.5%",
-                  "width": "6.875000000000001%",
+                  "backgroundColor": "#d9cace",
+                  "width": "0%",
                 }
               }
             />
@@ -5925,31 +7263,31 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "rgba(255, 255, 255, 0.3)",
-                  "width": "9.375%",
+                  "width": "0%",
                 }
               }
             />
             <span
               className="party-name party-name--desktop"
             >
-              Others
+              Independent
             </span>
             <span
               className="party-name party-name--mobile"
             >
-              Others
+              Ind
             </span>
           </span>
         </td>
         <td
           className="seats"
         >
-          8
+          0
         </td>
         <td
           className="voteshare"
         >
-          3.0
+          -
         </td>
       </tr>
     </tbody>
@@ -5962,7 +7300,61 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
     <span
       className="seats"
     >
-      1
+      0
+    </span>
+    )
+    , 
+    TIGfC
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    Ind
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    PC
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    SDLP
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    Speaker
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    Ukip
+     (
+    <span
+      className="seats"
+    >
+      0
     </span>
     )
     , 
@@ -5971,7 +7363,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
     <span
       className="seats"
     >
-      1
+      0
     </span>
     )
     
