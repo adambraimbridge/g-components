@@ -1984,7 +1984,7 @@ soluta vix, quis natum ne qui, ei vidit latine partiendo mei. Mel ea duis essent
 ]
 `;
 
-exports[`Storyshots Core|Layout Full Width 1`] = `
+exports[`Storyshots Core|Layout Full Width Article Body 1`] = `
 Array [
   <header
     className="o-header o-header--simple o-header--transparent"
@@ -3857,7 +3857,7 @@ Array [
             className="o-grid-row "
           >
             <div
-              data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+              data-o-grid-colspan="full-width"
             >
               <div>
                 <p>

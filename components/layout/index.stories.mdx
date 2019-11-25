@@ -188,7 +188,7 @@ to maintain typographic styles.
 </Preview>
 
 <Preview>
-  <Story name="Full-width">
+  <Story name="Full-width article body">
     <Layout
       flags={{ ...DEFAULTS.flags, dark: true }}
       headline={DEFAULTS.headline}
@@ -199,7 +199,7 @@ to maintain typographic styles.
       buildTime={DEFAULTS.buildTime}
       ads={DEFAULTS.ads}
       id={DEFAULTS.id}
-      fullWidth={true}
+      span={'full-width'}
     >
       {[
         ...lorem.split(/\n\n/).map((par, idx) => <p key={idx /* eslint-disable-line */}>{par}</p>),
