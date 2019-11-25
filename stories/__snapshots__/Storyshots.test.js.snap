@@ -5826,7 +5826,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
             <span
               className="party-name party-name--desktop"
             >
-              Brexit
+              Brexit party
             </span>
             <span
               className="party-name party-name--mobile"
@@ -6083,7 +6083,7 @@ exports[`Storyshots Elections|GE2019/Utilities Get Party Info Party String 1`] =
       <strong>
         formattedName: 
       </strong>
-      Brexit
+      Brexit party
     </div>
     <br />
   </div>
