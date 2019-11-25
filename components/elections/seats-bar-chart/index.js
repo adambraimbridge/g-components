@@ -80,8 +80,8 @@ const SeatsBarChart = ({
 
         <thead>
           <tr>
-            {tableHeaders.map(t => (
-              <th key={`th_${t}`}>{t}</th>
+            {tableHeaders.map(tableHeader => (
+              <th key={`th_${tableHeader}`}>{tableHeader}</th>
             ))}
           </tr>
         </thead>
@@ -91,7 +91,7 @@ const SeatsBarChart = ({
             ({ party, seats, seatsCeiling, projectedSeatsOverWon, voteShare, isOthers }) => {
               const { formattedName, shortName, color, whiteOverlayOpacity } = getPartyInfo(party);
               return (
-                <tr className={`row${isOthers ? ' row--others' : ''}`}>
+                <tr className={`row${isOthers ? ' row--others' : ''}`} key={`row_${party}`}>
                   <td className={`party${isOthers ? ' party--others' : ''}`}>
                     <span className="party-badge" style={{ backgroundColor: color }} />
                     <span className="party-bar-container">
@@ -129,7 +129,7 @@ const SeatsBarChart = ({
                     </span>
                   </td>
                   <td className="seats">{seats}</td>
-                  <td className="voteshare">{voteShare.toFixed(1)}</td>
+                  <td className="voteshare">{voteShare ? voteShare.toFixed(1) : '-'}</td>
                 </tr>
               );
             },
@@ -151,6 +151,8 @@ const SeatsBarChart = ({
     </div>
   );
 };
+
+SeatsBarChart.displayName = 'GSeatsBarChart';
 
 SeatsBarChart.propTypes = {
   className: PropTypes.string,

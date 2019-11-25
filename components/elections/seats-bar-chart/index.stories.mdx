@@ -1,58 +1,49 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 import '../../../shared/critical-path.scss';
 import SeatsBarChart from './';
+import { formatResultsData } from '../sample-data/utils.js';
+import resultsStart from '../sample-data/results/start.json';
+import resultsMiddle from '../sample-data/results/middle.json';
+import resultsEnd from '../sample-data/results/end.json';
+
+export const partiesToShowInTable = [
+  'Conservative',
+  'Brexit',
+  'Labour',
+  'Liberal Democrats',
+  'Green',
+  'DUP',
+  'Sinn Féin',
+  'SNP',
+];
+
+export const resultsStartFormatted = formatResultsData(resultsStart, partiesToShowInTable);
+export const resultsMiddleFormatted = formatResultsData(resultsMiddle, partiesToShowInTable);
+export const resultsEndFormatted = formatResultsData(resultsEnd, partiesToShowInTable);
 
 <Meta title="Elections|GE2019/Seats Bar Chart" component={SeatsBarChart} />
 
 # Seats Bar Chart component
 
 <Preview>
-  <Story name="Basic">
+  <Story name="Basic (start)">
     <SeatsBarChart
       tableHeaders={['Party', 'Seats', '% of vote']}
-      data={[
-        {
-          party: 'Conservative',
-          seats: 100,
-          projectedSeats: 317,
-          voteShare: 42.4,
-          isInTable: true,
-        },
-        { party: 'Labour', seats: 70, projectedSeats: 262, voteShare: 40, isInTable: true },
-        { party: 'SNP', seats: 10, projectedSeats: 35, voteShare: 3, isInTable: true },
-        {
-          party: 'Liberal Democrats',
-          seats: 8,
-          projectedSeats: 23,
-          voteShare: 7.4,
-          isInTable: true,
-        },
-        {
-          party: 'DUP',
-          seats: 3,
-          projectedSeats: 10,
-          voteShare: 0.7,
-          isInTable: true,
-        },
-        {
-          party: 'Sinn Fein',
-          seats: 3,
-          projectedSeats: 7,
-          voteShare: 0.6,
-          isInTable: true,
-        },
-        { party: 'Brexit', seats: 1, projectedSeats: 1, voteShare: 7, isInTable: true },
-        {
-          party: 'Others',
-          seats: 8,
-          projectedSeats: 30,
-          voteShare: 3,
-          isInTable: true,
-          isOthers: true,
-        },
-        { party: 'Alliance', seats: 1, projectedSeats: 2, voteShare: 0.5, isInTable: false },
-        { party: 'UUP', seats: 1, projectedSeats: 2, voteShare: 0.3, isInTable: false },
-      ]}
+      data={resultsStartFormatted}
+      majority={320}
+    />
+  </Story>
+  <Story name="Basic (middle)">
+    <SeatsBarChart
+      tableHeaders={['Party', 'Seats', '% of vote']}
+      data={resultsMiddleFormatted}
+      majority={320}
+    />
+  </Story>
+  <Story name="Basic (end)">
+    <SeatsBarChart
+      tableHeaders={['Party', 'Seats', '% of vote']}
+      data={resultsEndFormatted}
       majority={320}
     />
   </Story>
