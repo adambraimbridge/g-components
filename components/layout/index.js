@@ -24,7 +24,16 @@ import './styles.scss';
 
 export const Context = createContext(null);
 
-const Layout = ({ flags, ads, children, defaultContainer, customArticleHead, span, ...props }) => {
+const Layout = ({
+  flags,
+  ads,
+  children,
+  defaultContainer,
+  customArticleHead,
+  bodyColspan,
+  headerColspan,
+  ...props
+}) => {
   const [state, setState] = useState({
     breakpoint: 'default',
   });
@@ -89,11 +98,11 @@ const Layout = ({ flags, ads, children, defaultContainer, customArticleHead, spa
       {flags.header && <Header key="header" {...{ ...props, flags, breakpoint }} />}
       <main key="main" role="main">
         <article className="article" itemScope itemType="http://schema.org/Article">
-          <div className="article-head o-grid-container">
-            <div className="o-grid-row">
-              <header data-o-grid-colspan="12 S11 Scenter M9 L8 XL7">{articleHeadComponent}</header>
-            </div>
-          </div>
+          <GridContainer className="article-head">
+            <GridRow>
+              <GridChild colspan="12 S11 Scenter M9 L8 XL7">{articleHeadComponent}</GridChild>
+            </GridRow>
+          </GridContainer>
           <div className="article-body o-typography-wrapper" itemProp="articleBody">
             {hasCustomChildren ? (
               React.Children.map(children, child =>
@@ -105,7 +114,7 @@ const Layout = ({ flags, ads, children, defaultContainer, customArticleHead, spa
             ) : (
               <GridContainer>
                 <GridRow>
-                  <GridChild span={span}>
+                  <GridChild colspan={bodyColspan}>
                     <div>
                       {React.Children.map(children, child =>
                         React.cloneElement(
@@ -127,9 +136,9 @@ const Layout = ({ flags, ads, children, defaultContainer, customArticleHead, spa
               itemScope
               itemType="https://schema.org/Organization"
             >
-              <div className="o-grid-container">
-                <div className="o-grid-row">
-                  <div data-o-grid-colspan="12 S11 Scenter M9 L8 XL7">
+              <GridContainer>
+                <GridRow>
+                  <GridChild colspan="12 S11 Scenter M9 L8 XL7">
                     <small>
                       <a
                         href="http://www.ft.com/servicestools/help/copyright"
@@ -142,9 +151,9 @@ const Layout = ({ flags, ads, children, defaultContainer, customArticleHead, spa
                       article tools. Please don&apos;t cut articles from FT.com and redistribute by
                       email or post to the web.
                     </small>
-                  </div>
-                </div>
-              </div>
+                  </GridChild>
+                </GridRow>
+              </GridContainer>
             </footer>
           </div>
         </article>
@@ -170,7 +179,8 @@ Layout.propTypes = {
   defaultContainer: PropTypes.bool,
   customArticleHead: PropTypes.node,
   wrapArticleHead: PropTypes.bool,
-  span: PropTypes.string,
+  bodyColspan: PropTypes.string,
+  headerColspan: PropTypes.string,
 };
 
 Layout.defaultProps = {
@@ -184,7 +194,8 @@ Layout.defaultProps = {
   defaultContainer: true,
   customArticleHead: null,
   wrapArticleHead: true,
-  span: '12 S11 Scenter M9 L8 XL7',
+  bodyColspan: '12 S11 Scenter M9 L8 XL7',
+  headerColspan: '12 S11 Scenter M9 L8 XL7',
 };
 
 export default Layout;

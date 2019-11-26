@@ -6,11 +6,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const GridChild = ({ children, colspan }) => {
+export const GridChild = ({ children, colspan, ...props }) => {
   switch (typeof colspan) {
     case 'number':
     case 'string':
-      return <div data-o-grid-colspan={colspan}>{children}</div>;
+      return (
+        <div data-o-grid-colspan={colspan} {...props}>
+          {children}
+        </div>
+      );
     default:
       break;
   }
@@ -19,6 +23,7 @@ export const GridChild = ({ children, colspan }) => {
       data-o-grid-colspan={Object.entries(colspan)
         .map(([breakpoint, size]) => `${breakpoint.toUpperCase()}${size}`)
         .join(' ')}
+      {...props}
     >
       {children}
     </div>

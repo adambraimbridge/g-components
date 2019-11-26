@@ -7,8 +7,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-export const GridRow = ({ compact, children }) => (
-  <div className={classnames('o-grid-row', compact && 'o-grid-row--compact')}>{children}</div>
+export const GridRow = ({ compact, children, ...props }) => (
+  <div className={classnames('o-grid-row', compact && 'o-grid-row--compact')} {...props}>
+    {children}
+  </div>
 );
 
 GridRow.displayName = 'GGridRow';
