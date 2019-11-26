@@ -19,52 +19,10 @@ import ArticleHead from '../article-head';
 import OnwardJourney from '../onwardjourney';
 import Comments from '../comments';
 import Footer from '../footer';
+import { GridChild, GridRow, GridContainer } from '../grid';
 import './styles.scss';
 
 export const Context = createContext(null);
-
-export const GridContainer = ({ bleed, children }) => (
-  <div className={`o-grid-container${bleed ? ' o-grid-container--bleed' : ''}`}>{children}</div>
-);
-
-GridContainer.displayName = 'GGridContainer';
-
-GridContainer.propTypes = {
-  bleed: PropTypes.bool,
-  children: PropTypes.node.isRequired,
-};
-
-GridContainer.defaultProps = {
-  bleed: false,
-};
-
-export const GridRow = ({ compact, children }) => (
-  <div className={`o-grid-row ${compact ? ' o-grid-row--compact' : ''}`}>{children}</div>
-);
-
-GridRow.displayName = 'GGridRow';
-
-GridRow.propTypes = {
-  compact: PropTypes.bool,
-  children: PropTypes.node.isRequired,
-};
-
-GridRow.defaultProps = {
-  compact: false,
-};
-
-export const GridChild = ({ children, span }) => <div data-o-grid-colspan={span}>{children}</div>;
-
-GridChild.displayName = 'GGridChild';
-
-GridChild.propTypes = {
-  children: PropTypes.node.isRequired,
-  span: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
-GridChild.defaultProps = {
-  span: 'full-width',
-};
 
 const Layout = ({ flags, ads, children, defaultContainer, customArticleHead, span, ...props }) => {
   const [state, setState] = useState({
