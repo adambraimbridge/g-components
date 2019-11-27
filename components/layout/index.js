@@ -90,6 +90,7 @@ const Layout = ({
         ads,
         defaultContainer,
         customArticleHead,
+        breakpoint,
         ...props,
       }}
     >
