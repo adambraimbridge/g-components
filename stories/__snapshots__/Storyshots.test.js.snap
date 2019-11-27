@@ -689,6 +689,1653 @@ exports[`Storyshots Core|Footer Basic 1`] = `
 </footer>
 `;
 
+exports[`Storyshots Core|Grid/Grid Default Grid 1`] = `
+Array [
+  <div
+    className="o-grid-container"
+  >
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="2"
+      >
+        <div
+          className="demo-cell"
+        >
+          2
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="2"
+      >
+        <div
+          className="demo-cell"
+        >
+          2
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="2"
+      >
+        <div
+          className="demo-cell"
+        >
+          2
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="2"
+      >
+        <div
+          className="demo-cell"
+        >
+          2
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="2"
+      >
+        <div
+          className="demo-cell"
+        >
+          2
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="2"
+      >
+        <div
+          className="demo-cell"
+        >
+          2
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="3"
+      >
+        <div
+          className="demo-cell"
+        >
+          3
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="3"
+      >
+        <div
+          className="demo-cell"
+        >
+          3
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="3"
+      >
+        <div
+          className="demo-cell"
+        >
+          3
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="3"
+      >
+        <div
+          className="demo-cell"
+        >
+          3
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="4"
+      >
+        <div
+          className="demo-cell"
+        >
+          4
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="4"
+      >
+        <div
+          className="demo-cell"
+        >
+          4
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="4"
+      >
+        <div
+          className="demo-cell"
+        >
+          4
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row o-grid-row--compact"
+    >
+      <div
+        data-o-grid-colspan="6"
+      >
+        <div
+          className="demo-cell"
+        >
+          6 (compact)
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="6"
+      >
+        <div
+          className="demo-cell"
+        >
+          6 (compact)
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="12"
+      >
+        <div
+          className="demo-cell"
+        >
+          12
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="8 S12 M8"
+      >
+        <div
+          className="demo-cell"
+        >
+          <span
+            data-demo-highlight="default"
+          >
+            8
+          </span>
+          <span
+            data-demo-highlight="S"
+          >
+            S12
+          </span>
+          <span
+            data-demo-highlight="M L XL"
+          >
+            M8
+          </span>
+          <div
+            className="o-grid-row"
+          >
+            <div
+              data-o-grid-colspan="6 S12 M6 XL3"
+            >
+              <div
+                className="demo-cell"
+              >
+                <span
+                  data-demo-highlight="default"
+                >
+                  6
+                </span>
+                <span
+                  data-demo-highlight="S"
+                >
+                  S12
+                </span>
+                <span
+                  data-demo-highlight="M L"
+                >
+                  M6
+                </span>
+                <span
+                  data-demo-highlight="XL"
+                >
+                  XL3
+                </span>
+              </div>
+            </div>
+            <div
+              data-o-grid-colspan="6 S12 M6 XL3"
+            >
+              <div
+                className="demo-cell"
+              >
+                <span
+                  data-demo-highlight="default"
+                >
+                  6
+                </span>
+                <span
+                  data-demo-highlight="S"
+                >
+                  S12
+                </span>
+                <span
+                  data-demo-highlight="M L"
+                >
+                  M6
+                </span>
+                <span
+                  data-demo-highlight="XL"
+                >
+                  XL3
+                </span>
+              </div>
+            </div>
+            <div
+              data-o-grid-colspan="6 S12 M6 XL3"
+            >
+              <div
+                className="demo-cell"
+              >
+                <span
+                  data-demo-highlight="default"
+                >
+                  6
+                </span>
+                <span
+                  data-demo-highlight="S"
+                >
+                  S12
+                </span>
+                <span
+                  data-demo-highlight="M L"
+                >
+                  M6
+                </span>
+                <span
+                  data-demo-highlight="XL"
+                >
+                  XL3
+                </span>
+              </div>
+            </div>
+            <div
+              data-o-grid-colspan="6 S12 M6 XL3"
+            >
+              <div
+                className="demo-cell"
+              >
+                <span
+                  data-demo-highlight="default"
+                >
+                  6
+                </span>
+                <span
+                  data-demo-highlight="S"
+                >
+                  S12
+                </span>
+                <span
+                  data-demo-highlight="M L"
+                >
+                  M6
+                </span>
+                <span
+                  data-demo-highlight="XL"
+                >
+                  XL3
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="4 S12 M4"
+      >
+        <div
+          className="demo-cell"
+        >
+          <span
+            data-demo-highlight="default"
+          >
+            4
+          </span>
+          <span
+            data-demo-highlight="S"
+          >
+            S12
+          </span>
+          <span
+            data-demo-highlight="M L XL"
+          >
+            M4
+          </span>
+          <div
+            className="o-grid-row"
+          >
+            <div
+              data-o-grid-colspan="12 L7 XL6"
+            >
+              <div
+                className="demo-cell"
+              >
+                <span
+                  data-demo-highlight="default S M"
+                >
+                  12
+                </span>
+                <span
+                  data-demo-highlight="L"
+                >
+                  L7
+                </span>
+                <span
+                  data-demo-highlight="XL"
+                >
+                  XL6
+                </span>
+              </div>
+            </div>
+            <div
+              data-o-grid-colspan="12 L5 XL6"
+            >
+              <div
+                className="demo-cell"
+              >
+                <span
+                  data-demo-highlight="default S M"
+                >
+                  12
+                </span>
+                <span
+                  data-demo-highlight="L"
+                >
+                  L5
+                </span>
+                <span
+                  data-demo-highlight="XL"
+                >
+                  XL6
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="one-half"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-half
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="one-quarter"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-quarter
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="one-quarter"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-quarter
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="one-third"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-third
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="two-thirds"
+      >
+        <div
+          className="demo-cell"
+        >
+          two-thirds
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="one-third push8"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-third push8 (first in source)
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="two-thirds pull4"
+      >
+        <div
+          className="demo-cell"
+        >
+          two-thirds pull4 (last in source)
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="one-third center"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-third center
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="one-half"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-half
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="one-quarter"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-quarter
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="one-quarter"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-quarter
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="one-quarter"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-quarter
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="one-quarter"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-quarter
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="one-third"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-third
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="one-third"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-third
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="two-thirds"
+      >
+        <div
+          className="demo-cell"
+        >
+          two-thirds
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="full-width"
+      >
+        <div
+          className="demo-cell"
+        >
+          full-width
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="full-width"
+      >
+        <div
+          className="demo-cell"
+        >
+          full-width
+        </div>
+      </div>
+    </div>
+  </div>,
+  <p
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    With container bleed:
+  </p>,
+  <div
+    className="o-grid-container  o-grid-container--bleed"
+  >
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="6"
+      >
+        <div
+          class="demo-cell"
+        >
+          6
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="6"
+      >
+        <div
+          class="demo-cell"
+        >
+          6
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row o-grid-row--compact"
+    >
+      <div
+        data-o-grid-colspan="6"
+      >
+        <div
+          class="demo-cell"
+        >
+          6 (compact)
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="6"
+      >
+        <div
+          class="demo-cell"
+        >
+          6 (compact)
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Core|Grid/GridChild Default Unresponsive Columns 1`] = `
+<div
+  className="o-grid-container"
+>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="1"
+    >
+      <div
+        className="demo-cell"
+      >
+        1
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="2"
+    >
+      <div
+        className="demo-cell"
+      >
+        2
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="3"
+    >
+      <div
+        className="demo-cell"
+      >
+        3
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="4"
+    >
+      <div
+        className="demo-cell"
+      >
+        4
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="5"
+    >
+      <div
+        className="demo-cell"
+      >
+        5
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="6"
+    >
+      <div
+        className="demo-cell"
+      >
+        6
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="7"
+    >
+      <div
+        className="demo-cell"
+      >
+        7
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="8"
+    >
+      <div
+        className="demo-cell"
+      >
+        8
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="9"
+    >
+      <div
+        className="demo-cell"
+      >
+        9
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="10"
+    >
+      <div
+        className="demo-cell"
+      >
+        10
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="11"
+    >
+      <div
+        className="demo-cell"
+      >
+        11
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12"
+    >
+      <div
+        className="demo-cell"
+      >
+        12
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Grid/GridChild Flexbox Interaction 1`] = `
+<div
+  className="o-grid-container"
+>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      className="demo-flex"
+      data-o-grid-colspan="12 S12 M12 L4 XL4"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M12 L4 XL4
+        <br />
+        and a lots and lots and lots and lots of extra text to make the columns different heights
+      </div>
+    </div>
+    <div
+      className="demo-flex"
+      data-o-grid-colspan="12 S12 M12 L8 XL8"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M12 L8 XL8
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      className="demo-flex"
+      data-o-grid-colspan="12 S12 M12 L4 XL4"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M12 L4 XL4
+      </div>
+    </div>
+    <div
+      className="demo-flex"
+      data-o-grid-colspan="12 S12 M12 L4 XL4"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M12 L4 XL4
+        <br />
+        and a lots and lots and lots and lots of extra text to make the columns different heights
+      </div>
+    </div>
+    <div
+      className="demo-flex"
+      data-o-grid-colspan="12 S12 M12 L4 XL4"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M12 L4 XL4
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      className="demo-flex"
+      data-o-grid-colspan="12 S12 M12 L8 XL8"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M12 L8 XL8
+      </div>
+    </div>
+    <div
+      className="demo-flex"
+      data-o-grid-colspan="12 S12 M12 L4 XL4"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M12 L4 XL4
+        <br />
+        and a lots and lots and lots and lots of extra text to make the columns different heights
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Grid/GridChild Keywords 1`] = `
+<div
+  className="o-grid-container"
+>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="one-half"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-half
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="one-third"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-third
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan="two-thirds"
+    >
+      <div
+        className="demo-cell"
+      >
+        two-thirds
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="one-quarter"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-quarter
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan="three-quarters"
+    >
+      <div
+        className="demo-cell"
+      >
+        three-quarters
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="one-half Mone-third Lone-quarter XLone-half"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-half Mone-third Lone-quarter XLone-half
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan="one-half Mtwo-thirds Lthree-quarters XLone-half"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-half Mtwo-thirds Lthree-quarters XLone-half
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="5 center M6 L9 Luncenter XL6 XLcenter"
+    >
+      <div
+        className="demo-cell"
+      >
+        5 center M6 L9 Luncenter XL6 XLcenter
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="one-half Scenter Muncenter Lcenter XLuncenter"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-half Scenter Muncenter Lcenter XLuncenter
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="one-half offset3 push2"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-half offset3 push2
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="one-half Spush5 Mpush0 Lpush4 L7 Loffset1 XLpush2 XL5 XLoffset1"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-half Spush5 Mpush0 Lpush4 L7 Loffset1 XLpush2 XL5 XLoffset1
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan="one-half Spull5 Mpull0 Lpull8 L4 XLpull2 XL5"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-half Spull5 Mpull0 Lpull8 L4 XLpull2 XL5
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Grid/GridChild Nested Grids 1`] = `
+<div
+  className="o-grid-container"
+>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="8 S12 M11 L10 XL9"
+    >
+      <div
+        className="demo-cell"
+      >
+        8 S12 M11 L10 XL9
+        <div
+          className="o-grid-row"
+        >
+          <div
+            data-o-grid-colspan="8 S12 M11 L10 XL9"
+          >
+            <div
+              className="demo-cell"
+            >
+              8 S12 M11 L10 XL9
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S12 M12 L12 XL12"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M12 L12 XL12
+        <div
+          className="o-grid-row"
+        >
+          <div
+            data-o-grid-colspan="6 S6 M6 L6 XL6"
+          >
+            <div
+              className="demo-cell"
+            >
+              S6 M6 L6 XL6
+            </div>
+          </div>
+          <div
+            data-o-grid-colspan="6 S6 M6 L6 XL6"
+          >
+            <div
+              className="demo-cell"
+            >
+              S6 M6 L6 XL6
+              <div
+                className="o-grid-row"
+              >
+                <div
+                  data-o-grid-colspan="6 S6 M6 L6 XL6"
+                >
+                  <div
+                    className="demo-cell"
+                  >
+                    S6 M6 L6 XL6
+                  </div>
+                </div>
+                <div
+                  data-o-grid-colspan="6 S6 M6 L6 XL6"
+                >
+                  <div
+                    className="demo-cell"
+                  >
+                    S6 M6 L6 XL6
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Grid/GridChild Overridability Of Default And Layout Specific Styles By Other Layouts 1`] = `
+<div
+  className="o-grid-container"
+>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S0 M12 L11 XL10"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S0 M12 L11 XL10
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S1 M0 L12 XL11"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S1 M0 L12 XL11
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S2 M1 L0 XL12"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S2 M1 L0 XL12
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S3 M2 L1 XL0"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S3 M2 L1 XL0
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S4 M3 L2 XL1"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S4 M3 L2 XL1
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S5 M4 L3 XL2"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S5 M4 L3 XL2
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S6 M5 L4 XL3"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S6 M5 L4 XL3
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S7 M6 L5 XL4"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S7 M6 L5 XL4
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S8 M7 L6 XL5"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S8 M7 L6 XL5
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S9 M8 L7 XL6"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S9 M8 L7 XL6
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S10 M9 L8 XL7"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S10 M9 L8 XL7
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S11 M10 L9 XL8"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S11 M10 L9 XL8
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S12 M11 L10 XL9"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M11 L10 XL9
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Grid/GridChild Overriding Of Default Width 1`] = `
+<div
+  className="o-grid-container"
+>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="0 M12 L11 XL10"
+    >
+      <div
+        className="demo-cell"
+      >
+        0 M12 L11 XL10
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="1 M6 L12 XL11"
+    >
+      <div
+        className="demo-cell"
+      >
+        1 M6 L12 XL11
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="3 M2 L1 XL12"
+    >
+      <div
+        className="demo-cell"
+      >
+        3 M2 L1 XL12
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S3 M4 L4 XL4"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S3 M4 L4 XL4
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Grid/GridContainer Full Bleed Grid Container 1`] = `
+<div
+  className="o-grid-container  o-grid-container--bleed"
+>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan={6}
+    >
+      <div
+        className="demo-cell"
+      >
+        normal row
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan={6}
+    >
+      <div
+        className="demo-cell"
+      >
+        normal row
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row o-grid-row--compact"
+  >
+    <div
+      data-o-grid-colspan={6}
+    >
+      <div
+        className="demo-cell"
+      >
+        compact row
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan={6}
+    >
+      <div
+        className="demo-cell"
+      >
+        compact row
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Grid/GridContainer Snappy Container 1`] = `
+<div
+  className="o-grid-container o-grid-container--snappy"
+>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan={12}
+    >
+      <div
+        className="demo-cell"
+      >
+        <code>
+          .o-grid-snappy
+        </code>
+         Applied to parent of full-width row
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan={6}
+    >
+      <div
+        className="demo-cell"
+      >
+        <code>
+          .o-grid-snappy
+        </code>
+         Applied to parent
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan={6}
+    >
+      <div
+        className="demo-cell"
+      >
+        <code>
+          .o-grid-snappy
+        </code>
+         Applied to parent
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan={6}
+    >
+      <div
+        className="demo-cell"
+      >
+        <code>
+          .o-grid-snappy
+        </code>
+         Applied to parent of solo row
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Grid/GridRow Compact And Gutterless Columns 1`] = `
+<div
+  className="o-grid-container"
+>
+  <div
+    className="o-grid-row o-grid-row--compact"
+  >
+    <div
+      data-o-grid-colspan="6"
+    >
+      <div
+        className="demo-cell"
+      >
+        no gutters (applied using o-grid-row--compact)
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan="6"
+    >
+      <div
+        className="demo-cell"
+      >
+        no gutters (applied using o-grid-row--compact)
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row o-grid-row--compact"
+  >
+    <div
+      data-o-grid-colspan="6 push6"
+    >
+      <div
+        className="demo-cell"
+      >
+        First in source
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan="6 pull6"
+    >
+      <div
+        className="demo-cell"
+      >
+        Last in source
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Core|HTML Head Basic 1`] = `""`;
 
 exports[`Storyshots Core|Header Basic 1`] = `
@@ -826,12 +2473,12 @@ Array [
       itemType="http://schema.org/Article"
     >
       <div
-        className="article-head o-grid-container"
+        className="article-head"
       >
         <div
           className="o-grid-row"
         >
-          <header
+          <div
             data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
           >
             <div>
@@ -960,7 +2607,7 @@ Array [
                 Thursday, 31 January 2019
               </span>
             </div>
-          </header>
+          </div>
         </div>
       </div>
       <div
@@ -971,7 +2618,7 @@ Array [
           className="o-grid-container"
         >
           <div
-            className="o-grid-row "
+            className="o-grid-row"
           >
             <div
               data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
@@ -1425,12 +3072,12 @@ Array [
       itemType="http://schema.org/Article"
     >
       <div
-        className="article-head o-grid-container"
+        className="article-head"
       >
         <div
           className="o-grid-row"
         >
-          <header
+          <div
             data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
           >
             <div>
@@ -1559,7 +3206,7 @@ Array [
                 Thursday, 31 January 2019
               </span>
             </div>
-          </header>
+          </div>
         </div>
       </div>
       <div
@@ -1570,7 +3217,7 @@ Array [
           className="o-grid-container"
         >
           <div
-            className="o-grid-row "
+            className="o-grid-row"
           >
             <div
               data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
@@ -1582,6 +3229,610 @@ Array [
                   headline="New Starter Kit site"
                   id="3a499586-b2e0-11e4-a058-00144feab7de"
                   publishedDate="2019-01-31T00:00:00.000Z"
+                  title="New Starter Kit site"
+                  topic={
+                    Object {
+                      "name": "Testing",
+                      "url": "https://local.ft.com/",
+                    }
+                  }
+                  url="https://local.ft.com/"
+                  wrapArticleHead={true}
+                >
+                  Lorem ipsum dolor sit amet, esse mediocritatem et eos, ex cum nostrum singulis inciderint.
+Error vitae molestie ea sit, cu usu facilis deleniti, nec ea novum solet. No pro labores
+omnesque, duo ut tractatos accusamus. Usu vitae mollis ut, cetero detraxit cu qui. Et elitr
+dolore praesent est.
+Ex his oratio perpetua expetendis, commune suscipiantur nec at, vel lorem atqui option ne.
+Habeo congue vel te. Ex quo summo principes. Eu dicta solet molestiae eam, eu ius primis
+consectetuer. Ei dicant numquam omittam qui. Vim dicunt nostrud volutpat ex, cu mel
+gubergren constituto.
+Ad qui wisi minimum cotidieque, ea vis esse discere intellegam. Et omnium inimicus vim. Ea
+sale dicam homero ius. Impedit eligendi delicata in mel, vis soluta temporibus an, ex vis
+vide laoreet. No per hinc ferri mediocritatem, eam modus ubique atomorum ne. Iudico offendit
+ut his.
+Mel fastidii eleifend no, ut oratio intellegam cum. Iudico dignissim sadipscing ei mel. At
+laudem legendos erroribus eos. Aliquid dolorem dissentiunt eos cu. Eros suscipiantur mea ei,
+tantas vituperata vis ad. Pri et dicunt regione, ut quando volutpat abhorreant eos.
+Ad cum saperet docendi, ex habeo nemore euismod vix, usu semper instructior cu. Natum
+salutatus consetetur sit cu. Ad erroribus complectitur vis. Ne possim similique vis. Ne enim
+soluta vix, quis natum ne qui, ei vidit latine partiendo mei. Mel ea duis essent vivendo.
+                </p>
+                <div
+                  aria-hidden="true"
+                  className="o-ads o-ads--center o-ads--background o-ads--reserve-250"
+                  data-o-ads-formats-default="Responsive"
+                  data-o-ads-formats-extra="MediumRectangle,Responsive"
+                  data-o-ads-formats-large="MediumRectangle,Responsive"
+                  data-o-ads-formats-medium="MediumRectangle,Responsive"
+                  data-o-ads-formats-small="MediumRectangle,Responsive"
+                  data-o-ads-name="mid-ad"
+                  data-o-ads-targeting="pos=mid;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer
+          className="o-typography-footer"
+          itemProp="publisher"
+          itemScope={true}
+          itemType="https://schema.org/Organization"
+        >
+          <div
+            className="o-grid-container"
+          >
+            <div
+              className="o-grid-row"
+            >
+              <div
+                data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+              >
+                <small>
+                  <a
+                    data-trackable="link-copyright"
+                    href="http://www.ft.com/servicestools/help/copyright"
+                  >
+                    Copyright
+                  </a>
+                   
+                  <span
+                    itemProp="name"
+                  >
+                    The Financial Times
+                  </span>
+                   Limited
+                   
+                  2019
+                  . All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.
+                </small>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </article>
+  </main>,
+  <div
+    className="pink"
+  >
+    <div
+      className="o-grid-container"
+    >
+      <div
+        className="o-grid-row"
+      >
+        <div
+          data-o-component="o-comments"
+          data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+          id="comments"
+        >
+          <div
+            className="o--if-no-js"
+          >
+            To participate in this chat, you need to upgrade to a newer web browser.
+             
+            <a
+              href="http://help.ft.com/tools-services/browser-compatibility/"
+            >
+              Learn more.
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <footer
+    className="o-footer o-footer--theme-dark"
+    data-o-component="o-footer"
+    data-o-footer--no-js=""
+  >
+    <div
+      className="o-footer__container"
+    >
+      <div
+        className="o-footer__row"
+      >
+        <nav
+          aria-label="Useful links"
+          className="o-footer__matrix"
+        >
+          <div
+            className="o-footer__matrix-group o-footer__matrix-group--1"
+          >
+            <div
+              className="o-footer__matrix-title"
+            >
+              Support
+            </div>
+            <div
+              className="o-footer__matrix-content"
+              id="o-footer-section-0"
+            >
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/help"
+                >
+                  Help
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/aboutus"
+                >
+                  About Us
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="o-footer__matrix-group o-footer__matrix-group--1"
+          >
+            <div
+              className="o-footer__matrix-title"
+            >
+              Legal & Privacy
+            </div>
+            <div
+              className="o-footer__matrix-content"
+              id="o-footer-section-1"
+            >
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/servicestools/help/terms"
+                >
+                  Terms & Conditions
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/servicestools/help/privacy"
+                >
+                  Privacy
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/cookiepolicy"
+                >
+                  Cookies
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/servicestools/help/copyright"
+                >
+                  Copyright
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="o-footer__matrix-group o-footer__matrix-group--2"
+          >
+            <div
+              aria-controls="o-footer-section-2"
+              className="o-footer__matrix-title"
+            >
+              Services
+            </div>
+            <div
+              className="o-footer__matrix-content"
+              id="o-footer-section-2"
+            >
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//sub.ft.com/spa_5"
+                >
+                  Individual Subscriptions
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//enterprise.ft.com/en-gb/services/group-subscriptions/"
+                >
+                  Group Subscriptions
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//enterprise.ft.com/en-gb/services/republishing/"
+                >
+                  Republishing
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.businessesforsale.com/ft2/notices"
+                >
+                  Contracts & Tenders
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//commerce.uk.reuters.com/purchase/mostPopular.do?rpc&#x3D;471"
+                >
+                  Analysts Research
+                </a>
+              </div>
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.exec-appointments.com/"
+                >
+                  Executive Job Search
+                </a>
+                <a
+                  aria-label="Advertise with the F T"
+                  className="o-footer__matrix-link"
+                  href="//fttoolkit.co.uk/d/"
+                >
+                  Advertise with the FT
+                </a>
+                <a
+                  aria-label="Follow the F T on Twitter"
+                  className="o-footer__matrix-link"
+                  href="//twitter.com/ft"
+                >
+                  Follow the FT on Twitter
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="o-footer__matrix-group o-footer__matrix-group--2"
+          >
+            <div
+              aria-controls="o-footer-section-3"
+              className="o-footer__matrix-title"
+            >
+              Tools
+            </div>
+            <div
+              className="o-footer__matrix-content"
+              id="o-footer-section-3"
+            >
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//markets.ft.com/data/portfolio/dashboard"
+                >
+                  Portfolio
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//ftepaper.ft.com"
+                >
+                  Today's Paper
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//markets.ft.com/data/alerts/"
+                >
+                  Alerts Hub
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//rankings.ft.com/businessschoolrankings/global-mba-ranking-2016"
+                >
+                  MBA Rankings
+                </a>
+              </div>
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//markets.ft.com/Research/Economic-Calendar"
+                >
+                  Economic Calendar
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//nbe.ft.com/nbe/profile.cfm"
+                >
+                  Newsletters
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//markets.ft.com/research/Markets/Currencies?segid&#x3D;70113"
+                >
+                  Currency Converter
+                </a>
+                <a
+                  aria-label="E-books"
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/ebooks"
+                >
+                  Ebooks
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div
+          className="o-footer__external-link o-footer__matrix-title"
+        >
+          <a
+            className="o-footer__more-from-ft o-footer__matrix-title"
+            href="http://ft.com/more-from-ft-group"
+          >
+            More from the FT Group
+          </a>
+        </div>
+      </div>
+      <div
+        className="o-footer__copyright"
+        role="contentinfo"
+      >
+        <small>
+          Markets data delayed by at least 15 minutes. © THE FINANCIAL TIMES LTD
+           
+          2019
+          . 
+          <abbr
+            aria-label="F T"
+            title="Financial Times"
+          >
+            FT
+          </abbr>
+           
+          and ‘Financial Times’ are trademarks of The Financial Times Ltd.
+          <br />
+          The Financial Times and its journalism are subject to a self-regulation regime under the
+           
+          <a
+            aria-label="F T Editorial Code of Practice"
+            href="http://aboutus.ft.com/en-gb/ft-editorial-code/"
+          >
+            FT Editorial Code of Practice
+          </a>
+          .
+        </small>
+      </div>
+    </div>
+    <div
+      className="o-footer__brand"
+    >
+      <div
+        className="o-footer__container"
+      >
+        <div
+          className="o-footer__brand-logo"
+        />
+      </div>
+    </div>
+  </footer>,
+]
+`;
+
+exports[`Storyshots Core|Layout Full Width Article Body 1`] = `
+Array [
+  <header
+    className="o-header o-header--simple o-header--transparent"
+    data-o-component="o-header"
+    data-o-header--no-js=""
+  >
+    <div
+      className="o-header__row o-header__top"
+    >
+      <div
+        className="o-header__container"
+      >
+        <div
+          className="o-header__top-wrapper"
+        >
+          <div
+            className="o-header__top-column o-header__top-column--center"
+          >
+            <a
+              className="o-header__top-logo"
+              href="http://www.ft.com/"
+              title="Go to Financial Times homepage"
+            >
+              <span
+                className="o-header__visually-hidden"
+              >
+                Financial Times
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>,
+  <main
+    role="main"
+  >
+    <article
+      className="article"
+      itemScope={true}
+      itemType="http://schema.org/Article"
+    >
+      <div
+        className="article-head"
+      >
+        <div
+          className="o-grid-row"
+        >
+          <div
+            data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+          >
+            <div>
+              <a
+                className="o-typography-topic"
+                href="https://local.ft.com/"
+              >
+                Testing
+              </a>
+            </div>
+            <h1
+              className="o-typography-headline"
+              itemProp="headline"
+            >
+              New Starter Kit site
+            </h1>
+            <div
+              className="o-typography-standfirst"
+            >
+              
+               
+              <a
+                className="o-typography-link"
+              />
+            </div>
+            <meta
+              content="2019-01-31T00:00:00.000Z"
+              itemProp="dateModified"
+              suppressHydrationWarning={true}
+            />
+            <figure
+              className="graphic graphic-b-1 graphic-pad-1"
+            >
+              <img
+                src="https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Af07ccec8-7ded-11e8-af48-190d103e32a4?source=ig"
+              />
+              <figcaption
+                className="o-typography-caption"
+              />
+            </figure>
+            <div
+              className="article__share article__share--top n-util-clearfix"
+              data-trackable="share | top"
+            >
+              <div
+                className="container container--inverse"
+              >
+                <div
+                  className="o-share o-share--inverse"
+                  data-o-component="o-share"
+                >
+                  <ul>
+                    <li
+                      className="o-share__action o-share__action--twitter"
+                    >
+                      <a
+                        className="o-share__icon o-share__icon--twitter"
+                        href="https://twitter.com/intent/tweet?url=https://local.ft.com/&amp;text=FT article: &amp;related=&amp;via=FinancialTimes"
+                        rel="noopener"
+                      >
+                        <span
+                          className="o-share__text"
+                        >
+                          Share on Twitter. Opens in a new window.
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      className="o-share__action o-share__icon--facebook"
+                    >
+                      <a
+                        href="http://www.facebook.com/sharer.php?u=https://local.ft.com/"
+                        rel="noopener"
+                      >
+                        <span
+                          className="o-share__text"
+                        >
+                          Share on Facebook. Opens in a new window.
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      className="o-share__action o-share__icon--linkedin"
+                    >
+                      <a
+                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://local.ft.com/&amp;source=Financial%20Times"
+                        rel="noopener"
+                      >
+                        <span
+                          className="o-share__text"
+                        >
+                          Share on LinkedIn. Opens in a new window.
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      className="o-share__action o-share__icon--whatsapp"
+                    >
+                      <a
+                        data-trackable="whatsapp"
+                        href="whatsapp://send?text=New Starter Kit site%20-%20https://local.ft.com/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        <span
+                          className="o-share__text"
+                        >
+                          Share on Whatsapp. Opens in a new window.
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              className="byline"
+            >
+               
+              <span
+                className="o-date o-typography-timestamp"
+                data-o-component="o-date"
+                dateTime="2019-01-31T00:00:00.000Z"
+                suppressHydrationWarning={true}
+              >
+                Thursday, 31 January 2019
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="article-body o-typography-wrapper"
+        itemProp="articleBody"
+      >
+        <div
+          className="o-grid-container"
+        >
+          <div
+            className="o-grid-row"
+          >
+            <div
+              data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+            >
+              <div>
+                <p
+                  breakpoint="default"
+                  buildTime="2019-01-31T00:00:00.000Z"
+                  headline="New Starter Kit site"
+                  id="3a499586-b2e0-11e4-a058-00144feab7de"
+                  publishedDate="2019-01-31T00:00:00.000Z"
+                  span="full-width"
                   title="New Starter Kit site"
                   topic={
                     Object {
@@ -2028,12 +4279,12 @@ Array [
       itemType="http://schema.org/Article"
     >
       <div
-        className="article-head o-grid-container"
+        className="article-head"
       >
         <div
           className="o-grid-row"
         >
-          <header
+          <div
             data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
           >
             <div>
@@ -2169,7 +4420,7 @@ Array [
                 Thursday, 31 January 2019
               </span>
             </div>
-          </header>
+          </div>
         </div>
       </div>
       <div
@@ -2180,7 +4431,7 @@ Array [
           className="o-grid-container"
         >
           <div
-            className="o-grid-row "
+            className="o-grid-row"
           >
             <div
               data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
@@ -2630,18 +4881,18 @@ Array [
       itemType="http://schema.org/Article"
     >
       <div
-        className="article-head o-grid-container"
+        className="article-head"
       >
         <div
           className="o-grid-row"
         >
-          <header
+          <div
             data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
           >
             <h1>
               New starter kit site
             </h1>
-          </header>
+          </div>
         </div>
       </div>
       <div
@@ -2652,7 +4903,7 @@ Array [
           className="o-grid-container"
         >
           <div
-            className="o-grid-row "
+            className="o-grid-row"
           >
             <div
               data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
@@ -3106,12 +5357,12 @@ Array [
       itemType="http://schema.org/Article"
     >
       <div
-        className="article-head o-grid-container"
+        className="article-head"
       >
         <div
           className="o-grid-row"
         >
-          <header
+          <div
             data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
           >
             <div>
@@ -3240,7 +5491,7 @@ Array [
                 Thursday, 31 January 2019
               </span>
             </div>
-          </header>
+          </div>
         </div>
       </div>
       <div
@@ -3251,10 +5502,10 @@ Array [
           className="o-grid-container"
         >
           <div
-            className="o-grid-row "
+            className="o-grid-row"
           >
             <div
-              data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+              data-o-grid-colspan="full-width"
             >
               <div>
                 <p>
