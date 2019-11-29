@@ -2374,7 +2374,28 @@ exports[`Storyshots Core|Header Basic 1`] = `
 </header>
 `;
 
-exports[`Storyshots Core|Image Set Basic 1`] = `""`;
+exports[`Storyshots Core|Image Set Basic 1`] = `
+<div
+  className="g-imageset"
+>
+  <figure>
+    <picture>
+      <source
+        media="screen and (max-width: 490px)"
+        srcSet="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2F61b2c912-0d49-11ea-bb52-34c8d9dc6d84?source=ig&amp;fit=scale-down&amp;quality=highest&amp;width=490"
+      />
+      <source
+        media="screen and (min-width: 980px)"
+        srcSet="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2F5c9b8478-0d49-11ea-bb52-34c8d9dc6d84?source=ig&amp;fit=scale-down&amp;quality=highest&amp;width=1260"
+      />
+      <img
+        alt="Demo image set"
+        srcSet="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2F5f35b8b6-0d49-11ea-bb52-34c8d9dc6d84?source=ig&amp;fit=scale-down&amp;quality=highest&amp;width=700"
+      />
+    </picture>
+  </figure>
+</div>
+`;
 
 exports[`Storyshots Core|Last Updated Default Live Variant 1`] = `
 <div
