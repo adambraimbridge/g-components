@@ -3,15 +3,17 @@
  * Constituency results table component
  */
 
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { uk } from '@financial-times/politics';
+import { Context } from '../../layout';
 import { numberWithCommas } from '../utils';
 import './styles.scss';
 
 const { getPartyInfo } = uk;
 
 export const ConstituencyResultsTable = ({ className, data, tableHeaders, note, sortFunction }) => {
+  const { breakpoint } = useContext(Context);
   const sortedData = sortFunction
     ? data.sort((a, b) => sortFunction(a, b))
     : data.sort((a, b) =>
