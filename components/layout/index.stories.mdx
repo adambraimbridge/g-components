@@ -1,7 +1,8 @@
 import { useContext } from 'react';
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 import { MiddleAd } from '../ads';
-import Layout, { GridContainer, GridRow, GridChild, Context } from './';
+import { GridContainer, GridRow, GridChild } from '../grid';
+import Layout, { Context } from './';
 import '../../shared/critical-path.scss';
 
 export const defaultFlags = {
@@ -178,6 +179,28 @@ to maintain typographic styles.
       buildTime={DEFAULTS.buildTime}
       ads={DEFAULTS.ads}
       id={DEFAULTS.id}
+    >
+      {[
+        ...lorem.split(/\n\n/).map((par, idx) => <p key={idx /* eslint-disable-line */}>{par}</p>),
+        <MiddleAd />,
+      ]}
+    </Layout>
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Full-width article body">
+    <Layout
+      flags={{ ...DEFAULTS.flags, dark: true }}
+      headline={DEFAULTS.headline}
+      title={DEFAULTS.title}
+      topic={DEFAULTS.topic}
+      url={DEFAULTS.url}
+      publishedDate={DEFAULTS.pubdate}
+      buildTime={DEFAULTS.buildTime}
+      ads={DEFAULTS.ads}
+      id={DEFAULTS.id}
+      span={'full-width'}
     >
       {[
         ...lorem.split(/\n\n/).map((par, idx) => <p key={idx /* eslint-disable-line */}>{par}</p>),

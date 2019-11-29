@@ -19,54 +19,21 @@ import ArticleHead from '../article-head';
 import OnwardJourney from '../onwardjourney';
 import Comments from '../comments';
 import Footer from '../footer';
+import { GridChild, GridRow, GridContainer } from '../grid';
 import './styles.scss';
 
 export const Context = createContext(null);
 
-export const GridContainer = ({ bleed, children }) => (
-  <div className={`o-grid-container${bleed ? ' o-grid-container--bleed' : ''}`}>{children}</div>
-);
-
-GridContainer.displayName = 'GGridContainer';
-
-GridContainer.propTypes = {
-  bleed: PropTypes.bool,
-  children: PropTypes.node.isRequired,
-};
-
-GridContainer.defaultProps = {
-  bleed: false,
-};
-
-export const GridRow = ({ compact, children }) => (
-  <div className={`o-grid-row ${compact ? ' o-grid-row--compact' : ''}`}>{children}</div>
-);
-
-GridRow.displayName = 'GGridRow';
-
-GridRow.propTypes = {
-  compact: PropTypes.bool,
-  children: PropTypes.node.isRequired,
-};
-
-GridRow.defaultProps = {
-  compact: false,
-};
-
-export const GridChild = ({ children, span }) => <div data-o-grid-colspan={span}>{children}</div>;
-
-GridChild.displayName = 'GGridChild';
-
-GridChild.propTypes = {
-  children: PropTypes.node.isRequired,
-  span: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
-GridChild.defaultProps = {
-  span: '12 S11 Scenter M9 L8 XL7',
-};
-
-const Layout = ({ flags, ads, children, defaultContainer, customArticleHead, ...props }) => {
+const Layout = ({
+  flags,
+  ads,
+  children,
+  defaultContainer,
+  customArticleHead,
+  bodyColspan,
+  headerColspan,
+  ...props
+}) => {
   const [state, setState] = useState({
     breakpoint: 'default',
   });
@@ -123,6 +90,7 @@ const Layout = ({ flags, ads, children, defaultContainer, customArticleHead, ...
         ads,
         defaultContainer,
         customArticleHead,
+        breakpoint,
         ...props,
       }}
     >
@@ -131,11 +99,11 @@ const Layout = ({ flags, ads, children, defaultContainer, customArticleHead, ...
       {flags.header && <Header key="header" {...{ ...props, flags, breakpoint }} />}
       <main key="main" role="main">
         <article className="article" itemScope itemType="http://schema.org/Article">
-          <div className="article-head o-grid-container">
-            <div className="o-grid-row">
-              <header data-o-grid-colspan="12 S11 Scenter M9 L8 XL7">{articleHeadComponent}</header>
-            </div>
-          </div>
+          <GridContainer className="article-head">
+            <GridRow>
+              <GridChild colspan="12 S11 Scenter M9 L8 XL7">{articleHeadComponent}</GridChild>
+            </GridRow>
+          </GridContainer>
           <div className="article-body o-typography-wrapper" itemProp="articleBody">
             {hasCustomChildren ? (
               React.Children.map(children, child =>
@@ -147,7 +115,7 @@ const Layout = ({ flags, ads, children, defaultContainer, customArticleHead, ...
             ) : (
               <GridContainer>
                 <GridRow>
-                  <GridChild>
+                  <GridChild colspan={bodyColspan}>
                     <div>
                       {React.Children.map(children, child =>
                         React.cloneElement(
@@ -169,9 +137,9 @@ const Layout = ({ flags, ads, children, defaultContainer, customArticleHead, ...
               itemScope
               itemType="https://schema.org/Organization"
             >
-              <div className="o-grid-container">
-                <div className="o-grid-row">
-                  <div data-o-grid-colspan="12 S11 Scenter M9 L8 XL7">
+              <GridContainer>
+                <GridRow>
+                  <GridChild colspan="12 S11 Scenter M9 L8 XL7">
                     <small>
                       <a
                         href="http://www.ft.com/servicestools/help/copyright"
@@ -184,9 +152,9 @@ const Layout = ({ flags, ads, children, defaultContainer, customArticleHead, ...
                       article tools. Please don&apos;t cut articles from FT.com and redistribute by
                       email or post to the web.
                     </small>
-                  </div>
-                </div>
-              </div>
+                  </GridChild>
+                </GridRow>
+              </GridContainer>
             </footer>
           </div>
         </article>
@@ -212,6 +180,8 @@ Layout.propTypes = {
   defaultContainer: PropTypes.bool,
   customArticleHead: PropTypes.node,
   wrapArticleHead: PropTypes.bool,
+  bodyColspan: PropTypes.string,
+  headerColspan: PropTypes.string,
 };
 
 Layout.defaultProps = {
@@ -225,6 +195,8 @@ Layout.defaultProps = {
   defaultContainer: true,
   customArticleHead: null,
   wrapArticleHead: true,
+  bodyColspan: '12 S11 Scenter M9 L8 XL7',
+  headerColspan: '12 S11 Scenter M9 L8 XL7',
 };
 
 export default Layout;
