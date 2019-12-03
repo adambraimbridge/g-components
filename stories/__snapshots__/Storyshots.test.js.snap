@@ -5907,6 +5907,60 @@ soluta vix, quis natum ne qui, ei vidit latine partiendo mei. Mel ea duis essent
 ]
 `;
 
+exports[`Storyshots Core|Loading All Sizes With Dark Theme 1`] = `
+<div>
+  <div
+    className="g-loading g-loading--small g-loading--dark"
+  />
+  <div
+    className="g-loading g-loading--medium g-loading--dark"
+  />
+  <div
+    className="g-loading g-loading--large g-loading--dark"
+  />
+</div>
+`;
+
+exports[`Storyshots Core|Loading All Sizes With Light Theme 1`] = `
+<div
+  style={
+    Object {
+      "background": "#262a33",
+    }
+  }
+>
+  <div
+    className="g-loading g-loading--small g-loading--light"
+  />
+  <div
+    className="g-loading g-loading--medium g-loading--light"
+  />
+  <div
+    className="g-loading g-loading--large g-loading--light"
+  />
+</div>
+`;
+
+exports[`Storyshots Core|Loading Basic With Light Theme 1`] = `
+<div
+  style={
+    Object {
+      "background": "#262a33",
+    }
+  }
+>
+  <div
+    className="g-loading g-loading--small g-loading--light"
+  />
+</div>
+`;
+
+exports[`Storyshots Core|Loading Basic With No Props 1`] = `
+<div
+  className="g-loading g-loading--small g-loading--dark"
+/>
+`;
+
 exports[`Storyshots Core|OnwardJourney Basic 1`] = `null`;
 
 exports[`Storyshots Core|Share Basic 1`] = `
