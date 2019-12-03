@@ -22,7 +22,7 @@ import Footer from '../footer';
 import { GridChild, GridRow, GridContainer } from '../grid';
 import './styles.scss';
 
-export const Context = createContext(null);
+export const Context = createContext({});
 
 const Layout = ({
   flags,
