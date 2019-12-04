@@ -62,15 +62,33 @@ export const ConstituencyResultsTable = ({
             ))}
           </tr>
         </thead>
+
         <tbody>
           {['l', 'xl'].includes(breakpoint.toLowerCase()) || showExpander ? (
-            <Expander>{rows}</Expander>
+            <Expander hasNote tagName="tr">
+              {rows}
+              <tr>
+                {note && (
+                  <td colSpan="1000" className={`${className}__table--note`}>
+                    {note}
+                  </td>
+                )}
+              </tr>
+            </Expander>
           ) : (
-            rows
+            [
+              rows,
+              <tr>
+                {note && (
+                  <td colSpan="1000" className={`${className}__table--note`}>
+                    {note}
+                  </td>
+                )}
+              </tr>,
+            ]
           )}
         </tbody>
       </table>
-      {note && <div className={`${className}__note`}>{note}</div>}
     </div>
   );
 };
@@ -94,6 +112,8 @@ ConstituencyResultsTable.propTypes = {
 ConstituencyResultsTable.defaultProps = {
   className: 'g-constituency-results-table',
   expander: false,
+  note: '',
+  sortFunction: () => false,
 };
 
 export default ConstituencyResultsTable;

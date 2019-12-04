@@ -8,11 +8,34 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import './styles.scss';
 
-export const Expander = ({ children, showLabel, itemsToShow, showLessText, showMoreText }) => {
+export const Expander = ({
+  children,
+  showLabel,
+  itemsToShow,
+  showLessText,
+  showMoreText,
+  tagName,
+  hasNote,
+}) => {
   const [expanded, setExpanded] = useState(false);
+  const Tag =
+    tagName === 'tr'
+      ? ({ children: tagChildren, className, style }) => (
+          <tr className={className} style={style}>
+            <td colSpan="1000">{tagChildren}</td>
+          </tr>
+        )
+      : tagName;
+  const childArray = Children.toArray(children);
   return (
-    <div className="g-expander">
-      <div className="g-expander__header">
+    <React.Fragment>
+      {(expanded && children) ||
+        (!expanded &&
+          Children.count(children) > 1 && [
+            ...childArray.slice(0, itemsToShow),
+            hasNote ? childArray[childArray.length - 1] : null,
+          ])}
+      <Tag className="g-expander__header" colSpan={tagName === 'td' ? 1000 : undefined}>
         {
           <button
             className={classnames(
@@ -26,12 +49,8 @@ export const Expander = ({ children, showLabel, itemsToShow, showLessText, showM
             <i />
           </button>
         }
-      </div>
-      {(expanded && <div className="g-expander__children">{children}</div>) ||
-        (!expanded &&
-          Children.count(children) > 1 &&
-          Children.toArray(children).slice(0, itemsToShow))}
-    </div>
+      </Tag>
+    </React.Fragment>
   );
 };
 
@@ -41,6 +60,8 @@ Expander.propTypes = {
   itemsToShow: PropTypes.number,
   showLessText: PropTypes.string,
   showMoreText: PropTypes.string,
+  tagName: PropTypes.string,
+  hasNote: PropTypes.bool,
 };
 
 Expander.defaultProps = {
@@ -48,6 +69,8 @@ Expander.defaultProps = {
   itemsToShow: 3,
   showLessText: 'Show less',
   showMoreText: 'Show more',
+  tagName: 'div',
+  hasNote: false,
 };
 
 Expander.displayName = 'GExpander';
