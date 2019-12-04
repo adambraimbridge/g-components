@@ -1,0 +1,20 @@
+@import 'o-loading/main';
+
+/* @TODO update this all to latest o-loading. See #92 */
+.g-loading {
+  @include oLoading();
+  @include oLoadingColor('light');
+
+  &--small {
+    @include oLoadingSize('small');
+  }
+  &--medium {
+    @include oLoadingSize('medium');
+  }
+  &--large {
+    @include oLoadingSize('large');
+  }
+  &--dark {
+    @include oLoadingColor('dark');
+  }
+}
