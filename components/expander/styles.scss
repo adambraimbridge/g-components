@@ -1,0 +1,37 @@
+.g-expander__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.g-expander__expand-button {
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  font-size: 18px;
+  line-height: 1.11;
+  color: #0d7680;
+  height: 30px;
+  cursor: pointer;
+  padding-right: 25px;
+
+  span:after {
+    content: '';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 25px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-up?source=o-icons&tint=%230d7680,%230d7680&format=svg');
+  }
+
+  &--open {
+    span:after {
+      background-image: url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-down?source=o-icons&tint=%230d7680,%230d7680&format=svg');
+    }
+  }
+}

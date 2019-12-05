@@ -6491,13 +6491,156 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Custom Sort
           Emma Warman
         </td>
       </tr>
+      <tr>
+        <td
+          className="g-constituency-results-table__table--note"
+          colSpan="1000"
+        >
+          * Note to indicate outgoing candidate
+        </td>
+      </tr>
     </tbody>
   </table>
-  <div
-    className="g-constituency-results-table__note"
+</div>
+`;
+
+exports[`Storyshots Elections|GE2019/Constituency Results Table With Expander 1`] = `
+<div
+  className="g-constituency-results-table"
+>
+  <table
+    className="g-constituency-results-table__table"
   >
-    * Note to indicate outgoing candidate
-  </div>
+    <thead>
+      <tr>
+        <th>
+          Party
+        </th>
+        <th>
+          Candidate
+        </th>
+        <th>
+          Total Votes
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#8deb9d",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Green
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Caroline Lucas
+          *
+        </td>
+        <td
+          className="number"
+        >
+          30,149
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#cf4d3c",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Lab
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Solomon Curtis
+        </td>
+        <td
+          className="number"
+        >
+          15,450
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#149adb",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Con
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Emma Warman
+        </td>
+        <td
+          className="number"
+        >
+          11,082
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="g-constituency-results-table__table--note"
+          colSpan="1000"
+        >
+          * Note to indicate outgoing candidate
+        </td>
+      </tr>
+      <tr
+        className="g-expander__header"
+      >
+        <td
+          colSpan="1000"
+        >
+          <button
+            className="g-expander__expand-button"
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              Show more
+            </span>
+            <i />
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 `;
 
@@ -6697,13 +6840,16 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`]
           376
         </td>
       </tr>
+      <tr>
+        <td
+          className="g-constituency-results-table__table--note"
+          colSpan="1000"
+        >
+          * Note to indicate outgoing candidate
+        </td>
+      </tr>
     </tbody>
   </table>
-  <div
-    className="g-constituency-results-table__note"
-  >
-    * Note to indicate outgoing candidate
-  </div>
 </div>
 `;
 
@@ -6733,30 +6879,6 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table Without Results 
             className="party-badge"
             style={
               Object {
-                "backgroundColor": "#f09000",
-              }
-            }
-          />
-          <span
-            className="party-name"
-          >
-            Lib Dem
-          </span>
-        </td>
-        <td
-          className="candidate-name"
-        >
-          Callum James Littlemore
-        </td>
-      </tr>
-      <tr>
-        <td
-          className="party"
-        >
-          <span
-            className="party-badge"
-            style={
-              Object {
                 "backgroundColor": "#8deb9d",
               }
             }
@@ -6772,6 +6894,30 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table Without Results 
         >
           Caroline Lucas
           *
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#cf4d3c",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Lab
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Solomon Curtis
         </td>
       </tr>
       <tr>
@@ -6830,6 +6976,30 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table Without Results 
             className="party-badge"
             style={
               Object {
+                "backgroundColor": "#f09000",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Lib Dem
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Callum James Littlemore
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
                 "backgroundColor": "#d9cace",
               }
             }
@@ -6848,35 +7018,14 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table Without Results 
       </tr>
       <tr>
         <td
-          className="party"
+          className="g-constituency-results-table__table--note"
+          colSpan="1000"
         >
-          <span
-            className="party-badge"
-            style={
-              Object {
-                "backgroundColor": "#cf4d3c",
-              }
-            }
-          />
-          <span
-            className="party-name"
-          >
-            Lab
-          </span>
-        </td>
-        <td
-          className="candidate-name"
-        >
-          Solomon Curtis
+          * Note to indicate outgoing candidate
         </td>
       </tr>
     </tbody>
   </table>
-  <div
-    className="g-constituency-results-table__note"
-  >
-    * Note to indicate outgoing candidate
-  </div>
 </div>
 `;
 
@@ -10065,5 +10214,50 @@ exports[`Storyshots Elections|GE2019/Utilities Get Party Info Party String 1`] =
     </div>
     <br />
   </div>
+</div>
+`;
+
+exports[`Storyshots core|Expander Basic With Multiple Children 1`] = `
+Array [
+  <div>
+    0
+  </div>,
+  <div>
+    1
+  </div>,
+  <div>
+    2
+  </div>,
+  <div
+    className="g-expander__header"
+  >
+    <button
+      className="g-expander__expand-button"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        Show more
+      </span>
+      <i />
+    </button>
+  </div>,
+]
+`;
+
+exports[`Storyshots core|Expander Basic With One Child 1`] = `
+<div
+  className="g-expander__header"
+>
+  <button
+    className="g-expander__expand-button"
+    onClick={[Function]}
+    type="button"
+  >
+    <span>
+      Show more
+    </span>
+    <i />
+  </button>
 </div>
 `;
