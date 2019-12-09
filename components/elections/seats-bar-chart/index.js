@@ -74,7 +74,7 @@ const SeatsBarChart = ({
             className={`${className}__majority-text`}
             style={{ left: `${calcPercentage(majority)}%` }}
           >
-            Majority
+            {`Majority ${majority}`}
           </span>
         </span>
 
