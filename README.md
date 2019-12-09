@@ -6,31 +6,31 @@ Reusable React components for building graphics pages. [See how to use them in t
 
 ### Data rendering
 
-| Component                      | Description                                   |
-|--------------------------------|-----------------------------------------------|
-| `<DataTable>`                  | A sortable table                              |
-| `<DataFilter>`                 | Filter tabular data by searching or selecting |
+| Component      | Description                                   |
+| -------------- | --------------------------------------------- |
+| `<DataTable>`  | A sortable table                              |
+| `<DataFilter>` | Filter tabular data by searching or selecting |
 
 ### Optional page components
 
-| Component                      | Description                                   |
-|--------------------------------|-----------------------------------------------|
-| `<ImageSet>`                   | An image set (small, medium, large)           |
+| Component    | Description                         |
+| ------------ | ----------------------------------- |
+| `<ImageSet>` | An image set (small, medium, large) |
 
 ### Page furniture
 
-| Component                      | Description                                   |
-|--------------------------------|-----------------------------------------------|
-| `<Layout />`                   | Container component and grid                  |
-| `<HtmlHead />`                 | HTML document structure                       |
-| `<Analytics />`                | Analytics tracking                            |
-| `<Header />`                   | Page header                                   |
-| `<ArticleHead />`              | Article topper                                |
-| `<Share />`                    | Sharing links                                 |
-| `<TopAd />` and `<MiddleAd />` | Ad slots                                      |
-| `<OnwardJourney />`            | Onward Journey section                        |
-| `<Comments />`                 | Comments section                              |
-| `<Footer />`                   | Page footer                                   |
+| Component                      | Description                  |
+| ------------------------------ | ---------------------------- |
+| `<Layout />`                   | Container component and grid |
+| `<HtmlHead />`                 | HTML document structure      |
+| `<Analytics />`                | Analytics tracking           |
+| `<Header />`                   | Page header                  |
+| `<ArticleHead />`              | Article topper               |
+| `<Share />`                    | Sharing links                |
+| `<TopAd />` and `<MiddleAd />` | Ad slots                     |
+| `<OnwardJourney />`            | Onward Journey section       |
+| `<Comments />`                 | Comments section             |
+| `<Footer />`                   | Page footer                  |
 
 # Development
 
@@ -47,7 +47,8 @@ Make sure your local is up to date with the origin, then update the docs if nece
 ```bash
 $ npm run build
 $ git add styles.css docs/*
-$ git commit -m 'Update docs'
+$ npm run test -- -u
+$ git commit -m 'Update docs and snapshots'
 $ git push
 ```
 

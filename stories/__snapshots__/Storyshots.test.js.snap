@@ -2408,14 +2408,6 @@ exports[`Storyshots Core|Last Updated Default Live Variant 1`] = `
     <div
       className="o-teaser__content"
     >
-      Last updated 
-      <time
-        className="o-date"
-        data-o-component="o-date"
-        dateTime="2019-01-31T00:00:00.000Z"
-      >
-        0 seconds ago
-      </time>
       <div
         className="o-teaser__timestamp o-teaser__timestamp--inprogress"
         style={
@@ -2428,6 +2420,14 @@ exports[`Storyshots Core|Last Updated Default Live Variant 1`] = `
           className="o-teaser__timestamp-prefix"
         />
       </div>
+      Last updated 
+      <time
+        className="o-date"
+        data-o-component="o-date"
+        dateTime="2019-01-31T00:00:00.000Z"
+      >
+        0 seconds ago
+      </time>
     </div>
   </div>
 </div>
