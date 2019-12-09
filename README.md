@@ -46,8 +46,8 @@ Make sure your local is up to date with the origin, then update the docs if nece
 
 ```bash
 $ npm run build
-$ git add styles.css docs/*
 $ npm run test -- -u
+$ git add styles.css docs/*
 $ git commit -m 'Update docs and snapshots'
 $ git push
 ```
