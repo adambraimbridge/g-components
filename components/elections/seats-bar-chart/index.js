@@ -74,7 +74,7 @@ const SeatsBarChart = ({
             className={`${className}__majority-text`}
             style={{ left: `${calcPercentage(majority)}%` }}
           >
-            Majority
+            {`Majority ${majority}`}
           </span>
         </span>
 
@@ -169,7 +169,7 @@ SeatsBarChart.propTypes = {
       isInTable: PropTypes.bool,
     }),
   ).isRequired,
-  majority: PropTypes.number,
+  majority: PropTypes.number.isRequired,
   showShortPartyNames: PropTypes.bool,
 };
 
