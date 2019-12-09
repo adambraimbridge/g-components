@@ -169,7 +169,7 @@ SeatsBarChart.propTypes = {
       isInTable: PropTypes.bool,
     }),
   ).isRequired,
-  majority: PropTypes.number,
+  majority: PropTypes.number.isRequired,
   showShortPartyNames: PropTypes.bool,
 };
 
