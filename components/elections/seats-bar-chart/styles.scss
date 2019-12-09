@@ -188,6 +188,7 @@
             left: 6px;
             line-height: 32px;
             text-shadow: 0 0 2px #ffffff;
+            width: max-content;
 
             &--desktop {
               @include oGridRespondTo($until: M) {
