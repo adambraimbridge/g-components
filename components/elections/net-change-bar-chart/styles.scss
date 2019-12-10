@@ -101,6 +101,11 @@
           .bar {
             box-sizing: border-box;
             border: solid 1px rgba(102, 96, 92, 0.3);
+          }
+        }
+
+        &--others--negative {
+          .bar {
             border-right: none;
           }
         }
