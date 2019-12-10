@@ -25,19 +25,34 @@ const SeatsBarChart = ({
   const seatsData = data.map(({ seats, projectedSeats, ...d }) => ({
     seats,
     projectedSeats,
-    seatsCeiling: projectedSeats || seats,
-    projectedSeatsOverWon: (projectedSeats || seats) - seats,
+    seatsCeiling: showProjectedSeats ? projectedSeats || seats : seats,
+    projectedSeatsOverWon: (showProjectedSeats ? projectedSeats || seats : seats) - seats,
     ...d,
   }));
+
+  const footnoteData = seatsData
+    .filter(({ isInTable }) => !isInTable)
+    .sort((a, b) => b.seats - a.seats);
+
+  const othersData = {
+    party: 'Others',
+    seats: footnoteData.reduce((a, b) => a + b.seats, 0),
+    projectedSeats: footnoteData.reduce(
+      (a, b) => a + (showProjectedSeats ? b.projectedSeats || b.seats : b.seats),
+      0,
+    ),
+    seatsCeiling: footnoteData.reduce((a, b) => a + b.seatsCeiling, 0),
+    projectedSeatsOverWon: footnoteData.reduce((a, b) => a + b.projectedSeatsOverWon, 0),
+    voteShare: footnoteData.reduce((a, b) => a + b.voteShare, 0),
+    isOthers: true,
+  };
 
   const tableData = [
     ...seatsData
       .filter(({ isInTable, isOthers }) => isInTable && !isOthers)
       .sort((a, b) => b.seatsCeiling - a.seatsCeiling),
-    ...seatsData.filter(({ isOthers }) => isOthers),
+    othersData,
   ];
-
-  const footnoteData = data.filter(({ isInTable }) => !isInTable).sort((a, b) => b.seats - a.seats);
 
   const maxSeats = tableData.reduce((acc, { seatsCeiling }) => Math.max(acc, seatsCeiling), 0);
   const maxValue = Math.max(majority, maxSeats);

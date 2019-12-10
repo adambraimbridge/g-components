@@ -17,13 +17,37 @@ export const partiesToShowInTable = [
   'SNP',
 ];
 
-export const resultsStartFormatted = formatResultsData(resultsStart, partiesToShowInTable);
-export const resultsMiddleFormatted = formatResultsData(resultsMiddle, partiesToShowInTable);
-export const resultsEndFormatted = formatResultsData(resultsEnd, partiesToShowInTable);
+export const partiesThatAreOthers = [
+  'Alliance',
+  'Independent/Other',
+  'Plaid Cymru',
+  'SDLP',
+  'Ukip',
+  'UUP',
+  'Independent Group for Change',
+];
+
+export const resultsStartFormatted = formatResultsData(
+  resultsStart,
+  partiesToShowInTable,
+  partiesThatAreOthers,
+);
+export const resultsMiddleFormatted = formatResultsData(
+  resultsMiddle,
+  partiesToShowInTable,
+  partiesThatAreOthers,
+);
+export const resultsEndFormatted = formatResultsData(
+  resultsEnd,
+  partiesToShowInTable,
+  partiesThatAreOthers,
+);
 
 <Meta title="Elections|GE2019/Seats Bar Chart" component={SeatsBarChart} />
 
 # Seats Bar Chart component
+
+### Start
 
 <Preview>
   <Story name="Basic (start)">
@@ -33,6 +57,11 @@ export const resultsEndFormatted = formatResultsData(resultsEnd, partiesToShowIn
       majority={320}
     />
   </Story>
+</Preview>
+
+### Middle
+
+<Preview>
   <Story name="Basic (middle)">
     <SeatsBarChart
       tableHeaders={['Party', 'Seats', '% of vote']}
@@ -40,6 +69,11 @@ export const resultsEndFormatted = formatResultsData(resultsEnd, partiesToShowIn
       majority={320}
     />
   </Story>
+</Preview>
+
+### End
+
+<Preview>
   <Story name="Basic (end)">
     <SeatsBarChart
       tableHeaders={['Party', 'Seats', '% of vote']}
