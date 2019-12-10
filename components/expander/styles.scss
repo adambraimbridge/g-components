@@ -26,12 +26,12 @@
     left: calc(100% - 25px);
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-up?source=o-icons&tint=%230d7680,%230d7680&format=svg');
+    background-image: url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-down?source=o-icons&tint=%230d7680,%230d7680&format=svg');
   }
 
   &--open {
     span:after {
-      background-image: url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-down?source=o-icons&tint=%230d7680,%230d7680&format=svg');
+      background-image: url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-up?source=o-icons&tint=%230d7680,%230d7680&format=svg');
     }
   }
 }
