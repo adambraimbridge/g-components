@@ -12,15 +12,22 @@ import './styles.scss';
 const { getPartyInfo } = uk;
 
 const NetChangeBarChart = ({ className, title, tableHeaders, data, showShortPartyNames }) => {
+  const footnoteData = data
+    .filter(({ isInTable }) => !isInTable)
+    .sort((a, b) => b.seatChange - a.seatChange);
+
+  const othersData = {
+    party: 'Others',
+    seatChange: footnoteData.reduce((a, b) => a + b.seatChange, 0),
+    isOthers: true,
+  };
+
   const tableData = [
     ...data
       .filter(({ isInTable, isOthers }) => isInTable && !isOthers)
       .sort((a, b) => b.seatChange - a.seatChange),
-    ...data.filter(({ isOthers }) => isOthers),
+    othersData,
   ];
-  const footnoteData = data
-    .filter(({ isInTable }) => !isInTable)
-    .sort((a, b) => b.seatChange - a.seatChange);
 
   const minSeatChange = tableData.reduce((acc, { seatChange }) => Math.min(acc, seatChange), 0);
   const maxSeatChange = tableData.reduce((acc, { seatChange }) => Math.max(acc, seatChange), 0);
@@ -63,7 +70,11 @@ const NetChangeBarChart = ({ className, title, tableHeaders, data, showShortPart
                   </span>
                   <span className="party-name party-name--mobile">{shortName}</span>
                 </td>
-                <td className={`bar-change${isOthers ? ' bar-change--others' : ''}`}>
+                <td
+                  className={`bar-change${isOthers ? ' bar-change--others' : ''}${
+                    seatChange < 0 ? ' bar-change--others--negative' : ''
+                  }`}
+                >
                   <span className="bar-container">
                     <span
                       className="bar"
@@ -84,10 +95,7 @@ const NetChangeBarChart = ({ className, title, tableHeaders, data, showShortPart
                         width: `${getBarWidth(seatChange)}%`,
                       }}
                     />
-                    <span
-                      className="centre-line"
-                      style={{ left: `${getStartPosition(0)}%` }}
-                    ></span>
+                    <span className="centre-line" style={{ left: `${getStartPosition(0)}%` }} />
                   </span>
                 </td>
                 <td className="change">
