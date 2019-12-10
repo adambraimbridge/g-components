@@ -7367,7 +7367,7 @@ exports[`Storyshots Elections|GE2019/Net Change Bar Chart Basic 1`] = `
           </span>
         </td>
         <td
-          className="bar-change"
+          className="bar-change bar-change--others--negative"
         >
           <span
             className="bar-container"
@@ -7434,7 +7434,7 @@ exports[`Storyshots Elections|GE2019/Net Change Bar Chart Basic 1`] = `
           </span>
         </td>
         <td
-          className="bar-change"
+          className="bar-change bar-change--others--negative"
         >
           <span
             className="bar-container"
@@ -7511,8 +7511,8 @@ exports[`Storyshots Elections|GE2019/Net Change Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "#ffffff",
-                  "left": "23.52941176470588%",
-                  "width": "17.64705882352941%",
+                  "left": "41.17647058823529%",
+                  "width": "5.882352941176471%",
                 }
               }
             />
@@ -7521,8 +7521,8 @@ exports[`Storyshots Elections|GE2019/Net Change Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "rgba(255, 255, 255, 0.3)",
-                  "left": "23.52941176470588%",
-                  "width": "17.64705882352941%",
+                  "left": "41.17647058823529%",
+                  "width": "5.882352941176471%",
                 }
               }
             />
@@ -7539,7 +7539,8 @@ exports[`Storyshots Elections|GE2019/Net Change Bar Chart Basic 1`] = `
         <td
           className="change"
         >
-          -9
+          +
+          3
         </td>
       </tr>
     </tbody>
@@ -8342,7 +8343,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic End 1`] = `
             className="party-badge"
             style={
               Object {
-                "backgroundColor": "#d9cace",
+                "backgroundColor": "#ffffff",
               }
             }
           />
@@ -8353,8 +8354,8 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic End 1`] = `
               className="party-bar"
               style={
                 Object {
-                  "backgroundColor": "#d9cace",
-                  "width": "0%",
+                  "backgroundColor": "#ffffff",
+                  "width": "4.518072289156627%",
                 }
               }
             />
@@ -8363,31 +8364,31 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic End 1`] = `
               style={
                 Object {
                   "backgroundColor": "rgba(255, 255, 255, 0.3)",
-                  "width": "0%",
+                  "width": "4.518072289156627%",
                 }
               }
             />
             <span
               className="party-name party-name--desktop"
             >
-              Independent
+              Others
             </span>
             <span
               className="party-name party-name--mobile"
             >
-              Ind
+              Others
             </span>
           </span>
         </td>
         <td
           className="seats"
         >
-          0
+          15
         </td>
         <td
           className="voteshare"
         >
-          2.0
+          4.4
         </td>
       </tr>
     </tbody>
@@ -9068,7 +9069,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic Middle 1`] = `
             className="party-badge"
             style={
               Object {
-                "backgroundColor": "#d9cace",
+                "backgroundColor": "#ffffff",
               }
             }
           />
@@ -9079,7 +9080,17 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic Middle 1`] = `
               className="party-bar"
               style={
                 Object {
-                  "backgroundColor": "#d9cace",
+                  "backgroundColor": "#ffffff",
+                  "width": "3.582089552238806%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--projected"
+              style={
+                Object {
+                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
+                  "left": "3.2835820895522385%",
                   "width": "0.2985074626865672%",
                 }
               }
@@ -9089,31 +9100,31 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic Middle 1`] = `
               style={
                 Object {
                   "backgroundColor": "rgba(255, 255, 255, 0.3)",
-                  "width": "0.2985074626865672%",
+                  "width": "3.582089552238806%",
                 }
               }
             />
             <span
               className="party-name party-name--desktop"
             >
-              Independent
+              Others
             </span>
             <span
               className="party-name party-name--mobile"
             >
-              Ind
+              Others
             </span>
           </span>
         </td>
         <td
           className="seats"
         >
-          1
+          11
         </td>
         <td
           className="voteshare"
         >
-          2.2
+          4.7
         </td>
       </tr>
     </tbody>
@@ -9723,7 +9734,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic Start 1`] = `
             className="party-badge"
             style={
               Object {
-                "backgroundColor": "#d9cace",
+                "backgroundColor": "#ffffff",
               }
             }
           />
@@ -9734,7 +9745,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic Start 1`] = `
               className="party-bar"
               style={
                 Object {
-                  "backgroundColor": "#d9cace",
+                  "backgroundColor": "#ffffff",
                   "width": "0%",
                 }
               }
@@ -9751,12 +9762,12 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic Start 1`] = `
             <span
               className="party-name party-name--desktop"
             >
-              Independent
+              Others
             </span>
             <span
               className="party-name party-name--mobile"
             >
-              Ind
+              Others
             </span>
           </span>
         </td>
