@@ -7,6 +7,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { uk } from '@financial-times/politics';
+import './styles.scss';
 
 const { getPartyInfo } = uk;
 
