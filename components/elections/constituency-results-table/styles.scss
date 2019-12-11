@@ -69,6 +69,7 @@
           top: 7px;
           margin-right: 10px;
           width: 4px;
+          box-sizing: border-box;
 
           @include oGridRespondTo(M) {
             width: 8px;

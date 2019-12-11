@@ -15,10 +15,11 @@ const { getPartyInfo } = uk;
 
 const ConstituencyResultsTableRow = ({ party, candidate, votes, showAsterick }) => {
   const { shortName, color } = getPartyInfo(party);
+  const border = party === 'The Speaker' ? '1px solid #B2AFAD' : 'none';
   return (
     <tr key={`row_${party}`}>
       <td className="party">
-        <span className="party-badge" style={{ backgroundColor: color }} />
+        <span className="party-badge" style={{ backgroundColor: color, border }} />
         <span className="party-name">{shortName}</span>
       </td>
       <td className="candidate-name">
