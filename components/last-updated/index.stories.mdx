@@ -20,7 +20,10 @@ This disappears if not provided a date object.
 If you don't provide a date to the `lastUpdated` prop, you won't see anything.
 
 <Preview>
-  <Story name="No date provided (invisible)">
+  <Story name="No date provided (live)">
     <LastUpdated />
+  </Story>
+  <Story name="No date provided (not live; invisible)">
+    <LastUpdated live={false} />
   </Story>
 </Preview>
