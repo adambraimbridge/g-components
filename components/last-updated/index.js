@@ -9,7 +9,7 @@ import DateTime from '../datetime';
 import './styles.scss';
 
 const LastUpdated = ({ lastUpdated, live }) =>
-  lastUpdated && lastUpdated.instanceOf(Date) ? (
+  lastUpdated && lastUpdated.instanceOf && lastUpdated.instanceOf(Date) ? (
     <div className={`last-updated${live ? ' last-updated--live' : ''}`}>
       {live ? (
         <div className="o-teaser o-teaser--small" data-o-component="o-teaser">
