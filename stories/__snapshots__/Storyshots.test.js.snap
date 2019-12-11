@@ -2450,7 +2450,40 @@ exports[`Storyshots Core|Last Updated Light Variant 1`] = `
 </div>
 `;
 
-exports[`Storyshots Core|Last Updated No Date Provided Invisible 1`] = `null`;
+exports[`Storyshots Core|Last Updated No Date Provided Live 1`] = `
+<div
+  className="last-updated last-updated--live"
+>
+  <div
+    className="o-teaser o-teaser--small"
+    data-o-component="o-teaser"
+  >
+    <div
+      className="o-teaser__content"
+    >
+      <div
+        className="o-teaser__timestamp o-teaser__timestamp--inprogress"
+        style={
+          Object {
+            "display": "inline-block",
+          }
+        }
+      >
+        <span
+          className="o-teaser__timestamp-prefix"
+        />
+      </div>
+      Live
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Last Updated No Date Provided Not Live Invisible 1`] = `
+<div
+  className="last-updated"
+/>
+`;
 
 exports[`Storyshots Core|Layout Basic 1`] = `
 Array [
