@@ -58,6 +58,7 @@ const RaceResult = ({ incumbent, winner, backgroundColor, breakpoint: breakpoint
         style={{
           backgroundColor: winner ? winnerParty.color : '#f2dfce',
           color: winner ? winnerParty.textColor : 'black',
+          border: winner === 'The Speaker' ? '1px solid #B2AFAD' : 'none',
         }}
       >
         {text}

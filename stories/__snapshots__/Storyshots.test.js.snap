@@ -6888,6 +6888,221 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`]
 </div>
 `;
 
+exports[`Storyshots Elections|GE2019/Constituency Results Table With Speaker 1`] = `
+<div
+  className="g-constituency-results-table"
+>
+  <table
+    className="g-constituency-results-table__table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Party
+        </th>
+        <th>
+          Candidate
+        </th>
+        <th>
+          Total Votes
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#8deb9d",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Green
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Caroline Lucas Test
+          *
+        </td>
+        <td
+          className="number"
+        >
+          30,149
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#cf4d3c",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Lab
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Solomon Curtis Test
+        </td>
+        <td
+          className="number"
+        >
+          15,450
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#149adb",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Con
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Emma Warman Test
+        </td>
+        <td
+          className="number"
+        >
+          11,082
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#7200ab",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Ukip
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Ian Buchanan Test
+        </td>
+        <td
+          className="number"
+        >
+          630
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#f09000",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Lib Dem
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Callum Jameson Littlelonger Test
+        </td>
+        <td
+          className="number"
+        >
+          400
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+                "border": "1px solid #B2AFAD",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Speaker
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Isabelle Amanda Parasram Test
+        </td>
+        <td
+          className="number"
+        >
+          376
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="g-constituency-results-table__table--note"
+          colSpan="1000"
+        >
+          * Note to indicate outgoing candidate
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`Storyshots Elections|GE2019/Constituency Results Table Without Results 1`] = `
 <div
   className="g-constituency-results-table"
@@ -7699,6 +7914,105 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Scottish National Par
           }
         >
           SNP gain
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Elections|GE2019/Race Result Indicator Speaker 1`] = `
+<div
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <ul>
+    <li>
+      Labour -&gt; The Speaker
+      <div
+        className="race-result"
+      >
+        <div
+          className="race-result--incumbent"
+          style={
+            Object {
+              "backgroundColor": "#cf4d3c",
+            }
+          }
+        />
+        <div
+          className="race-result--triangle-background"
+          style={
+            Object {
+              "borderColor": "transparent transparent transparent #fff1e5",
+            }
+          }
+        />
+        <div
+          className="race-result--triangle"
+          style={
+            Object {
+              "borderColor": "transparent transparent transparent #cf4d3c",
+            }
+          }
+        />
+        <div
+          className="race-result--outcome"
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "border": "1px solid #B2AFAD",
+              "color": "black",
+            }
+          }
+        >
+          Speaker gain
+        </div>
+      </div>
+    </li>
+    <li>
+      The Speaker -&gt; Conservative
+      <div
+        className="race-result"
+      >
+        <div
+          className="race-result--incumbent"
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+            }
+          }
+        />
+        <div
+          className="race-result--triangle-background"
+          style={
+            Object {
+              "borderColor": "transparent transparent transparent #fff1e5",
+            }
+          }
+        />
+        <div
+          className="race-result--triangle"
+          style={
+            Object {
+              "borderColor": "transparent transparent transparent #ffffff",
+            }
+          }
+        />
+        <div
+          className="race-result--outcome"
+          style={
+            Object {
+              "backgroundColor": "#149adb",
+              "border": "none",
+              "color": "white",
+            }
+          }
+        >
+          Con gain
         </div>
       </div>
     </li>
