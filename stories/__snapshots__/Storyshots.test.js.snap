@@ -7572,7 +7572,351 @@ exports[`Storyshots Elections|GE2019/Net Change Bar Chart Basic 1`] = `
 </div>
 `;
 
-exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 1`] = `
+exports[`Storyshots Elections|GE2019/Race Result Indicator Scottish National Party Will Always Be Snp 1`] = `
+<div
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <ul>
+    <li>
+      S breakpoint:
+       
+      <div
+        className="race-result"
+      >
+        <div
+          className="race-result--incumbent"
+          style={
+            Object {
+              "backgroundColor": "#cf4d3c",
+            }
+          }
+        />
+        <div
+          className="race-result--triangle-background"
+          style={
+            Object {
+              "borderColor": "transparent transparent transparent #fff1e5",
+            }
+          }
+        />
+        <div
+          className="race-result--triangle"
+          style={
+            Object {
+              "borderColor": "transparent transparent transparent #cf4d3c",
+            }
+          }
+        />
+        <div
+          className="race-result--outcome"
+          style={
+            Object {
+              "backgroundColor": "#ffdf00",
+              "color": "black",
+            }
+          }
+        >
+          SNP gain
+        </div>
+      </div>
+    </li>
+    <li>
+      XL breakpoint:
+       
+      <div
+        className="race-result"
+      >
+        <div
+          className="race-result--incumbent"
+          style={
+            Object {
+              "backgroundColor": "#149adb",
+            }
+          }
+        />
+        <div
+          className="race-result--triangle-background"
+          style={
+            Object {
+              "borderColor": "transparent transparent transparent #fff1e5",
+            }
+          }
+        />
+        <div
+          className="race-result--triangle"
+          style={
+            Object {
+              "borderColor": "transparent transparent transparent #149adb",
+            }
+          }
+        />
+        <div
+          className="race-result--outcome"
+          style={
+            Object {
+              "backgroundColor": "#ffdf00",
+              "color": "black",
+            }
+          }
+        >
+          SNP gain
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations Large 1`] = `
+<div
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="race-result"
+  >
+    <div
+      className="race-result--incumbent"
+      style={
+        Object {
+          "backgroundColor": "#cf4d3c",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #cf4d3c",
+        }
+      }
+    />
+    <div
+      className="race-result--outcome"
+      style={
+        Object {
+          "backgroundColor": "#cf4d3c",
+          "color": "white",
+        }
+      }
+    >
+      Labour hold
+    </div>
+  </div>
+  <div
+    className="race-result"
+  >
+    <div
+      className="race-result--incumbent"
+      style={
+        Object {
+          "backgroundColor": "#149adb",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #149adb",
+        }
+      }
+    />
+    <div
+      className="race-result--outcome"
+      style={
+        Object {
+          "backgroundColor": "#cf4d3c",
+          "color": "white",
+        }
+      }
+    >
+      Labour gain
+    </div>
+  </div>
+  <div
+    className="race-result"
+  >
+    <div
+      className="race-result--incumbent"
+      style={
+        Object {
+          "backgroundColor": "#cf4d3c",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #cf4d3c",
+        }
+      }
+    />
+    <div
+      className="race-result--outcome"
+      style={
+        Object {
+          "backgroundColor": "#149adb",
+          "color": "white",
+        }
+      }
+    >
+      Conservative gain
+    </div>
+  </div>
+  <div
+    className="race-result"
+  >
+    <div
+      className="race-result--incumbent"
+      style={
+        Object {
+          "backgroundColor": "#f09000",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #f09000",
+        }
+      }
+    />
+    <div
+      className="race-result--outcome"
+      style={
+        Object {
+          "backgroundColor": "#f09000",
+          "color": "black",
+        }
+      }
+    >
+      Liberal Democrats hold
+    </div>
+  </div>
+  <div
+    className="race-result"
+  >
+    <div
+      className="race-result--incumbent"
+      style={
+        Object {
+          "backgroundColor": "#149adb",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #149adb",
+        }
+      }
+    />
+    <div
+      className="race-result--outcome"
+      style={
+        Object {
+          "backgroundColor": "#f09000",
+          "color": "black",
+        }
+      }
+    >
+      Liberal Democrats gain
+    </div>
+  </div>
+  <div
+    className="race-result"
+  >
+    <div
+      className="race-result--incumbent"
+      style={
+        Object {
+          "backgroundColor": "#8deb9d",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #8deb9d",
+        }
+      }
+    />
+    <div
+      className="race-result--outcome"
+      style={
+        Object {
+          "backgroundColor": "#8deb9d",
+          "color": "black",
+        }
+      }
+    >
+      Green hold
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations Small 1`] = `
 <div
   style={
     Object {
