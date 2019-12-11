@@ -8,8 +8,10 @@ import PropTypes from 'prop-types';
 import DateTime from '../datetime';
 import './styles.scss';
 
+const validDate = date => Object.prototype.toString.call(date) === '[object Date]';
+
 const LastUpdated = ({ lastUpdated, live }) =>
-  lastUpdated && lastUpdated.instanceOf && lastUpdated.instanceOf(Date) ? (
+  lastUpdated && validDate(lastUpdated) ? (
     <div className={`last-updated${live ? ' last-updated--live' : ''}`}>
       {live ? (
         <div className="o-teaser o-teaser--small" data-o-component="o-teaser">
