@@ -12,9 +12,8 @@ import './styles.scss';
 
 const { getPartyInfo } = uk;
 
-const RaceResult = ({ incumbent, winner, backgroundColor }) => {
-  const { breakpoint = 'default' } = useContext(Context) || {};
-
+const RaceResult = ({ incumbent, winner, backgroundColor, breakpoint: breakpointProp }) => {
+  const { breakpoint = breakpointProp || 'default' } = useContext(Context) || {};
   if (!incumbent) return null;
 
   const incumbentParty = getPartyInfo(incumbent);
@@ -25,12 +24,16 @@ const RaceResult = ({ incumbent, winner, backgroundColor }) => {
     ? winner !== incumbent
       ? `${
           !['default', 's', 'm'].includes(breakpoint.toLowerCase())
-            ? winnerParty.formattedName
+            ? winnerParty.formattedName.length <= 20
+              ? winnerParty.formattedName
+              : winnerParty.shortName
             : winnerParty.shortName
         } gain`
       : `${
           !['default', 's', 'm'].includes(breakpoint.toLowerCase())
-            ? winnerParty.formattedName
+            ? winnerParty.formattedName.length <= 20
+              ? winnerParty.formattedName
+              : winnerParty.shortName
             : winnerParty.shortName
         } hold`
     : 'Yet to declare';
@@ -67,6 +70,7 @@ RaceResult.propTypes = {
   winner: PropTypes.string.isRequired,
   incumbent: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string,
+  breakpoint: PropTypes.string,
 };
 
 RaceResult.defaultProps = {
