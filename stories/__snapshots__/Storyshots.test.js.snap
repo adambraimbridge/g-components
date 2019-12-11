@@ -2450,6 +2450,8 @@ exports[`Storyshots Core|Last Updated Light Variant 1`] = `
 </div>
 `;
 
+exports[`Storyshots Core|Last Updated No Date Provided Invisible 1`] = `null`;
+
 exports[`Storyshots Core|Layout Basic 1`] = `
 Array [
   <header
