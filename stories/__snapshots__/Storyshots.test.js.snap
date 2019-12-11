@@ -6390,6 +6390,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Custom Sort
             style={
               Object {
                 "backgroundColor": "#7200ab",
+                "border": "none",
               }
             }
           />
@@ -6414,6 +6415,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Custom Sort
             style={
               Object {
                 "backgroundColor": "#cf4d3c",
+                "border": "none",
               }
             }
           />
@@ -6438,6 +6440,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Custom Sort
             style={
               Object {
                 "backgroundColor": "#f09000",
+                "border": "none",
               }
             }
           />
@@ -6462,6 +6465,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Custom Sort
             style={
               Object {
                 "backgroundColor": "#8deb9d",
+                "border": "none",
               }
             }
           />
@@ -6487,6 +6491,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Custom Sort
             style={
               Object {
                 "backgroundColor": "#d9cace",
+                "border": "none",
               }
             }
           />
@@ -6511,6 +6516,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Custom Sort
             style={
               Object {
                 "backgroundColor": "#149adb",
+                "border": "none",
               }
             }
           />
@@ -6569,6 +6575,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Expander 1`
             style={
               Object {
                 "backgroundColor": "#8deb9d",
+                "border": "none",
               }
             }
           />
@@ -6599,6 +6606,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Expander 1`
             style={
               Object {
                 "backgroundColor": "#cf4d3c",
+                "border": "none",
               }
             }
           />
@@ -6628,6 +6636,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Expander 1`
             style={
               Object {
                 "backgroundColor": "#149adb",
+                "border": "none",
               }
             }
           />
@@ -6709,6 +6718,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`]
             style={
               Object {
                 "backgroundColor": "#8deb9d",
+                "border": "none",
               }
             }
           />
@@ -6739,6 +6749,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`]
             style={
               Object {
                 "backgroundColor": "#cf4d3c",
+                "border": "none",
               }
             }
           />
@@ -6768,6 +6779,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`]
             style={
               Object {
                 "backgroundColor": "#149adb",
+                "border": "none",
               }
             }
           />
@@ -6797,6 +6809,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`]
             style={
               Object {
                 "backgroundColor": "#7200ab",
+                "border": "none",
               }
             }
           />
@@ -6826,6 +6839,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`]
             style={
               Object {
                 "backgroundColor": "#f09000",
+                "border": "none",
               }
             }
           />
@@ -6855,6 +6869,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`]
             style={
               Object {
                 "backgroundColor": "#d9cace",
+                "border": "none",
               }
             }
           />
@@ -7130,6 +7145,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table Without Results 
             style={
               Object {
                 "backgroundColor": "#8deb9d",
+                "border": "none",
               }
             }
           />
@@ -7155,6 +7171,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table Without Results 
             style={
               Object {
                 "backgroundColor": "#cf4d3c",
+                "border": "none",
               }
             }
           />
@@ -7179,6 +7196,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table Without Results 
             style={
               Object {
                 "backgroundColor": "#149adb",
+                "border": "none",
               }
             }
           />
@@ -7203,6 +7221,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table Without Results 
             style={
               Object {
                 "backgroundColor": "#7200ab",
+                "border": "none",
               }
             }
           />
@@ -7227,6 +7246,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table Without Results 
             style={
               Object {
                 "backgroundColor": "#f09000",
+                "border": "none",
               }
             }
           />
@@ -7251,6 +7271,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table Without Results 
             style={
               Object {
                 "backgroundColor": "#d9cace",
+                "border": "none",
               }
             }
           />
@@ -7866,6 +7887,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Scottish National Par
           style={
             Object {
               "backgroundColor": "#ffdf00",
+              "border": "none",
               "color": "black",
             }
           }
@@ -7909,6 +7931,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Scottish National Par
           style={
             Object {
               "backgroundColor": "#ffdf00",
+              "border": "none",
               "color": "black",
             }
           }
@@ -8060,6 +8083,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#cf4d3c",
+          "border": "none",
           "color": "white",
         }
       }
@@ -8099,6 +8123,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#cf4d3c",
+          "border": "none",
           "color": "white",
         }
       }
@@ -8138,6 +8163,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#149adb",
+          "border": "none",
           "color": "white",
         }
       }
@@ -8177,6 +8203,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#f09000",
+          "border": "none",
           "color": "black",
         }
       }
@@ -8216,6 +8243,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#f09000",
+          "border": "none",
           "color": "black",
         }
       }
@@ -8255,6 +8283,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#8deb9d",
+          "border": "none",
           "color": "black",
         }
       }
@@ -8305,6 +8334,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#cf4d3c",
+          "border": "none",
           "color": "white",
         }
       }
@@ -8344,6 +8374,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#cf4d3c",
+          "border": "none",
           "color": "white",
         }
       }
@@ -8383,6 +8414,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#149adb",
+          "border": "none",
           "color": "white",
         }
       }
@@ -8422,6 +8454,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#f09000",
+          "border": "none",
           "color": "black",
         }
       }
@@ -8461,6 +8494,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#f09000",
+          "border": "none",
           "color": "black",
         }
       }
@@ -8500,6 +8534,7 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#8deb9d",
+          "border": "none",
           "color": "black",
         }
       }
