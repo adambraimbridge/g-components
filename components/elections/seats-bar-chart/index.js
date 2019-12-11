@@ -7,7 +7,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { uk } from '@financial-times/politics';
-import './styles.scss';
 
 const { getPartyInfo } = uk;
 
@@ -47,12 +46,10 @@ const SeatsBarChart = ({
     isOthers: true,
   };
 
-  const tableData = [
-    ...seatsData
-      .filter(({ isInTable, isOthers }) => isInTable && !isOthers)
-      .sort((a, b) => b.seatsCeiling - a.seatsCeiling),
-    othersData,
-  ];
+  const sortedFiltered = seatsData
+    .filter(({ isInTable, isOthers }) => isInTable && !isOthers)
+    .sort((a, b) => b.seatsCeiling - a.seatsCeiling);
+  const tableData = [...sortedFiltered, sortedFiltered.length && othersData].filter(d => d);
 
   const maxSeats = tableData.reduce((acc, { seatsCeiling }) => Math.max(acc, seatsCeiling), 0);
   const maxValue = Math.max(majority, maxSeats);
@@ -154,9 +151,9 @@ const SeatsBarChart = ({
 
       <div className={`${className}__footnote`}>
         {footnoteData.map(({ party, seats }, index, arr) => {
-          const { shortName, color } = getPartyInfo(party);
+          const { shortName } = getPartyInfo(party);
           return (
-            <Fragment>
+            <Fragment key={`frag_${shortName}`}>
               {shortName} (<span className="seats">{seats}</span>)
               {index !== arr.length - 1 ? ', ' : ''}
             </Fragment>
