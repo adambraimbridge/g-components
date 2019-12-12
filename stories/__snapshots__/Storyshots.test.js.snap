@@ -7843,6 +7843,542 @@ exports[`Storyshots Elections|GE2019/Net Change Bar Chart Basic 1`] = `
 </div>
 `;
 
+exports[`Storyshots Elections|GE2019/Net Change Bar Chart Empty State 1`] = `
+<div
+  className="g-net-change-bar-chart"
+>
+  <div
+    className="g-net-change-bar-chart__header"
+  >
+    <h3
+      className="g-net-change-bar-chart__title"
+    >
+      Net change in seats compared to outgoing parliament
+    </h3>
+  </div>
+  <table
+    className="g-net-change-bar-chart__table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Party
+        </th>
+        <th
+          className="axis-label"
+        >
+          <span
+            style={
+              Object {
+                "left": "NaN%",
+              }
+            }
+          >
+            0
+          </span>
+        </th>
+        <th>
+          +/-
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#149adb",
+              }
+            }
+          />
+          <span
+            className="party-name party-name--desktop"
+          >
+            Conservative
+          </span>
+          <span
+            className="party-name party-name--mobile"
+          >
+            Con
+          </span>
+        </td>
+        <td
+          className="bar-change bar-change--others--zero"
+        >
+          <span
+            className="bar-container"
+          >
+            <span
+              className="bar"
+              style={
+                Object {
+                  "backgroundColor": "#149adb",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="bar bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="centre-line"
+              style={
+                Object {
+                  "left": "NaN%",
+                }
+              }
+            />
+          </span>
+        </td>
+        <td
+          className="change"
+        >
+          0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#cf4d3c",
+              }
+            }
+          />
+          <span
+            className="party-name party-name--desktop"
+          >
+            Labour
+          </span>
+          <span
+            className="party-name party-name--mobile"
+          >
+            Lab
+          </span>
+        </td>
+        <td
+          className="bar-change bar-change--others--zero"
+        >
+          <span
+            className="bar-container"
+          >
+            <span
+              className="bar"
+              style={
+                Object {
+                  "backgroundColor": "#cf4d3c",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="bar bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="centre-line"
+              style={
+                Object {
+                  "left": "NaN%",
+                }
+              }
+            />
+          </span>
+        </td>
+        <td
+          className="change"
+        >
+          0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#ffdf00",
+              }
+            }
+          />
+          <span
+            className="party-name party-name--desktop"
+          >
+            Scottish National party
+          </span>
+          <span
+            className="party-name party-name--mobile"
+          >
+            SNP
+          </span>
+        </td>
+        <td
+          className="bar-change bar-change--others--zero"
+        >
+          <span
+            className="bar-container"
+          >
+            <span
+              className="bar"
+              style={
+                Object {
+                  "backgroundColor": "#ffdf00",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="bar bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0)",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="centre-line"
+              style={
+                Object {
+                  "left": "NaN%",
+                }
+              }
+            />
+          </span>
+        </td>
+        <td
+          className="change"
+        >
+          0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#f09000",
+              }
+            }
+          />
+          <span
+            className="party-name party-name--desktop"
+          >
+            Liberal Democrats
+          </span>
+          <span
+            className="party-name party-name--mobile"
+          >
+            Lib Dem
+          </span>
+        </td>
+        <td
+          className="bar-change bar-change--others--zero"
+        >
+          <span
+            className="bar-container"
+          >
+            <span
+              className="bar"
+              style={
+                Object {
+                  "backgroundColor": "#f09000",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="bar bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="centre-line"
+              style={
+                Object {
+                  "left": "NaN%",
+                }
+              }
+            />
+          </span>
+        </td>
+        <td
+          className="change"
+        >
+          0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#210066",
+              }
+            }
+          />
+          <span
+            className="party-name party-name--desktop"
+          >
+            Democratic Unionist party
+          </span>
+          <span
+            className="party-name party-name--mobile"
+          >
+            DUP
+          </span>
+        </td>
+        <td
+          className="bar-change bar-change--others--zero"
+        >
+          <span
+            className="bar-container"
+          >
+            <span
+              className="bar"
+              style={
+                Object {
+                  "backgroundColor": "#210066",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="bar bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.5)",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="centre-line"
+              style={
+                Object {
+                  "left": "NaN%",
+                }
+              }
+            />
+          </span>
+        </td>
+        <td
+          className="change"
+        >
+          0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#006643",
+              }
+            }
+          />
+          <span
+            className="party-name party-name--desktop"
+          >
+            Sinn Féin
+          </span>
+          <span
+            className="party-name party-name--mobile"
+          >
+            SF
+          </span>
+        </td>
+        <td
+          className="bar-change bar-change--others--zero"
+        >
+          <span
+            className="bar-container"
+          >
+            <span
+              className="bar"
+              style={
+                Object {
+                  "backgroundColor": "#006643",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="bar bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="centre-line"
+              style={
+                Object {
+                  "left": "NaN%",
+                }
+              }
+            />
+          </span>
+        </td>
+        <td
+          className="change"
+        >
+          0
+        </td>
+      </tr>
+      <tr
+        className="row row--others"
+      >
+        <td
+          className="party party--others"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+              }
+            }
+          />
+          <span
+            className="party-name party-name--desktop"
+          >
+            Others
+          </span>
+          <span
+            className="party-name party-name--mobile"
+          >
+            Others
+          </span>
+        </td>
+        <td
+          className="bar-change bar-change--others bar-change--others--zero"
+        >
+          <span
+            className="bar-container"
+          >
+            <span
+              className="bar"
+              style={
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="bar bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="centre-line"
+              style={
+                Object {
+                  "left": "NaN%",
+                }
+              }
+            />
+          </span>
+        </td>
+        <td
+          className="change"
+        >
+          0
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div
+    className="g-net-change-bar-chart__footnote"
+  >
+    APNI
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    UUP
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    
+  </div>
+</div>
+`;
+
 exports[`Storyshots Elections|GE2019/Race Result Indicator Scottish National Party Will Always Be Snp 1`] = `
 <div
   style={
