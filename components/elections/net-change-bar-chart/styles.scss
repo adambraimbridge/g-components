@@ -110,6 +110,12 @@
           }
         }
 
+        &--others--zero {
+          .bar {
+            border: none;
+          }
+        }
+
         .bar-container {
           display: inline-block;
           width: 100%;
