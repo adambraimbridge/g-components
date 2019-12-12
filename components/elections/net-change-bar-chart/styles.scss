@@ -88,7 +88,7 @@
       }
 
       &:nth-child(n + 2) {
-        text-align: right;
+        text-align: center;
       }
 
       &.bar-change {
@@ -107,6 +107,12 @@
         &--others--negative {
           .bar {
             border-right: none;
+          }
+        }
+
+        &--others--zero {
+          .bar {
+            border: none;
           }
         }
 

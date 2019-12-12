@@ -72,7 +72,11 @@ const NetChangeBarChart = ({ className, title, tableHeaders, data, showShortPart
                 </td>
                 <td
                   className={`bar-change${isOthers ? ' bar-change--others' : ''}${
-                    seatChange < 0 ? ' bar-change--others--negative' : ''
+                    seatChange < 0
+                      ? ' bar-change--others--negative'
+                      : seatChange === 0
+                      ? ' bar-change--others--zero'
+                      : ''
                   }`}
                 >
                   <span className="bar-container">
