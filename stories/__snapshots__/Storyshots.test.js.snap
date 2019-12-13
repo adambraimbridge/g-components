@@ -9420,7 +9420,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic End 1`] = `
         <td
           className="voteshare"
         >
-          0.8
+          0.9
         </td>
       </tr>
       <tr
@@ -10149,64 +10149,6 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic Middle 1`] = `
             className="party-badge"
             style={
               Object {
-                "backgroundColor": "#210066",
-              }
-            }
-          />
-          <span
-            className="party-bar-container"
-          >
-            <span
-              className="party-bar"
-              style={
-                Object {
-                  "backgroundColor": "#210066",
-                  "width": "0.8955223880597015%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--overlay"
-              style={
-                Object {
-                  "backgroundColor": "rgba(255, 255, 255, 0.5)",
-                  "width": "0.8955223880597015%",
-                }
-              }
-            />
-            <span
-              className="party-name party-name--desktop"
-            >
-              Democratic Unionist party
-            </span>
-            <span
-              className="party-name party-name--mobile"
-            >
-              DUP
-            </span>
-          </span>
-        </td>
-        <td
-          className="seats"
-        >
-          3
-        </td>
-        <td
-          className="voteshare"
-        >
-          0.7
-        </td>
-      </tr>
-      <tr
-        className="row"
-      >
-        <td
-          className="party"
-        >
-          <span
-            className="party-badge"
-            style={
-              Object {
                 "backgroundColor": "#8deb9d",
               }
             }
@@ -10263,6 +10205,64 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic Middle 1`] = `
           className="voteshare"
         >
           5.0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#210066",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#210066",
+                  "width": "0.8955223880597015%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.5)",
+                  "width": "0.8955223880597015%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Democratic Unionist party
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              DUP
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          3
+        </td>
+        <td
+          className="voteshare"
+        >
+          0.7
         </td>
       </tr>
       <tr
