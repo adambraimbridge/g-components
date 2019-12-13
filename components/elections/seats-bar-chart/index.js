@@ -49,7 +49,11 @@ const SeatsBarChart = ({
 
   const sortedFiltered = seatsData
     .filter(({ isInTable, isOthers }) => isInTable && !isOthers)
-    .sort((a, b) => b.seatsCeiling - a.seatsCeiling);
+    .sort((a, b) =>
+      b.seatsCeiling - a.seatsCeiling !== 0
+        ? b.seatsCeiling - a.seatsCeiling
+        : b.voteShare - a.voteShare,
+    );
   const tableData = [...sortedFiltered, sortedFiltered.length && othersData].filter(d => d);
 
   const maxSeats = tableData.reduce((acc, { seatsCeiling }) => Math.max(acc, seatsCeiling), 0);
