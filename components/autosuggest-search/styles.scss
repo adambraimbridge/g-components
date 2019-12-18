@@ -47,7 +47,8 @@
     width: 100%;
 
     ul li {
-      font-family: MetricWeb, sans-serif;
+      font-family: MetricWeb, sans-serif !important;
+      line-height: normal !important;
     }
 
     ul li:before {
@@ -59,7 +60,6 @@
     font-family: MetricWeb, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    text-transform: uppercase;
     color: #33302e;
     background-color: #ffffff;
     margin-top: 0;

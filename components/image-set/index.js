@@ -19,43 +19,29 @@ function getImageURL(imgString, width) {
   return imageUUID(imgString, width);
 }
 
-const imageSet = ({ graphicsData }) => (
+const ImageSet = ({ alt, sources }) => (
   <div className="g-imageset">
     <figure>
       <picture>
-        {graphicsData.sources && graphicsData.sources.small && (
-          <source
-            media="screen and (max-width: 490px)"
-            srcSet={getImageURL(graphicsData.sources.small, 490)}
-          />
+        {sources && sources.small && (
+          <source media="screen and (max-width: 490px)" srcSet={getImageURL(sources.small, 490)} />
         )}
-        {graphicsData.sources && graphicsData.sources.large && (
-          <source
-            media="screen and (min-width: 980px)"
-            srcSet={getImageURL(graphicsData.sources.large, 1260)}
-          />
+        {sources && sources.large && (
+          <source media="screen and (min-width: 980px)" srcSet={getImageURL(sources.large, 1260)} />
         )}
-        {graphicsData.sources && graphicsData.sources.medium && (
-          <img srcSet={getImageURL(graphicsData.sources.medium, 700)} alt={graphicsData.alt} />
-        )}
+        {sources && sources.medium && <img srcSet={getImageURL(sources.medium, 700)} alt={alt} />}
       </picture>
     </figure>
   </div>
 );
 
-imageSet.propTypes = {
-  graphicsData: PropTypes.objectOf({
-    alt: PropTypes.string.isRequired,
-    sources: PropTypes.objectOf({
-      small: PropTypes.string,
-      medium: PropTypes.string,
-      large: PropTypes.string,
-    }).isRequired,
-  }),
+ImageSet.propTypes = {
+  alt: PropTypes.string.isRequired,
+  sources: PropTypes.shape({
+    small: PropTypes.string,
+    medium: PropTypes.string,
+    large: PropTypes.string,
+  }).isRequired,
 };
 
-imageSet.defaultProps = {
-  graphicsData: {},
-};
-
-export default imageSet;
+export default ImageSet;

@@ -212,6 +212,22 @@ exports[`Storyshots Core|Autosuggest Search Mp Lookup Example 1`] = `
 </form>
 `;
 
+exports[`Storyshots Core|Card Basic 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1em",
+    }
+  }
+>
+  <div
+    className="g-card"
+  >
+    This is a basic card component
+  </div>
+</div>
+`;
+
 exports[`Storyshots Core|Comments Basic 1`] = `
 <div
   className="o-grid-container"
@@ -673,6 +689,1653 @@ exports[`Storyshots Core|Footer Basic 1`] = `
 </footer>
 `;
 
+exports[`Storyshots Core|Grid/Grid Default Grid 1`] = `
+Array [
+  <div
+    className="o-grid-container"
+  >
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="1"
+      >
+        <div
+          className="demo-cell"
+        >
+          1
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="2"
+      >
+        <div
+          className="demo-cell"
+        >
+          2
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="2"
+      >
+        <div
+          className="demo-cell"
+        >
+          2
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="2"
+      >
+        <div
+          className="demo-cell"
+        >
+          2
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="2"
+      >
+        <div
+          className="demo-cell"
+        >
+          2
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="2"
+      >
+        <div
+          className="demo-cell"
+        >
+          2
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="2"
+      >
+        <div
+          className="demo-cell"
+        >
+          2
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="3"
+      >
+        <div
+          className="demo-cell"
+        >
+          3
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="3"
+      >
+        <div
+          className="demo-cell"
+        >
+          3
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="3"
+      >
+        <div
+          className="demo-cell"
+        >
+          3
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="3"
+      >
+        <div
+          className="demo-cell"
+        >
+          3
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="4"
+      >
+        <div
+          className="demo-cell"
+        >
+          4
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="4"
+      >
+        <div
+          className="demo-cell"
+        >
+          4
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="4"
+      >
+        <div
+          className="demo-cell"
+        >
+          4
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row o-grid-row--compact"
+    >
+      <div
+        data-o-grid-colspan="6"
+      >
+        <div
+          className="demo-cell"
+        >
+          6 (compact)
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="6"
+      >
+        <div
+          className="demo-cell"
+        >
+          6 (compact)
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="12"
+      >
+        <div
+          className="demo-cell"
+        >
+          12
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="8 S12 M8"
+      >
+        <div
+          className="demo-cell"
+        >
+          <span
+            data-demo-highlight="default"
+          >
+            8
+          </span>
+          <span
+            data-demo-highlight="S"
+          >
+            S12
+          </span>
+          <span
+            data-demo-highlight="M L XL"
+          >
+            M8
+          </span>
+          <div
+            className="o-grid-row"
+          >
+            <div
+              data-o-grid-colspan="6 S12 M6 XL3"
+            >
+              <div
+                className="demo-cell"
+              >
+                <span
+                  data-demo-highlight="default"
+                >
+                  6
+                </span>
+                <span
+                  data-demo-highlight="S"
+                >
+                  S12
+                </span>
+                <span
+                  data-demo-highlight="M L"
+                >
+                  M6
+                </span>
+                <span
+                  data-demo-highlight="XL"
+                >
+                  XL3
+                </span>
+              </div>
+            </div>
+            <div
+              data-o-grid-colspan="6 S12 M6 XL3"
+            >
+              <div
+                className="demo-cell"
+              >
+                <span
+                  data-demo-highlight="default"
+                >
+                  6
+                </span>
+                <span
+                  data-demo-highlight="S"
+                >
+                  S12
+                </span>
+                <span
+                  data-demo-highlight="M L"
+                >
+                  M6
+                </span>
+                <span
+                  data-demo-highlight="XL"
+                >
+                  XL3
+                </span>
+              </div>
+            </div>
+            <div
+              data-o-grid-colspan="6 S12 M6 XL3"
+            >
+              <div
+                className="demo-cell"
+              >
+                <span
+                  data-demo-highlight="default"
+                >
+                  6
+                </span>
+                <span
+                  data-demo-highlight="S"
+                >
+                  S12
+                </span>
+                <span
+                  data-demo-highlight="M L"
+                >
+                  M6
+                </span>
+                <span
+                  data-demo-highlight="XL"
+                >
+                  XL3
+                </span>
+              </div>
+            </div>
+            <div
+              data-o-grid-colspan="6 S12 M6 XL3"
+            >
+              <div
+                className="demo-cell"
+              >
+                <span
+                  data-demo-highlight="default"
+                >
+                  6
+                </span>
+                <span
+                  data-demo-highlight="S"
+                >
+                  S12
+                </span>
+                <span
+                  data-demo-highlight="M L"
+                >
+                  M6
+                </span>
+                <span
+                  data-demo-highlight="XL"
+                >
+                  XL3
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="4 S12 M4"
+      >
+        <div
+          className="demo-cell"
+        >
+          <span
+            data-demo-highlight="default"
+          >
+            4
+          </span>
+          <span
+            data-demo-highlight="S"
+          >
+            S12
+          </span>
+          <span
+            data-demo-highlight="M L XL"
+          >
+            M4
+          </span>
+          <div
+            className="o-grid-row"
+          >
+            <div
+              data-o-grid-colspan="12 L7 XL6"
+            >
+              <div
+                className="demo-cell"
+              >
+                <span
+                  data-demo-highlight="default S M"
+                >
+                  12
+                </span>
+                <span
+                  data-demo-highlight="L"
+                >
+                  L7
+                </span>
+                <span
+                  data-demo-highlight="XL"
+                >
+                  XL6
+                </span>
+              </div>
+            </div>
+            <div
+              data-o-grid-colspan="12 L5 XL6"
+            >
+              <div
+                className="demo-cell"
+              >
+                <span
+                  data-demo-highlight="default S M"
+                >
+                  12
+                </span>
+                <span
+                  data-demo-highlight="L"
+                >
+                  L5
+                </span>
+                <span
+                  data-demo-highlight="XL"
+                >
+                  XL6
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="one-half"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-half
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="one-quarter"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-quarter
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="one-quarter"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-quarter
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="one-third"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-third
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="two-thirds"
+      >
+        <div
+          className="demo-cell"
+        >
+          two-thirds
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="one-third push8"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-third push8 (first in source)
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="two-thirds pull4"
+      >
+        <div
+          className="demo-cell"
+        >
+          two-thirds pull4 (last in source)
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="one-third center"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-third center
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="one-half"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-half
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="one-quarter"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-quarter
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="one-quarter"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-quarter
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="one-quarter"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-quarter
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="one-quarter"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-quarter
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="one-third"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-third
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="one-third"
+      >
+        <div
+          className="demo-cell"
+        >
+          one-third
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="two-thirds"
+      >
+        <div
+          className="demo-cell"
+        >
+          two-thirds
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="full-width"
+      >
+        <div
+          className="demo-cell"
+        >
+          full-width
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="full-width"
+      >
+        <div
+          className="demo-cell"
+        >
+          full-width
+        </div>
+      </div>
+    </div>
+  </div>,
+  <p
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    With container bleed:
+  </p>,
+  <div
+    className="o-grid-container  o-grid-container--bleed"
+  >
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-grid-colspan="6"
+      >
+        <div
+          class="demo-cell"
+        >
+          6
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="6"
+      >
+        <div
+          class="demo-cell"
+        >
+          6
+        </div>
+      </div>
+    </div>
+    <div
+      className="o-grid-row o-grid-row--compact"
+    >
+      <div
+        data-o-grid-colspan="6"
+      >
+        <div
+          class="demo-cell"
+        >
+          6 (compact)
+        </div>
+      </div>
+      <div
+        data-o-grid-colspan="6"
+      >
+        <div
+          class="demo-cell"
+        >
+          6 (compact)
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Core|Grid/GridChild Default Unresponsive Columns 1`] = `
+<div
+  className="o-grid-container"
+>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="1"
+    >
+      <div
+        className="demo-cell"
+      >
+        1
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="2"
+    >
+      <div
+        className="demo-cell"
+      >
+        2
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="3"
+    >
+      <div
+        className="demo-cell"
+      >
+        3
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="4"
+    >
+      <div
+        className="demo-cell"
+      >
+        4
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="5"
+    >
+      <div
+        className="demo-cell"
+      >
+        5
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="6"
+    >
+      <div
+        className="demo-cell"
+      >
+        6
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="7"
+    >
+      <div
+        className="demo-cell"
+      >
+        7
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="8"
+    >
+      <div
+        className="demo-cell"
+      >
+        8
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="9"
+    >
+      <div
+        className="demo-cell"
+      >
+        9
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="10"
+    >
+      <div
+        className="demo-cell"
+      >
+        10
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="11"
+    >
+      <div
+        className="demo-cell"
+      >
+        11
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12"
+    >
+      <div
+        className="demo-cell"
+      >
+        12
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Grid/GridChild Flexbox Interaction 1`] = `
+<div
+  className="o-grid-container"
+>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      className="demo-flex"
+      data-o-grid-colspan="12 S12 M12 L4 XL4"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M12 L4 XL4
+        <br />
+        and a lots and lots and lots and lots of extra text to make the columns different heights
+      </div>
+    </div>
+    <div
+      className="demo-flex"
+      data-o-grid-colspan="12 S12 M12 L8 XL8"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M12 L8 XL8
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      className="demo-flex"
+      data-o-grid-colspan="12 S12 M12 L4 XL4"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M12 L4 XL4
+      </div>
+    </div>
+    <div
+      className="demo-flex"
+      data-o-grid-colspan="12 S12 M12 L4 XL4"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M12 L4 XL4
+        <br />
+        and a lots and lots and lots and lots of extra text to make the columns different heights
+      </div>
+    </div>
+    <div
+      className="demo-flex"
+      data-o-grid-colspan="12 S12 M12 L4 XL4"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M12 L4 XL4
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      className="demo-flex"
+      data-o-grid-colspan="12 S12 M12 L8 XL8"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M12 L8 XL8
+      </div>
+    </div>
+    <div
+      className="demo-flex"
+      data-o-grid-colspan="12 S12 M12 L4 XL4"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M12 L4 XL4
+        <br />
+        and a lots and lots and lots and lots of extra text to make the columns different heights
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Grid/GridChild Keywords 1`] = `
+<div
+  className="o-grid-container"
+>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="one-half"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-half
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="one-third"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-third
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan="two-thirds"
+    >
+      <div
+        className="demo-cell"
+      >
+        two-thirds
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="one-quarter"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-quarter
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan="three-quarters"
+    >
+      <div
+        className="demo-cell"
+      >
+        three-quarters
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="one-half Mone-third Lone-quarter XLone-half"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-half Mone-third Lone-quarter XLone-half
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan="one-half Mtwo-thirds Lthree-quarters XLone-half"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-half Mtwo-thirds Lthree-quarters XLone-half
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="5 center M6 L9 Luncenter XL6 XLcenter"
+    >
+      <div
+        className="demo-cell"
+      >
+        5 center M6 L9 Luncenter XL6 XLcenter
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="one-half Scenter Muncenter Lcenter XLuncenter"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-half Scenter Muncenter Lcenter XLuncenter
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="one-half offset3 push2"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-half offset3 push2
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="one-half Spush5 Mpush0 Lpush4 L7 Loffset1 XLpush2 XL5 XLoffset1"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-half Spush5 Mpush0 Lpush4 L7 Loffset1 XLpush2 XL5 XLoffset1
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan="one-half Spull5 Mpull0 Lpull8 L4 XLpull2 XL5"
+    >
+      <div
+        className="demo-cell"
+      >
+        one-half Spull5 Mpull0 Lpull8 L4 XLpull2 XL5
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Grid/GridChild Nested Grids 1`] = `
+<div
+  className="o-grid-container"
+>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="8 S12 M11 L10 XL9"
+    >
+      <div
+        className="demo-cell"
+      >
+        8 S12 M11 L10 XL9
+        <div
+          className="o-grid-row"
+        >
+          <div
+            data-o-grid-colspan="8 S12 M11 L10 XL9"
+          >
+            <div
+              className="demo-cell"
+            >
+              8 S12 M11 L10 XL9
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S12 M12 L12 XL12"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M12 L12 XL12
+        <div
+          className="o-grid-row"
+        >
+          <div
+            data-o-grid-colspan="6 S6 M6 L6 XL6"
+          >
+            <div
+              className="demo-cell"
+            >
+              S6 M6 L6 XL6
+            </div>
+          </div>
+          <div
+            data-o-grid-colspan="6 S6 M6 L6 XL6"
+          >
+            <div
+              className="demo-cell"
+            >
+              S6 M6 L6 XL6
+              <div
+                className="o-grid-row"
+              >
+                <div
+                  data-o-grid-colspan="6 S6 M6 L6 XL6"
+                >
+                  <div
+                    className="demo-cell"
+                  >
+                    S6 M6 L6 XL6
+                  </div>
+                </div>
+                <div
+                  data-o-grid-colspan="6 S6 M6 L6 XL6"
+                >
+                  <div
+                    className="demo-cell"
+                  >
+                    S6 M6 L6 XL6
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Grid/GridChild Overridability Of Default And Layout Specific Styles By Other Layouts 1`] = `
+<div
+  className="o-grid-container"
+>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S0 M12 L11 XL10"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S0 M12 L11 XL10
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S1 M0 L12 XL11"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S1 M0 L12 XL11
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S2 M1 L0 XL12"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S2 M1 L0 XL12
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S3 M2 L1 XL0"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S3 M2 L1 XL0
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S4 M3 L2 XL1"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S4 M3 L2 XL1
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S5 M4 L3 XL2"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S5 M4 L3 XL2
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S6 M5 L4 XL3"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S6 M5 L4 XL3
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S7 M6 L5 XL4"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S7 M6 L5 XL4
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S8 M7 L6 XL5"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S8 M7 L6 XL5
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S9 M8 L7 XL6"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S9 M8 L7 XL6
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S10 M9 L8 XL7"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S10 M9 L8 XL7
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S11 M10 L9 XL8"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S11 M10 L9 XL8
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S12 M11 L10 XL9"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S12 M11 L10 XL9
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Grid/GridChild Overriding Of Default Width 1`] = `
+<div
+  className="o-grid-container"
+>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="0 M12 L11 XL10"
+    >
+      <div
+        className="demo-cell"
+      >
+        0 M12 L11 XL10
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="1 M6 L12 XL11"
+    >
+      <div
+        className="demo-cell"
+      >
+        1 M6 L12 XL11
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="3 M2 L1 XL12"
+    >
+      <div
+        className="demo-cell"
+      >
+        3 M2 L1 XL12
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan="12 S3 M4 L4 XL4"
+    >
+      <div
+        className="demo-cell"
+      >
+        12 S3 M4 L4 XL4
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Grid/GridContainer Full Bleed Grid Container 1`] = `
+<div
+  className="o-grid-container  o-grid-container--bleed"
+>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan={6}
+    >
+      <div
+        className="demo-cell"
+      >
+        normal row
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan={6}
+    >
+      <div
+        className="demo-cell"
+      >
+        normal row
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row o-grid-row--compact"
+  >
+    <div
+      data-o-grid-colspan={6}
+    >
+      <div
+        className="demo-cell"
+      >
+        compact row
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan={6}
+    >
+      <div
+        className="demo-cell"
+      >
+        compact row
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Grid/GridContainer Snappy Container 1`] = `
+<div
+  className="o-grid-container o-grid-container--snappy"
+>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan={12}
+    >
+      <div
+        className="demo-cell"
+      >
+        <code>
+          .o-grid-snappy
+        </code>
+         Applied to parent of full-width row
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan={6}
+    >
+      <div
+        className="demo-cell"
+      >
+        <code>
+          .o-grid-snappy
+        </code>
+         Applied to parent
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan={6}
+    >
+      <div
+        className="demo-cell"
+      >
+        <code>
+          .o-grid-snappy
+        </code>
+         Applied to parent
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row"
+  >
+    <div
+      data-o-grid-colspan={6}
+    >
+      <div
+        className="demo-cell"
+      >
+        <code>
+          .o-grid-snappy
+        </code>
+         Applied to parent of solo row
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Grid/GridRow Compact And Gutterless Columns 1`] = `
+<div
+  className="o-grid-container"
+>
+  <div
+    className="o-grid-row o-grid-row--compact"
+  >
+    <div
+      data-o-grid-colspan="6"
+    >
+      <div
+        className="demo-cell"
+      >
+        no gutters (applied using o-grid-row--compact)
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan="6"
+    >
+      <div
+        className="demo-cell"
+      >
+        no gutters (applied using o-grid-row--compact)
+      </div>
+    </div>
+  </div>
+  <div
+    className="o-grid-row o-grid-row--compact"
+  >
+    <div
+      data-o-grid-colspan="6 push6"
+    >
+      <div
+        className="demo-cell"
+      >
+        First in source
+      </div>
+    </div>
+    <div
+      data-o-grid-colspan="6 pull6"
+    >
+      <div
+        className="demo-cell"
+      >
+        Last in source
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Core|HTML Head Basic 1`] = `""`;
 
 exports[`Storyshots Core|Header Basic 1`] = `
@@ -711,7 +2374,28 @@ exports[`Storyshots Core|Header Basic 1`] = `
 </header>
 `;
 
-exports[`Storyshots Core|Image Set Basic 1`] = `""`;
+exports[`Storyshots Core|Image Set Basic 1`] = `
+<div
+  className="g-imageset"
+>
+  <figure>
+    <picture>
+      <source
+        media="screen and (max-width: 490px)"
+        srcSet="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2F61b2c912-0d49-11ea-bb52-34c8d9dc6d84?source=ig&amp;fit=scale-down&amp;quality=highest&amp;width=490"
+      />
+      <source
+        media="screen and (min-width: 980px)"
+        srcSet="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2F5c9b8478-0d49-11ea-bb52-34c8d9dc6d84?source=ig&amp;fit=scale-down&amp;quality=highest&amp;width=1260"
+      />
+      <img
+        alt="Demo image set"
+        srcSet="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2F5f35b8b6-0d49-11ea-bb52-34c8d9dc6d84?source=ig&amp;fit=scale-down&amp;quality=highest&amp;width=700"
+      />
+    </picture>
+  </figure>
+</div>
+`;
 
 exports[`Storyshots Core|Last Updated Default Live Variant 1`] = `
 <div
@@ -724,14 +2408,6 @@ exports[`Storyshots Core|Last Updated Default Live Variant 1`] = `
     <div
       className="o-teaser__content"
     >
-      Last updated 
-      <time
-        className="o-date"
-        data-o-component="o-date"
-        dateTime="2019-01-31T00:00:00.000Z"
-      >
-        0 seconds ago
-      </time>
       <div
         className="o-teaser__timestamp o-teaser__timestamp--inprogress"
         style={
@@ -744,6 +2420,14 @@ exports[`Storyshots Core|Last Updated Default Live Variant 1`] = `
           className="o-teaser__timestamp-prefix"
         />
       </div>
+      Last updated 
+      <time
+        className="o-date"
+        data-o-component="o-date"
+        dateTime="2019-01-31T00:00:00.000Z"
+      >
+        0 seconds ago
+      </time>
     </div>
   </div>
 </div>
@@ -764,6 +2448,41 @@ exports[`Storyshots Core|Last Updated Light Variant 1`] = `
     </time>
   </span>
 </div>
+`;
+
+exports[`Storyshots Core|Last Updated No Date Provided Live 1`] = `
+<div
+  className="last-updated last-updated--live"
+>
+  <div
+    className="o-teaser o-teaser--small"
+    data-o-component="o-teaser"
+  >
+    <div
+      className="o-teaser__content"
+    >
+      <div
+        className="o-teaser__timestamp o-teaser__timestamp--inprogress"
+        style={
+          Object {
+            "display": "inline-block",
+          }
+        }
+      >
+        <span
+          className="o-teaser__timestamp-prefix"
+        />
+      </div>
+      Live
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Last Updated No Date Provided Not Live Invisible 1`] = `
+<div
+  className="last-updated"
+/>
 `;
 
 exports[`Storyshots Core|Layout Basic 1`] = `
@@ -810,12 +2529,12 @@ Array [
       itemType="http://schema.org/Article"
     >
       <div
-        className="article-head o-grid-container"
+        className="article-head"
       >
         <div
           className="o-grid-row"
         >
-          <header
+          <div
             data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
           >
             <div>
@@ -944,7 +2663,7 @@ Array [
                 Thursday, 31 January 2019
               </span>
             </div>
-          </header>
+          </div>
         </div>
       </div>
       <div
@@ -955,7 +2674,7 @@ Array [
           className="o-grid-container"
         >
           <div
-            className="o-grid-row "
+            className="o-grid-row"
           >
             <div
               data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
@@ -1409,12 +3128,12 @@ Array [
       itemType="http://schema.org/Article"
     >
       <div
-        className="article-head o-grid-container"
+        className="article-head"
       >
         <div
           className="o-grid-row"
         >
-          <header
+          <div
             data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
           >
             <div>
@@ -1543,7 +3262,7 @@ Array [
                 Thursday, 31 January 2019
               </span>
             </div>
-          </header>
+          </div>
         </div>
       </div>
       <div
@@ -1554,7 +3273,7 @@ Array [
           className="o-grid-container"
         >
           <div
-            className="o-grid-row "
+            className="o-grid-row"
           >
             <div
               data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
@@ -1566,6 +3285,610 @@ Array [
                   headline="New Starter Kit site"
                   id="3a499586-b2e0-11e4-a058-00144feab7de"
                   publishedDate="2019-01-31T00:00:00.000Z"
+                  title="New Starter Kit site"
+                  topic={
+                    Object {
+                      "name": "Testing",
+                      "url": "https://local.ft.com/",
+                    }
+                  }
+                  url="https://local.ft.com/"
+                  wrapArticleHead={true}
+                >
+                  Lorem ipsum dolor sit amet, esse mediocritatem et eos, ex cum nostrum singulis inciderint.
+Error vitae molestie ea sit, cu usu facilis deleniti, nec ea novum solet. No pro labores
+omnesque, duo ut tractatos accusamus. Usu vitae mollis ut, cetero detraxit cu qui. Et elitr
+dolore praesent est.
+Ex his oratio perpetua expetendis, commune suscipiantur nec at, vel lorem atqui option ne.
+Habeo congue vel te. Ex quo summo principes. Eu dicta solet molestiae eam, eu ius primis
+consectetuer. Ei dicant numquam omittam qui. Vim dicunt nostrud volutpat ex, cu mel
+gubergren constituto.
+Ad qui wisi minimum cotidieque, ea vis esse discere intellegam. Et omnium inimicus vim. Ea
+sale dicam homero ius. Impedit eligendi delicata in mel, vis soluta temporibus an, ex vis
+vide laoreet. No per hinc ferri mediocritatem, eam modus ubique atomorum ne. Iudico offendit
+ut his.
+Mel fastidii eleifend no, ut oratio intellegam cum. Iudico dignissim sadipscing ei mel. At
+laudem legendos erroribus eos. Aliquid dolorem dissentiunt eos cu. Eros suscipiantur mea ei,
+tantas vituperata vis ad. Pri et dicunt regione, ut quando volutpat abhorreant eos.
+Ad cum saperet docendi, ex habeo nemore euismod vix, usu semper instructior cu. Natum
+salutatus consetetur sit cu. Ad erroribus complectitur vis. Ne possim similique vis. Ne enim
+soluta vix, quis natum ne qui, ei vidit latine partiendo mei. Mel ea duis essent vivendo.
+                </p>
+                <div
+                  aria-hidden="true"
+                  className="o-ads o-ads--center o-ads--background o-ads--reserve-250"
+                  data-o-ads-formats-default="Responsive"
+                  data-o-ads-formats-extra="MediumRectangle,Responsive"
+                  data-o-ads-formats-large="MediumRectangle,Responsive"
+                  data-o-ads-formats-medium="MediumRectangle,Responsive"
+                  data-o-ads-formats-small="MediumRectangle,Responsive"
+                  data-o-ads-name="mid-ad"
+                  data-o-ads-targeting="pos=mid;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer
+          className="o-typography-footer"
+          itemProp="publisher"
+          itemScope={true}
+          itemType="https://schema.org/Organization"
+        >
+          <div
+            className="o-grid-container"
+          >
+            <div
+              className="o-grid-row"
+            >
+              <div
+                data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+              >
+                <small>
+                  <a
+                    data-trackable="link-copyright"
+                    href="http://www.ft.com/servicestools/help/copyright"
+                  >
+                    Copyright
+                  </a>
+                   
+                  <span
+                    itemProp="name"
+                  >
+                    The Financial Times
+                  </span>
+                   Limited
+                   
+                  2019
+                  . All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.
+                </small>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </article>
+  </main>,
+  <div
+    className="pink"
+  >
+    <div
+      className="o-grid-container"
+    >
+      <div
+        className="o-grid-row"
+      >
+        <div
+          data-o-component="o-comments"
+          data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+          id="comments"
+        >
+          <div
+            className="o--if-no-js"
+          >
+            To participate in this chat, you need to upgrade to a newer web browser.
+             
+            <a
+              href="http://help.ft.com/tools-services/browser-compatibility/"
+            >
+              Learn more.
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <footer
+    className="o-footer o-footer--theme-dark"
+    data-o-component="o-footer"
+    data-o-footer--no-js=""
+  >
+    <div
+      className="o-footer__container"
+    >
+      <div
+        className="o-footer__row"
+      >
+        <nav
+          aria-label="Useful links"
+          className="o-footer__matrix"
+        >
+          <div
+            className="o-footer__matrix-group o-footer__matrix-group--1"
+          >
+            <div
+              className="o-footer__matrix-title"
+            >
+              Support
+            </div>
+            <div
+              className="o-footer__matrix-content"
+              id="o-footer-section-0"
+            >
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/help"
+                >
+                  Help
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/aboutus"
+                >
+                  About Us
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="o-footer__matrix-group o-footer__matrix-group--1"
+          >
+            <div
+              className="o-footer__matrix-title"
+            >
+              Legal & Privacy
+            </div>
+            <div
+              className="o-footer__matrix-content"
+              id="o-footer-section-1"
+            >
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/servicestools/help/terms"
+                >
+                  Terms & Conditions
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/servicestools/help/privacy"
+                >
+                  Privacy
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/cookiepolicy"
+                >
+                  Cookies
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/servicestools/help/copyright"
+                >
+                  Copyright
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="o-footer__matrix-group o-footer__matrix-group--2"
+          >
+            <div
+              aria-controls="o-footer-section-2"
+              className="o-footer__matrix-title"
+            >
+              Services
+            </div>
+            <div
+              className="o-footer__matrix-content"
+              id="o-footer-section-2"
+            >
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//sub.ft.com/spa_5"
+                >
+                  Individual Subscriptions
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//enterprise.ft.com/en-gb/services/group-subscriptions/"
+                >
+                  Group Subscriptions
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//enterprise.ft.com/en-gb/services/republishing/"
+                >
+                  Republishing
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.businessesforsale.com/ft2/notices"
+                >
+                  Contracts & Tenders
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//commerce.uk.reuters.com/purchase/mostPopular.do?rpc&#x3D;471"
+                >
+                  Analysts Research
+                </a>
+              </div>
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.exec-appointments.com/"
+                >
+                  Executive Job Search
+                </a>
+                <a
+                  aria-label="Advertise with the F T"
+                  className="o-footer__matrix-link"
+                  href="//fttoolkit.co.uk/d/"
+                >
+                  Advertise with the FT
+                </a>
+                <a
+                  aria-label="Follow the F T on Twitter"
+                  className="o-footer__matrix-link"
+                  href="//twitter.com/ft"
+                >
+                  Follow the FT on Twitter
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="o-footer__matrix-group o-footer__matrix-group--2"
+          >
+            <div
+              aria-controls="o-footer-section-3"
+              className="o-footer__matrix-title"
+            >
+              Tools
+            </div>
+            <div
+              className="o-footer__matrix-content"
+              id="o-footer-section-3"
+            >
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//markets.ft.com/data/portfolio/dashboard"
+                >
+                  Portfolio
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//ftepaper.ft.com"
+                >
+                  Today's Paper
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//markets.ft.com/data/alerts/"
+                >
+                  Alerts Hub
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//rankings.ft.com/businessschoolrankings/global-mba-ranking-2016"
+                >
+                  MBA Rankings
+                </a>
+              </div>
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//markets.ft.com/Research/Economic-Calendar"
+                >
+                  Economic Calendar
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//nbe.ft.com/nbe/profile.cfm"
+                >
+                  Newsletters
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//markets.ft.com/research/Markets/Currencies?segid&#x3D;70113"
+                >
+                  Currency Converter
+                </a>
+                <a
+                  aria-label="E-books"
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/ebooks"
+                >
+                  Ebooks
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div
+          className="o-footer__external-link o-footer__matrix-title"
+        >
+          <a
+            className="o-footer__more-from-ft o-footer__matrix-title"
+            href="http://ft.com/more-from-ft-group"
+          >
+            More from the FT Group
+          </a>
+        </div>
+      </div>
+      <div
+        className="o-footer__copyright"
+        role="contentinfo"
+      >
+        <small>
+          Markets data delayed by at least 15 minutes. © THE FINANCIAL TIMES LTD
+           
+          2019
+          . 
+          <abbr
+            aria-label="F T"
+            title="Financial Times"
+          >
+            FT
+          </abbr>
+           
+          and ‘Financial Times’ are trademarks of The Financial Times Ltd.
+          <br />
+          The Financial Times and its journalism are subject to a self-regulation regime under the
+           
+          <a
+            aria-label="F T Editorial Code of Practice"
+            href="http://aboutus.ft.com/en-gb/ft-editorial-code/"
+          >
+            FT Editorial Code of Practice
+          </a>
+          .
+        </small>
+      </div>
+    </div>
+    <div
+      className="o-footer__brand"
+    >
+      <div
+        className="o-footer__container"
+      >
+        <div
+          className="o-footer__brand-logo"
+        />
+      </div>
+    </div>
+  </footer>,
+]
+`;
+
+exports[`Storyshots Core|Layout Full Width Article Body 1`] = `
+Array [
+  <header
+    className="o-header o-header--simple o-header--transparent"
+    data-o-component="o-header"
+    data-o-header--no-js=""
+  >
+    <div
+      className="o-header__row o-header__top"
+    >
+      <div
+        className="o-header__container"
+      >
+        <div
+          className="o-header__top-wrapper"
+        >
+          <div
+            className="o-header__top-column o-header__top-column--center"
+          >
+            <a
+              className="o-header__top-logo"
+              href="http://www.ft.com/"
+              title="Go to Financial Times homepage"
+            >
+              <span
+                className="o-header__visually-hidden"
+              >
+                Financial Times
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>,
+  <main
+    role="main"
+  >
+    <article
+      className="article"
+      itemScope={true}
+      itemType="http://schema.org/Article"
+    >
+      <div
+        className="article-head"
+      >
+        <div
+          className="o-grid-row"
+        >
+          <div
+            data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+          >
+            <div>
+              <a
+                className="o-typography-topic"
+                href="https://local.ft.com/"
+              >
+                Testing
+              </a>
+            </div>
+            <h1
+              className="o-typography-headline"
+              itemProp="headline"
+            >
+              New Starter Kit site
+            </h1>
+            <div
+              className="o-typography-standfirst"
+            >
+              
+               
+              <a
+                className="o-typography-link"
+              />
+            </div>
+            <meta
+              content="2019-01-31T00:00:00.000Z"
+              itemProp="dateModified"
+              suppressHydrationWarning={true}
+            />
+            <figure
+              className="graphic graphic-b-1 graphic-pad-1"
+            >
+              <img
+                src="https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Af07ccec8-7ded-11e8-af48-190d103e32a4?source=ig"
+              />
+              <figcaption
+                className="o-typography-caption"
+              />
+            </figure>
+            <div
+              className="article__share article__share--top n-util-clearfix"
+              data-trackable="share | top"
+            >
+              <div
+                className="container container--inverse"
+              >
+                <div
+                  className="o-share o-share--inverse"
+                  data-o-component="o-share"
+                >
+                  <ul>
+                    <li
+                      className="o-share__action o-share__action--twitter"
+                    >
+                      <a
+                        className="o-share__icon o-share__icon--twitter"
+                        href="https://twitter.com/intent/tweet?url=https://local.ft.com/&amp;text=FT article: &amp;related=&amp;via=FinancialTimes"
+                        rel="noopener"
+                      >
+                        <span
+                          className="o-share__text"
+                        >
+                          Share on Twitter. Opens in a new window.
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      className="o-share__action o-share__icon--facebook"
+                    >
+                      <a
+                        href="http://www.facebook.com/sharer.php?u=https://local.ft.com/"
+                        rel="noopener"
+                      >
+                        <span
+                          className="o-share__text"
+                        >
+                          Share on Facebook. Opens in a new window.
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      className="o-share__action o-share__icon--linkedin"
+                    >
+                      <a
+                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://local.ft.com/&amp;source=Financial%20Times"
+                        rel="noopener"
+                      >
+                        <span
+                          className="o-share__text"
+                        >
+                          Share on LinkedIn. Opens in a new window.
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      className="o-share__action o-share__icon--whatsapp"
+                    >
+                      <a
+                        data-trackable="whatsapp"
+                        href="whatsapp://send?text=New Starter Kit site%20-%20https://local.ft.com/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        <span
+                          className="o-share__text"
+                        >
+                          Share on Whatsapp. Opens in a new window.
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              className="byline"
+            >
+               
+              <span
+                className="o-date o-typography-timestamp"
+                data-o-component="o-date"
+                dateTime="2019-01-31T00:00:00.000Z"
+                suppressHydrationWarning={true}
+              >
+                Thursday, 31 January 2019
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="article-body o-typography-wrapper"
+        itemProp="articleBody"
+      >
+        <div
+          className="o-grid-container"
+        >
+          <div
+            className="o-grid-row"
+          >
+            <div
+              data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+            >
+              <div>
+                <p
+                  breakpoint="default"
+                  buildTime="2019-01-31T00:00:00.000Z"
+                  headline="New Starter Kit site"
+                  id="3a499586-b2e0-11e4-a058-00144feab7de"
+                  publishedDate="2019-01-31T00:00:00.000Z"
+                  span="full-width"
                   title="New Starter Kit site"
                   topic={
                     Object {
@@ -2012,12 +4335,12 @@ Array [
       itemType="http://schema.org/Article"
     >
       <div
-        className="article-head o-grid-container"
+        className="article-head"
       >
         <div
           className="o-grid-row"
         >
-          <header
+          <div
             data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
           >
             <div>
@@ -2153,7 +4476,7 @@ Array [
                 Thursday, 31 January 2019
               </span>
             </div>
-          </header>
+          </div>
         </div>
       </div>
       <div
@@ -2164,7 +4487,7 @@ Array [
           className="o-grid-container"
         >
           <div
-            className="o-grid-row "
+            className="o-grid-row"
           >
             <div
               data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
@@ -2209,7 +4532,7 @@ Array [
                   This should resemble config: 
                   <br />
                   <pre>
-                    {"flags":{"prod":false,"errorReporting":true,"analytics":false,"googleAnalytics":false,"ads":false,"onwardjourney":true,"shareButtons":true,"header":true,"footer":true,"comments":true,"data":false,"dark":false},"ads":{"gptSite":"test.5887.origami","gptZone":false,"dfpTargeting":false},"defaultContainer":true,"customArticleHead":null,"url":"https://local.ft.com/","summary":"This is a standfirst","topic":{"url":"https://local.ft.com/","name":"Testing"},"bylines":[{"name":"Ændrew Rininsland","url":"https://ft.com/ændrew-rininsland"}],"image":{"uuid":"f07ccec8-7ded-11e8-af48-190d103e32a4"},"headline":"New Starter Kit site","title":"New Starter Kit site","id":"3a499586-b2e0-11e4-a058-00144feab7de","pubdate":"2019-01-31T00:00:00.000Z","buildTime":"2019-01-31T00:00:00.000Z","wrapArticleHead":true}
+                    {"flags":{"prod":false,"errorReporting":true,"analytics":false,"googleAnalytics":false,"ads":false,"onwardjourney":true,"shareButtons":true,"header":true,"footer":true,"comments":true,"data":false,"dark":false},"ads":{"gptSite":"test.5887.origami","gptZone":false,"dfpTargeting":false},"defaultContainer":true,"customArticleHead":null,"breakpoint":"default","url":"https://local.ft.com/","summary":"This is a standfirst","topic":{"url":"https://local.ft.com/","name":"Testing"},"bylines":[{"name":"Ændrew Rininsland","url":"https://ft.com/ændrew-rininsland"}],"image":{"uuid":"f07ccec8-7ded-11e8-af48-190d103e32a4"},"headline":"New Starter Kit site","title":"New Starter Kit site","id":"3a499586-b2e0-11e4-a058-00144feab7de","pubdate":"2019-01-31T00:00:00.000Z","buildTime":"2019-01-31T00:00:00.000Z","wrapArticleHead":true}
                   </pre>
                 </div>
               </div>
@@ -2614,18 +4937,18 @@ Array [
       itemType="http://schema.org/Article"
     >
       <div
-        className="article-head o-grid-container"
+        className="article-head"
       >
         <div
           className="o-grid-row"
         >
-          <header
+          <div
             data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
           >
             <h1>
               New starter kit site
             </h1>
-          </header>
+          </div>
         </div>
       </div>
       <div
@@ -2636,7 +4959,7 @@ Array [
           className="o-grid-container"
         >
           <div
-            className="o-grid-row "
+            className="o-grid-row"
           >
             <div
               data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
@@ -3090,12 +5413,12 @@ Array [
       itemType="http://schema.org/Article"
     >
       <div
-        className="article-head o-grid-container"
+        className="article-head"
       >
         <div
           className="o-grid-row"
         >
-          <header
+          <div
             data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
           >
             <div>
@@ -3224,7 +5547,7 @@ Array [
                 Thursday, 31 January 2019
               </span>
             </div>
-          </header>
+          </div>
         </div>
       </div>
       <div
@@ -3235,10 +5558,10 @@ Array [
           className="o-grid-container"
         >
           <div
-            className="o-grid-row "
+            className="o-grid-row"
           >
             <div
-              data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+              data-o-grid-colspan="full-width"
             >
               <div>
                 <p>
@@ -3617,6 +5940,60 @@ soluta vix, quis natum ne qui, ei vidit latine partiendo mei. Mel ea duis essent
     </div>
   </footer>,
 ]
+`;
+
+exports[`Storyshots Core|Loading All Sizes With Dark Theme 1`] = `
+<div>
+  <div
+    className="g-loading g-loading--small g-loading--dark"
+  />
+  <div
+    className="g-loading g-loading--medium g-loading--dark"
+  />
+  <div
+    className="g-loading g-loading--large g-loading--dark"
+  />
+</div>
+`;
+
+exports[`Storyshots Core|Loading All Sizes With Light Theme 1`] = `
+<div
+  style={
+    Object {
+      "background": "#262a33",
+    }
+  }
+>
+  <div
+    className="g-loading g-loading--small g-loading--light"
+  />
+  <div
+    className="g-loading g-loading--medium g-loading--light"
+  />
+  <div
+    className="g-loading g-loading--large g-loading--light"
+  />
+</div>
+`;
+
+exports[`Storyshots Core|Loading Basic With Light Theme 1`] = `
+<div
+  style={
+    Object {
+      "background": "#262a33",
+    }
+  }
+>
+  <div
+    className="g-loading g-loading--small g-loading--light"
+  />
+</div>
+`;
+
+exports[`Storyshots Core|Loading Basic With No Props 1`] = `
+<div
+  className="g-loading g-loading--small g-loading--dark"
+/>
 `;
 
 exports[`Storyshots Core|OnwardJourney Basic 1`] = `null`;
@@ -4044,7 +6421,189 @@ exports[`Storyshots Elections|GE2019/Constituency Lookup Basic 1`] = `
 </div>
 `;
 
-exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`] = `
+exports[`Storyshots Elections|GE2019/Constituency Results Table With Custom Sort 1`] = `
+<div
+  className="g-constituency-results-table"
+>
+  <table
+    className="g-constituency-results-table__table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Party
+        </th>
+        <th>
+          Candidate
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#7200ab",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Ukip
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Ian Buchanan
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#cf4d3c",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Lab
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Solomon Curtis
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#f09000",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Lib Dem
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Callum James Littlemore
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#8deb9d",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Green
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Caroline Lucas
+          *
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#d9cace",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Ind
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Isabelle Amanda Parasram
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#149adb",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Con
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Emma Warman
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="g-constituency-results-table__table--note"
+          colSpan="1000"
+        >
+          * Note to indicate outgoing candidate
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Elections|GE2019/Constituency Results Table With Expander 1`] = `
 <div
   className="g-constituency-results-table"
 >
@@ -4074,6 +6633,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`]
             style={
               Object {
                 "backgroundColor": "#8deb9d",
+                "border": "none",
               }
             }
           />
@@ -4104,6 +6664,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`]
             style={
               Object {
                 "backgroundColor": "#cf4d3c",
+                "border": "none",
               }
             }
           />
@@ -4133,6 +6694,150 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`]
             style={
               Object {
                 "backgroundColor": "#149adb",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Con
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Emma Warman
+        </td>
+        <td
+          className="number"
+        >
+          11,082
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="g-constituency-results-table__table--note"
+          colSpan="1000"
+        >
+          * Note to indicate outgoing candidate
+        </td>
+      </tr>
+      <tr
+        className="g-expander__header"
+      >
+        <td
+          colSpan="1000"
+        >
+          <button
+            className="g-expander__expand-button"
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              Show more
+            </span>
+            <i />
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`] = `
+<div
+  className="g-constituency-results-table"
+>
+  <table
+    className="g-constituency-results-table__table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Party
+        </th>
+        <th>
+          Candidate
+        </th>
+        <th>
+          Total Votes
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#8deb9d",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Green
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Caroline Lucas
+          *
+        </td>
+        <td
+          className="number"
+        >
+          30,149
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#cf4d3c",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Lab
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Solomon Curtis
+        </td>
+        <td
+          className="number"
+        >
+          15,450
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#149adb",
+                "border": "none",
               }
             }
           />
@@ -4162,6 +6867,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`]
             style={
               Object {
                 "backgroundColor": "#7200ab",
+                "border": "none",
               }
             }
           />
@@ -4191,6 +6897,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`]
             style={
               Object {
                 "backgroundColor": "#f09000",
+                "border": "none",
               }
             }
           />
@@ -4220,6 +6927,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`]
             style={
               Object {
                 "backgroundColor": "#d9cace",
+                "border": "none",
               }
             }
           />
@@ -4240,13 +6948,231 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table With Results 1`]
           376
         </td>
       </tr>
+      <tr>
+        <td
+          className="g-constituency-results-table__table--note"
+          colSpan="1000"
+        >
+          * Note to indicate outgoing candidate
+        </td>
+      </tr>
     </tbody>
   </table>
-  <div
-    className="g-constituency-results-table__note"
+</div>
+`;
+
+exports[`Storyshots Elections|GE2019/Constituency Results Table With Speaker 1`] = `
+<div
+  className="g-constituency-results-table"
+>
+  <table
+    className="g-constituency-results-table__table"
   >
-    * Note to indicate outgoing candidate
-  </div>
+    <thead>
+      <tr>
+        <th>
+          Party
+        </th>
+        <th>
+          Candidate
+        </th>
+        <th>
+          Total Votes
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#8deb9d",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Green
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Caroline Lucas Test
+          *
+        </td>
+        <td
+          className="number"
+        >
+          30,149
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#cf4d3c",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Lab
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Solomon Curtis Test
+        </td>
+        <td
+          className="number"
+        >
+          15,450
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#149adb",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Con
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Emma Warman Test
+        </td>
+        <td
+          className="number"
+        >
+          11,082
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#7200ab",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Ukip
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Ian Buchanan Test
+        </td>
+        <td
+          className="number"
+        >
+          630
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#f09000",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Lib Dem
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Callum Jameson Littlelonger Test
+        </td>
+        <td
+          className="number"
+        >
+          400
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+                "border": "1px solid #B2AFAD",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Speaker
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Isabelle Amanda Parasram Test
+        </td>
+        <td
+          className="number"
+        >
+          376
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="g-constituency-results-table__table--note"
+          colSpan="1000"
+        >
+          * Note to indicate outgoing candidate
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 `;
 
@@ -4276,31 +7202,8 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table Without Results 
             className="party-badge"
             style={
               Object {
-                "backgroundColor": "#f09000",
-              }
-            }
-          />
-          <span
-            className="party-name"
-          >
-            Lib Dem
-          </span>
-        </td>
-        <td
-          className="candidate-name"
-        >
-          Callum James Littlemore
-        </td>
-      </tr>
-      <tr>
-        <td
-          className="party"
-        >
-          <span
-            className="party-badge"
-            style={
-              Object {
                 "backgroundColor": "#8deb9d",
+                "border": "none",
               }
             }
           />
@@ -4325,7 +7228,33 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table Without Results 
             className="party-badge"
             style={
               Object {
+                "backgroundColor": "#cf4d3c",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Lab
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Solomon Curtis
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
                 "backgroundColor": "#149adb",
+                "border": "none",
               }
             }
           />
@@ -4350,6 +7279,7 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table Without Results 
             style={
               Object {
                 "backgroundColor": "#7200ab",
+                "border": "none",
               }
             }
           />
@@ -4373,7 +7303,33 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table Without Results 
             className="party-badge"
             style={
               Object {
+                "backgroundColor": "#f09000",
+                "border": "none",
+              }
+            }
+          />
+          <span
+            className="party-name"
+          >
+            Lib Dem
+          </span>
+        </td>
+        <td
+          className="candidate-name"
+        >
+          Callum James Littlemore
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
                 "backgroundColor": "#d9cace",
+                "border": "none",
               }
             }
           />
@@ -4391,35 +7347,14 @@ exports[`Storyshots Elections|GE2019/Constituency Results Table Without Results 
       </tr>
       <tr>
         <td
-          className="party"
+          className="g-constituency-results-table__table--note"
+          colSpan="1000"
         >
-          <span
-            className="party-badge"
-            style={
-              Object {
-                "backgroundColor": "#cf4d3c",
-              }
-            }
-          />
-          <span
-            className="party-name"
-          >
-            Lab
-          </span>
-        </td>
-        <td
-          className="candidate-name"
-        >
-          Solomon Curtis
+          * Note to indicate outgoing candidate
         </td>
       </tr>
     </tbody>
   </table>
-  <div
-    className="g-constituency-results-table__note"
-  >
-    * Note to indicate outgoing candidate
-  </div>
 </div>
 `;
 
@@ -4427,11 +7362,15 @@ exports[`Storyshots Elections|GE2019/Net Change Bar Chart Basic 1`] = `
 <div
   className="g-net-change-bar-chart"
 >
-  <h3
-    className="g-net-change-bar-chart__title"
+  <div
+    className="g-net-change-bar-chart__header"
   >
-    Net change in seats compared to outgoing parliament
-  </h3>
+    <h3
+      className="g-net-change-bar-chart__title"
+    >
+      Net change in seats compared to outgoing parliament
+    </h3>
+  </div>
   <table
     className="g-net-change-bar-chart__table"
   >
@@ -4757,7 +7696,7 @@ exports[`Storyshots Elections|GE2019/Net Change Bar Chart Basic 1`] = `
           </span>
         </td>
         <td
-          className="bar-change"
+          className="bar-change bar-change--others--negative"
         >
           <span
             className="bar-container"
@@ -4824,7 +7763,7 @@ exports[`Storyshots Elections|GE2019/Net Change Bar Chart Basic 1`] = `
           </span>
         </td>
         <td
-          className="bar-change"
+          className="bar-change bar-change--others--negative"
         >
           <span
             className="bar-container"
@@ -4901,8 +7840,8 @@ exports[`Storyshots Elections|GE2019/Net Change Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "#ffffff",
-                  "left": "23.52941176470588%",
-                  "width": "17.64705882352941%",
+                  "left": "41.17647058823529%",
+                  "width": "5.882352941176471%",
                 }
               }
             />
@@ -4911,8 +7850,8 @@ exports[`Storyshots Elections|GE2019/Net Change Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "rgba(255, 255, 255, 0.3)",
-                  "left": "23.52941176470588%",
-                  "width": "17.64705882352941%",
+                  "left": "41.17647058823529%",
+                  "width": "5.882352941176471%",
                 }
               }
             />
@@ -4929,7 +7868,8 @@ exports[`Storyshots Elections|GE2019/Net Change Bar Chart Basic 1`] = `
         <td
           className="change"
         >
-          -9
+          +
+          3
         </td>
       </tr>
     </tbody>
@@ -4961,7 +7901,743 @@ exports[`Storyshots Elections|GE2019/Net Change Bar Chart Basic 1`] = `
 </div>
 `;
 
-exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 1`] = `
+exports[`Storyshots Elections|GE2019/Net Change Bar Chart Empty State 1`] = `
+<div
+  className="g-net-change-bar-chart"
+>
+  <div
+    className="g-net-change-bar-chart__header"
+  >
+    <h3
+      className="g-net-change-bar-chart__title"
+    >
+      Net change in seats compared to outgoing parliament
+    </h3>
+  </div>
+  <table
+    className="g-net-change-bar-chart__table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Party
+        </th>
+        <th
+          className="axis-label"
+        >
+          <span
+            style={
+              Object {
+                "left": "NaN%",
+              }
+            }
+          >
+            0
+          </span>
+        </th>
+        <th>
+          +/-
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#149adb",
+              }
+            }
+          />
+          <span
+            className="party-name party-name--desktop"
+          >
+            Conservative
+          </span>
+          <span
+            className="party-name party-name--mobile"
+          >
+            Con
+          </span>
+        </td>
+        <td
+          className="bar-change bar-change--others--zero"
+        >
+          <span
+            className="bar-container"
+          >
+            <span
+              className="bar"
+              style={
+                Object {
+                  "backgroundColor": "#149adb",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="bar bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="centre-line"
+              style={
+                Object {
+                  "left": "NaN%",
+                }
+              }
+            />
+          </span>
+        </td>
+        <td
+          className="change"
+        >
+          0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#cf4d3c",
+              }
+            }
+          />
+          <span
+            className="party-name party-name--desktop"
+          >
+            Labour
+          </span>
+          <span
+            className="party-name party-name--mobile"
+          >
+            Lab
+          </span>
+        </td>
+        <td
+          className="bar-change bar-change--others--zero"
+        >
+          <span
+            className="bar-container"
+          >
+            <span
+              className="bar"
+              style={
+                Object {
+                  "backgroundColor": "#cf4d3c",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="bar bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="centre-line"
+              style={
+                Object {
+                  "left": "NaN%",
+                }
+              }
+            />
+          </span>
+        </td>
+        <td
+          className="change"
+        >
+          0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#ffdf00",
+              }
+            }
+          />
+          <span
+            className="party-name party-name--desktop"
+          >
+            Scottish National party
+          </span>
+          <span
+            className="party-name party-name--mobile"
+          >
+            SNP
+          </span>
+        </td>
+        <td
+          className="bar-change bar-change--others--zero"
+        >
+          <span
+            className="bar-container"
+          >
+            <span
+              className="bar"
+              style={
+                Object {
+                  "backgroundColor": "#ffdf00",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="bar bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0)",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="centre-line"
+              style={
+                Object {
+                  "left": "NaN%",
+                }
+              }
+            />
+          </span>
+        </td>
+        <td
+          className="change"
+        >
+          0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#f09000",
+              }
+            }
+          />
+          <span
+            className="party-name party-name--desktop"
+          >
+            Liberal Democrats
+          </span>
+          <span
+            className="party-name party-name--mobile"
+          >
+            Lib Dem
+          </span>
+        </td>
+        <td
+          className="bar-change bar-change--others--zero"
+        >
+          <span
+            className="bar-container"
+          >
+            <span
+              className="bar"
+              style={
+                Object {
+                  "backgroundColor": "#f09000",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="bar bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="centre-line"
+              style={
+                Object {
+                  "left": "NaN%",
+                }
+              }
+            />
+          </span>
+        </td>
+        <td
+          className="change"
+        >
+          0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#210066",
+              }
+            }
+          />
+          <span
+            className="party-name party-name--desktop"
+          >
+            Democratic Unionist party
+          </span>
+          <span
+            className="party-name party-name--mobile"
+          >
+            DUP
+          </span>
+        </td>
+        <td
+          className="bar-change bar-change--others--zero"
+        >
+          <span
+            className="bar-container"
+          >
+            <span
+              className="bar"
+              style={
+                Object {
+                  "backgroundColor": "#210066",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="bar bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.5)",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="centre-line"
+              style={
+                Object {
+                  "left": "NaN%",
+                }
+              }
+            />
+          </span>
+        </td>
+        <td
+          className="change"
+        >
+          0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#006643",
+              }
+            }
+          />
+          <span
+            className="party-name party-name--desktop"
+          >
+            Sinn Féin
+          </span>
+          <span
+            className="party-name party-name--mobile"
+          >
+            SF
+          </span>
+        </td>
+        <td
+          className="bar-change bar-change--others--zero"
+        >
+          <span
+            className="bar-container"
+          >
+            <span
+              className="bar"
+              style={
+                Object {
+                  "backgroundColor": "#006643",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="bar bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="centre-line"
+              style={
+                Object {
+                  "left": "NaN%",
+                }
+              }
+            />
+          </span>
+        </td>
+        <td
+          className="change"
+        >
+          0
+        </td>
+      </tr>
+      <tr
+        className="row row--others"
+      >
+        <td
+          className="party party--others"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+              }
+            }
+          />
+          <span
+            className="party-name party-name--desktop"
+          >
+            Others
+          </span>
+          <span
+            className="party-name party-name--mobile"
+          >
+            Others
+          </span>
+        </td>
+        <td
+          className="bar-change bar-change--others bar-change--others--zero"
+        >
+          <span
+            className="bar-container"
+          >
+            <span
+              className="bar"
+              style={
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="bar bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <span
+              className="centre-line"
+              style={
+                Object {
+                  "left": "NaN%",
+                }
+              }
+            />
+          </span>
+        </td>
+        <td
+          className="change"
+        >
+          0
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div
+    className="g-net-change-bar-chart__footnote"
+  >
+    APNI
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    UUP
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elections|GE2019/Race Result Indicator Scottish National Party Will Always Be Snp 1`] = `
+<div
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <ul>
+    <li>
+      S breakpoint:
+       
+      <div
+        className="race-result"
+      >
+        <div
+          className="race-result--incumbent"
+          style={
+            Object {
+              "backgroundColor": "#cf4d3c",
+            }
+          }
+        />
+        <div
+          className="race-result--triangle-background"
+          style={
+            Object {
+              "borderColor": "transparent transparent transparent #fff1e5",
+            }
+          }
+        />
+        <div
+          className="race-result--triangle"
+          style={
+            Object {
+              "borderColor": "transparent transparent transparent #cf4d3c",
+            }
+          }
+        />
+        <div
+          className="race-result--outcome"
+          style={
+            Object {
+              "backgroundColor": "#ffdf00",
+              "border": "none",
+              "color": "black",
+            }
+          }
+        >
+          SNP gain
+        </div>
+      </div>
+    </li>
+    <li>
+      XL breakpoint:
+       
+      <div
+        className="race-result"
+      >
+        <div
+          className="race-result--incumbent"
+          style={
+            Object {
+              "backgroundColor": "#149adb",
+            }
+          }
+        />
+        <div
+          className="race-result--triangle-background"
+          style={
+            Object {
+              "borderColor": "transparent transparent transparent #fff1e5",
+            }
+          }
+        />
+        <div
+          className="race-result--triangle"
+          style={
+            Object {
+              "borderColor": "transparent transparent transparent #149adb",
+            }
+          }
+        />
+        <div
+          className="race-result--outcome"
+          style={
+            Object {
+              "backgroundColor": "#ffdf00",
+              "border": "none",
+              "color": "black",
+            }
+          }
+        >
+          SNP gain
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Elections|GE2019/Race Result Indicator Speaker 1`] = `
+<div
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <ul>
+    <li>
+      Labour -&gt; The Speaker
+      <div
+        className="race-result"
+      >
+        <div
+          className="race-result--incumbent"
+          style={
+            Object {
+              "backgroundColor": "#cf4d3c",
+            }
+          }
+        />
+        <div
+          className="race-result--triangle-background"
+          style={
+            Object {
+              "borderColor": "transparent transparent transparent #fff1e5",
+            }
+          }
+        />
+        <div
+          className="race-result--triangle"
+          style={
+            Object {
+              "borderColor": "transparent transparent transparent #cf4d3c",
+            }
+          }
+        />
+        <div
+          className="race-result--outcome"
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "border": "1px solid #B2AFAD",
+              "color": "black",
+            }
+          }
+        >
+          Speaker gain
+        </div>
+      </div>
+    </li>
+    <li>
+      The Speaker -&gt; Conservative
+      <div
+        className="race-result"
+      >
+        <div
+          className="race-result--incumbent"
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+            }
+          }
+        />
+        <div
+          className="race-result--triangle-background"
+          style={
+            Object {
+              "borderColor": "transparent transparent transparent #fff1e5",
+            }
+          }
+        />
+        <div
+          className="race-result--triangle"
+          style={
+            Object {
+              "borderColor": "transparent transparent transparent #ffffff",
+            }
+          }
+        />
+        <div
+          className="race-result--outcome"
+          style={
+            Object {
+              "backgroundColor": "#149adb",
+              "border": "none",
+              "color": "white",
+            }
+          }
+        >
+          Con gain
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations Large 1`] = `
 <div
   style={
     Object {
@@ -4982,6 +8658,11 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
     />
     <div
       className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
     />
     <div
       className="race-result--triangle"
@@ -4996,10 +8677,12 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#cf4d3c",
+          "border": "none",
+          "color": "white",
         }
       }
     >
-      Labour holds
+      Labour hold
     </div>
   </div>
   <div
@@ -5015,6 +8698,11 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
     />
     <div
       className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
     />
     <div
       className="race-result--triangle"
@@ -5029,10 +8717,12 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#cf4d3c",
+          "border": "none",
+          "color": "white",
         }
       }
     >
-      Labour gain from Conservative
+      Labour gain
     </div>
   </div>
   <div
@@ -5048,6 +8738,11 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
     />
     <div
       className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
     />
     <div
       className="race-result--triangle"
@@ -5062,10 +8757,12 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#149adb",
+          "border": "none",
+          "color": "white",
         }
       }
     >
-      Conservative gain from Labour
+      Conservative gain
     </div>
   </div>
   <div
@@ -5081,6 +8778,11 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
     />
     <div
       className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
     />
     <div
       className="race-result--triangle"
@@ -5095,10 +8797,12 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#f09000",
+          "border": "none",
+          "color": "black",
         }
       }
     >
-      Liberal Democrats holds
+      Liberal Democrats hold
     </div>
   </div>
   <div
@@ -5114,6 +8818,11 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
     />
     <div
       className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
     />
     <div
       className="race-result--triangle"
@@ -5128,10 +8837,12 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#f09000",
+          "border": "none",
+          "color": "black",
         }
       }
     >
-      Liberal Democrats gain from Conservative
+      Liberal Democrats gain
     </div>
   </div>
   <div
@@ -5147,6 +8858,11 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
     />
     <div
       className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
     />
     <div
       className="race-result--triangle"
@@ -5161,44 +8877,280 @@ exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations 
       style={
         Object {
           "backgroundColor": "#8deb9d",
+          "border": "none",
+          "color": "black",
         }
       }
     >
-      Green holds
+      Green hold
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
+exports[`Storyshots Elections|GE2019/Race Result Indicator Various Permutations Small 1`] = `
+<div
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="race-result"
+  >
+    <div
+      className="race-result--incumbent"
+      style={
+        Object {
+          "backgroundColor": "#cf4d3c",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #cf4d3c",
+        }
+      }
+    />
+    <div
+      className="race-result--outcome"
+      style={
+        Object {
+          "backgroundColor": "#cf4d3c",
+          "border": "none",
+          "color": "white",
+        }
+      }
+    >
+      Lab hold
+    </div>
+  </div>
+  <div
+    className="race-result"
+  >
+    <div
+      className="race-result--incumbent"
+      style={
+        Object {
+          "backgroundColor": "#149adb",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #149adb",
+        }
+      }
+    />
+    <div
+      className="race-result--outcome"
+      style={
+        Object {
+          "backgroundColor": "#cf4d3c",
+          "border": "none",
+          "color": "white",
+        }
+      }
+    >
+      Lab gain
+    </div>
+  </div>
+  <div
+    className="race-result"
+  >
+    <div
+      className="race-result--incumbent"
+      style={
+        Object {
+          "backgroundColor": "#cf4d3c",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #cf4d3c",
+        }
+      }
+    />
+    <div
+      className="race-result--outcome"
+      style={
+        Object {
+          "backgroundColor": "#149adb",
+          "border": "none",
+          "color": "white",
+        }
+      }
+    >
+      Con gain
+    </div>
+  </div>
+  <div
+    className="race-result"
+  >
+    <div
+      className="race-result--incumbent"
+      style={
+        Object {
+          "backgroundColor": "#f09000",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #f09000",
+        }
+      }
+    />
+    <div
+      className="race-result--outcome"
+      style={
+        Object {
+          "backgroundColor": "#f09000",
+          "border": "none",
+          "color": "black",
+        }
+      }
+    >
+      Lib Dem hold
+    </div>
+  </div>
+  <div
+    className="race-result"
+  >
+    <div
+      className="race-result--incumbent"
+      style={
+        Object {
+          "backgroundColor": "#149adb",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #149adb",
+        }
+      }
+    />
+    <div
+      className="race-result--outcome"
+      style={
+        Object {
+          "backgroundColor": "#f09000",
+          "border": "none",
+          "color": "black",
+        }
+      }
+    >
+      Lib Dem gain
+    </div>
+  </div>
+  <div
+    className="race-result"
+  >
+    <div
+      className="race-result--incumbent"
+      style={
+        Object {
+          "backgroundColor": "#8deb9d",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle-background"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #fff1e5",
+        }
+      }
+    />
+    <div
+      className="race-result--triangle"
+      style={
+        Object {
+          "borderColor": "transparent transparent transparent #8deb9d",
+        }
+      }
+    />
+    <div
+      className="race-result--outcome"
+      style={
+        Object {
+          "backgroundColor": "#8deb9d",
+          "border": "none",
+          "color": "black",
+        }
+      }
+    >
+      Green hold
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic End 1`] = `
 <div
   className="g-seats-bar-chart"
 >
-  <h3
-    className="g-seats-bar-chart__title"
-  >
-    Number of seats won
-  </h3>
   <div
-    className="g-seats-bar-chart__key"
+    className="g-seats-bar-chart__header"
   >
-    <span
-      className="g-seats-bar-chart__key-rect"
+    <h3
+      className="g-seats-bar-chart__title"
     >
-      <span
-        className="g-seats-bar-chart__key-rect-overlay"
-        style={
-          Object {
-            "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-          }
-        }
-      />
-    </span>
-    <span
-      className="g-seats-bar-chart__key-text"
-    >
-      = PA Projection
-    </span>
+      Number of seats won
+    </h3>
   </div>
   <table
     className="g-seats-bar-chart__table"
@@ -5210,7 +9162,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
         className="g-seats-bar-chart__majority-line"
         style={
           Object {
-            "left": "100%",
+            "left": "96.3855421686747%",
           }
         }
       />
@@ -5218,11 +9170,11 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
         className="g-seats-bar-chart__majority-text"
         style={
           Object {
-            "left": "100%",
+            "left": "96.3855421686747%",
           }
         }
       >
-        Majority
+        Majority 320
       </span>
     </span>
     <thead>
@@ -5261,17 +9213,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "#149adb",
-                  "width": "99.0625%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--projected"
-              style={
-                Object {
-                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-                  "left": "31.25%",
-                  "width": "67.8125%",
+                  "width": "100%",
                 }
               }
             />
@@ -5280,7 +9222,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "rgba(255, 255, 255, 0.2)",
-                  "width": "99.0625%",
+                  "width": "100%",
                 }
               }
             />
@@ -5299,12 +9241,12 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
         <td
           className="seats"
         >
-          100
+          332
         </td>
         <td
           className="voteshare"
         >
-          42.4
+          37.3
         </td>
       </tr>
       <tr
@@ -5329,17 +9271,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "#cf4d3c",
-                  "width": "81.875%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--projected"
-              style={
-                Object {
-                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-                  "left": "21.875%",
-                  "width": "60%",
+                  "width": "53.6144578313253%",
                 }
               }
             />
@@ -5348,7 +9280,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "rgba(255, 255, 255, 0.2)",
-                  "width": "81.875%",
+                  "width": "53.6144578313253%",
                 }
               }
             />
@@ -5367,80 +9299,12 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
         <td
           className="seats"
         >
-          70
+          178
         </td>
         <td
           className="voteshare"
         >
-          40.0
-        </td>
-      </tr>
-      <tr
-        className="row"
-      >
-        <td
-          className="party"
-        >
-          <span
-            className="party-badge"
-            style={
-              Object {
-                "backgroundColor": "#ffdf00",
-              }
-            }
-          />
-          <span
-            className="party-bar-container"
-          >
-            <span
-              className="party-bar"
-              style={
-                Object {
-                  "backgroundColor": "#ffdf00",
-                  "width": "10.9375%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--projected"
-              style={
-                Object {
-                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-                  "left": "3.125%",
-                  "width": "7.8125%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--overlay"
-              style={
-                Object {
-                  "backgroundColor": "rgba(255, 255, 255, 0)",
-                  "width": "10.9375%",
-                }
-              }
-            />
-            <span
-              className="party-name party-name--desktop"
-            >
-              Scottish National party
-            </span>
-            <span
-              className="party-name party-name--mobile"
-            >
-              SNP
-            </span>
-          </span>
-        </td>
-        <td
-          className="seats"
-        >
-          10
-        </td>
-        <td
-          className="voteshare"
-        >
-          3.0
+          29.0
         </td>
       </tr>
       <tr
@@ -5465,17 +9329,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "#f09000",
-                  "width": "7.187499999999999%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--projected"
-              style={
-                Object {
-                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-                  "left": "2.5%",
-                  "width": "4.6875%",
+                  "width": "17.16867469879518%",
                 }
               }
             />
@@ -5484,7 +9338,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "rgba(255, 255, 255, 0.2)",
-                  "width": "7.187499999999999%",
+                  "width": "17.16867469879518%",
                 }
               }
             />
@@ -5503,12 +9357,70 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
         <td
           className="seats"
         >
-          8
+          57
         </td>
         <td
           className="voteshare"
         >
-          7.4
+          15.4
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#ffdf00",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#ffdf00",
+                  "width": "13.55421686746988%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0)",
+                  "width": "13.55421686746988%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Scottish National party
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              SNP
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          45
+        </td>
+        <td
+          className="voteshare"
+        >
+          4.0
         </td>
       </tr>
       <tr
@@ -5533,17 +9445,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "#210066",
-                  "width": "3.125%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--projected"
-              style={
-                Object {
-                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-                  "left": "0.9375%",
-                  "width": "2.1875%",
+                  "width": "2.108433734939759%",
                 }
               }
             />
@@ -5552,7 +9454,849 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "rgba(255, 255, 255, 0.5)",
-                  "width": "3.125%",
+                  "width": "2.108433734939759%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Democratic Unionist party
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              DUP
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          7
+        </td>
+        <td
+          className="voteshare"
+        >
+          0.9
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#006643",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#006643",
+                  "width": "2.108433734939759%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "2.108433734939759%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Sinn Féin
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              SF
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          7
+        </td>
+        <td
+          className="voteshare"
+        >
+          0.8
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#8deb9d",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#8deb9d",
+                  "width": "1.8072289156626504%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "1.8072289156626504%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Green
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Green
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          6
+        </td>
+        <td
+          className="voteshare"
+        >
+          5.5
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#80cfd6",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#80cfd6",
+                  "width": "0.9036144578313252%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "0.9036144578313252%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Brexit party
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Brexit
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          3
+        </td>
+        <td
+          className="voteshare"
+        >
+          2.8
+        </td>
+      </tr>
+      <tr
+        className="row row--others"
+      >
+        <td
+          className="party party--others"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "width": "4.518072289156627%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "4.518072289156627%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Others
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Others
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          15
+        </td>
+        <td
+          className="voteshare"
+        >
+          4.4
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div
+    className="g-seats-bar-chart__footnote"
+  >
+    PC
+     (
+    <span
+      className="seats"
+    >
+      9
+    </span>
+    )
+    , 
+    SDLP
+     (
+    <span
+      className="seats"
+    >
+      3
+    </span>
+    )
+    , 
+    TIGfC
+     (
+    <span
+      className="seats"
+    >
+      1
+    </span>
+    )
+    , 
+    Speaker
+     (
+    <span
+      className="seats"
+    >
+      1
+    </span>
+    )
+    , 
+    UUP
+     (
+    <span
+      className="seats"
+    >
+      1
+    </span>
+    )
+    , 
+    APNI
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    Ind
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    Ukip
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic Middle 1`] = `
+<div
+  className="g-seats-bar-chart"
+>
+  <div
+    className="g-seats-bar-chart__header"
+  >
+    <h3
+      className="g-seats-bar-chart__title"
+    >
+      Number of seats won
+    </h3>
+    <div
+      className="g-seats-bar-chart__key"
+    >
+      <span
+        className="g-seats-bar-chart__key-rect"
+      >
+        <span
+          className="g-seats-bar-chart__key-rect-overlay"
+          style={
+            Object {
+              "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
+            }
+          }
+        />
+      </span>
+      <span
+        className="g-seats-bar-chart__key-text"
+      >
+        = PA Projection
+      </span>
+    </div>
+  </div>
+  <table
+    className="g-seats-bar-chart__table"
+  >
+    <span
+      className="g-seats-bar-chart__majority-line-container"
+    >
+      <span
+        className="g-seats-bar-chart__majority-line"
+        style={
+          Object {
+            "left": "95.52238805970148%",
+          }
+        }
+      />
+      <span
+        className="g-seats-bar-chart__majority-text"
+        style={
+          Object {
+            "left": "95.52238805970148%",
+          }
+        }
+      >
+        Majority 320
+      </span>
+    </span>
+    <thead>
+      <tr>
+        <th>
+          Party
+        </th>
+        <th>
+          Seats
+        </th>
+        <th>
+          % of vote
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#149adb",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#149adb",
+                  "width": "100%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--projected"
+              style={
+                Object {
+                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
+                  "left": "54.62686567164179%",
+                  "width": "45.37313432835821%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "width": "100%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Conservative
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Con
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          183
+        </td>
+        <td
+          className="voteshare"
+        >
+          37.5
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#cf4d3c",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#cf4d3c",
+                  "width": "55.223880597014926%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--projected"
+              style={
+                Object {
+                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
+                  "left": "25.671641791044774%",
+                  "width": "29.55223880597015%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "width": "55.223880597014926%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Labour
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Lab
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          86
+        </td>
+        <td
+          className="voteshare"
+        >
+          28.0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#ffdf00",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#ffdf00",
+                  "width": "14.925373134328357%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--projected"
+              style={
+                Object {
+                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
+                  "left": "7.761194029850746%",
+                  "width": "7.164179104477612%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0)",
+                  "width": "14.925373134328357%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Scottish National party
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              SNP
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          26
+        </td>
+        <td
+          className="voteshare"
+        >
+          4.2
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#f09000",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#f09000",
+                  "width": "14.328358208955224%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--projected"
+              style={
+                Object {
+                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
+                  "left": "10.44776119402985%",
+                  "width": "3.880597014925373%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "width": "14.328358208955224%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Liberal Democrats
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Lib Dem
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          35
+        </td>
+        <td
+          className="voteshare"
+        >
+          16.2
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#006643",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#006643",
+                  "width": "1.1940298507462688%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "1.1940298507462688%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Sinn Féin
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              SF
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          4
+        </td>
+        <td
+          className="voteshare"
+        >
+          0.7
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#8deb9d",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#8deb9d",
+                  "width": "0.8955223880597015%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--projected"
+              style={
+                Object {
+                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
+                  "left": "0.5970149253731344%",
+                  "width": "0.2985074626865672%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "0.8955223880597015%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Green
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Green
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          2
+        </td>
+        <td
+          className="voteshare"
+        >
+          5.0
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#210066",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#210066",
+                  "width": "0.8955223880597015%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.5)",
+                  "width": "0.8955223880597015%",
                 }
               }
             />
@@ -5589,74 +10333,6 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
             className="party-badge"
             style={
               Object {
-                "backgroundColor": "#006643",
-              }
-            }
-          />
-          <span
-            className="party-bar-container"
-          >
-            <span
-              className="party-bar"
-              style={
-                Object {
-                  "backgroundColor": "#006643",
-                  "width": "2.1875%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--projected"
-              style={
-                Object {
-                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-                  "left": "0.9375%",
-                  "width": "1.25%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--overlay"
-              style={
-                Object {
-                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
-                  "width": "2.1875%",
-                }
-              }
-            />
-            <span
-              className="party-name party-name--desktop"
-            >
-              Sinn Féin
-            </span>
-            <span
-              className="party-name party-name--mobile"
-            >
-              SF
-            </span>
-          </span>
-        </td>
-        <td
-          className="seats"
-        >
-          3
-        </td>
-        <td
-          className="voteshare"
-        >
-          0.6
-        </td>
-      </tr>
-      <tr
-        className="row"
-      >
-        <td
-          className="party"
-        >
-          <span
-            className="party-badge"
-            style={
-              Object {
                 "backgroundColor": "#80cfd6",
               }
             }
@@ -5669,17 +10345,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "#80cfd6",
-                  "width": "0.3125%",
-                }
-              }
-            />
-            <span
-              className="party-bar party-bar--projected"
-              style={
-                Object {
-                  "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-                  "left": "0.3125%",
-                  "width": "0%",
+                  "width": "0.2985074626865672%",
                 }
               }
             />
@@ -5688,7 +10354,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "rgba(255, 255, 255, 0.3)",
-                  "width": "0.3125%",
+                  "width": "0.2985074626865672%",
                 }
               }
             />
@@ -5712,7 +10378,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
         <td
           className="voteshare"
         >
-          7.0
+          3.0
         </td>
       </tr>
       <tr
@@ -5737,7 +10403,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "#ffffff",
-                  "width": "9.375%",
+                  "width": "3.582089552238806%",
                 }
               }
             />
@@ -5746,8 +10412,8 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundImage": "repeating-linear-gradient(50deg, transparent, transparent 3px, #fff1e5 3px, #fff1e5 5px)",
-                  "left": "2.5%",
-                  "width": "6.875000000000001%",
+                  "left": "3.2835820895522385%",
+                  "width": "0.2985074626865672%",
                 }
               }
             />
@@ -5756,7 +10422,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
               style={
                 Object {
                   "backgroundColor": "rgba(255, 255, 255, 0.3)",
-                  "width": "9.375%",
+                  "width": "3.582089552238806%",
                 }
               }
             />
@@ -5775,12 +10441,667 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
         <td
           className="seats"
         >
-          8
+          11
         </td>
         <td
           className="voteshare"
         >
-          3.0
+          4.7
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div
+    className="g-seats-bar-chart__footnote"
+  >
+    PC
+     (
+    <span
+      className="seats"
+    >
+      7
+    </span>
+    )
+    , 
+    TIGfC
+     (
+    <span
+      className="seats"
+    >
+      1
+    </span>
+    )
+    , 
+    Ind
+     (
+    <span
+      className="seats"
+    >
+      1
+    </span>
+    )
+    , 
+    SDLP
+     (
+    <span
+      className="seats"
+    >
+      1
+    </span>
+    )
+    , 
+    Speaker
+     (
+    <span
+      className="seats"
+    >
+      1
+    </span>
+    )
+    , 
+    APNI
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    Ukip
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    UUP
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic Start 1`] = `
+<div
+  className="g-seats-bar-chart"
+>
+  <div
+    className="g-seats-bar-chart__header"
+  >
+    <h3
+      className="g-seats-bar-chart__title"
+    >
+      Number of seats won
+    </h3>
+  </div>
+  <table
+    className="g-seats-bar-chart__table"
+  >
+    <span
+      className="g-seats-bar-chart__majority-line-container"
+    >
+      <span
+        className="g-seats-bar-chart__majority-line"
+        style={
+          Object {
+            "left": "100%",
+          }
+        }
+      />
+      <span
+        className="g-seats-bar-chart__majority-text"
+        style={
+          Object {
+            "left": "100%",
+          }
+        }
+      >
+        Majority 320
+      </span>
+    </span>
+    <thead>
+      <tr>
+        <th>
+          Party
+        </th>
+        <th>
+          Seats
+        </th>
+        <th>
+          % of vote
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#149adb",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#149adb",
+                  "width": "1.5625%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "width": "1.5625%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Conservative
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Con
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          5
+        </td>
+        <td
+          className="voteshare"
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#ffdf00",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#ffdf00",
+                  "width": "1.25%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0)",
+                  "width": "1.25%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Scottish National party
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              SNP
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          4
+        </td>
+        <td
+          className="voteshare"
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#cf4d3c",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#cf4d3c",
+                  "width": "0.3125%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "width": "0.3125%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Labour
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Lab
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          1
+        </td>
+        <td
+          className="voteshare"
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#f09000",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#f09000",
+                  "width": "0.3125%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                  "width": "0.3125%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Liberal Democrats
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Lib Dem
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          1
+        </td>
+        <td
+          className="voteshare"
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#006643",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#006643",
+                  "width": "0.3125%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "0.3125%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Sinn Féin
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              SF
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          1
+        </td>
+        <td
+          className="voteshare"
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#80cfd6",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#80cfd6",
+                  "width": "0%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "0%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Brexit party
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Brexit
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          0
+        </td>
+        <td
+          className="voteshare"
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#210066",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#210066",
+                  "width": "0%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.5)",
+                  "width": "0%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Democratic Unionist party
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              DUP
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          0
+        </td>
+        <td
+          className="voteshare"
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="row"
+      >
+        <td
+          className="party"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#8deb9d",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#8deb9d",
+                  "width": "0%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "0%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Green
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Green
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          0
+        </td>
+        <td
+          className="voteshare"
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="row row--others"
+      >
+        <td
+          className="party party--others"
+        >
+          <span
+            className="party-badge"
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+              }
+            }
+          />
+          <span
+            className="party-bar-container"
+          >
+            <span
+              className="party-bar"
+              style={
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "width": "0%",
+                }
+              }
+            />
+            <span
+              className="party-bar party-bar--overlay"
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "width": "0%",
+                }
+              }
+            />
+            <span
+              className="party-name party-name--desktop"
+            >
+              Others
+            </span>
+            <span
+              className="party-name party-name--mobile"
+            >
+              Others
+            </span>
+          </span>
+        </td>
+        <td
+          className="seats"
+        >
+          0
+        </td>
+        <td
+          className="voteshare"
+        >
+          -
         </td>
       </tr>
     </tbody>
@@ -5793,7 +11114,61 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
     <span
       className="seats"
     >
-      1
+      0
+    </span>
+    )
+    , 
+    TIGfC
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    Ind
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    PC
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    SDLP
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    Speaker
+     (
+    <span
+      className="seats"
+    >
+      0
+    </span>
+    )
+    , 
+    Ukip
+     (
+    <span
+      className="seats"
+    >
+      0
     </span>
     )
     , 
@@ -5802,7 +11177,7 @@ exports[`Storyshots Elections|GE2019/Seats Bar Chart Basic 1`] = `
     <span
       className="seats"
     >
-      1
+      0
     </span>
     )
     
@@ -6172,5 +11547,50 @@ exports[`Storyshots Elections|GE2019/Utilities Get Party Info Party String 1`] =
     </div>
     <br />
   </div>
+</div>
+`;
+
+exports[`Storyshots core|Expander Basic With Multiple Children 1`] = `
+Array [
+  <div>
+    0
+  </div>,
+  <div>
+    1
+  </div>,
+  <div>
+    2
+  </div>,
+  <div
+    className="g-expander__header"
+  >
+    <button
+      className="g-expander__expand-button"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        Show more
+      </span>
+      <i />
+    </button>
+  </div>,
+]
+`;
+
+exports[`Storyshots core|Expander Basic With One Child 1`] = `
+<div
+  className="g-expander__header"
+>
+  <button
+    className="g-expander__expand-button"
+    onClick={[Function]}
+    type="button"
+  >
+    <span>
+      Show more
+    </span>
+    <i />
+  </button>
 </div>
 `;

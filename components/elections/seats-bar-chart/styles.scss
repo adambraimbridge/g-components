@@ -1,12 +1,19 @@
 @import 'o-grid/main';
 
 .g-seats-bar-chart {
-  &__title {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.33;
-    color: #000000;
-    margin-bottom: 10px;
+  &__header {
+    @include oGridRespondTo(M) {
+      height: 60px;
+    }
+
+    h3.g-seats-bar-chart__title {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.33;
+      color: #000000;
+      margin-bottom: 5px;
+      margin-top: 0px;
+    }
   }
 
   &__key {
@@ -41,6 +48,7 @@
     display: block;
     width: calc(60% - 8px);
     height: 100%;
+    z-index: 1;
   }
 
   &__majority-line {
@@ -181,6 +189,7 @@
             left: 6px;
             line-height: 32px;
             text-shadow: 0 0 2px #ffffff;
+            width: max-content;
 
             &--desktop {
               @include oGridRespondTo($until: M) {

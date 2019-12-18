@@ -1,0 +1,146 @@
+[
+  {
+    "partyName": "Alliance",
+    "partySeats": 0,
+    "partySeatsNewlyWon": 0,
+    "partySeatsNewlyLost": 0,
+    "partySeatsChange": 0,
+    "partyVotes": 1832,
+    "partySharePercentage": null
+  },
+  {
+    "partyName": "Brexit",
+    "partySeats": 0,
+    "partySeatsNewlyWon": 0,
+    "partySeatsNewlyLost": 0,
+    "partySeatsChange": 0,
+    "partyVotes": 7278,
+    "partySharePercentage": null
+  },
+  {
+    "partyName": "Conservative",
+    "partySeats": 5,
+    "partySeatsNewlyWon": 2,
+    "partySeatsNewlyLost": 294,
+    "partySeatsChange": -292,
+    "partyVotes": 140173,
+    "partySharePercentage": null
+  },
+  {
+    "partyName": "DUP",
+    "partySeats": 0,
+    "partySeatsNewlyWon": 0,
+    "partySeatsNewlyLost": 10,
+    "partySeatsChange": -10,
+    "partyVotes": 6188,
+    "partySharePercentage": null
+  },
+  {
+    "partyName": "Green",
+    "partySeats": 0,
+    "partySeatsNewlyWon": 0,
+    "partySeatsNewlyLost": 1,
+    "partySeatsChange": -1,
+    "partyVotes": 17023,
+    "partySharePercentage": null
+  },
+  {
+    "partyName": "Independent Group for Change",
+    "partySeats": 0,
+    "partySeatsNewlyWon": 0,
+    "partySeatsNewlyLost": 3,
+    "partySeatsChange": -3,
+    "partyVotes": 0,
+    "partySharePercentage": null
+  },
+  {
+    "partyName": "Independent/Other",
+    "partySeats": 0,
+    "partySeatsNewlyWon": 0,
+    "partySeatsNewlyLost": 24,
+    "partySeatsChange": -24,
+    "partyVotes": 6756,
+    "partySharePercentage": null
+  },
+  {
+    "partyName": "Labour",
+    "partySeats": 1,
+    "partySeatsNewlyWon": 1,
+    "partySeatsNewlyLost": 245,
+    "partySeatsChange": -244,
+    "partyVotes": 96662,
+    "partySharePercentage": null
+  },
+  {
+    "partyName": "Liberal Democrats",
+    "partySeats": 1,
+    "partySeatsNewlyWon": 1,
+    "partySeatsNewlyLost": 21,
+    "partySeatsChange": -20,
+    "partyVotes": 47937,
+    "partySharePercentage": null
+  },
+  {
+    "partyName": "Plaid Cymru",
+    "partySeats": 0,
+    "partySeatsNewlyWon": 0,
+    "partySeatsNewlyLost": 4,
+    "partySeatsChange": -4,
+    "partyVotes": 1322,
+    "partySharePercentage": null
+  },
+  {
+    "partyName": "SDLP",
+    "partySeats": 0,
+    "partySeatsNewlyWon": 0,
+    "partySeatsNewlyLost": 0,
+    "partySeatsChange": 0,
+    "partyVotes": 1190,
+    "partySharePercentage": null
+  },
+  {
+    "partyName": "Sinn Féin",
+    "partySeats": 1,
+    "partySeatsNewlyWon": 0,
+    "partySeatsNewlyLost": 6,
+    "partySeatsChange": -6,
+    "partyVotes": 19124,
+    "partySharePercentage": null
+  },
+  {
+    "partyName": "SNP",
+    "partySeats": 4,
+    "partySeatsNewlyWon": 1,
+    "partySeatsNewlyLost": 32,
+    "partySeatsChange": -31,
+    "partyVotes": 83134,
+    "partySharePercentage": null
+  },
+  {
+    "partyName": "The Speaker",
+    "partySeats": 0,
+    "partySeatsNewlyWon": 0,
+    "partySeatsNewlyLost": 1,
+    "partySeatsChange": -1,
+    "partyVotes": 0,
+    "partySharePercentage": null
+  },
+  {
+    "partyName": "Ukip",
+    "partySeats": 0,
+    "partySeatsNewlyWon": 0,
+    "partySeatsNewlyLost": 0,
+    "partySeatsChange": 0,
+    "partyVotes": 0,
+    "partySharePercentage": null
+  },
+  {
+    "partyName": "UUP",
+    "partySeats": 0,
+    "partySeatsNewlyWon": 0,
+    "partySeatsNewlyLost": 0,
+    "partySeatsChange": 0,
+    "partyVotes": 0,
+    "partySharePercentage": null
+  }
+]

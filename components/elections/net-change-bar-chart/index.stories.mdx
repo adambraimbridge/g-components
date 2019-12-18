@@ -6,6 +6,8 @@ import NetChangeBarChart from './';
 
 # Net Change Bar Chart component
 
+# Basic
+
 <Preview>
   <Story name="Basic">
     <NetChangeBarChart
@@ -34,13 +36,55 @@ import NetChangeBarChart from './';
           isInTable: true,
         },
         {
-          party: 'Others',
+          party: 'Independent/Others',
           seatChange: -9,
           isInTable: true,
           isOthers: true,
         },
-        { party: 'Alliance', seatChange: 2, isInTable: false },
-        { party: 'UUP', seatChange: 1, isInTable: false },
+        { party: 'Alliance', seatChange: 2, isInTable: false, isOthers: true },
+        { party: 'UUP', seatChange: 1, isInTable: false, isOthers: true },
+      ]}
+    />
+  </Story>
+</Preview>
+
+### Empty state
+
+<Preview>
+  <Story name="Empty state">
+    <NetChangeBarChart
+      tableHeaders={['Party', '0', '+/-']}
+      data={[
+        {
+          party: 'Conservative',
+          seatChange: 0,
+          isInTable: true,
+        },
+        { party: 'Labour', seatChange: 0, isInTable: true },
+        { party: 'SNP', seatChange: 0, isInTable: true },
+        {
+          party: 'Liberal Democrats',
+          seatChange: 0,
+          isInTable: true,
+        },
+        {
+          party: 'DUP',
+          seatChange: 0,
+          isInTable: true,
+        },
+        {
+          party: 'Sinn Fein',
+          seatChange: 0,
+          isInTable: true,
+        },
+        {
+          party: 'Independent/Others',
+          seatChange: 0,
+          isInTable: true,
+          isOthers: true,
+        },
+        { party: 'Alliance', seatChange: 0, isInTable: false, isOthers: true },
+        { party: 'UUP', seatChange: 0, isInTable: false, isOthers: true },
       ]}
     />
   </Story>

@@ -11,36 +11,74 @@ import './styles.scss';
 
 const { getPartyInfo } = uk;
 
-const SeatsBarChart = ({ className, title, keyText, tableHeaders, data, majority }) => {
-  const tableData = [
-    ...data
-      .filter(({ isInTable, isOthers }) => isInTable && !isOthers)
-      .sort((a, b) => b.projectedSeats - a.projectedSeats),
-    ...data.filter(({ isOthers }) => isOthers),
-  ];
-  const footnoteData = data
-    .filter(({ isInTable }) => !isInTable)
-    .sort((a, b) => b.projectedSeats - a.projectedSeats);
+const SeatsBarChart = ({
+  className,
+  title,
+  keyText,
+  tableHeaders,
+  data,
+  majority,
+  showShortPartyNames,
+}) => {
+  const showProjectedSeats = data.some(({ projectedSeats }) => projectedSeats);
 
-  const maxSeats = tableData.reduce((acc, { projectedSeats }) => Math.max(acc, projectedSeats), 0);
+  const seatsData = data.map(({ seats, projectedSeats, ...d }) => ({
+    seats,
+    projectedSeats,
+    seatsCeiling: showProjectedSeats ? projectedSeats || seats : seats,
+    projectedSeatsOverWon: (showProjectedSeats ? projectedSeats || seats : seats) - seats,
+    ...d,
+  }));
+
+  const footnoteData = seatsData
+    .filter(({ isInTable }) => !isInTable)
+    .sort((a, b) => b.seats - a.seats);
+
+  const othersData = {
+    party: 'Others',
+    seats: footnoteData.reduce((a, b) => a + b.seats, 0),
+    projectedSeats: footnoteData.reduce(
+      (a, b) => a + (showProjectedSeats ? b.projectedSeats || b.seats : b.seats),
+      0,
+    ),
+    seatsCeiling: footnoteData.reduce((a, b) => a + b.seatsCeiling, 0),
+    projectedSeatsOverWon: footnoteData.reduce((a, b) => a + b.projectedSeatsOverWon, 0),
+    voteShare: footnoteData.reduce((a, b) => a + b.voteShare, 0),
+    isOthers: true,
+  };
+
+  const sortedFiltered = seatsData
+    .filter(({ isInTable, isOthers }) => isInTable && !isOthers)
+    .sort((a, b) =>
+      b.seatsCeiling - a.seatsCeiling !== 0
+        ? b.seatsCeiling - a.seatsCeiling
+        : b.voteShare - a.voteShare,
+    );
+  const tableData = [...sortedFiltered, sortedFiltered.length && othersData].filter(d => d);
+
+  const maxSeats = tableData.reduce((acc, { seatsCeiling }) => Math.max(acc, seatsCeiling), 0);
   const maxValue = Math.max(majority, maxSeats);
   const calcPercentage = seats => (seats / maxValue) * 100;
 
   return (
     <div className={className}>
-      <h3 className={`${className}__title`}>{title}</h3>
+      <div className={`${className}__header`}>
+        <h3 className={`${className}__title`}>{title}</h3>
 
-      <div className={`${className}__key`}>
-        <span className={`${className}__key-rect`}>
-          <span
-            className={`${className}__key-rect-overlay`}
-            style={{
-              backgroundImage: `repeating-linear-gradient(50deg, transparent, transparent 3px, ${'#fff1e5'} 3px, ${'#fff1e5'} 5px)`,
-            }}
-          />
-        </span>
+        {showProjectedSeats && (
+          <div className={`${className}__key`}>
+            <span className={`${className}__key-rect`}>
+              <span
+                className={`${className}__key-rect-overlay`}
+                style={{
+                  backgroundImage: `repeating-linear-gradient(50deg, transparent, transparent 3px, ${'#fff1e5'} 3px, ${'#fff1e5'} 5px)`,
+                }}
+              />
+            </span>
 
-        <span className={`${className}__key-text`}>{`= ${keyText}`}</span>
+            <span className={`${className}__key-text`}>{`= ${keyText}`}</span>
+          </div>
+        )}
       </div>
 
       <table className={`${className}__table`}>
@@ -53,69 +91,74 @@ const SeatsBarChart = ({ className, title, keyText, tableHeaders, data, majority
             className={`${className}__majority-text`}
             style={{ left: `${calcPercentage(majority)}%` }}
           >
-            Majority
+            {`Majority ${majority}`}
           </span>
         </span>
 
         <thead>
           <tr>
-            {tableHeaders.map(t => (
-              <th key={`th_${t}`}>{t}</th>
+            {tableHeaders.map(tableHeader => (
+              <th key={`th_${tableHeader}`}>{tableHeader}</th>
             ))}
           </tr>
         </thead>
 
         <tbody>
-          {tableData.map(({ party, seats, projectedSeats, voteShare, isOthers }) => {
-            const { formattedName, shortName, color, whiteOverlayOpacity } = getPartyInfo(party);
-            const projectedSeatsOverWon = projectedSeats - seats;
-            return (
-              <tr className={`row${isOthers ? ' row--others' : ''}`}>
-                <td className={`party${isOthers ? ' party--others' : ''}`}>
-                  <span className="party-badge" style={{ backgroundColor: color }} />
-                  <span className="party-bar-container">
-                    <span
-                      className="party-bar"
-                      style={{
-                        backgroundColor: color,
-                        width: `${calcPercentage(projectedSeats)}%`,
-                      }}
-                    />
-                    <span
-                      className="party-bar party-bar--projected"
-                      style={{
-                        backgroundImage: `repeating-linear-gradient(50deg, transparent, transparent 3px, ${'#fff1e5'} 3px, ${'#fff1e5'} 5px)`,
-                        width: `${calcPercentage(projectedSeatsOverWon)}%`,
-                        left: `${calcPercentage(seats)}%`,
-                      }}
-                    />
-                    <span
-                      className="party-bar party-bar--overlay"
-                      style={{
-                        width: `${calcPercentage(projectedSeats)}%`,
-                        backgroundColor:
-                          whiteOverlayOpacity !== undefined
-                            ? `rgba(255, 255, 255, ${whiteOverlayOpacity})`
-                            : 'rgba(255, 255, 255, 0.3)',
-                      }}
-                    />
-                    <span className="party-name party-name--desktop">{formattedName}</span>
-                    <span className="party-name party-name--mobile">{shortName}</span>
-                  </span>
-                </td>
-                <td className="seats">{seats}</td>
-                <td className="voteshare">{voteShare.toFixed(1)}</td>
-              </tr>
-            );
-          })}
+          {tableData.map(
+            ({ party, seats, seatsCeiling, projectedSeatsOverWon, voteShare, isOthers }) => {
+              const { formattedName, shortName, color, whiteOverlayOpacity } = getPartyInfo(party);
+              return (
+                <tr className={`row${isOthers ? ' row--others' : ''}`} key={`row_${party}`}>
+                  <td className={`party${isOthers ? ' party--others' : ''}`}>
+                    <span className="party-badge" style={{ backgroundColor: color }} />
+                    <span className="party-bar-container">
+                      <span
+                        className="party-bar"
+                        style={{
+                          backgroundColor: color,
+                          width: `${calcPercentage(seatsCeiling)}%`,
+                        }}
+                      />
+                      {projectedSeatsOverWon !== 0 && (
+                        <span
+                          className="party-bar party-bar--projected"
+                          style={{
+                            backgroundImage: `repeating-linear-gradient(50deg, transparent, transparent 3px, ${'#fff1e5'} 3px, ${'#fff1e5'} 5px)`,
+                            width: `${calcPercentage(projectedSeatsOverWon)}%`,
+                            left: `${calcPercentage(seats)}%`,
+                          }}
+                        />
+                      )}
+                      <span
+                        className="party-bar party-bar--overlay"
+                        style={{
+                          width: `${calcPercentage(seatsCeiling)}%`,
+                          backgroundColor:
+                            whiteOverlayOpacity !== undefined
+                              ? `rgba(255, 255, 255, ${whiteOverlayOpacity})`
+                              : 'rgba(255, 255, 255, 0.3)',
+                        }}
+                      />
+                      <span className="party-name party-name--desktop">
+                        {showShortPartyNames ? shortName : formattedName}
+                      </span>
+                      <span className="party-name party-name--mobile">{shortName}</span>
+                    </span>
+                  </td>
+                  <td className="seats">{seats}</td>
+                  <td className="voteshare">{voteShare ? voteShare.toFixed(1) : '-'}</td>
+                </tr>
+              );
+            },
+          )}
         </tbody>
       </table>
 
       <div className={`${className}__footnote`}>
         {footnoteData.map(({ party, seats }, index, arr) => {
-          const { shortName, color } = getPartyInfo(party);
+          const { shortName } = getPartyInfo(party);
           return (
-            <Fragment>
+            <Fragment key={`frag_${shortName}`}>
               {shortName} (<span className="seats">{seats}</span>)
               {index !== arr.length - 1 ? ', ' : ''}
             </Fragment>
@@ -125,6 +168,8 @@ const SeatsBarChart = ({ className, title, keyText, tableHeaders, data, majority
     </div>
   );
 };
+
+SeatsBarChart.displayName = 'GSeatsBarChart';
 
 SeatsBarChart.propTypes = {
   className: PropTypes.string,
@@ -141,13 +186,15 @@ SeatsBarChart.propTypes = {
       isInTable: PropTypes.bool,
     }),
   ).isRequired,
-  majority: PropTypes.number,
+  majority: PropTypes.number.isRequired,
+  showShortPartyNames: PropTypes.bool,
 };
 
 SeatsBarChart.defaultProps = {
   className: 'g-seats-bar-chart',
   title: 'Number of seats won',
   keyText: 'PA Projection',
+  showShortPartyNames: false,
 };
 
 export default SeatsBarChart;

@@ -13,19 +13,27 @@ const LastUpdated = ({ lastUpdated, live }) => (
     {live ? (
       <div className="o-teaser o-teaser--small" data-o-component="o-teaser">
         <div className="o-teaser__content">
-          Last updated <DateTime timestamp={lastUpdated} />
           <div
             className="o-teaser__timestamp o-teaser__timestamp--inprogress"
             style={{ display: 'inline-block' }}
           >
             <span className="o-teaser__timestamp-prefix" />
           </div>
+          {lastUpdated ? (
+            <React.Fragment>
+              Last updated <DateTime datestamp={lastUpdated} />
+            </React.Fragment>
+          ) : (
+            'Live'
+          )}
         </div>
       </div>
     ) : (
-      <span>
-        Last updated <DateTime timestamp={lastUpdated} />
-      </span>
+      lastUpdated && (
+        <span>
+          Last updated <DateTime datestamp={lastUpdated} />
+        </span>
+      )
     )}
   </div>
 );
@@ -35,7 +43,7 @@ LastUpdated.propTypes = {
   live: PropTypes.bool,
 };
 LastUpdated.defaultProps = {
-  lastUpdated: new Date(),
+  lastUpdated: false,
   live: true,
 };
 
