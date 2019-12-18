@@ -6319,6 +6319,64 @@ exports[`Storyshots Core|Sticky Complex Case 1`] = `
 </div>
 `;
 
+exports[`Storyshots Core|Video Set Basic 1`] = `
+<div
+  className="g-videoset"
+>
+  <div
+    className="g-videoset__large"
+  >
+    <figure>
+      <video
+        alt="Demo video set video"
+        controls={true}
+        poster="https://ig.ft.com/india-pollution/videos/poster-desktop.jpg"
+      >
+        <source
+          src="https://ig.ft.com/india-pollution/videos/india-china-pollution-large.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </figure>
+  </div>
+  <div
+    className="g-videoset__medium"
+  >
+    <figure>
+      <video
+        alt="Demo video set video"
+        controls={true}
+        poster="https://ig.ft.com/india-pollution/videos/poster-desktop.jpg"
+      >
+        <source
+          src="https://ig.ft.com/india-pollution/videos/india-china-pollution-large.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </figure>
+  </div>
+  <div
+    className="g-videoset__small"
+  >
+    <figure>
+      <video
+        alt="Demo video set video"
+        controls={true}
+        poster="https://ig.ft.com/india-pollution/videos/poster-mobile.jpg"
+      >
+        <source
+          src="https://ig.ft.com/india-pollution/videos/india-china-pollution-mobile.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </figure>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Elections|GE2019/Constituency Lookup Basic 1`] = `
 <div
   className="g-constituency-lookup"
