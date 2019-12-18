@@ -16,6 +16,7 @@ Reusable React components for building graphics pages. [See how to use them in t
 | Component                      | Description                                   |
 |--------------------------------|-----------------------------------------------|
 | `<ImageSet>`                   | An image set (small, medium, large)           |
+| `<VideoSet>`                   | A video set (small, medium, large)            |
 
 ### Page furniture
 
