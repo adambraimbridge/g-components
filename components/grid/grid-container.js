@@ -7,9 +7,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-export const GridContainer = ({ bleed, snappy, children, ...props }) => (
+export const GridContainer = ({ bleed, snappy, children, className, ...props }) => (
   <div
     className={classnames(
+      className,
       'o-grid-container',
       bleed && ' o-grid-container--bleed',
       snappy && 'o-grid-container--snappy',

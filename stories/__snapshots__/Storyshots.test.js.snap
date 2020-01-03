@@ -2529,7 +2529,7 @@ Array [
       itemType="http://schema.org/Article"
     >
       <div
-        className="article-head"
+        className="article-head o-grid-container"
       >
         <div
           className="o-grid-row"
@@ -3128,7 +3128,7 @@ Array [
       itemType="http://schema.org/Article"
     >
       <div
-        className="article-head"
+        className="article-head o-grid-container"
       >
         <div
           className="o-grid-row"
@@ -3731,7 +3731,7 @@ Array [
       itemType="http://schema.org/Article"
     >
       <div
-        className="article-head"
+        className="article-head o-grid-container"
       >
         <div
           className="o-grid-row"
@@ -4335,7 +4335,7 @@ Array [
       itemType="http://schema.org/Article"
     >
       <div
-        className="article-head"
+        className="article-head o-grid-container"
       >
         <div
           className="o-grid-row"
@@ -4937,7 +4937,7 @@ Array [
       itemType="http://schema.org/Article"
     >
       <div
-        className="article-head"
+        className="article-head o-grid-container"
       >
         <div
           className="o-grid-row"
@@ -5413,7 +5413,7 @@ Array [
       itemType="http://schema.org/Article"
     >
       <div
-        className="article-head"
+        className="article-head o-grid-container"
       >
         <div
           className="o-grid-row"
