@@ -48,6 +48,7 @@
     "@storybook/addon-storyshots": "^5.2.8",
     "@storybook/addon-viewport": "^5.2.8",
     "@storybook/addons": "^5.2.8",
+    "@storybook/core-events": "^5.2.8",
     "@storybook/react": "^5.2.8",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
