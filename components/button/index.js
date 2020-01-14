@@ -44,14 +44,14 @@ export const Button = ({
 
 Button.propTypes = {
   className: PropTypes.string,
-  theme: PropTypes.oneOf(['mono', 'b2c']),
+  theme: PropTypes.oneOf(['mono', 'b2c', '']),
   selected: PropTypes.bool,
   disabled: PropTypes.bool,
   big: PropTypes.bool,
   buttonType: PropTypes.oneOf(['button', 'submit', 'reset']),
-  type: PropTypes.oneOf(['primary', 'inverse']),
+  type: PropTypes.oneOf(['primary', 'secondary']),
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.arrayOf(PropTypes.node)]).isRequired,
-  icon: PropTypes.oneOf(validIcons),
+  icon: PropTypes.oneOf([...validIcons, '']),
   label: PropTypes.string,
   inverse: PropTypes.bool,
 };
