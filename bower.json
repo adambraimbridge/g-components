@@ -32,6 +32,6 @@
     "o-table": "^6.9.1",
     "o-forms": "^5.8.2",
     "o-loading": "^2",
-    "o-buttons": "5"
+    "o-buttons": "^5"
   }
 }
