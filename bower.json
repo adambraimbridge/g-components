@@ -31,6 +31,7 @@
     "o-tracking": "^1.2.3",
     "o-table": "^6.9.1",
     "o-forms": "^5.8.2",
-    "o-loading": "^2"
+    "o-loading": "^2",
+    "o-buttons": "^5"
   }
 }

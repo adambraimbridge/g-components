@@ -212,6 +212,748 @@ exports[`Storyshots Core|Autosuggest Search Mp Lookup Example 1`] = `
 </form>
 `;
 
+exports[`Storyshots Core|Button B 2 C Theme 1`] = `
+<button
+  className="o-buttons o-buttons--primary o-buttons--b2c"
+  disabled={false}
+  type="button"
+>
+  B2C theme
+</button>
+`;
+
+exports[`Storyshots Core|Button Grouped Layout 1`] = `
+<div
+  className="o-buttons-group"
+>
+  <button
+    aria-pressed="true"
+    className="o-buttons o-buttons--secondary"
+    disabled={false}
+    type="button"
+  >
+    John
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary"
+    disabled={false}
+    type="button"
+  >
+    Paul
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary"
+    disabled={false}
+    type="button"
+  >
+    George
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary"
+    disabled={false}
+    type="button"
+  >
+    Ringo
+  </button>
+</div>
+`;
+
+exports[`Storyshots Core|Button Icon Buttons 1`] = `
+<div>
+  <h2>
+    Currently supported icons
+  </h2>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--arrow-left"
+    disabled={false}
+    type="button"
+  >
+    Go back
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--arrow-right"
+    disabled={false}
+    type="button"
+  >
+    Go forward
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--upload"
+    disabled={false}
+    type="button"
+  >
+    Upload
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--download"
+    disabled={false}
+    type="button"
+  >
+    Download
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--warning"
+    disabled={false}
+    type="button"
+  >
+    Danger
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--arrow-down"
+    disabled={false}
+    type="button"
+  >
+    Show
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--arrow-up"
+    disabled={false}
+    type="button"
+  >
+    Hide
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--tick"
+    disabled={false}
+    type="button"
+  >
+    Tick
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--plus"
+    disabled={false}
+    type="button"
+  >
+    Plus
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--grid"
+    disabled={false}
+    type="button"
+  >
+    Grid
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--list"
+    disabled={false}
+    type="button"
+  >
+    List
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--edit"
+    disabled={false}
+    type="button"
+  >
+    Edit
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--search"
+    disabled={false}
+    type="button"
+  >
+    Search
+  </button>
+  <br />
+  <br />
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--arrow-left"
+    disabled={false}
+    type="button"
+  >
+    Go back
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--arrow-right"
+    disabled={false}
+    type="button"
+  >
+    Go forward
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--upload"
+    disabled={false}
+    type="button"
+  >
+    Upload
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--download"
+    disabled={false}
+    type="button"
+  >
+    Download
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--warning"
+    disabled={false}
+    type="button"
+  >
+    Danger
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--arrow-down"
+    disabled={false}
+    type="button"
+  >
+    Show
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--arrow-up"
+    disabled={false}
+    type="button"
+  >
+    Hide
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--tick"
+    disabled={false}
+    type="button"
+  >
+    Tick
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--plus"
+    disabled={false}
+    type="button"
+  >
+    Plus
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--grid"
+    disabled={false}
+    type="button"
+  >
+    Grid
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--list"
+    disabled={false}
+    type="button"
+  >
+    List
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--edit"
+    disabled={false}
+    type="button"
+  >
+    Edit
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--search"
+    disabled={false}
+    type="button"
+  >
+    Search
+  </button>
+  <h2>
+    Icon buttons without text
+  </h2>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--arrow-left o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Go back
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--arrow-right o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Go forward
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--upload o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Upload
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--download o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Download
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--warning o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Danger
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--arrow-down o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Show
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--arrow-up o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Hide
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--tick o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Tick
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--plus o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Plus
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--grid o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Grid
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--list o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      List
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--edit o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Edit
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--search o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Search
+    </span>
+  </button>
+  <br />
+  <br />
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--arrow-left o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Go back
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--arrow-right o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Go forward
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--upload o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Upload
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--download o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Download
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--warning o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Danger
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--arrow-down o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Show
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--arrow-up o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Hide
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--tick o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Tick
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--plus o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Plus
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--grid o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Grid
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--list o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      List
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--edit o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Edit
+    </span>
+  </button>
+  <button
+    className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--search o-buttons-icon--icon-only"
+    disabled={false}
+    type="button"
+  >
+    <span
+      className="o-buttons-icon__label"
+    >
+      Search
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Core|Button Pagination Layout 1`] = `
+<div>
+  <div
+    className="o-buttons-pagination"
+  >
+    <button
+      className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--arrow-left o-buttons-icon--icon-only"
+      disabled={true}
+      type="button"
+    >
+      <span
+        className="o-buttons-icon__label"
+      >
+        Fewer results
+      </span>
+    </button>
+    <button
+      aria-pressed={true}
+      className="o-buttons o-buttons--secondary"
+      disabled={false}
+      type="button"
+    >
+      1
+    </button>
+    <button
+      className="o-buttons o-buttons--secondary"
+      disabled={false}
+      type="button"
+    >
+      2
+    </button>
+    <button
+      className="o-buttons o-buttons--secondary"
+      disabled={false}
+      type="button"
+    >
+      3
+    </button>
+    <div
+      className="faux-inline-block"
+    >
+      ...
+    </div>
+    <button
+      className="o-buttons o-buttons--secondary"
+      disabled={false}
+      type="button"
+    >
+      25
+    </button>
+    <button
+      className="o-buttons o-buttons--secondary"
+      disabled={false}
+      type="button"
+    >
+      26
+    </button>
+    <button
+      className="o-buttons o-buttons--secondary"
+      disabled={false}
+      type="button"
+    >
+      27
+    </button>
+    <button
+      className="o-buttons o-buttons--secondary o-buttons-icon o-buttons-icon--arrow-right o-buttons-icon--icon-only"
+      disabled={false}
+      type="button"
+    >
+      <span
+        className="o-buttons-icon__label"
+      >
+        More results
+      </span>
+    </button>
+  </div>
+  <div
+    className="o-buttons-pagination"
+  >
+    <button
+      className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--arrow-left o-buttons-icon--icon-only"
+      disabled={true}
+      type="button"
+    >
+      <span
+        className="o-buttons-icon__label"
+      >
+        Fewer results
+      </span>
+    </button>
+    <button
+      aria-pressed={true}
+      className="o-buttons o-buttons--secondary o-buttons--big"
+      disabled={false}
+      type="button"
+    >
+      1
+    </button>
+    <button
+      className="o-buttons o-buttons--secondary o-buttons--big"
+      disabled={false}
+      type="button"
+    >
+      2
+    </button>
+    <button
+      className="o-buttons o-buttons--secondary o-buttons--big"
+      disabled={false}
+      type="button"
+    >
+      3
+    </button>
+    <div
+      className="faux-inline-block"
+    >
+      ...
+    </div>
+    <button
+      className="o-buttons o-buttons--secondary o-buttons--big"
+      disabled={false}
+      type="button"
+    >
+      25
+    </button>
+    <button
+      className="o-buttons o-buttons--secondary o-buttons--big"
+      disabled={false}
+      type="button"
+    >
+      26
+    </button>
+    <button
+      className="o-buttons o-buttons--secondary o-buttons--big"
+      disabled={false}
+      type="button"
+    >
+      27
+    </button>
+    <button
+      className="o-buttons o-buttons--secondary o-buttons--big o-buttons-icon o-buttons-icon--arrow-right o-buttons-icon--icon-only"
+      disabled={false}
+      type="button"
+    >
+      <span
+        className="o-buttons-icon__label"
+      >
+        More results
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|Button Primary Button 1`] = `
+<button
+  className="o-buttons o-buttons--primary"
+  disabled={false}
+  type="button"
+>
+  Primary
+</button>
+`;
+
+exports[`Storyshots Core|Button Primary Button Inverse 1`] = `
+<button
+  className="o-buttons o-buttons--primary o-buttons--inverse"
+  disabled={false}
+  type="button"
+>
+  Primary
+</button>
+`;
+
+exports[`Storyshots Core|Button Primary Button Mono 1`] = `
+<button
+  className="o-buttons o-buttons--primary o-buttons--mono"
+  disabled={false}
+  type="button"
+>
+  Primary
+</button>
+`;
+
+exports[`Storyshots Core|Button Secondary Default Button 1`] = `
+<button
+  className="o-buttons o-buttons--secondary"
+  disabled={false}
+  type="button"
+>
+  Secondary/default
+</button>
+`;
+
+exports[`Storyshots Core|Button Secondary Default Button Inverse 1`] = `
+<button
+  className="o-buttons o-buttons--secondary o-buttons--inverse"
+  disabled={false}
+  type="button"
+>
+  Primary
+</button>
+`;
+
+exports[`Storyshots Core|Button Secondary Default Button Mono 1`] = `
+<button
+  className="o-buttons o-buttons--secondary o-buttons--mono"
+  disabled={false}
+  type="button"
+>
+  Primary
+</button>
+`;
+
 exports[`Storyshots Core|Card Basic 1`] = `
 <div
   style={
