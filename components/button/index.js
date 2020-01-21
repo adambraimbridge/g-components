@@ -22,6 +22,7 @@ export const Button = ({
   disabled,
   label,
   inverse,
+  ...props
 }) => (
   <button
     className={classnames(
@@ -37,6 +38,7 @@ export const Button = ({
     type={buttonType}
     aria-pressed={selected}
     disabled={disabled}
+    {...props}
   >
     {label && icon ? <span className="o-buttons-icon__label">{label}</span> : children}
   </button>
