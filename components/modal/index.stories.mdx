@@ -1,0 +1,50 @@
+import { useState, cloneElement } from 'react';
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import '../../shared/critical-path.scss';
+import Modal from './';
+
+export const ExamplePage = ({ children }) => {
+  const [modalOpen, openModal] = useState(false);
+  return (
+    <div>
+      <h1>Example page!</h1>
+      <p>
+        Page text Page text Page text Page text Page text Page text Page text Page text Page text
+        Page text Page text Page text Page text Page text Page text Page text Page text Page text
+        Page text Page text Page text
+      </p>
+      <button onClick={() => openModal(true)}>Open modal</button>
+      {cloneElement(children, { isOpen: modalOpen, closeModal: () => openModal(false) })}
+    </div>
+  );
+};
+
+<Meta title="Core|Modal" component={Modal} />
+
+# x component
+
+tktk
+
+<Preview>
+  <Story name="Basic modal">
+    <ExamplePage>
+      <Modal>Oh look a modal</Modal>
+    </ExamplePage>
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Bigger model">
+    <ExamplePage>
+      <Modal>
+        <h1>Wow a bigger modal</h1>
+        <p>You could put some text or something here!</p>
+        <p>You could put some text or something here!</p>
+        <p>You could put some text or something here!</p>
+        <p>You could put some text or something here!</p>
+        <p>You could put some text or something here!</p>
+        <p>You could put some text or something here!</p>
+      </Modal>
+    </ExamplePage>
+  </Story>
+</Preview>
