@@ -12,34 +12,39 @@ import './styles.scss';
 
 const Modal = ({ className, parent, children, isOpen, closeModal, closeButton }) => {
   const parentEl = usePortal(parent);
-  return createPortal(
-    isOpen && (
-      <React.Fragment>
-        <div
-          className={classnames('g-modal-background', className)}
-          role="button"
-          aria-label="Close modal"
-          onClick={closeModal}
-          onKeyPress={closeModal}
-          tabIndex={0}
-        />
-        <div className="g-modal">
-          {closeButton && (
-            <div
-              className="g-modal__close-button"
-              role="button"
-              onClick={closeModal}
-              onKeyPress={closeModal}
-              tabIndex={-1}
-            >
-              <i className="g-modal__close-button-icon" />
-            </div>
-          )}
-          {children}
-        </div>
-      </React.Fragment>
-    ),
-    parentEl,
+
+  return (
+    parentEl &&
+    createPortal(
+      isOpen && (
+        <React.Fragment>
+          <div
+            className={classnames('g-modal-background', className)}
+            role="button"
+            aria-label="Close modal"
+            onClick={closeModal}
+            onKeyPress={closeModal}
+            tabIndex={0}
+          />
+          <div className="g-modal">
+            {closeButton && (
+              <div className="g-modal__close-button">
+                <i
+                  className="g-modal__close-button-icon"
+                  role="button"
+                  onClick={closeModal}
+                  onKeyPress={closeModal}
+                  tabIndex={-1}
+                  aria-label="Close modal"
+                />
+              </div>
+            )}
+            {children}
+          </div>
+        </React.Fragment>
+      ),
+      parentEl,
+    )
   );
 };
 

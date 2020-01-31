@@ -23,6 +23,11 @@ export const usePortal = parent => {
   const rootRef = useRef(null);
 
   useEffect(() => {
+    if (!rootRef.current) {
+      const rootEl = document.createElement('div');
+      rootEl.classList.add('g-portal');
+      rootRef.current = rootEl;
+    }
     /* eslint-disable no-nested-ternary */
     const parentEl = isElement(parent)
       ? parent
@@ -34,7 +39,7 @@ export const usePortal = parent => {
     // Unmounted
     if (!parentEl.parentElement) {
       parentEl.classList.add('g-portal-parent');
-      document.body.insertBefore(parentEl, document.body.lastElementChild.nextElementSibling);
+      document.body.insertBefore(parentEl, document.body.firstElementChild);
     }
 
     parentEl.appendChild(rootRef.current);
@@ -46,15 +51,7 @@ export const usePortal = parent => {
     };
   }, [parent]);
 
-  return (() => {
-    if (!rootRef.current) {
-      const rootEl = document.createElement('div');
-      rootEl.classList.add('g-portal');
-      rootRef.current = rootEl;
-    }
-
-    return rootRef.current;
-  })();
+  return rootRef.current;
 };
 
 export default {

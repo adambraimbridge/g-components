@@ -6738,6 +6738,38 @@ exports[`Storyshots Core|Loading Basic With No Props 1`] = `
 />
 `;
 
+exports[`Storyshots Core|Modal Basic Modal 1`] = `
+<div>
+  <h1>
+    Example page!
+  </h1>
+  <p>
+    Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Open modal
+  </button>
+</div>
+`;
+
+exports[`Storyshots Core|Modal Bigger Model 1`] = `
+<div>
+  <h1>
+    Example page!
+  </h1>
+  <p>
+    Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Open modal
+  </button>
+</div>
+`;
+
 exports[`Storyshots Core|OnwardJourney Basic 1`] = `null`;
 
 exports[`Storyshots Core|Share Basic 1`] = `
