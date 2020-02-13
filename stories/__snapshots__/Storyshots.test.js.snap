@@ -3472,44 +3472,44 @@ soluta vix, quis natum ne qui, ei vidit latine partiendo mei. Mel ea duis essent
             </div>
           </div>
         </div>
-        <footer
-          className="o-typography-footer"
-          itemProp="publisher"
-          itemScope={true}
-          itemType="https://schema.org/Organization"
+      </div>
+      <footer
+        className="o-typography-footer"
+        itemProp="publisher"
+        itemScope={true}
+        itemType="https://schema.org/Organization"
+      >
+        <div
+          className="o-grid-container"
         >
           <div
-            className="o-grid-container"
+            className="o-grid-row"
           >
             <div
-              className="o-grid-row"
+              data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
             >
-              <div
-                data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
-              >
-                <small>
-                  <a
-                    data-trackable="link-copyright"
-                    href="http://www.ft.com/servicestools/help/copyright"
-                  >
-                    Copyright
-                  </a>
-                   
-                  <span
-                    itemProp="name"
-                  >
-                    The Financial Times
-                  </span>
-                   Limited
-                   
-                  2019
-                  . All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.
-                </small>
-              </div>
+              <small>
+                <a
+                  data-trackable="link-copyright"
+                  href="http://www.ft.com/servicestools/help/copyright"
+                >
+                  Copyright
+                </a>
+                 
+                <span
+                  itemProp="name"
+                >
+                  The Financial Times
+                </span>
+                 Limited
+                 
+                2019
+                . All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.
+              </small>
             </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </article>
   </main>,
   <div
@@ -4071,44 +4071,44 @@ soluta vix, quis natum ne qui, ei vidit latine partiendo mei. Mel ea duis essent
             </div>
           </div>
         </div>
-        <footer
-          className="o-typography-footer"
-          itemProp="publisher"
-          itemScope={true}
-          itemType="https://schema.org/Organization"
+      </div>
+      <footer
+        className="o-typography-footer"
+        itemProp="publisher"
+        itemScope={true}
+        itemType="https://schema.org/Organization"
+      >
+        <div
+          className="o-grid-container"
         >
           <div
-            className="o-grid-container"
+            className="o-grid-row"
           >
             <div
-              className="o-grid-row"
+              data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
             >
-              <div
-                data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
-              >
-                <small>
-                  <a
-                    data-trackable="link-copyright"
-                    href="http://www.ft.com/servicestools/help/copyright"
-                  >
-                    Copyright
-                  </a>
-                   
-                  <span
-                    itemProp="name"
-                  >
-                    The Financial Times
-                  </span>
-                   Limited
-                   
-                  2019
-                  . All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.
-                </small>
-              </div>
+              <small>
+                <a
+                  data-trackable="link-copyright"
+                  href="http://www.ft.com/servicestools/help/copyright"
+                >
+                  Copyright
+                </a>
+                 
+                <span
+                  itemProp="name"
+                >
+                  The Financial Times
+                </span>
+                 Limited
+                 
+                2019
+                . All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.
+              </small>
             </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </article>
   </main>,
   <div
@@ -4675,44 +4675,44 @@ soluta vix, quis natum ne qui, ei vidit latine partiendo mei. Mel ea duis essent
             </div>
           </div>
         </div>
-        <footer
-          className="o-typography-footer"
-          itemProp="publisher"
-          itemScope={true}
-          itemType="https://schema.org/Organization"
+      </div>
+      <footer
+        className="o-typography-footer"
+        itemProp="publisher"
+        itemScope={true}
+        itemType="https://schema.org/Organization"
+      >
+        <div
+          className="o-grid-container"
         >
           <div
-            className="o-grid-container"
+            className="o-grid-row"
           >
             <div
-              className="o-grid-row"
+              data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
             >
-              <div
-                data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
-              >
-                <small>
-                  <a
-                    data-trackable="link-copyright"
-                    href="http://www.ft.com/servicestools/help/copyright"
-                  >
-                    Copyright
-                  </a>
-                   
-                  <span
-                    itemProp="name"
-                  >
-                    The Financial Times
-                  </span>
-                   Limited
-                   
-                  2019
-                  . All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.
-                </small>
-              </div>
+              <small>
+                <a
+                  data-trackable="link-copyright"
+                  href="http://www.ft.com/servicestools/help/copyright"
+                >
+                  Copyright
+                </a>
+                 
+                <span
+                  itemProp="name"
+                >
+                  The Financial Times
+                </span>
+                 Limited
+                 
+                2019
+                . All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.
+              </small>
             </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </article>
   </main>,
   <div
@@ -5281,44 +5281,44 @@ Array [
             </div>
           </div>
         </div>
-        <footer
-          className="o-typography-footer"
-          itemProp="publisher"
-          itemScope={true}
-          itemType="https://schema.org/Organization"
+      </div>
+      <footer
+        className="o-typography-footer"
+        itemProp="publisher"
+        itemScope={true}
+        itemType="https://schema.org/Organization"
+      >
+        <div
+          className="o-grid-container"
         >
           <div
-            className="o-grid-container"
+            className="o-grid-row"
           >
             <div
-              className="o-grid-row"
+              data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
             >
-              <div
-                data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
-              >
-                <small>
-                  <a
-                    data-trackable="link-copyright"
-                    href="http://www.ft.com/servicestools/help/copyright"
-                  >
-                    Copyright
-                  </a>
-                   
-                  <span
-                    itemProp="name"
-                  >
-                    The Financial Times
-                  </span>
-                   Limited
-                   
-                  2019
-                  . All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.
-                </small>
-              </div>
+              <small>
+                <a
+                  data-trackable="link-copyright"
+                  href="http://www.ft.com/servicestools/help/copyright"
+                >
+                  Copyright
+                </a>
+                 
+                <span
+                  itemProp="name"
+                >
+                  The Financial Times
+                </span>
+                 Limited
+                 
+                2019
+                . All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.
+              </small>
             </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </article>
   </main>,
   <div
@@ -5757,44 +5757,44 @@ soluta vix, quis natum ne qui, ei vidit latine partiendo mei. Mel ea duis essent
             </div>
           </div>
         </div>
-        <footer
-          className="o-typography-footer"
-          itemProp="publisher"
-          itemScope={true}
-          itemType="https://schema.org/Organization"
+      </div>
+      <footer
+        className="o-typography-footer"
+        itemProp="publisher"
+        itemScope={true}
+        itemType="https://schema.org/Organization"
+      >
+        <div
+          className="o-grid-container"
         >
           <div
-            className="o-grid-container"
+            className="o-grid-row"
           >
             <div
-              className="o-grid-row"
+              data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
             >
-              <div
-                data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
-              >
-                <small>
-                  <a
-                    data-trackable="link-copyright"
-                    href="http://www.ft.com/servicestools/help/copyright"
-                  >
-                    Copyright
-                  </a>
-                   
-                  <span
-                    itemProp="name"
-                  >
-                    The Financial Times
-                  </span>
-                   Limited
-                   
-                  2019
-                  . All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.
-                </small>
-              </div>
+              <small>
+                <a
+                  data-trackable="link-copyright"
+                  href="http://www.ft.com/servicestools/help/copyright"
+                >
+                  Copyright
+                </a>
+                 
+                <span
+                  itemProp="name"
+                >
+                  The Financial Times
+                </span>
+                 Limited
+                 
+                2019
+                . All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.
+              </small>
             </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </article>
   </main>,
   <div
@@ -6330,44 +6330,44 @@ soluta vix, quis natum ne qui, ei vidit latine partiendo mei. Mel ea duis essent
             </div>
           </div>
         </div>
-        <footer
-          className="o-typography-footer"
-          itemProp="publisher"
-          itemScope={true}
-          itemType="https://schema.org/Organization"
+      </div>
+      <footer
+        className="o-typography-footer"
+        itemProp="publisher"
+        itemScope={true}
+        itemType="https://schema.org/Organization"
+      >
+        <div
+          className="o-grid-container"
         >
           <div
-            className="o-grid-container"
+            className="o-grid-row"
           >
             <div
-              className="o-grid-row"
+              data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
             >
-              <div
-                data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
-              >
-                <small>
-                  <a
-                    data-trackable="link-copyright"
-                    href="http://www.ft.com/servicestools/help/copyright"
-                  >
-                    Copyright
-                  </a>
-                   
-                  <span
-                    itemProp="name"
-                  >
-                    The Financial Times
-                  </span>
-                   Limited
-                   
-                  2019
-                  . All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.
-                </small>
-              </div>
+              <small>
+                <a
+                  data-trackable="link-copyright"
+                  href="http://www.ft.com/servicestools/help/copyright"
+                >
+                  Copyright
+                </a>
+                 
+                <span
+                  itemProp="name"
+                >
+                  The Financial Times
+                </span>
+                 Limited
+                 
+                2019
+                . All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.
+              </small>
             </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </article>
   </main>,
   <div
