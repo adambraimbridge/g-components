@@ -1,6 +1,5 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 import { GridContainer, GridRow, GridChild } from './';
-import '../../shared/critical-path.scss';
 import demoStylesModule from '!!style-loader?injectType=lazyStyleTag!css-loader!sass-loader!o-grid/demos/src/scss/_demos.scss?story';
 
 export const demoStyles = Promise.resolve(demoStylesModule);
