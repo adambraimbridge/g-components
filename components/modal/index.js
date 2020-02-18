@@ -3,7 +3,7 @@
  * Modal dialog box
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { createPortal } from 'react-dom';
@@ -12,6 +12,17 @@ import './styles.scss';
 
 const Modal = ({ className, parent, children, isOpen, closeModal, closeButton }) => {
   const parentEl = usePortal(parent);
+
+  // Set up escape key handler
+  useEffect(() => {
+    const handler = ({ keyCode }) => {
+      if (keyCode === 27) closeModal();
+    };
+    document.addEventListener('onkeydown', handler);
+    return () => {
+      document.removeEventListener('onkeydown', handler);
+    };
+  }, [closeModal]);
 
   return (
     parentEl &&
@@ -24,7 +35,7 @@ const Modal = ({ className, parent, children, isOpen, closeModal, closeButton })
             aria-label="Close modal"
             onClick={closeModal}
             onKeyPress={closeModal}
-            tabIndex={0}
+            tabIndex={-1}
           />
           <div className="g-modal">
             {closeButton && (
@@ -34,8 +45,8 @@ const Modal = ({ className, parent, children, isOpen, closeModal, closeButton })
                   role="button"
                   onClick={closeModal}
                   onKeyPress={closeModal}
-                  tabIndex={-1}
-                  aria-label="Close modal"
+                  tabIndex={0}
+                  aria-label="Close dialog"
                 />
               </div>
             )}
@@ -50,7 +61,7 @@ const Modal = ({ className, parent, children, isOpen, closeModal, closeButton })
 
 Modal.propTypes = {
   children: PropTypes.node,
-  parent: PropTypes.oneOfType([PropTypes.string, PropTypes.string]),
+  parent: PropTypes.oneOfType([PropTypes.node, PropTypes.string]),
   closeButton: PropTypes.bool,
   classNames: PropTypes.string,
 };
