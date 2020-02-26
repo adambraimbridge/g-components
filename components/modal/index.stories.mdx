@@ -13,6 +13,13 @@ export const ExamplePage = ({ children }) => {
         Page text Page text Page text Page text Page text Page text Page text Page text Page text
         Page text Page text Page text
       </p>
+      <input
+        onFocus={() => {
+          if (modalOpen) console.error('WHOOPS -- NO TAB HERE WHEN OPEN!!!');
+        }}
+        type="text"
+        value="You shouldn't be able to tab here when modal is open"
+      />
       <button onClick={() => openModal(true)}>Open modal</button>
       {cloneElement(children, { isOpen: modalOpen, closeModal: () => openModal(false) })}
     </div>
@@ -21,7 +28,7 @@ export const ExamplePage = ({ children }) => {
 
 <Meta title="Core|Modal" component={Modal} />
 
-# x component
+# Modal popup component
 
 tktk
 
@@ -34,7 +41,7 @@ tktk
 </Preview>
 
 <Preview>
-  <Story name="Bigger model">
+  <Story name="Bigger modal">
     <ExamplePage>
       <Modal>
         <h1>Wow a bigger modal</h1>
@@ -44,6 +51,21 @@ tktk
         <p>You could put some text or something here!</p>
         <p>You could put some text or something here!</p>
         <p>You could put some text or something here!</p>
+      </Modal>
+    </ExamplePage>
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="a11y modal">
+    <ExamplePage>
+      <Modal>
+        <input type="text" value="This should tab first!" />
+        <br />
+        <input type="text" value="This should tab second!" />
+        <br />
+        <input type="text" value="This should tab third!" />
+        <br />
       </Modal>
     </ExamplePage>
   </Story>
