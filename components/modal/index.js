@@ -6,142 +6,39 @@
 import React, { useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import { createPortal } from 'react-dom';
+import ReactDOM, { createPortal } from 'react-dom';
 import { usePortal } from '../../shared/hooks';
 import './styles.scss';
 
-const Modal = ({ className, parent, children, isOpen, closeModal: closeCallback, closeButton }) => {
-  const parentEl = usePortal(parent);
-  const lastFocused = useRef(null);
-  const childContainer = useRef(null);
-  const closeButtonRef = useRef(null);
-  const allFocusable = useRef(null);
+/**
+ * A wrapper for oOverlay contents
+ *
+ * Based on whether the overlay is shown or not (from `useOverlay`
+ * state), create a [React portal](https://reactjs.org/docs/portals.html)
+ * to insert the children of this component into oOverlay contents DOM
+ * element.
+ *
+ * @param {Object} props
+ * @param {*} props.children - The contents of the overlay
+ * @param {Object} props.overlayState - The overlay state (result of `useOverlay`)
+ * @param {Object} props.overlayState.isShowing - Whether to create the content or not
+ * @param {Object} props.overlayState.oOverlayContentsSelector - A selector to get the DOM element to insert overlay contents into
+ */
+const GModal = ({ children, overlayState }) => {
+  const { isShowing, oOverlayContentsSelector } = overlayState;
 
-  const closeModal = useCallback(
-    (...args) => {
-      if (lastFocused.current) lastFocused.current.focus();
-      allFocusable.current.forEach(el => {
-        el.tabindex = el.originalTabIndex;
-      });
-      closeCallback(...args);
-    },
-    [closeCallback],
-  );
+  // Find where the overlay contents is, to create the portal
+  const portalContainer = document.querySelector(oOverlayContentsSelector);
 
-  // Do some fuckery with tabindices
-  useEffect(() => {
-    if (isOpen) {
-      lastFocused.current = document.activeElement;
-      allFocusable.current = document.querySelectorAll(
-        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
-      );
-      allFocusable.current.forEach(el => {
-        el.originalTabIndex = el.tabIndex;
-        el.tabIndex = -1;
-      });
-    }
-  }, [isOpen]);
-
-  useEffect(() => {
-    if (!childContainer.current || !closeButtonRef.current) return;
-
-    // Via https://gomakethings.com/how-to-get-the-first-and-last-focusable-elements-in-the-dom/
-    const focusable = [
-      ...childContainer.current.querySelectorAll(
-        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
-      ),
-      closeButtonRef.current,
-    ];
-
-    const [focusableFirstChild] = focusable;
-    // Focus on first focasable
-    focusableFirstChild.focus();
-    const handler = ({ keyCode }) => {
-      if (keyCode === 9) {
-        const currentElIndex = focusable.indexOf(document.activeElement);
-        console.log(currentElIndex);
-        if (currentElIndex === -1 && focusableFirstChild) {
-          console.log('first child!');
-          focusableFirstChild.focus();
-        } else if (currentElIndex + 1 < focusable.length) {
-          console.log('another child!');
-          focusable[currentElIndex + 1].focus();
-        } else if (focusableFirstChild) {
-          console.log('loop');
-          focusableFirstChild.focus();
-        } else {
-          throw new Error('Unhandled focus exception');
-        }
-      }
-    };
-    document.addEventListener('keydown', handler);
-    return () => {
-      document.removeEventListener('keydown', handler);
-    };
-  }, [children, childContainer, closeButtonRef, isOpen]);
-
-  // Set up escape key handler
-  useEffect(() => {
-    const handler = ({ keyCode }) => {
-      if (keyCode === 27) {
-        lastFocused.current.focus();
-        closeModal();
-      }
-    };
-    document.addEventListener('keydown', handler);
-    return () => {
-      document.removeEventListener('keydown', handler);
-    };
-  }, [closeModal]);
-
-  return (
-    parentEl &&
-    createPortal(
-      isOpen && (
-        <React.Fragment>
-          <div
-            className={classnames('g-modal-background', className)}
-            role="button"
-            aria-label="Close modal"
-            onClick={closeModal}
-            onKeyPress={closeModal}
-            tabIndex={-1}
-          />
-          <div className="g-modal">
-            {closeButton && (
-              <div className="g-modal__close-button">
-                <i
-                  className="g-modal__close-button-icon"
-                  role="button"
-                  onClick={closeModal}
-                  onKeyPress={closeModal}
-                  ref={closeButtonRef}
-                  aria-label="Close dialog"
-                />
-              </div>
-            )}
-            <div className="g-modal__body" ref={childContainer}>
-              {children}
-            </div>
-          </div>
-        </React.Fragment>
-      ),
-      parentEl,
-    )
-  );
+  // Only create a portal if the overlay is showing
+  return isShowing ? ReactDOM.createPortal(children, portalContainer) : null;
 };
 
-Modal.propTypes = {
-  children: PropTypes.node,
-  parent: PropTypes.oneOfType([PropTypes.node, PropTypes.string]),
-  closeButton: PropTypes.bool,
-  classNames: PropTypes.string,
+GModal.propTypes = {
+  overlayState: PropTypes.shape({
+    isShowing: PropTypes.bool,
+    oOverlayContentsSelector: PropTypes.string,
+  }).isRequired,
 };
 
-Modal.defaultProps = {
-  parent: undefined,
-  closeButton: true,
-  classNames: undefined,
-};
-
-export default Modal;
+export default GModal;
