@@ -3281,38 +3281,6 @@ exports[`Storyshots Core|Loading Basic With No Props 1`] = `
 />
 `;
 
-exports[`Storyshots Core|Modal Basic Modal 1`] = `
-<div>
-  <h1>
-    Example page!
-  </h1>
-  <p>
-    Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text
-  </p>
-  <button
-    onClick={[Function]}
-  >
-    Open modal
-  </button>
-</div>
-`;
-
-exports[`Storyshots Core|Modal Bigger Model 1`] = `
-<div>
-  <h1>
-    Example page!
-  </h1>
-  <p>
-    Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text Page text
-  </p>
-  <button
-    onClick={[Function]}
-  >
-    Open modal
-  </button>
-</div>
-`;
-
 exports[`Storyshots Core|OnwardJourney Basic 1`] = `null`;
 
 exports[`Storyshots Core|Progress Basic Progress Bars 1`] = `
@@ -5343,106 +5311,11 @@ exports[`Storyshots Elections|GE2019/Net Change Bar Chart Basic 1`] = `
           <span
             className="party-name party-name--mobile"
           >
-<<<<<<< HEAD
-            FT Editorial Code of Practice
-          </a>
-          .
-        </small>
-      </div>
-    </div>
-    <div
-      className="o-footer__brand"
-    >
-      <div
-        className="o-footer__container"
-      >
-        <div
-          className="o-footer__brand-logo"
-        />
-      </div>
-    </div>
-  </footer>,
-]
-`;
-
-exports[`Storyshots Core|Loading All Sizes With Dark Theme 1`] = `
-<div>
-  <div
-    className="g-loading g-loading--small g-loading--dark"
-  />
-  <div
-    className="g-loading g-loading--medium g-loading--dark"
-  />
-  <div
-    className="g-loading g-loading--large g-loading--dark"
-  />
-</div>
-`;
-
-exports[`Storyshots Core|Loading All Sizes With Light Theme 1`] = `
-<div
-  style={
-    Object {
-      "background": "#262a33",
-    }
-  }
->
-  <div
-    className="g-loading g-loading--small g-loading--light"
-  />
-  <div
-    className="g-loading g-loading--medium g-loading--light"
-  />
-  <div
-    className="g-loading g-loading--large g-loading--light"
-  />
-</div>
-`;
-
-exports[`Storyshots Core|Loading Basic With Light Theme 1`] = `
-<div
-  style={
-    Object {
-      "background": "#262a33",
-    }
-  }
->
-  <div
-    className="g-loading g-loading--small g-loading--light"
-  />
-</div>
-`;
-
-exports[`Storyshots Core|Loading Basic With No Props 1`] = `
-<div
-  className="g-loading g-loading--small g-loading--dark"
-/>
-`;
-
-exports[`Storyshots Core|OnwardJourney Basic 1`] = `null`;
-
-exports[`Storyshots Core|Share Basic 1`] = `
-<div
-  className="article__share article__share--top n-util-clearfix"
-  data-trackable="share | top"
->
-  <div
-    className="container"
-  >
-    <div
-      className="o-share"
-      data-o-component="o-share"
-    >
-      <ul>
-        <li
-          className="o-share__action o-share__action--twitter"
-=======
             Con
           </span>
         </td>
         <td
           className="bar-change bar-change--others--negative"
->>>>>>> 421c4f3... Fixing errors caused by separating out the layout and o-ads hooks
         >
           <span
             className="bar-container"
