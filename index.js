@@ -23,3 +23,4 @@ export { default as Card } from './components/card';
 export { default as AutosuggestSearch } from './components/autosuggest-search';
 export { default as Loading } from './components/loading';
 export { default as Button } from './components/button';
+export { default as Feature } from './components/feature';

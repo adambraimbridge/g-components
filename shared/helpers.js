@@ -55,11 +55,7 @@ export function spoorTrackingPixel(data) {
   if (document) {
     const ieVersion = document.documentMode ? document.documentMode : 99; // eslint-disable-line
     const img = `<img src="https://spoor-api.ft.com/px.gif?data=${jsonString}" height="1" width="1" />`;
-    return ieVersion < 9 ? img : (
-      <noscript data-o-component="o-tracking">
-        {img}
-      </noscript>
-    );
+    return ieVersion < 9 ? img : <noscript data-o-component="o-tracking">{img}</noscript>;
   }
 
   return null;
@@ -77,7 +73,7 @@ export function getMainImage(img = {}) {
 
 // Via: https://reactjs.org/blog/2015/12/16/ismounted-antipattern.html
 
-export const makeCancelable = (promise) => {
+export const makeCancelable = promise => {
   let hasCanceled = false;
 
   const wrappedPromise = new Promise((resolve, reject) => {
@@ -106,7 +102,7 @@ export const registerLayoutChangeEvents = () => {
 
     const setupQuery = (query, size) => {
       // matchMedia listener handler: Dispatch `o-grid.layoutChange` event if a match
-      const handleMQChange = (mql) => {
+      const handleMQChange = mql => {
         if (mql.matches) {
           window.dispatchEvent(
             new CustomEvent('o-grid.layoutChange', {
@@ -155,13 +151,13 @@ export const registerLayoutChangeEvents = () => {
   );
 };
 
-export const unregisterLayoutChangeEvents = (listeners) => {
+export const unregisterLayoutChangeEvents = listeners => {
   const { layouts } = getGridBreakpoints();
   if (layouts) {
     const breakpoints = new Map([...Object.entries(layouts), ['default', '240px']]);
     const decr1 = val => `${Number(val.replace('px', '') - 1)}px`;
 
-    const removeQuery = (query) => {
+    const removeQuery = query => {
       const [, listener] = listeners.find(([q]) => q === query);
       const mql = window.matchMedia(query);
       mql.removeListener(listener);
@@ -198,3 +194,32 @@ export const unregisterLayoutChangeEvents = (listeners) => {
     });
   }
 };
+
+/**
+ * @function
+ * Tests whether an object is a DOM node.
+ * Via: https://stackoverflow.com/a/384380/467760
+ */
+export function isNode(o) {
+  return typeof Node === 'object'
+    ? o instanceof Node
+    : o &&
+        typeof o === 'object' &&
+        typeof o.nodeType === 'number' &&
+        typeof o.nodeName === 'string';
+}
+
+/**
+ * @function
+ * Tests whether an object is a DOM element.
+ * Via: https://stackoverflow.com/a/384380/467760
+ */
+export function isElement(o) {
+  return typeof HTMLElement === 'object'
+    ? o instanceof HTMLElement // DOM2
+    : o &&
+        typeof o === 'object' &&
+        o !== null &&
+        o.nodeType === 1 &&
+        typeof o.nodeName === 'string';
+}
