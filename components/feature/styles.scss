@@ -21,6 +21,11 @@ $o-grid-is-silent: false;
     }
   }
 
+  &__main {
+    display: flex;
+    flex: 1;
+  }
+
   &__controls {
     position: absolute;
     left: 0;
@@ -46,6 +51,7 @@ $o-grid-is-silent: false;
     z-index: 1;
     position: relative;
     color: #d3d4d6;
+    flex: 1;
   }
 
   &__background,

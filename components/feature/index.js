@@ -46,10 +46,11 @@ const Feature = forwardRef(
       currentPage,
     ]);
 
-    // const keyboardHandlers = useKeyboardShortcuts({
-    //   37: goBack,
-    //   39: goForward,
-    // });
+    // Setup global keyboard shortcuts
+    useKeyboardShortcuts({
+      37: goBack,
+      39: goForward,
+    });
 
     return (
       <Context.Provider
@@ -88,7 +89,7 @@ const Feature = forwardRef(
                     currentPage < 1 && 'g-feature__controls--disabled',
                   )}
                   role="button"
-                  // onKeyDown={keyboardHandlers.goBack}
+                  onKeyDown={goBack}
                   onClick={goBack}
                 />
                 <div
@@ -99,13 +100,13 @@ const Feature = forwardRef(
                     currentPage + 1 === Children.count(children) && 'g-feature__controls--disabled',
                   )}
                   role="button"
-                  // onKeyDown={keyboardHandlers.goForward}
+                  onKeyDown={goForward}
                   onClick={goForward}
                 />
               </nav>
             )}
             {/* The main bit */}
-            <main key="main" role="main" className="g-feature__main">
+            <main key="main" role="main" className="g-feature__main article o-typography-wrapper">
               {BackgroundComponent && (
                 <div className="g-feature__background" role="presentation">
                   <BackgroundComponent page={currentPage} />

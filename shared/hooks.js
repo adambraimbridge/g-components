@@ -121,23 +121,28 @@ export const useLayoutChangeEvents = () => {
  * Sets up global keyboard shortcuts
  */
 export const useKeyboardShortcuts = shortcuts => {
+  const handlers = useRef(null);
   useEffect(() => {
-    const listener = ({ keyCode }) => {
-      if (shortcuts[keyCode]) shortcuts[keyCode]();
+    handlers.current = shortcuts;
+  }, [shortcuts]);
+  useEffect(() => {
+    const listener = ({ keyCode, target }) => {
+      if (target === document.body && handlers.current[keyCode]) {
+        handlers.current[keyCode]();
+      }
     };
 
     document.addEventListener('keydown', listener);
     return () => {
       window.removeEventListener('keydown', listener);
     };
-  }, [shortcuts]);
+  }, []);
 
-  // Return object with function name bound to respective keypress
-  // N.b., this will break if you use the same function name twice
+  // Returns synthetic event listeners
   return Object.entries(shortcuts).reduce(
     (a, [k, v]) => ({
       ...a,
-      [v.name]: ({ keyPress }) => keyPress === k && v(),
+      [k]: ({ keyPress }) => keyPress === k && v(),
     }),
     {},
   );
