@@ -12689,6 +12689,7 @@ exports[`Storyshots Layouts|Feature Basic 1`] = `
         aria-label="Go back"
         className="g-feature__controls--back g-feature__controls--disabled"
         onClick={[Function]}
+        onKeyDown={[Function]}
         role="button"
         tabIndex={-1}
       />
@@ -12696,12 +12697,13 @@ exports[`Storyshots Layouts|Feature Basic 1`] = `
         aria-label="Go forward"
         className="g-feature__controls--forward"
         onClick={[Function]}
+        onKeyDown={[Function]}
         role="button"
         tabIndex={0}
       />
     </nav>
     <main
-      className="g-feature__main"
+      className="g-feature__main article o-typography-wrapper"
       role="main"
     >
       <div
@@ -12722,9 +12724,14 @@ exports[`Storyshots Layouts|Feature Basic 1`] = `
       <article
         className="g-feature__content"
       >
-        <h1>
-          Slide 1!
-        </h1>
+        <div>
+          <h1>
+            Slide 1!
+          </h1>
+          <h3>
+            Another line on slide 1!
+          </h3>
+        </div>
       </article>
       <div
         className="g-feature__foreground"
