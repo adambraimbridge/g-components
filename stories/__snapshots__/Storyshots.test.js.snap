@@ -212,6 +212,61 @@ exports[`Storyshots Core|Autosuggest Search Mp Lookup Example 1`] = `
 </form>
 `;
 
+exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With Default 1`] = `
+<form
+  className="g-autosuggest-search"
+  onSubmit={[Function]}
+  style={
+    Object {
+      "width": 300,
+    }
+  }
+>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-owns="react-autowhatever-1"
+    className="react-autosuggest__container"
+    role="combobox"
+  >
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls="react-autowhatever-1"
+      autoComplete="off"
+      className="react-autosuggest__input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      placeholder="Search here..."
+      type="text"
+      value="Jeremy Corbyn"
+    />
+    <div
+      className="react-autosuggest__suggestions-container"
+      id="react-autowhatever-1"
+      role="listbox"
+    />
+  </div>
+  <button
+    className="g-autosuggest-search__clear-button"
+    onClick={[Function]}
+    type="button"
+  >
+    <i
+      className="icon"
+      style={
+        Object {
+          "height": 20,
+          "width": 20,
+        }
+      }
+    />
+  </button>
+</form>
+`;
+
 exports[`Storyshots Core|Button B 2 C Theme 1`] = `
 <button
   className="o-buttons o-buttons--primary o-buttons--b2c"

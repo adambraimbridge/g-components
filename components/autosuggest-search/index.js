@@ -40,9 +40,10 @@ const AutosuggestSearch = ({
   onSubmitCallback,
   onClearFunction,
   validateInput,
+  defaultValue,
 }) => {
   const inputRef = useRef();
-  const [searchValue, setSearchValue] = useState('');
+  const [searchValue, setSearchValue] = useState(defaultValue || '');
   const [suggestions, setSuggestions] = useState([]);
   const [errorState, setErrorState] = useState({ isError: false, errorMessage: '' });
 
@@ -137,6 +138,7 @@ AutosuggestSearch.propTypes = {
   onSubmitCallback: PropTypes.func,
   onClearFunction: PropTypes.func,
   validateInput: PropTypes.func,
+  defaultValue: PropTypes.string,
 };
 
 AutosuggestSearch.defaultProps = {
