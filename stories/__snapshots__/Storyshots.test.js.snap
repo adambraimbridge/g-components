@@ -3338,6 +3338,12 @@ exports[`Storyshots Core|Loading Basic With No Props 1`] = `
 
 exports[`Storyshots Core|OnwardJourney Basic 1`] = `null`;
 
+exports[`Storyshots Core|Overlay Basic 1`] = `
+<div>
+  Use the Knobs toggle to show overlay
+</div>
+`;
+
 exports[`Storyshots Core|Progress Basic Progress Bars 1`] = `
 <div
   className="dark"
