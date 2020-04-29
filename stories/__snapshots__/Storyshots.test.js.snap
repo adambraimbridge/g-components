@@ -3282,6 +3282,78 @@ exports[`Storyshots Core|Last Updated No Date Provided Not Live Invisible 1`] = 
 />
 `;
 
+exports[`Storyshots Core|List Card Basic 1`] = `
+<div
+  className="g-list-card g-card"
+>
+  <h3
+    className="g-list-card__title"
+  >
+    Yay
+  </h3>
+  <ul
+    className="g-list-card__list"
+  >
+    <li
+      className="g-list-card__list-item"
+    >
+      One!
+    </li>
+    <li
+      className="g-list-card__list-item"
+    >
+      Two!
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Core|List Card Changelog Example 1`] = `
+<div
+  className="g-list-card g-card"
+>
+  <h3
+    className="g-list-card__title"
+  >
+    Latest Changes
+  </h3>
+  <ul
+    className="g-list-card__list"
+  >
+    <li
+      className="g-list-card__list-item"
+    >
+      <span>
+        <strong>
+          April 26:
+        </strong>
+         Streamgraph changes...
+      </span>
+    </li>
+    <li
+      className="g-list-card__list-item"
+    >
+      <span>
+        <strong>
+          April 9:
+        </strong>
+         Map changes...
+      </span>
+    </li>
+    <li
+      className="g-list-card__list-item"
+    >
+      <span>
+        <strong>
+          April 8:
+        </strong>
+         Data changes...
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`Storyshots Core|Loading All Sizes With Dark Theme 1`] = `
 <div>
   <div
