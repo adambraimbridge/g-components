@@ -64,7 +64,10 @@ const AutosuggestSearch = ({
 
   // Run callback when suggestion selected from dropdown
   const onSuggestionSelected = (event, { suggestionValue, suggestion }) => {
-    if (onSelectCallback) onSelectCallback(suggestion);
+    if (onSelectCallback) {
+      const callbackReturn = onSelectCallback(suggestion);
+      if (callbackReturn) setErrorState(callbackReturn);
+    }
     setSearchValue(suggestionValue);
     inputRef.current.input.blur();
   };
