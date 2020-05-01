@@ -3,7 +3,7 @@
  * Autosuggest search component
  */
 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Autosuggest from 'react-autosuggest';
 import './styles.scss';
@@ -41,11 +41,16 @@ const AutosuggestSearch = ({
   onClearFunction,
   validateInput,
   defaultValue,
+  errorMessageOverride,
 }) => {
   const inputRef = useRef();
   const [searchValue, setSearchValue] = useState(defaultValue || '');
   const [suggestions, setSuggestions] = useState([]);
   const [errorState, setErrorState] = useState({ isError: false, errorMessage: '' });
+
+  useEffect(() => {
+    if (errorMessageOverride) setErrorState({ isError: true, errorMessage: errorMessageOverride });
+  }, [errorMessageOverride]);
 
   // Update suggestions based on search value
   const onSuggestionsFetchRequested = ({ value }) => {
@@ -59,7 +64,10 @@ const AutosuggestSearch = ({
 
   // Run callback when suggestion selected from dropdown
   const onSuggestionSelected = (event, { suggestionValue, suggestion }) => {
-    if (onSelectCallback) onSelectCallback(suggestion);
+    if (onSelectCallback) {
+      const callbackReturn = onSelectCallback(suggestion);
+      if (callbackReturn) setErrorState(callbackReturn);
+    }
     setSearchValue(suggestionValue);
     inputRef.current.input.blur();
   };
@@ -139,6 +147,7 @@ AutosuggestSearch.propTypes = {
   onClearFunction: PropTypes.func,
   validateInput: PropTypes.func,
   defaultValue: PropTypes.string,
+  errorMessageOverride: PropTypes.string,
 };
 
 AutosuggestSearch.defaultProps = {
