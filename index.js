@@ -26,3 +26,5 @@ export { default as Button } from './components/button';
 export { default as Feature } from './components/feature';
 export { default as Overlay } from './components/overlay';
 export { default as ListCard } from './components/list-card';
+export { default as ImageSet } from './components/image-set';
+export { default as VideoSet } from './components/video-set';
