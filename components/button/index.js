@@ -7,7 +7,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import validIcons from './icons';
-import './styles.scss';
+// import './styles.scss'; // @TODO FIX
 
 /* eslint-disable react/button-has-type */
 export const Button = ({

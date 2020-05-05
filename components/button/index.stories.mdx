@@ -11,7 +11,7 @@ the API is rather similar.
 <Preview>
   <Story
     name="Secondary/default button"
-    parameters={{ styles: [Promise.resolve(require('o-buttons/demos/src/demo.scss'))] }}
+    parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}
   >
     <Button>Secondary/default</Button>
     <Button big>Secondary/default</Button>
@@ -25,7 +25,7 @@ the API is rather similar.
 <Preview>
   <Story
     name="Primary button"
-    parameters={{ styles: [Promise.resolve(require('o-buttons/demos/src/demo.scss'))] }}
+    parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}
   >
     <Button type="primary">Primary</Button>
     <Button type="primary" big>
@@ -43,7 +43,7 @@ the API is rather similar.
 <Preview>
   <Story
     name="Secondary/default button (inverse)"
-    parameters={{ styles: [Promise.resolve(require('o-buttons/demos/src/demo.scss'))] }}
+    parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}
   >
     <Button inverse>Primary</Button>
     <Button inverse big>
@@ -61,7 +61,7 @@ the API is rather similar.
 <Preview>
   <Story
     name="Primary button (inverse)"
-    parameters={{ styles: [Promise.resolve(require('o-buttons/demos/src/demo.scss'))] }}
+    parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}
   >
     <Button inverse type="primary">
       Primary
@@ -81,7 +81,7 @@ the API is rather similar.
 <Preview>
   <Story
     name="Secondary/default button (mono)"
-    parameters={{ styles: [Promise.resolve(require('o-buttons/demos/src/demo.scss'))] }}
+    parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}
   >
     <Button theme="mono">Primary</Button>
     <Button theme="mono" big>
@@ -99,7 +99,7 @@ the API is rather similar.
 <Preview>
   <Story
     name="Primary button (mono)"
-    parameters={{ styles: [Promise.resolve(require('o-buttons/demos/src/demo.scss'))] }}
+    parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}
   >
     <Button theme="mono" type="primary">
       Primary
@@ -117,10 +117,7 @@ the API is rather similar.
 </Preview>
 
 <Preview>
-  <Story
-    name="B2C theme"
-    parameters={{ styles: [Promise.resolve(require('o-buttons/demos/src/demo.scss'))] }}
-  >
+  <Story name="B2C theme" parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}>
     <Button type="primary" theme="b2c">
       B2C theme
     </Button>
@@ -139,7 +136,7 @@ the API is rather similar.
 <Preview>
   <Story
     name="Grouped layout"
-    parameters={{ styles: [Promise.resolve(require('o-buttons/demos/src/demo.scss'))] }}
+    parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}
   >
     <ButtonGroup>
       <Button selected="true">John</Button>
@@ -151,10 +148,7 @@ the API is rather similar.
 </Preview>
 
 <Preview>
-  <Story
-    name="Icon buttons"
-    parameters={{ styles: [Promise.resolve(require('o-buttons/demos/src/demo.scss'))] }}
-  >
+  <Story name="Icon buttons" parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}>
     <div>
       <h2>Currently supported icons</h2>
       <Button icon="arrow-left">Go back</Button>
@@ -247,7 +241,7 @@ the API is rather similar.
 <Preview>
   <Story
     name="Pagination layout"
-    parameters={{ styles: [Promise.resolve(require('o-buttons/demos/src/demo.scss'))] }}
+    parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}
   >
     <div>
       <ButtonPaginationGroup>

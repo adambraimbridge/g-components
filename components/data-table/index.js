@@ -159,17 +159,19 @@ const DataTable = ({
     tableOrigami.current = OTable.init(tableRef.current);
   }, []);
 
-  useEffect(() => {
-    if (tableOrigami.current) {
-      const tableRows = Array.from(tableRef.current.querySelectorAll('tr')).filter(
-        row => Array.from(row.querySelectorAll('th')).length === 0,
-      );
-      const tableHeaders = Array.from(tableRef.current.querySelectorAll('thead th'));
-      if (responsive === 'flat') {
-        tableOrigami.current._duplicateHeaders(tableRows, tableHeaders); // so it deals with data changing
-      }
-    }
-  }, [rows, headers]);
+  // @TODO fix this; private method OTable.prototype._duplicateHeaders
+  // useEffect(() => {
+  //   if (tableOrigami.current) {
+  //     const tableRows = Array.from(tableRef.current.querySelectorAll('tr')).filter(
+  //       row => Array.from(row.querySelectorAll('th')).length === 0,
+  //     );
+  //     const tableHeaders = Array.from(tableRef.current.querySelectorAll('thead th'));
+
+  //     // if (responsive === 'flat') {
+  //     //   tableOrigami.current._duplicateHeaders(tableRows, tableHeaders); // so it deals with data changing
+  //     // }
+  //   }
+  // }, [rows, headers]);
 
   const attributes = tableAttributes(
     responsive,

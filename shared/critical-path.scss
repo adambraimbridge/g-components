@@ -1,3 +1,4 @@
+@import './_globals.scss';
 @import 'o-colors/main.scss';
 @import 'o-grid/main.scss';
 
@@ -54,7 +55,7 @@ main {
 }
 
 body {
-  @include oColorsFor(page, background);
+  background: oColorsByUsecase('page', 'background');
   margin: 0;
   border: 0;
   font-family: $font-sans;

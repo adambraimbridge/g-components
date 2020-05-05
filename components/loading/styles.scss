@@ -2,19 +2,32 @@
 
 /* @TODO update this all to latest o-loading. See #92 */
 .g-loading {
-  @include oLoading();
-  @include oLoadingColor('light');
-
   &--small {
-    @include oLoadingSize('small');
+    @include oLoadingContent(
+      $opts: (
+        'size': 'small',
+      )
+    );
   }
   &--medium {
-    @include oLoadingSize('medium');
+    @include oLoadingContent(
+      $opts: (
+        'size': 'medium',
+      )
+    );
   }
   &--large {
-    @include oLoadingSize('large');
+    @include oLoadingContent(
+      $opts: (
+        'size': 'large',
+      )
+    );
   }
   &--dark {
-    @include oLoadingColor('dark');
+    @include oLoadingContent(
+      $opts: (
+        'theme': 'dark',
+      )
+    );
   }
 }
