@@ -9,6 +9,17 @@ import Autosuggest from 'react-autosuggest';
 import classNames from 'classnames';
 import './styles.scss';
 
+const Icon = ({ iconName, iconColorHex, width, height }) => (
+  <i
+    className="g-icon"
+    style={{
+      backgroundImage: `url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:${iconName}?source=o-icons&tint=%23${iconColorHex},%23${iconColorHex}&format=svg')`,
+      width,
+      height,
+    }}
+  />
+);
+
 // Default get suggestions method
 const defaultGetSuggestions = (value, searchList) => {
   const inputValue = value.trim().toLowerCase();
@@ -95,45 +106,55 @@ const AutosuggestSearch = ({
     setErrorState({ isError: false, errorMessage: '' });
   };
 
+  // Function to focus on input wherever you click
+  const focusOnInput = () => inputRef.current.input.focus();
+
   // Clear search value on button click
   const clearSearch = () => {
     setSearchValue('');
     setErrorState({ isError: false, errorMessage: '' });
-    inputRef.current.input.focus();
+    focusOnInput();
     onClearFunction();
   };
 
   const { isError, errorMessage } = errorState;
   // Generate form classes
-  const formClasses = classNames(
+  const classes = classNames(
     className,
     isError && `${className}--error`,
     showSearchIcon && `${className}--with-icon`,
   );
 
   return (
-    <form className={formClasses} onSubmit={onSubmit} style={{ width }}>
-      <Autosuggest
-        ref={inputRef}
-        suggestions={suggestions}
-        onSuggestionsFetchRequested={onSuggestionsFetchRequested}
-        onSuggestionsClearRequested={onSuggestionsClearRequested}
-        getSuggestionValue={getSuggestionValue}
-        renderSuggestion={renderSuggestion}
-        onSuggestionSelected={onSuggestionSelected}
-        focusInputOnSuggestionClick={false}
-        inputProps={{
-          placeholder,
-          value: searchValue,
-          onChange,
-        }}
-      />
+    <form onSubmit={onSubmit} style={{ width }} onClick={focusOnInput}>
+      <div className={classes}>
+        {showSearchIcon && (
+          <div className={`${className}__search-icon`}>
+            <Icon iconName="search" iconColorHex="66605C" width={30} height={30} />
+          </div>
+        )}
+        <Autosuggest
+          ref={inputRef}
+          suggestions={suggestions}
+          onSuggestionsFetchRequested={onSuggestionsFetchRequested}
+          onSuggestionsClearRequested={onSuggestionsClearRequested}
+          getSuggestionValue={getSuggestionValue}
+          renderSuggestion={renderSuggestion}
+          onSuggestionSelected={onSuggestionSelected}
+          focusInputOnSuggestionClick={false}
+          inputProps={{
+            placeholder,
+            value: searchValue,
+            onChange,
+          }}
+        />
+        {searchValue !== '' && (
+          <button className={`${className}__clear-button`} type="button" onClick={clearSearch}>
+            <Icon iconName="cross" iconColorHex="000000" width={20} height={20} />
+          </button>
+        )}
+      </div>
       {isError && <div className={`${className}__error-message`}>{errorMessage}</div>}
-      {searchValue !== '' && (
-        <button className={`${className}__clear-button`} type="button" onClick={clearSearch}>
-          <i className="icon" style={{ width: 20, height: 20 }} />
-        </button>
-      )}
     </form>
   );
 };
