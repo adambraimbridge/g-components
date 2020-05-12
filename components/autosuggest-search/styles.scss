@@ -40,6 +40,19 @@
   }
 }
 
+// Show icon
+.g-autosuggest-search {
+  &--with-icon {
+    .react-autosuggest__input {
+      background-image: url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:search?source=o-icons&tint=%2366605C,%2366605C&format=svg');
+      background-repeat: no-repeat;
+      background-position: 4px;
+      padding-left: 36px;
+      background-size: 30px;
+    }
+  }
+}
+
 // Override react autosuggest defaults
 .react-autosuggest {
   &__container {
@@ -74,12 +87,6 @@
     appearance: none;
     border: 1px solid #b3a9a0;
     transition: 0.15s box-shadow ease-in, 0.15s -webkit-box-shadow ease-in;
-
-    background-image: url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:search?source=o-icons&tint=%2366605C,%2366605C&format=svg');
-    background-repeat: no-repeat;
-    background-position: 4px;
-    padding-left: 36px;
-    background-size: 30px;
 
     &::placeholder {
       text-transform: none;

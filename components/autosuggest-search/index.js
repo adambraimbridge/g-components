@@ -6,6 +6,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Autosuggest from 'react-autosuggest';
+import classNames from 'classnames';
 import './styles.scss';
 
 // Default get suggestions method
@@ -42,6 +43,7 @@ const AutosuggestSearch = ({
   validateInput,
   defaultValue,
   errorMessageOverride,
+  showSearchIcon,
 }) => {
   const inputRef = useRef();
   const [searchValue, setSearchValue] = useState(defaultValue || '');
@@ -103,7 +105,11 @@ const AutosuggestSearch = ({
 
   const { isError, errorMessage } = errorState;
   // Generate form classes
-  const formClasses = [className, isError && `${className}--error`].filter(i => i).join(' ');
+  const formClasses = classNames(
+    className,
+    isError && `${className}--error`,
+    showSearchIcon && `${className}--with-icon`,
+  );
 
   return (
     <form className={formClasses} onSubmit={onSubmit} style={{ width }}>
@@ -148,6 +154,7 @@ AutosuggestSearch.propTypes = {
   validateInput: PropTypes.func,
   defaultValue: PropTypes.string,
   errorMessageOverride: PropTypes.string,
+  showSearchIcon: PropTypes.bool,
 };
 
 AutosuggestSearch.defaultProps = {
@@ -161,6 +168,7 @@ AutosuggestSearch.defaultProps = {
   onSubmitCallback: () => {},
   onClearCallback: () => {},
   validateInput: () => {},
+  showSearchIcon: true,
 };
 
 export default AutosuggestSearch;
