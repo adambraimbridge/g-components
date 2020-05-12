@@ -40,6 +40,19 @@ const RenderSuggestion = ({ display }) => <div>{display}</div>;
 // Default mapping from suggestion to value
 const defaultGetSuggestionValue = ({ display }) => display;
 
+const SelectedValue = ({ className, display, value, onSelectedValueRemove }) => (
+  <div className={`${className}__selected-value`}>
+    <span>{display}</span>
+    <button
+      className={`${className}__selected-value-close-button`}
+      type="button"
+      onClick={() => onSelectedValueRemove(value)}
+    >
+      <Icon iconName="cross" iconColorHex="ffffff" width={20} height={20} />
+    </button>
+  </div>
+);
+
 const AutosuggestSearch = ({
   className,
   placeholder,
@@ -55,11 +68,16 @@ const AutosuggestSearch = ({
   defaultValue,
   errorMessageOverride,
   showSearchIcon,
+  selectedValues,
+  onSelectedValueRemove,
+  selectedValueComponent: customSelectedValueComponent,
 }) => {
   const inputRef = useRef();
   const [searchValue, setSearchValue] = useState(defaultValue || '');
   const [suggestions, setSuggestions] = useState([]);
   const [errorState, setErrorState] = useState({ isError: false, errorMessage: '' });
+
+  const selectedValueComponent = customSelectedValueComponent || SelectedValue;
 
   useEffect(() => {
     if (errorMessageOverride) setErrorState({ isError: true, errorMessage: errorMessageOverride });
@@ -133,6 +151,10 @@ const AutosuggestSearch = ({
             <Icon iconName="search" iconColorHex="66605C" width={30} height={30} />
           </div>
         )}
+        {selectedValues.length > 1 &&
+          selectedValues.map(({ display, value }) =>
+            selectedValueComponent({ className, display, value, onSelectedValueRemove }),
+          )}
         <Autosuggest
           ref={inputRef}
           suggestions={suggestions}
@@ -176,6 +198,9 @@ AutosuggestSearch.propTypes = {
   defaultValue: PropTypes.string,
   errorMessageOverride: PropTypes.string,
   showSearchIcon: PropTypes.bool,
+  selectedValues: PropTypes.array,
+  selectedValueComponent: PropTypes.func,
+  onSelectedValueRemove: PropTypes.func,
 };
 
 AutosuggestSearch.defaultProps = {
@@ -190,6 +215,8 @@ AutosuggestSearch.defaultProps = {
   onClearCallback: () => {},
   validateInput: () => {},
   showSearchIcon: true,
+  selectedValues: [],
+  onSelectedValueRemove: () => {},
 };
 
 export default AutosuggestSearch;
