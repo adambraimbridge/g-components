@@ -74,6 +74,7 @@ const AutosuggestSearch = ({
   onSelectedValueRemove,
   selectedValueComponent: customSelectedValueComponent,
   showClearButton,
+  onEmptyInputBackspace,
 }) => {
   const inputRef = useRef();
   const [searchValue, setSearchValue] = useState(defaultValue || '');
@@ -127,6 +128,14 @@ const AutosuggestSearch = ({
     setErrorState({ isError: false, errorMessage: '' });
   };
 
+  // Handle key down event on input
+  const onKeyDownHandler = event => {
+    const { key } = event;
+    if (searchValue === '' && key === 'Backspace') {
+      onEmptyInputBackspace();
+    }
+  };
+
   // Function to focus on input wherever you click
   const focusOnInput = () => inputRef.current.input.focus();
 
@@ -167,6 +176,7 @@ const AutosuggestSearch = ({
             placeholder,
             value: searchValue,
             onChange,
+            onKeyDown: onKeyDownHandler,
           }}
         />
         {showClearButton && searchValue !== '' && (
@@ -201,6 +211,7 @@ AutosuggestSearch.propTypes = {
   selectedValueComponent: PropTypes.func,
   onSelectedValueRemove: PropTypes.func,
   showClearButton: PropTypes.bool,
+  onEmptyInputBackspace: PropTypes.func,
 };
 
 AutosuggestSearch.defaultProps = {
@@ -218,6 +229,7 @@ AutosuggestSearch.defaultProps = {
   selectedValues: [],
   onSelectedValueRemove: () => {},
   showClearButton: true,
+  onEmptyInputBackspace: () => {},
 };
 
 export default AutosuggestSearch;
