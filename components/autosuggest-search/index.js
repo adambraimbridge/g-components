@@ -74,7 +74,6 @@ const AutosuggestSearch = ({
   onSelectedValueRemove,
   selectedValueComponent: customSelectedValueComponent,
   showClearButton,
-  showDropdownIcon,
 }) => {
   const inputRef = useRef();
   const [searchValue, setSearchValue] = useState(defaultValue || '');
@@ -141,11 +140,7 @@ const AutosuggestSearch = ({
 
   const { isError, errorMessage } = errorState;
   // Generate form classes
-  const classes = classNames(
-    className,
-    isError && `${className}--error`,
-    showDropdownIcon && `${className}--with-drodown-icon`,
-  );
+  const classes = classNames(className, isError && `${className}--error`);
 
   return (
     <form onSubmit={onSubmit} style={{ width }} onClick={focusOnInput}>
@@ -179,11 +174,6 @@ const AutosuggestSearch = ({
             <Icon iconName="cross" iconColorHex="33302e" width={20} height={20} />
           </button>
         )}
-        {showDropdownIcon && !(showClearButton && searchValue !== '') && (
-          <div className={`${className}__dropdown-icon`}>
-            <Icon iconName="arrow-down" iconColorHex="33302e" width={30} height={30} />
-          </div>
-        )}
       </div>
       {isError && <div className={`${className}__error-message`}>{errorMessage}</div>}
     </form>
@@ -211,7 +201,6 @@ AutosuggestSearch.propTypes = {
   selectedValueComponent: PropTypes.func,
   onSelectedValueRemove: PropTypes.func,
   showClearButton: PropTypes.bool,
-  showDropdownIcon: PropTypes.bool,
 };
 
 AutosuggestSearch.defaultProps = {
@@ -229,7 +218,6 @@ AutosuggestSearch.defaultProps = {
   selectedValues: [],
   onSelectedValueRemove: () => {},
   showClearButton: true,
-  showDropdownIcon: false,
 };
 
 export default AutosuggestSearch;

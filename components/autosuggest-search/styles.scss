@@ -26,10 +26,6 @@
     color: #cc0000;
   }
 
-  &--with-drodown-icon {
-    padding-right: 30px;
-  }
-
   &__clear-button {
     height: 42px;
     position: absolute;
@@ -53,18 +49,6 @@
     margin-right: -6px;
     display: flex;
     align-items: center;
-  }
-
-  &__dropdown-icon {
-    height: 42px;
-    position: absolute;
-    right: 4px;
-    top: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    background: none;
-    border: none;
   }
 
   &__selected-value {
