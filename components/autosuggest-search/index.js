@@ -6,7 +6,9 @@
 import React, { useRef, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Autosuggest from 'react-autosuggest';
+import classNames from 'classnames';
 import './styles.scss';
+import Icon from '../icon';
 
 // Default get suggestions method
 const defaultGetSuggestions = (value, searchList) => {
@@ -23,10 +25,25 @@ const defaultGetSuggestions = (value, searchList) => {
 };
 
 // Default component/function to render suggestion
-const RenderSuggestion = ({ display }) => <div>{display}</div>;
+const RenderSuggestion = ({ display, disabled }) => (
+  <div className={classNames('suggestion', disabled && 'suggestion--disabled')}>{display}</div>
+);
 
 // Default mapping from suggestion to value
 const defaultGetSuggestionValue = ({ display }) => display;
+
+const SelectedValue = ({ className, display, value, onSelectedValueRemove }) => (
+  <div className={`${className}__selected-value`}>
+    <span>{display}</span>
+    <button
+      className={`${className}__selected-value-close-button`}
+      type="button"
+      onClick={() => onSelectedValueRemove(value)}
+    >
+      <Icon iconName="cross" iconColor="ffffff" width={20} height={20} />
+    </button>
+  </div>
+);
 
 const AutosuggestSearch = ({
   className,
@@ -42,11 +59,19 @@ const AutosuggestSearch = ({
   validateInput,
   defaultValue,
   errorMessageOverride,
+  showSearchIcon,
+  selectedValues,
+  onSelectedValueRemove,
+  selectedValueComponent: customSelectedValueComponent,
+  showClearButton,
+  onEmptyInputBackspace,
 }) => {
   const inputRef = useRef();
   const [searchValue, setSearchValue] = useState(defaultValue || '');
   const [suggestions, setSuggestions] = useState([]);
   const [errorState, setErrorState] = useState({ isError: false, errorMessage: '' });
+
+  const selectedValueComponent = customSelectedValueComponent || SelectedValue;
 
   useEffect(() => {
     if (errorMessageOverride) setErrorState({ isError: true, errorMessage: errorMessageOverride });
@@ -93,41 +118,64 @@ const AutosuggestSearch = ({
     setErrorState({ isError: false, errorMessage: '' });
   };
 
+  // Handle key down event on input
+  const onKeyDownHandler = event => {
+    const { key } = event;
+    if (searchValue === '' && key === 'Backspace') {
+      onEmptyInputBackspace();
+    }
+  };
+
+  // Function to focus on input wherever you click
+  const focusOnInput = () => inputRef.current.input.focus();
+
   // Clear search value on button click
   const clearSearch = () => {
     setSearchValue('');
     setErrorState({ isError: false, errorMessage: '' });
-    inputRef.current.input.focus();
+    focusOnInput();
     onClearFunction();
   };
 
   const { isError, errorMessage } = errorState;
   // Generate form classes
-  const formClasses = [className, isError && `${className}--error`].filter(i => i).join(' ');
+  const classes = classNames(className, isError && `${className}--error`);
 
   return (
-    <form className={formClasses} onSubmit={onSubmit} style={{ width }}>
-      <Autosuggest
-        ref={inputRef}
-        suggestions={suggestions}
-        onSuggestionsFetchRequested={onSuggestionsFetchRequested}
-        onSuggestionsClearRequested={onSuggestionsClearRequested}
-        getSuggestionValue={getSuggestionValue}
-        renderSuggestion={renderSuggestion}
-        onSuggestionSelected={onSuggestionSelected}
-        focusInputOnSuggestionClick={false}
-        inputProps={{
-          placeholder,
-          value: searchValue,
-          onChange,
-        }}
-      />
+    <form onSubmit={onSubmit} style={{ width }} onClick={focusOnInput}>
+      <div className={classes}>
+        {showSearchIcon && (
+          <div className={`${className}__search-icon`}>
+            <Icon iconName="search" iconColor="#66605C" width={30} height={30} />
+          </div>
+        )}
+        {selectedValues.length > 1 &&
+          selectedValues.map(({ display, value }) =>
+            selectedValueComponent({ className, display, value, onSelectedValueRemove }),
+          )}
+        <Autosuggest
+          ref={inputRef}
+          suggestions={suggestions}
+          onSuggestionsFetchRequested={onSuggestionsFetchRequested}
+          onSuggestionsClearRequested={onSuggestionsClearRequested}
+          getSuggestionValue={getSuggestionValue}
+          renderSuggestion={renderSuggestion}
+          onSuggestionSelected={onSuggestionSelected}
+          focusInputOnSuggestionClick={false}
+          inputProps={{
+            placeholder,
+            value: searchValue,
+            onChange,
+            onKeyDown: onKeyDownHandler,
+          }}
+        />
+        {showClearButton && searchValue !== '' && (
+          <button className={`${className}__clear-button`} type="button" onClick={clearSearch}>
+            <Icon iconName="cross" iconColor="#33302e" width={20} height={20} />
+          </button>
+        )}
+      </div>
       {isError && <div className={`${className}__error-message`}>{errorMessage}</div>}
-      {searchValue !== '' && (
-        <button className={`${className}__clear-button`} type="button" onClick={clearSearch}>
-          <i className="icon" style={{ width: 20, height: 20 }} />
-        </button>
-      )}
     </form>
   );
 };
@@ -148,6 +196,12 @@ AutosuggestSearch.propTypes = {
   validateInput: PropTypes.func,
   defaultValue: PropTypes.string,
   errorMessageOverride: PropTypes.string,
+  showSearchIcon: PropTypes.bool,
+  selectedValues: PropTypes.array,
+  selectedValueComponent: PropTypes.func,
+  onSelectedValueRemove: PropTypes.func,
+  showClearButton: PropTypes.bool,
+  onEmptyInputBackspace: PropTypes.func,
 };
 
 AutosuggestSearch.defaultProps = {
@@ -161,6 +215,11 @@ AutosuggestSearch.defaultProps = {
   onSubmitCallback: () => {},
   onClearCallback: () => {},
   validateInput: () => {},
+  showSearchIcon: true,
+  selectedValues: [],
+  onSelectedValueRemove: () => {},
+  showClearButton: true,
+  onEmptyInputBackspace: () => {},
 };
 
 export default AutosuggestSearch;
