@@ -149,8 +149,10 @@ function. The component takes these functions as (optional) props:
         return { isError: false, errorMessage: '' };
       }}
       onClearFunction={() => console.log('clear')}
-      showSearchIcon={false}
       selectedValues={array('Selected values', ['US', 'UK']).map(v => ({ display: v, value: v }))}
+      onSelectedValueRemove={value => alert(`Removing ${value}`)}
+      showSearchIcon={false}
+      showDropdownIcon={true}
     />
   </Story>
 </Preview>
@@ -172,7 +174,6 @@ function. The component takes these functions as (optional) props:
         return { isError: false, errorMessage: '' };
       }}
       onClearFunction={() => console.log('clear')}
-      showSearchIcon={false}
       selectedValues={array('Selected values', ['US', 'UK', 'France', 'Germany', 'Spain']).map(
         v => ({
           display: v,
@@ -180,6 +181,8 @@ function. The component takes these functions as (optional) props:
         }),
       )}
       onSelectedValueRemove={value => alert(`Removing ${value}`)}
+      showSearchIcon={false}
+      showDropdownIcon={true}
     />
   </Story>
 </Preview>

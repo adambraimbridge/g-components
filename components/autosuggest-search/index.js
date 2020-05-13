@@ -71,6 +71,8 @@ const AutosuggestSearch = ({
   selectedValues,
   onSelectedValueRemove,
   selectedValueComponent: customSelectedValueComponent,
+  showClearButton,
+  showDropdownIcon,
 }) => {
   const inputRef = useRef();
   const [searchValue, setSearchValue] = useState(defaultValue || '');
@@ -140,7 +142,7 @@ const AutosuggestSearch = ({
   const classes = classNames(
     className,
     isError && `${className}--error`,
-    showSearchIcon && `${className}--with-icon`,
+    showDropdownIcon && `${className}--with-drodown-icon`,
   );
 
   return (
@@ -170,10 +172,15 @@ const AutosuggestSearch = ({
             onChange,
           }}
         />
-        {searchValue !== '' && (
+        {showClearButton && searchValue !== '' && (
           <button className={`${className}__clear-button`} type="button" onClick={clearSearch}>
-            <Icon iconName="cross" iconColorHex="000000" width={20} height={20} />
+            <Icon iconName="cross" iconColorHex="33302e" width={20} height={20} />
           </button>
+        )}
+        {showDropdownIcon && !(showClearButton && searchValue !== '') && (
+          <div className={`${className}__dropdown-icon`}>
+            <Icon iconName="arrow-down" iconColorHex="33302e" width={30} height={30} />
+          </div>
         )}
       </div>
       {isError && <div className={`${className}__error-message`}>{errorMessage}</div>}
@@ -201,6 +208,8 @@ AutosuggestSearch.propTypes = {
   selectedValues: PropTypes.array,
   selectedValueComponent: PropTypes.func,
   onSelectedValueRemove: PropTypes.func,
+  showClearButton: PropTypes.bool,
+  showDropdownIcon: PropTypes.bool,
 };
 
 AutosuggestSearch.defaultProps = {
@@ -217,6 +226,8 @@ AutosuggestSearch.defaultProps = {
   showSearchIcon: true,
   selectedValues: [],
   onSelectedValueRemove: () => {},
+  showClearButton: true,
+  showDropdownIcon: false,
 };
 
 export default AutosuggestSearch;

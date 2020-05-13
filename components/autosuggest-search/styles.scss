@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  box-sizing: border-box;
 
   // Default border styles
   border: solid 1px #ccc1b7;
@@ -25,8 +26,12 @@
     color: #cc0000;
   }
 
+  &--with-drodown-icon {
+    padding-right: 30px;
+  }
+
   &__clear-button {
-    height: 44px;
+    height: 42px;
     position: absolute;
     right: 8px;
     top: 0;
@@ -43,11 +48,23 @@
   }
 
   &__search-icon {
-    height: 44px;
+    height: 42px;
     padding-left: 4px;
     margin-right: -6px;
     display: flex;
     align-items: center;
+  }
+
+  &__dropdown-icon {
+    height: 42px;
+    position: absolute;
+    right: 4px;
+    top: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
   }
 
   &__selected-value {
@@ -90,7 +107,7 @@
 // Override react autosuggest defaults
 .react-autosuggest {
   &__container {
-    flex-grow: 1;
+    flex: 1 0 120px;
   }
 
   &__input {
