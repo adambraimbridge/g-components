@@ -35,7 +35,9 @@ const defaultGetSuggestions = (value, searchList) => {
 };
 
 // Default component/function to render suggestion
-const RenderSuggestion = ({ display }) => <div>{display}</div>;
+const RenderSuggestion = ({ display, disabled }) => (
+  <div className={classNames('suggestion', disabled && 'suggestion--disabled')}>{display}</div>
+);
 
 // Default mapping from suggestion to value
 const defaultGetSuggestionValue = ({ display }) => display;

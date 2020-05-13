@@ -157,6 +157,18 @@
       font-family: MetricWeb, sans-serif !important;
       line-height: normal !important;
 
+      cursor: default;
+      pointer-events: none;
+
+      & > div[class*='disabled'] {
+        color: #999999;
+      }
+
+      & > div:not([class*='disabled']) {
+        cursor: pointer;
+        pointer-events: all;
+      }
+
       &:before {
         content: '';
       }
