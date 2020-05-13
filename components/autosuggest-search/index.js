@@ -8,17 +8,7 @@ import PropTypes from 'prop-types';
 import Autosuggest from 'react-autosuggest';
 import classNames from 'classnames';
 import './styles.scss';
-
-const Icon = ({ iconName, iconColorHex, width, height }) => (
-  <i
-    className="g-icon"
-    style={{
-      backgroundImage: `url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:${iconName}?source=o-icons&tint=%23${iconColorHex},%23${iconColorHex}&format=svg')`,
-      width,
-      height,
-    }}
-  />
-);
+import Icon from '../icon';
 
 // Default get suggestions method
 const defaultGetSuggestions = (value, searchList) => {
@@ -50,7 +40,7 @@ const SelectedValue = ({ className, display, value, onSelectedValueRemove }) => 
       type="button"
       onClick={() => onSelectedValueRemove(value)}
     >
-      <Icon iconName="cross" iconColorHex="ffffff" width={20} height={20} />
+      <Icon iconName="cross" iconColor="ffffff" width={20} height={20} />
     </button>
   </div>
 );
@@ -156,7 +146,7 @@ const AutosuggestSearch = ({
       <div className={classes}>
         {showSearchIcon && (
           <div className={`${className}__search-icon`}>
-            <Icon iconName="search" iconColorHex="66605C" width={30} height={30} />
+            <Icon iconName="search" iconColor="#66605C" width={30} height={30} />
           </div>
         )}
         {selectedValues.length > 1 &&
@@ -181,7 +171,7 @@ const AutosuggestSearch = ({
         />
         {showClearButton && searchValue !== '' && (
           <button className={`${className}__clear-button`} type="button" onClick={clearSearch}>
-            <Icon iconName="cross" iconColorHex="33302e" width={20} height={20} />
+            <Icon iconName="cross" iconColor="#33302e" width={20} height={20} />
           </button>
         )}
       </div>
