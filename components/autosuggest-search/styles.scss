@@ -173,11 +173,13 @@
   }
 
   &__suggestion {
-    cursor: pointer;
-    padding: 10px 20px;
-
     &--highlighted {
       background-color: #f2f2f2;
     }
   }
+}
+
+// Default suggestion element (inside ul/li)
+.suggestion {
+  padding: 10px 20px;
 }
