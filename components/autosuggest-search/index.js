@@ -33,7 +33,7 @@ const RenderSuggestion = ({ display, disabled }) => (
 const defaultGetSuggestionValue = ({ display }) => display;
 
 const SelectedValue = ({ className, display, value, onSelectedValueRemove }) => (
-  <div className={`${className}__selected-value`}>
+  <div className={`${className}__selected-value`} key={`selected-value__${value}`}>
     <span>{display}</span>
     <button
       className={`${className}__selected-value-close-button`}
