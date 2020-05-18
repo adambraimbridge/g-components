@@ -66,6 +66,8 @@ const AutosuggestSearch = ({
   selectedValueComponent: customSelectedValueComponent,
   showClearButton,
   onEmptyInputBackspace,
+  disabled,
+  onClickCallback,
 }) => {
   const inputRef = useRef();
   const [searchValue, setSearchValue] = useState(defaultValue || '');
@@ -130,6 +132,11 @@ const AutosuggestSearch = ({
   // Function to focus on input wherever you click
   const focusOnInput = () => inputRef.current.input.focus();
 
+  const onClickHandler = () => {
+    focusOnInput();
+    onClickCallback();
+  };
+
   // Clear search value on button click
   const clearSearch = () => {
     setSearchValue('');
@@ -147,7 +154,7 @@ const AutosuggestSearch = ({
   );
 
   return (
-    <form onSubmit={onSubmit} style={{ width }} onClick={focusOnInput}>
+    <form onSubmit={onSubmit} style={{ width }} onClick={onClickHandler}>
       <div className={classes}>
         {showSearchIcon && searchIconPosition === 'left' && (
           <div className={`${className}__search-icon`}>
@@ -172,6 +179,7 @@ const AutosuggestSearch = ({
             value: searchValue,
             onChange,
             onKeyDown: onKeyDownHandler,
+            disabled,
           }}
         />
         {showClearButton && searchValue !== '' && (
@@ -215,6 +223,8 @@ AutosuggestSearch.propTypes = {
   showClearButton: PropTypes.bool,
   onEmptyInputBackspace: PropTypes.func,
   searchIconPosition: PropTypes.oneOf(['left', 'right']),
+  disabled: PropTypes.bool,
+  onClickCallback: PropTypes.func,
 };
 
 AutosuggestSearch.defaultProps = {
@@ -234,6 +244,8 @@ AutosuggestSearch.defaultProps = {
   showClearButton: true,
   onEmptyInputBackspace: () => {},
   searchIconPosition: 'left',
+  disabled: false,
+  onClickCallback: () => {},
 };
 
 export default AutosuggestSearch;
