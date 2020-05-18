@@ -209,6 +209,19 @@ function. The component takes these functions as (optional) props:
       validateInput={validateInputFunction}
       onClearFunction={() => console.log('clear')}
       disabled={boolean('Disabled input', false)}
+    />
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="MP lookup example (with on click callback)">
+    <AutosuggestSearch
+      placeholder="Search here..."
+      width={300}
+      searchList={basicMpSearchList}
+      validateInput={validateInputFunction}
+      onClearFunction={() => console.log('clear')}
+      disabled={boolean('Disabled input', false)}
       onClickCallback={() => alert('hello')}
     />
   </Story>
