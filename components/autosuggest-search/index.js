@@ -60,11 +60,14 @@ const AutosuggestSearch = ({
   defaultValue,
   errorMessageOverride,
   showSearchIcon,
+  searchIconPosition,
   selectedValues,
   onSelectedValueRemove,
   selectedValueComponent: customSelectedValueComponent,
   showClearButton,
   onEmptyInputBackspace,
+  disabled,
+  onClickCallback,
 }) => {
   const inputRef = useRef();
   const [searchValue, setSearchValue] = useState(defaultValue || '');
@@ -129,6 +132,11 @@ const AutosuggestSearch = ({
   // Function to focus on input wherever you click
   const focusOnInput = () => inputRef.current.input.focus();
 
+  const onClickHandler = () => {
+    focusOnInput();
+    onClickCallback();
+  };
+
   // Clear search value on button click
   const clearSearch = () => {
     setSearchValue('');
@@ -139,12 +147,16 @@ const AutosuggestSearch = ({
 
   const { isError, errorMessage } = errorState;
   // Generate form classes
-  const classes = classNames(className, isError && `${className}--error`);
+  const classes = classNames(
+    className,
+    isError && `${className}--error`,
+    showSearchIcon && searchIconPosition === 'right' && `${className}--with-search-icon-right`,
+  );
 
   return (
-    <form onSubmit={onSubmit} style={{ width }} onClick={focusOnInput}>
+    <form onSubmit={onSubmit} style={{ width }} onClick={onClickHandler}>
       <div className={classes}>
-        {showSearchIcon && (
+        {showSearchIcon && searchIconPosition === 'left' && (
           <div className={`${className}__search-icon`}>
             <Icon iconName="search" iconColor="#66605C" width={30} height={30} />
           </div>
@@ -167,6 +179,7 @@ const AutosuggestSearch = ({
             value: searchValue,
             onChange,
             onKeyDown: onKeyDownHandler,
+            disabled,
           }}
         />
         {showClearButton && searchValue !== '' && (
@@ -174,6 +187,13 @@ const AutosuggestSearch = ({
             <Icon iconName="cross" iconColor="#33302e" width={20} height={20} />
           </button>
         )}
+        {showSearchIcon &&
+          searchIconPosition === 'right' &&
+          !(showClearButton && searchValue !== '') && (
+            <div className={`${className}__search-icon-right`}>
+              <Icon iconName="search" iconColor="#66605C" width={30} height={30} />
+            </div>
+          )}
       </div>
       {isError && <div className={`${className}__error-message`}>{errorMessage}</div>}
     </form>
@@ -202,6 +222,9 @@ AutosuggestSearch.propTypes = {
   onSelectedValueRemove: PropTypes.func,
   showClearButton: PropTypes.bool,
   onEmptyInputBackspace: PropTypes.func,
+  searchIconPosition: PropTypes.oneOf(['left', 'right']),
+  disabled: PropTypes.bool,
+  onClickCallback: PropTypes.func,
 };
 
 AutosuggestSearch.defaultProps = {
@@ -220,6 +243,9 @@ AutosuggestSearch.defaultProps = {
   onSelectedValueRemove: () => {},
   showClearButton: true,
   onEmptyInputBackspace: () => {},
+  searchIconPosition: 'left',
+  disabled: false,
+  onClickCallback: () => {},
 };
 
 export default AutosuggestSearch;
