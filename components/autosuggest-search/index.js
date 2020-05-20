@@ -82,7 +82,11 @@ const AutosuggestSearch = ({
 
   // Focus on input when selected values change (and only after user has clicked for the first time)
   useEffect(() => {
-    if (userHasClicked) focusOnInput();
+    if (userHasClicked) {
+      focusOnInput();
+      // Clear search value
+      setSearchValue('');
+    }
   }, [selectedValues, userHasClicked]);
 
   const selectedValueComponent = customSelectedValueComponent || SelectedValue;
