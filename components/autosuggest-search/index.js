@@ -74,6 +74,16 @@ const AutosuggestSearch = ({
   const [searchValue, setSearchValue] = useState(defaultValue || '');
   const [suggestions, setSuggestions] = useState([]);
   const [errorState, setErrorState] = useState({ isError: false, errorMessage: '' });
+  const [userHasClicked, setUserHasClicked] = useState(false);
+
+  // Function to focus on input wherever you click
+  const focusOnInput = () => inputRef.current.input.focus();
+  const unfocusOnInput = () => inputRef.current.input.blur();
+
+  // Focus on input when selected values change (and only after user has clicked for the first time)
+  useEffect(() => {
+    if (userHasClicked) focusOnInput();
+  }, [selectedValues, userHasClicked]);
 
   const selectedValueComponent = customSelectedValueComponent || SelectedValue;
 
@@ -98,6 +108,7 @@ const AutosuggestSearch = ({
       if (callbackReturn) setErrorState(callbackReturn);
     }
     setSearchValue(suggestionValue);
+    setForcedFocus(true);
   };
 
   // Run callback on submit (ENTER)
@@ -109,7 +120,11 @@ const AutosuggestSearch = ({
       const callbackReturn = await onSubmitCallback(searchValue);
       if (callbackReturn) setErrorState(callbackReturn);
     }
-    if (blurInputOnSuggestionSubmit) inputRef.current.input.blur();
+    if (blurInputOnSuggestionSubmit) {
+      unfocusOnInput();
+    } else {
+      setForcedFocus();
+    }
   };
 
   // Update search value state on input change
@@ -129,11 +144,9 @@ const AutosuggestSearch = ({
     }
   };
 
-  // Function to focus on input wherever you click
-  const focusOnInput = () => inputRef.current.input.focus();
-
   const onClickHandler = () => {
     focusOnInput();
+    setUserHasClicked(true);
     onClickCallback();
   };
 
