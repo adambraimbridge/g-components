@@ -108,7 +108,6 @@ const AutosuggestSearch = ({
       if (callbackReturn) setErrorState(callbackReturn);
     }
     setSearchValue(suggestionValue);
-    setForcedFocus(true);
   };
 
   // Run callback on submit (ENTER)
@@ -120,11 +119,7 @@ const AutosuggestSearch = ({
       const callbackReturn = await onSubmitCallback(searchValue);
       if (callbackReturn) setErrorState(callbackReturn);
     }
-    if (blurInputOnSuggestionSubmit) {
-      unfocusOnInput();
-    } else {
-      setForcedFocus();
-    }
+    if (blurInputOnSuggestionSubmit) unfocusOnInput();
   };
 
   // Update search value state on input change

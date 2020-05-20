@@ -734,6 +734,65 @@ exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With Error Message
 </form>
 `;
 
+exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With No Input Blur On Suggestion Selection 1`] = `
+<form
+  onClick={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "width": 300,
+    }
+  }
+>
+  <div
+    className="g-autosuggest-search"
+  >
+    <div
+      className="g-autosuggest-search__search-icon"
+    >
+      <i
+        className="g-icon"
+        style={
+          Object {
+            "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:search?source=o-icons&tint=%2366605C,%2366605C&format=svg')",
+            "height": 30,
+            "width": 30,
+          }
+        }
+      />
+    </div>
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-owns="react-autowhatever-1"
+      className="react-autosuggest__container"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls="react-autowhatever-1"
+        autoComplete="off"
+        className="react-autosuggest__input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search here..."
+        type="text"
+        value=""
+      />
+      <div
+        className="react-autosuggest__suggestions-container"
+        id="react-autowhatever-1"
+        role="listbox"
+      />
+    </div>
+  </div>
+</form>
+`;
+
 exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With On Click Callback 1`] = `
 <form
   onClick={[Function]}
