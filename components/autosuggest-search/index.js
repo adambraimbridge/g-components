@@ -68,6 +68,7 @@ const AutosuggestSearch = ({
   onEmptyInputBackspace,
   disabled,
   onClickCallback,
+  blurInputOnSuggestionSubmit,
 }) => {
   const inputRef = useRef();
   const [searchValue, setSearchValue] = useState(defaultValue || '');
@@ -97,7 +98,6 @@ const AutosuggestSearch = ({
       if (callbackReturn) setErrorState(callbackReturn);
     }
     setSearchValue(suggestionValue);
-    inputRef.current.input.blur();
   };
 
   // Run callback on submit (ENTER)
@@ -109,7 +109,7 @@ const AutosuggestSearch = ({
       const callbackReturn = await onSubmitCallback(searchValue);
       if (callbackReturn) setErrorState(callbackReturn);
     }
-    inputRef.current.input.blur();
+    if (blurInputOnSuggestionSubmit) inputRef.current.input.blur();
   };
 
   // Update search value state on input change
@@ -225,6 +225,7 @@ AutosuggestSearch.propTypes = {
   searchIconPosition: PropTypes.oneOf(['left', 'right']),
   disabled: PropTypes.bool,
   onClickCallback: PropTypes.func,
+  blurInputOnSuggestionSubmit: PropTypes.bool,
 };
 
 AutosuggestSearch.defaultProps = {
@@ -246,6 +247,7 @@ AutosuggestSearch.defaultProps = {
   searchIconPosition: 'left',
   disabled: false,
   onClickCallback: () => {},
+  blurInputOnSuggestionSubmit: true,
 };
 
 export default AutosuggestSearch;
