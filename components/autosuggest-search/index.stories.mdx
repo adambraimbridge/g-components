@@ -226,3 +226,16 @@ function. The component takes these functions as (optional) props:
     />
   </Story>
 </Preview>
+
+<Preview>
+  <Story name="MP lookup example (with no input blur on suggestion selection)">
+    <AutosuggestSearch
+      placeholder="Search here..."
+      width={300}
+      searchList={basicMpSearchList}
+      validateInput={validateInputFunction}
+      onClearFunction={() => console.log('clear')}
+      blurInputOnSuggestionSubmit={false}
+    />
+  </Story>
+</Preview>

@@ -68,11 +68,22 @@ const AutosuggestSearch = ({
   onEmptyInputBackspace,
   disabled,
   onClickCallback,
+  blurInputOnSuggestionSubmit,
 }) => {
   const inputRef = useRef();
   const [searchValue, setSearchValue] = useState(defaultValue || '');
   const [suggestions, setSuggestions] = useState([]);
   const [errorState, setErrorState] = useState({ isError: false, errorMessage: '' });
+  const [userHasClicked, setUserHasClicked] = useState(false);
+
+  // Function to focus on input wherever you click
+  const focusOnInput = () => inputRef.current.input.focus();
+  const unfocusOnInput = () => inputRef.current.input.blur();
+
+  // Focus on input when selected values change (and only after user has clicked for the first time)
+  useEffect(() => {
+    if (userHasClicked) focusOnInput();
+  }, [selectedValues, userHasClicked]);
 
   const selectedValueComponent = customSelectedValueComponent || SelectedValue;
 
@@ -97,7 +108,6 @@ const AutosuggestSearch = ({
       if (callbackReturn) setErrorState(callbackReturn);
     }
     setSearchValue(suggestionValue);
-    inputRef.current.input.blur();
   };
 
   // Run callback on submit (ENTER)
@@ -109,7 +119,7 @@ const AutosuggestSearch = ({
       const callbackReturn = await onSubmitCallback(searchValue);
       if (callbackReturn) setErrorState(callbackReturn);
     }
-    inputRef.current.input.blur();
+    if (blurInputOnSuggestionSubmit) unfocusOnInput();
   };
 
   // Update search value state on input change
@@ -129,11 +139,9 @@ const AutosuggestSearch = ({
     }
   };
 
-  // Function to focus on input wherever you click
-  const focusOnInput = () => inputRef.current.input.focus();
-
   const onClickHandler = () => {
     focusOnInput();
+    setUserHasClicked(true);
     onClickCallback();
   };
 
@@ -225,6 +233,7 @@ AutosuggestSearch.propTypes = {
   searchIconPosition: PropTypes.oneOf(['left', 'right']),
   disabled: PropTypes.bool,
   onClickCallback: PropTypes.func,
+  blurInputOnSuggestionSubmit: PropTypes.bool,
 };
 
 AutosuggestSearch.defaultProps = {
@@ -246,6 +255,7 @@ AutosuggestSearch.defaultProps = {
   searchIconPosition: 'left',
   disabled: false,
   onClickCallback: () => {},
+  blurInputOnSuggestionSubmit: true,
 };
 
 export default AutosuggestSearch;
