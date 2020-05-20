@@ -169,10 +169,12 @@ const AutosuggestSearch = ({
             <Icon iconName="search" iconColor="#66605C" width={30} height={30} />
           </div>
         )}
-        {selectedValues.length > 0 &&
-          selectedValues.map(({ display, value }) =>
-            selectedValueComponent({ className, display, value, onSelectedValueRemove }),
-          )}
+        <div className={`${className}__selected-values`}>
+          {selectedValues.length > 0 &&
+            selectedValues.map(({ display, value }) =>
+              selectedValueComponent({ className, display, value, onSelectedValueRemove }),
+            )}
+        </div>
         <Autosuggest
           ref={inputRef}
           suggestions={suggestions}
