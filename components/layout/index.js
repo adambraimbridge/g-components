@@ -61,7 +61,7 @@ const Article = ({
               <GridChild colspan="12 S11 Scenter M9 L8 XL7">{articleHeadComponent}</GridChild>
             </GridRow>
           </GridContainer>
-          <div className="article-body o-typography-wrapper" itemProp="articleBody">
+          <div className="article-body o-editorial-typography-body" itemProp="articleBody">
             {hasCustomChildren ? (
               React.Children.map(children, child =>
                 React.cloneElement(
@@ -73,7 +73,7 @@ const Article = ({
               <GridContainer>
                 <GridRow>
                   <GridChild colspan={bodyColspan}>
-                    <div>
+                    <div className="o-editorial-layout-wrapper">
                       {React.Children.map(children, child =>
                         React.cloneElement(
                           child,

@@ -106,7 +106,7 @@ const Feature = forwardRef(
               </nav>
             )}
             {/* The main bit */}
-            <main key="main" role="main" className="g-feature__main article o-typography-wrapper">
+            <main key="main" role="main" className="g-feature__main article">
               {BackgroundComponent && (
                 <div className="g-feature__background" role="presentation">
                   <BackgroundComponent page={currentPage} />

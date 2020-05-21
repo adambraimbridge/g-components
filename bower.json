@@ -33,6 +33,8 @@
     "o-forms": "^8.3.5",
     "o-loading": "^4.0.2",
     "o-buttons": "^6.0.13",
-    "o-overlay": "^3.0.4"
+    "o-overlay": "^3.0.4",
+    "o-editorial-typography": "^1.0.10",
+    "o-editorial-layout": "^1.1.3"
   }
 }

@@ -28,23 +28,23 @@ const ArticleHead = ({
   return (
     <Fragment>
       <div>
-        <a href={topic.url} className="o-typography-topic">
+        <a href={topic.url} className="o-editorial-typography-topic">
           {topic.name}
         </a>
       </div>
 
-      <h1 className="o-typography-headline" itemProp="headline">
+      <h1 className="o-editorial-layout-heading-1" itemProp="headline">
         {headline}
       </h1>
 
-      <div className="o-typography-standfirst">
+      <p className="o-editorial-typography-standfirst">
         {summary}{' '}
         {relatedArticle && (
           <a href={relatedArticle.url} className="o-typography-link">
             {relatedArticle.text}
           </a>
         )}
-      </div>
+      </p>
       <meta itemProp="dateModified" content={buildTime} suppressHydrationWarning />
 
       {(mainImage.url || mainImage.uuid) && (

@@ -1,8 +1,4 @@
 // starter-kit dark theme
-$o-typography-is-silent: false;
-
-@import 'o-colors/main';
-@import 'o-typography/main';
 
 .dark {
   background-color: oColorsByName('slate');
@@ -21,8 +17,8 @@ $o-typography-is-silent: false;
   }
 
   .article {
-    .o-typography-topic,
-    .o-typography-author {
+    .o-editorial-typography-topic,
+    .o-editorial-typography-author {
       color: oColorsGetTextColor(oColorsByName('slate'), 100);
 
       &:hover {
@@ -39,7 +35,7 @@ $o-typography-is-silent: false;
       color: oColorsGetTextColor(oColorsByName('slate'), 100);
     }
 
-    .o-typography-standfirst {
+    .o-editorial-typography-standfirst {
       color: oColorsGetTextColor(oColorsByName('slate'), 73);
 
       a {
