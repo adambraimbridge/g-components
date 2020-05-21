@@ -8,54 +8,54 @@ import PropTypes from 'prop-types';
 import './styles.scss';
 
 const RadioFilter = ({ namedClass, isAllSelectable, text, setText, options }) => (
-  <fieldset className={namedClass}>
-    <div className="o-forms__group o-forms__group--inline-together">
+  <div className={namedClass} role="group">
+    <span className="o-forms-input o-forms-input--radio-round o-forms-input--inline">
       {isAllSelectable === false ? null : (
-        <Fragment>
+        <label>
           <input
             type="radio"
-            className="o-forms__radio-button"
             value=""
             checked={text === ''}
             onChange={setText}
             id="g-data-filter-all"
           />
-          <label htmlFor="g-data-filter-all" className="o-forms__label">
+          <span htmlFor="g-data-filter-all" className="o-forms-input__label">
             (All)
-          </label>
-        </Fragment>
+          </span>
+        </label>
       )}
       {options.map(option => (
-        <Fragment>
+        <label>
           <input
             type="radio"
-            className="o-forms__radio-button"
             value={option}
             checked={text === option}
             onChange={setText}
             id={`g-data-filter-${option}`}
           />
-          <label htmlFor={`g-data-filter-${option}`} className="o-forms__label">
+          <span htmlFor={`g-data-filter-${option}`} className="o-forms-input__label">
             {option}
-          </label>
-        </Fragment>
+          </span>
+        </label>
       ))}
-    </div>
-  </fieldset>
+    </span>
+  </div>
 );
 
 const DropdownFilter = ({ namedClass, options, text, setText, isAllSelectable }) => (
   <div className={namedClass}>
-    {options.length === 0 ? null : (
-      <select className="o-forms__select" value={text} onChange={setText}>
-        {isAllSelectable === false ? null : <option value="">(All)</option>}
-        {options.map((option, i) => (
-          <option key={i} value={option}>
-            {option}
-          </option>
-        ))}
-      </select>
-    )}
+    <span className="o-forms-input o-forms-input--select">
+      {options.length === 0 ? null : (
+        <select value={text} onChange={setText}>
+          {isAllSelectable === false ? null : <option value="">(All)</option>}
+          {options.map((option, i) => (
+            <option key={i} value={option}>
+              {option}
+            </option>
+          ))}
+        </select>
+      )}
+    </span>
   </div>
 );
 
@@ -134,9 +134,7 @@ const DataFilter = ({
 
   if (!isLoaded) return null; // render nothing statically
 
-  const namedClass = [className, 'g-data-filter', 'o-forms', 'o-forms--wide']
-    .filter(x => x)
-    .join(' ');
+  const namedClass = [className, 'g-data-filter', 'o-forms-field'].filter(x => x).join(' ');
 
   if (selectFrom) {
     const options = Array.from(new Set(data.map(row => row[selectFrom])));
@@ -166,13 +164,9 @@ const DataFilter = ({
 
   return (
     <div className={namedClass}>
-      <input
-        type="text"
-        className="o-forms__text"
-        value={text}
-        placeholder={searchPlaceholder}
-        onChange={setText}
-      />
+      <span className="o-forms-input o-forms-input--text">
+        <input type="text" value={text} placeholder={searchPlaceholder} onChange={setText} />
+      </span>
     </div>
   );
 };
