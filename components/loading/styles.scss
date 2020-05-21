@@ -1,7 +1,11 @@
 @import 'o-loading/main';
 
-/* @TODO update this all to latest o-loading. See #92 */
 .g-loading {
+  @include oLoadingContent(
+    $opts: (
+      'theme': 'light',
+    )
+  );
   &--small {
     @include oLoadingContent(
       $opts: (
