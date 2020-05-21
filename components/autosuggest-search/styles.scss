@@ -69,6 +69,7 @@
 
   &__selected-values {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__selected-value {

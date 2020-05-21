@@ -138,6 +138,7 @@ function. The component takes these functions as (optional) props:
       ]}
       validateInput={validateInputFunction}
       onClearFunction={() => console.log('clear')}
+      usingSelectedValues={true}
       selectedValues={array('Selected values', ['US', 'UK']).map(v => ({ display: v, value: v }))}
       onSelectedValueRemove={value => alert(`Removing ${value}`)}
       showSearchIcon={false}
@@ -158,6 +159,7 @@ function. The component takes these functions as (optional) props:
       ]}
       validateInput={validateInputFunction}
       onClearFunction={() => console.log('clear')}
+      usingSelectedValues={true}
       selectedValues={array('Selected values', ['US', 'UK', 'France', 'Germany', 'Spain']).map(
         v => ({
           display: v,

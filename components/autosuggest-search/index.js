@@ -40,60 +40,59 @@ const SelectedValue = ({ className, display, value, onSelectedValueRemove }) => 
       type="button"
       onClick={() => onSelectedValueRemove(value)}
     >
-      <Icon iconName="cross" iconColor="ffffff" width={20} height={20} />
+      <Icon
+        className="remove-from-selection"
+        iconName="cross"
+        iconColor="ffffff"
+        width={20}
+        height={20}
+      />
     </button>
   </div>
 );
 
 const AutosuggestSearch = ({
   className,
-  placeholder,
   width,
+  placeholder,
+  defaultValue,
+  disabled,
+  showSearchIcon,
+  searchIconPosition,
+  showClearButton,
+  blurInputOnSuggestionSubmit,
+  // Data to generate suggestions from
   searchList,
+  // Selected values
+  selectedValues,
+  usingSelectedValues,
+  selectedValueComponent: customSelectedValueComponent,
+  // Suggestions
   getSuggestions,
   getSuggestionValue,
   renderSuggestion,
+  // Callbacks and event handlers
   onSelectCallback,
   onSubmitCallback,
-  onClearFunction,
-  validateInput,
-  defaultValue,
-  errorMessageOverride,
-  showSearchIcon,
-  searchIconPosition,
-  selectedValues,
-  onSelectedValueRemove,
-  selectedValueComponent: customSelectedValueComponent,
-  showClearButton,
-  onEmptyInputBackspace,
-  disabled,
   onClickCallback,
-  blurInputOnSuggestionSubmit,
+  onClearFunction,
+  onSelectedValueRemove,
+  onEmptyInputBackspace,
+  // Validation and errors
+  validateInput,
+  errorMessageOverride,
 }) => {
   const inputRef = useRef();
+  const [activeSuggestion, setActiveSuggestion] = useState(null);
   const [searchValue, setSearchValue] = useState(defaultValue || '');
   const [suggestions, setSuggestions] = useState([]);
   const [errorState, setErrorState] = useState({ isError: false, errorMessage: '' });
-  const [userHasClicked, setUserHasClicked] = useState(false);
 
   // Function to focus on input wherever you click
   const focusOnInput = () => inputRef.current.input.focus();
   const unfocusOnInput = () => inputRef.current.input.blur();
 
-  // Focus on input when selected values change (and only after user has clicked for the first time)
-  useEffect(() => {
-    if (userHasClicked) {
-      focusOnInput();
-      // Clear search value
-      setSearchValue('');
-    }
-  }, [selectedValues, userHasClicked]);
-
   const selectedValueComponent = customSelectedValueComponent || SelectedValue;
-
-  useEffect(() => {
-    if (errorMessageOverride) setErrorState({ isError: true, errorMessage: errorMessageOverride });
-  }, [errorMessageOverride]);
 
   // Update suggestions based on search value
   const onSuggestionsFetchRequested = ({ value }) => {
@@ -111,19 +110,23 @@ const AutosuggestSearch = ({
       const callbackReturn = onSelectCallback(suggestion);
       if (callbackReturn) setErrorState(callbackReturn);
     }
-    setSearchValue(suggestionValue);
+    setSearchValue(usingSelectedValues ? '' : suggestionValue);
   };
 
   // Run callback on submit (ENTER)
-  const onSubmit = async event => {
+  const onSubmit = event => {
     event.preventDefault();
-    const validateInputResult = validateInput(searchValue);
-    if (validateInput && validateInputResult.isError) setErrorState(validateInputResult);
-    if (onSubmitCallback && !validateInputResult.isError) {
-      const callbackReturn = await onSubmitCallback(searchValue);
-      if (callbackReturn) setErrorState(callbackReturn);
+    // Don't run if a suggestion is highlighted in the dropdown
+    if (!activeSuggestion) {
+      const validateInputResult = validateInput(searchValue);
+      if (validateInput && validateInputResult.isError) setErrorState(validateInputResult);
+      if (onSubmitCallback && !validateInputResult.isError) {
+        const callbackReturn = onSubmitCallback(searchValue);
+        if (callbackReturn) setErrorState(callbackReturn);
+        if (usingSelectedValues) setSearchValue('');
+      }
+      if (blurInputOnSuggestionSubmit) unfocusOnInput();
     }
-    if (blurInputOnSuggestionSubmit) unfocusOnInput();
   };
 
   // Update search value state on input change
@@ -141,12 +144,18 @@ const AutosuggestSearch = ({
     if (searchValue === '' && key === 'Backspace') {
       onEmptyInputBackspace();
     }
+    if (key !== 'Enter') {
+      setActiveSuggestion(null);
+    }
   };
 
-  const onClickHandler = () => {
-    focusOnInput();
-    setUserHasClicked(true);
-    onClickCallback();
+  const onClickHandler = e => {
+    if (e.target.className !== 'remove-from-selection g-icon') {
+      focusOnInput();
+      const callbackReturn = onClickCallback();
+      if (callbackReturn) setErrorState(callbackReturn);
+    }
+    setActiveSuggestion(null);
   };
 
   // Clear search value on button click
@@ -157,7 +166,16 @@ const AutosuggestSearch = ({
     onClearFunction();
   };
 
-  const { isError, errorMessage } = errorState;
+  // Wraps function so that error can be set
+  const onSelectedValueRemoveWrapper = value => {
+    const error = onSelectedValueRemove(value);
+    if (error) setErrorState(error);
+  };
+
+  const { isError: isErrorState, errorMessage: errorMessageState } = errorState;
+  const isError = errorMessageOverride || isErrorState;
+  const errorMessage = errorMessageOverride || errorMessageState;
+
   // Generate form classes
   const classes = classNames(
     className,
@@ -176,7 +194,12 @@ const AutosuggestSearch = ({
         <div className={`${className}__selected-values`}>
           {selectedValues.length > 0 &&
             selectedValues.map(({ display, value }) =>
-              selectedValueComponent({ className, display, value, onSelectedValueRemove }),
+              selectedValueComponent({
+                className,
+                display,
+                value,
+                onSelectedValueRemove: onSelectedValueRemoveWrapper,
+              }),
             )}
         </div>
         <Autosuggest
@@ -187,7 +210,12 @@ const AutosuggestSearch = ({
           getSuggestionValue={getSuggestionValue}
           renderSuggestion={renderSuggestion}
           onSuggestionSelected={onSuggestionSelected}
-          focusInputOnSuggestionClick={false}
+          onSuggestionHighlighted={({ suggestion }) => {
+            if (suggestion && suggestion.display) {
+              setActiveSuggestion(suggestion.display);
+            }
+          }}
+          focusInputOnSuggestionClick={usingSelectedValues}
           inputProps={{
             placeholder,
             value: searchValue,
@@ -218,50 +246,52 @@ AutosuggestSearch.displayName = 'GAutosuggestSearch';
 
 AutosuggestSearch.propTypes = {
   className: PropTypes.string,
-  searchList: PropTypes.arrayOf(PropTypes.object).isRequired,
-  placeholder: PropTypes.string,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  placeholder: PropTypes.string,
+  defaultValue: PropTypes.string,
+  disabled: PropTypes.bool,
+  showSearchIcon: PropTypes.bool,
+  searchIconPosition: PropTypes.oneOf(['left', 'right']),
+  showClearButton: PropTypes.bool,
+  blurInputOnSuggestionSubmit: PropTypes.bool,
+  searchList: PropTypes.arrayOf(PropTypes.object).isRequired,
+  selectedValues: PropTypes.array,
+  usingSelectedValues: PropTypes.bool,
+  selectedValueComponent: PropTypes.func,
   getSuggestions: PropTypes.func,
   getSuggestionValue: PropTypes.func,
   renderSuggestion: PropTypes.func,
   onSelectCallback: PropTypes.func,
   onSubmitCallback: PropTypes.func,
-  onClearFunction: PropTypes.func,
-  validateInput: PropTypes.func,
-  defaultValue: PropTypes.string,
-  errorMessageOverride: PropTypes.string,
-  showSearchIcon: PropTypes.bool,
-  selectedValues: PropTypes.array,
-  selectedValueComponent: PropTypes.func,
-  onSelectedValueRemove: PropTypes.func,
-  showClearButton: PropTypes.bool,
-  onEmptyInputBackspace: PropTypes.func,
-  searchIconPosition: PropTypes.oneOf(['left', 'right']),
-  disabled: PropTypes.bool,
   onClickCallback: PropTypes.func,
-  blurInputOnSuggestionSubmit: PropTypes.bool,
+  onClearFunction: PropTypes.func,
+  onSelectedValueRemove: PropTypes.func,
+  onEmptyInputBackspace: PropTypes.func,
+  validateInput: PropTypes.func,
+  errorMessageOverride: PropTypes.string,
 };
 
 AutosuggestSearch.defaultProps = {
   className: 'g-autosuggest-search',
-  placeholder: '',
   width: '100%',
+  placeholder: '',
+  disabled: false,
+  showSearchIcon: true,
+  searchIconPosition: 'left',
+  showClearButton: true,
+  blurInputOnSuggestionSubmit: true,
+  selectedValues: [],
+  usingSelectedValues: false,
   getSuggestions: defaultGetSuggestions,
   getSuggestionValue: defaultGetSuggestionValue,
   renderSuggestion: RenderSuggestion,
   onSelectCallback: () => {},
   onSubmitCallback: () => {},
-  onClearCallback: () => {},
-  validateInput: () => {},
-  showSearchIcon: true,
-  selectedValues: [],
-  onSelectedValueRemove: () => {},
-  showClearButton: true,
-  onEmptyInputBackspace: () => {},
-  searchIconPosition: 'left',
-  disabled: false,
   onClickCallback: () => {},
-  blurInputOnSuggestionSubmit: true,
+  onClearCallback: () => {},
+  onSelectedValueRemove: () => {},
+  onEmptyInputBackspace: () => {},
+  validateInput: () => {},
 };
 
 export default AutosuggestSearch;
