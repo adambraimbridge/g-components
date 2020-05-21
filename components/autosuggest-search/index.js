@@ -83,6 +83,9 @@ const AutosuggestSearch = ({
   errorMessageOverride,
 }) => {
   const inputRef = useRef();
+  /* This is the last suggestion the user hovered or highlighted using keys
+    - this is reset when the user presses any key other than enter
+    in the input of if they click on the input  */
   const [activeSuggestion, setActiveSuggestion] = useState(null);
   const [searchValue, setSearchValue] = useState(defaultValue || '');
   const [suggestions, setSuggestions] = useState([]);
@@ -90,6 +93,7 @@ const AutosuggestSearch = ({
 
   // Function to focus on input wherever you click
   const focusOnInput = () => inputRef.current.input.focus();
+  // ...and the function that does the opposite
   const unfocusOnInput = () => inputRef.current.input.blur();
 
   const selectedValueComponent = customSelectedValueComponent || SelectedValue;
@@ -110,19 +114,21 @@ const AutosuggestSearch = ({
       const callbackReturn = onSelectCallback(suggestion);
       if (callbackReturn) setErrorState(callbackReturn);
     }
+    // If using selected values tokens, reset the search value each time
     setSearchValue(usingSelectedValues ? '' : suggestionValue);
   };
 
   // Run callback on submit (ENTER)
   const onSubmit = event => {
     event.preventDefault();
-    // Don't run if a suggestion is highlighted in the dropdown
+    // Don't run this if the submit event is triggered from the dropdown
     if (!activeSuggestion) {
       const validateInputResult = validateInput(searchValue);
       if (validateInput && validateInputResult.isError) setErrorState(validateInputResult);
       if (onSubmitCallback && !validateInputResult.isError) {
         const callbackReturn = onSubmitCallback(searchValue);
         if (callbackReturn) setErrorState(callbackReturn);
+        // If using selected values tokens, reset the search value
         if (usingSelectedValues) setSearchValue('');
       }
       if (blurInputOnSuggestionSubmit) unfocusOnInput();
@@ -144,17 +150,20 @@ const AutosuggestSearch = ({
     if (searchValue === '' && key === 'Backspace') {
       onEmptyInputBackspace();
     }
+    // If the user presses any key other than enter, reset the active suggestion
     if (key !== 'Enter') {
       setActiveSuggestion(null);
     }
   };
 
   const onClickHandler = e => {
+    // Don't run the callback if the user has clicked on the selected token remove/cross button
     if (e.target.className !== 'remove-from-selection g-icon') {
       focusOnInput();
       const callbackReturn = onClickCallback();
       if (callbackReturn) setErrorState(callbackReturn);
     }
+    // Reset the active suggestion
     setActiveSuggestion(null);
   };
 
@@ -211,6 +220,8 @@ const AutosuggestSearch = ({
           renderSuggestion={renderSuggestion}
           onSuggestionSelected={onSuggestionSelected}
           onSuggestionHighlighted={({ suggestion }) => {
+            /* When the dropdown is open, update the active suggestion to the suggestion
+              the user is currently hovering over or has highlighted with arrow keys */
             if (suggestion && suggestion.display) {
               setActiveSuggestion(suggestion.display);
             }
