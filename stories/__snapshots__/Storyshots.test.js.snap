@@ -200,7 +200,7 @@ exports[`Storyshots Core|Autosuggest Search Country Lookup Example With Selected
           type="button"
         >
           <i
-            className="g-icon"
+            className="remove-from-selection g-icon"
             style={
               Object {
                 "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:cross?source=o-icons&tint=%23ffffff,%23ffffff&format=svg')",
@@ -223,7 +223,7 @@ exports[`Storyshots Core|Autosuggest Search Country Lookup Example With Selected
           type="button"
         >
           <i
-            className="g-icon"
+            className="remove-from-selection g-icon"
             style={
               Object {
                 "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:cross?source=o-icons&tint=%23ffffff,%23ffffff&format=svg')",
@@ -246,7 +246,7 @@ exports[`Storyshots Core|Autosuggest Search Country Lookup Example With Selected
           type="button"
         >
           <i
-            className="g-icon"
+            className="remove-from-selection g-icon"
             style={
               Object {
                 "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:cross?source=o-icons&tint=%23ffffff,%23ffffff&format=svg')",
@@ -269,7 +269,7 @@ exports[`Storyshots Core|Autosuggest Search Country Lookup Example With Selected
           type="button"
         >
           <i
-            className="g-icon"
+            className="remove-from-selection g-icon"
             style={
               Object {
                 "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:cross?source=o-icons&tint=%23ffffff,%23ffffff&format=svg')",
@@ -292,7 +292,7 @@ exports[`Storyshots Core|Autosuggest Search Country Lookup Example With Selected
           type="button"
         >
           <i
-            className="g-icon"
+            className="remove-from-selection g-icon"
             style={
               Object {
                 "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:cross?source=o-icons&tint=%23ffffff,%23ffffff&format=svg')",
@@ -364,7 +364,7 @@ exports[`Storyshots Core|Autosuggest Search Country Lookup Example With Selected
           type="button"
         >
           <i
-            className="g-icon"
+            className="remove-from-selection g-icon"
             style={
               Object {
                 "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:cross?source=o-icons&tint=%23ffffff,%23ffffff&format=svg')",
@@ -387,7 +387,7 @@ exports[`Storyshots Core|Autosuggest Search Country Lookup Example With Selected
           type="button"
         >
           <i
-            className="g-icon"
+            className="remove-from-selection g-icon"
             style={
               Object {
                 "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:cross?source=o-icons&tint=%23ffffff,%23ffffff&format=svg')",
@@ -706,7 +706,7 @@ exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With Error Message
   }
 >
   <div
-    className="g-autosuggest-search"
+    className="g-autosuggest-search g-autosuggest-search--error"
   >
     <div
       className="g-autosuggest-search__search-icon"
@@ -753,6 +753,11 @@ exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With Error Message
         role="listbox"
       />
     </div>
+  </div>
+  <div
+    className="g-autosuggest-search__error-message"
+  >
+    THIS IS AN ERROR OVERRIDE!
   </div>
 </form>
 `;
