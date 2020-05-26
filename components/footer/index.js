@@ -3,7 +3,7 @@
  * Footer component
  */
 import React, { useEffect, useRef } from 'react';
-import OFooter from 'o-footer/main.js';
+import OFooter from '@financial-times/o-footer';
 import { strftime } from '../../shared/helpers';
 import './styles.scss';
 

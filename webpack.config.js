@@ -4,9 +4,8 @@
  * This isn't used for any actual bundling; we use Rollup for that.
  */
 
-const BowerResolvePlugin = require('bower-resolve-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+// const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+// const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const path = require('path');
 const glob = require('glob');
 
@@ -21,27 +20,23 @@ module.exports = (mode = 'production') => {
       umdNamedDefine: true,
       sourceMapFilename: 'dist/gcomponents.map',
     },
-    optimization: {
-      splitChunks: {
-        chunks: 'all',
-      },
-      minimizer: [
-        new UglifyJsPlugin({
-          cache: true,
-          parallel: true,
-          sourceMap: true, // set to true if you want JS source maps
-        }),
-        new OptimizeCSSAssetsPlugin({}),
-      ],
-    },
+    // optimization: {
+    //   splitChunks: {
+    //     chunks: 'all',
+    //   },
+    //   minimizer: [
+    //     new UglifyJsPlugin({
+    //       cache: true,
+    //       parallel: true,
+    //       sourceMap: true, // set to true if you want JS source maps
+    //     }),
+    //     new OptimizeCSSAssetsPlugin({}),
+    //   ],
+    // },
     entry: {
       index: './index.js',
     },
     resolve: {
-      modules: ['bower_components', 'node_modules'],
-      plugins: [new BowerResolvePlugin()],
-      descriptionFiles: ['bower.json', 'package.json'],
-      mainFields: ['browser', 'main'],
       alias: {
         react: path.resolve(__dirname, './node_modules/react'),
         'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
@@ -101,7 +96,7 @@ module.exports = (mode = 'production') => {
               loader: 'sass-loader',
               options: {
                 sourceMap: true,
-                includePaths: ['bower_components'],
+                includePaths: ['node_modules/', 'node_modules/@financial-times'],
               },
             },
           ],

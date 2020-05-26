@@ -5,23 +5,16 @@
  */
 
 const path = require('path');
-const BowerResolvePlugin = require('bower-resolve-webpack-plugin');
 const webpackMerge = require('webpack-merge');
 
 module.exports = ({ config }) => {
   const overrides = {
-    resolve: {
-      modules: ['bower_components'],
-      plugins: [new BowerResolvePlugin()],
-      descriptionFiles: ['bower.json', 'package.json'],
-      mainFields: ['browser', 'main'],
-    },
     module: {
       rules: [
         {
           test: /\.jsx?$/,
           loader: 'babel-loader',
-          exclude: /(node_modules|bower_components)/,
+          exclude: /node_modules/,
         },
         {
           test: /\.scss$/,
@@ -32,7 +25,7 @@ module.exports = ({ config }) => {
               loader: 'sass-loader',
               options: {
                 sourceMap: true,
-                includePaths: ['bower_components'],
+                includePaths: ['node_modules', 'node_modules/@financial-times'],
               },
             },
           ],
