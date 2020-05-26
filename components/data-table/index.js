@@ -6,6 +6,7 @@
 import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import OTable from 'o-table/main.js';
+import classnames from 'classnames';
 import './styles.scss';
 
 const headerAttributes = (header, isSortable) => {
@@ -16,19 +17,20 @@ const headerAttributes = (header, isSortable) => {
     isSortable === false || header.columnIsSortable === false
       ? { 'data-o-table-heading-disable-sort': '' }
       : {},
+    { scope: 'col', role: 'columnheader' },
   ];
   return Object.assign(...attributes);
 };
 
 const cellAttributes = (header, row) => {
-  const classes = [
+  const className = classnames(
     header.columnType === 'number' && 'o-table__cell--numeric',
     header.columnIsVerticallyCentred && 'o-table__cell--vertically-center',
-  ];
+  );
   const attributes = [
-    classes ? { className: classes.filter(x => x).join(' ') } : {},
+    className ? { className } : {},
     header.columnType === 'number' ? { 'data-o-table-data-type': 'numeric' } : {},
-    header.columnSortField ? { 'data-o-table-order': row[header.columnSortField] } : {},
+    header.columnSortField ? { 'data-o-table-sort-value': row[header.columnSortField] } : {},
   ];
   return Object.assign(...attributes);
 };
@@ -42,20 +44,21 @@ const footerAttributes = header => {
   return Object.assign(...attributes);
 };
 
-const tableAttributes = (responsive, isStriped, isLinedHorizontal, isLinedVertical, isCompact) => {
-  const classes = [
+const tableAttributes = (responsive, isStriped, isLinedHorizontal, isCompact, isSortable) => {
+  const className = classnames(
     'o-table',
     responsive === 'scroll' && 'o-table--responsive-scroll',
     responsive === 'flat' && 'o-table--responsive-flat',
+    responsive === 'overflow' && 'o-table--responsive-overflow',
     isStriped && 'o-table--row-stripes',
     isLinedHorizontal && 'o-table--horizontal-lines',
-    isLinedVertical && 'o-table--vertical-lines',
     isCompact && 'o-table--compact',
-  ];
+  );
   const attributes = [
-    classes ? { className: classes.filter(x => x).join(' ') } : {},
+    { className },
     { 'data-o-component': 'o-table' },
-    responsive === 'flat' ? { 'data-o-table-responsive': 'flat' } : {},
+    !isSortable ? { 'data-o-table-sortable': false } : {},
+    responsive !== 'none' ? { 'data-o-table-responsive': responsive } : {},
   ];
   return Object.assign(...attributes);
 };
@@ -137,6 +140,27 @@ const Foot = ({ footers, headers }) => (
   </tfoot>
 );
 
+const Footnote = ({ footnote, headers }) => (
+  <tfoot>
+    <tr>
+      <td colSpan={headers.length} className="o-table-footnote">
+        {footnote}
+      </td>
+    </tr>
+  </tfoot>
+);
+
+const TableContainer = ({ responsive, className, children }) =>
+  responsive ? (
+    <div className="o-table-container">
+      <div className="o-table-overlay-wrapper">
+        <div className={className}>{children}</div>
+      </div>
+    </div>
+  ) : (
+    <div className={className}>{children}</div>
+  );
+
 const DataTable = ({
   className,
   captionTop,
@@ -149,7 +173,6 @@ const DataTable = ({
   isSortable,
   isStriped,
   isLinedHorizontal,
-  isLinedVertical,
   isCompact,
 }) => {
   const tableRef = useRef();
@@ -177,22 +200,26 @@ const DataTable = ({
     responsive,
     isStriped,
     isLinedHorizontal,
-    isLinedVertical,
     isCompact,
+    isSortable,
   );
 
-  const namedClass = [className, 'g-data-table', 'o-table-wrapper'].filter(x => x).join(' ');
+  const namedClass = classnames(className, 'g-data-table', 'o-table-scroll-wrapper');
 
   return (
-    <div className={namedClass}>
+    <TableContainer className={namedClass} responsive={responsive !== 'none'}>
       <table {...attributes} ref={tableRef}>
-        {captionTop && <caption className="o-table__caption--top">{captionTop}</caption>}
-        {captionBottom && <caption className="o-table__caption--bottom">{captionBottom}</caption>}
+        {captionTop && (
+          <caption className="o-table__caption">
+            <h2 className="o-typography-heading-level-2">{captionTop}</h2>
+          </caption>
+        )}
+        {captionBottom && <Footnote footnote={captionBottom} headers={headers} />}
         {!isHeaderHidden && <Head headers={headers} isSortable={isSortable} />}
         <Body rows={rows} headers={headers} />
         {footers.length !== 0 && <Foot footers={footers} headers={headers} />}
       </table>
-    </div>
+    </TableContainer>
   );
 };
 
@@ -221,12 +248,11 @@ DataTable.propTypes = {
       secondary: PropTypes.node,
     }),
   ),
-  responsive: PropTypes.oneOf(['none', 'scroll', 'flat']),
+  responsive: PropTypes.oneOf(['none', 'scroll', 'flat', 'overflow']),
   isHeaderHidden: PropTypes.bool,
   isSortable: PropTypes.bool,
   isStriped: PropTypes.bool,
   isLinedHorizontal: PropTypes.bool,
-  isLinedVertical: PropTypes.bool,
   isCompact: PropTypes.bool,
 };
 
@@ -241,7 +267,6 @@ DataTable.defaultProps = {
   isSortable: true,
   isStriped: false,
   isLinedHorizontal: false,
-  isLinedVertical: false,
   isCompact: false,
 };
 
