@@ -1,8 +1,5 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 import { GridContainer, GridRow, GridChild } from './';
-import demoStylesModule from '!!style-loader?injectType=lazyStyleTag!css-loader!sass-loader!o-grid/demos/src/scss/_demos.scss?story';
-
-export const demoStyles = Promise.resolve(demoStylesModule);
 
 <Meta title="Core|Grid/GridContainer" component={Layout} />
 
@@ -18,7 +15,10 @@ It has two config options:
 - `bleed`, which removes exterior margins.
 
 <Preview>
-  <Story name="Full bleed grid container" parameters={{ styles: [demoStyles] }}>
+  <Story
+    name="Full bleed grid container"
+    parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}
+  >
     <GridContainer bleed={true}>
       <GridRow>
         <GridChild colspan={6}>
@@ -41,7 +41,10 @@ It has two config options:
 </Preview>
 
 <Preview>
-  <Story name="Snappy container" parameters={{ styles: [demoStyles] }}>
+  <Story
+    name="Snappy container"
+    parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}
+  >
     <GridContainer snappy={true}>
       <GridRow>
         <GridChild colspan={12}>
