@@ -61,7 +61,7 @@ const Article = ({
               <GridChild colspan="12 S11 Scenter M9 L8 XL7">{articleHeadComponent}</GridChild>
             </GridRow>
           </GridContainer>
-          <div className="article-body o-typography-wrapper" itemProp="articleBody">
+          <div className="article-body o-editorial-typography-body" itemProp="articleBody">
             {hasCustomChildren ? (
               React.Children.map(children, child =>
                 React.cloneElement(
@@ -73,7 +73,7 @@ const Article = ({
               <GridContainer>
                 <GridRow>
                   <GridChild colspan={bodyColspan}>
-                    <div>
+                    <div className="o-editorial-layout-wrapper">
                       {React.Children.map(children, child =>
                         React.cloneElement(
                           child,
@@ -130,7 +130,7 @@ Article.propTypes = {
   ads: PropTypes.shape({
     gptSite: PropTypes.string.isRequired,
     gptZone: StringBoolPropType.isRequired,
-    dfpTargeting: StringBoolPropType.isRequired,
+    targeting: StringBoolPropType.isRequired,
   }),
   flags: flagsPropType.isRequired,
   children: PropTypes.node,
@@ -146,7 +146,7 @@ Article.defaultProps = {
   ads: {
     gptSite: 'test.5887.origami', // Ad unit hierarchy makes ads more granular.
     gptZone: false, // Start with ft.com and /companies /markets /world as appropriate to your story
-    dfpTargeting: false, // granular targeting is optional and will be specified by the ads team
+    targeting: false, // granular targeting is optional and will be specified by the ads team
   },
   children: null,
   defaultContainer: true,

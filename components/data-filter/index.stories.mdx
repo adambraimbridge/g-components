@@ -12,3 +12,22 @@ tktk
     <DataFilter />
   </Story>
 </Preview>
+
+<Preview>
+  <Story name="Dropdown">
+    <DataFilter
+      data={[{ value: 'testA' }, { value: 'testB' }, { value: 'testC' }]}
+      selectFrom={'value'}
+    />
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Radio">
+    <DataFilter
+      data={[{ value: 'testA' }, { value: 'testB' }, { value: 'testC' }]}
+      selectFrom={'value'}
+      isRadioSelectable={true}
+    />
+  </Story>
+</Preview>

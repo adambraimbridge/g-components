@@ -38,27 +38,27 @@ exports[`Storyshots Core|Article Head Basic 1`] = `
 Array [
   <div>
     <a
-      className="o-typography-topic"
+      className="o-editorial-typography-topic"
       href="https://local.ft.com/"
     >
       Testing
     </a>
   </div>,
   <h1
-    className="o-typography-headline"
+    className="o-editorial-layout-heading-1"
     itemProp="headline"
   >
     Testing &lt;ArticleHead&gt; component
   </h1>,
-  <div
-    className="o-typography-standfirst"
+  <p
+    className="o-editorial-typography-standfirst"
   >
     This is a standfirst
      
     <a
       className="o-typography-link"
     />
-  </div>,
+  </p>,
   <meta
     content="2019-01-31T00:00:00.000Z"
     itemProp="dateModified"
@@ -91,57 +91,70 @@ Array [
           >
             <a
               className="o-share__icon o-share__icon--twitter"
+              data-trackable="twitter"
               href="https://twitter.com/intent/tweet?url=https://local.ft.com/&amp;text=FT article: &amp;related=&amp;via=FinancialTimes"
               rel="noopener"
             >
               <span
                 className="o-share__text"
               >
-                Share on Twitter. Opens in a new window.
+                Share on 
+                Twitter
+                . Opens in a new window.
               </span>
             </a>
           </li>
           <li
-            className="o-share__action o-share__icon--facebook"
+            className="o-share__action o-share__action--facebook"
           >
             <a
+              className="o-share__icon o-share__icon--facebook"
+              data-trackable="facebook"
               href="http://www.facebook.com/sharer.php?u=https://local.ft.com/"
               rel="noopener"
             >
               <span
                 className="o-share__text"
               >
-                Share on Facebook. Opens in a new window.
+                Share on 
+                Facebook
+                . Opens in a new window.
               </span>
             </a>
           </li>
           <li
-            className="o-share__action o-share__icon--linkedin"
+            className="o-share__action o-share__action--linkedin"
           >
             <a
+              className="o-share__icon o-share__icon--linkedin"
+              data-trackable="linkedin"
               href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://local.ft.com/&amp;source=Financial%20Times"
               rel="noopener"
             >
               <span
                 className="o-share__text"
               >
-                Share on LinkedIn. Opens in a new window.
+                Share on 
+                LinkedIn
+                . Opens in a new window.
               </span>
             </a>
           </li>
           <li
-            className="o-share__action o-share__icon--whatsapp"
+            className="o-share__action o-share__action--whatsapp"
           >
             <a
+              className="o-share__icon o-share__icon--whatsapp"
               data-trackable="whatsapp"
               href="whatsapp://send?text=Testing <ArticleHead> component%20-%20https://local.ft.com/"
-              rel="noopener noreferrer"
-              target="_blank"
+              rel="noopener"
             >
               <span
                 className="o-share__text"
               >
-                Share on Whatsapp. Opens in a new window.
+                Share on 
+                WhatsApp
+                . Opens in a new window.
               </span>
             </a>
           </li>
@@ -154,20 +167,22 @@ Array [
   >
     
     <a
-      className="o-typography-author"
+      className="o-editorial-typography-author"
       href="https://ft.com/ændrew-rininsland"
     >
       Ændrew Rininsland
     </a>
      
-    <span
-      className="o-date o-typography-timestamp"
+    in 
+     
+    <time
+      className="o-date o-editorial-typography-byline-timestamp"
       data-o-component="o-date"
       dateTime="2019-01-31T00:00:00.000Z"
       suppressHydrationWarning={true}
     >
       Thursday, 31 January 2019
-    </span>
+    </time>
   </div>,
 ]
 `;
@@ -1970,36 +1985,31 @@ exports[`Storyshots Core|Comments Basic 1`] = `
 
 exports[`Storyshots Core|DataFilter Defaults 1`] = `null`;
 
+exports[`Storyshots Core|DataFilter Dropdown 1`] = `null`;
+
+exports[`Storyshots Core|DataFilter Radio 1`] = `null`;
+
 exports[`Storyshots Core|DataTable Basic 1`] = `
 <div
-  className="g-data-table o-table-wrapper"
+  className="g-data-table o-table-scroll-wrapper"
 >
   <table
-    className="o-table o-table--responsive-flat"
+    className="o-table"
     data-o-component="o-table"
-    data-o-table-responsive="flat"
   >
-    <caption
-      className="o-table__caption--top"
-    >
-      captionTop
-    </caption>
-    <caption
-      className="o-table__caption--bottom"
-    >
-      captionBottom
-    </caption>
     <thead>
       <tr>
         <th
           className="o-table__cell--numeric"
           data-o-table-data-type="numeric"
-          data-o-table-heading-disable-sort=""
+          role="columnheader"
+          scope="col"
         >
           Year
         </th>
         <th
-          data-o-table-heading-disable-sort=""
+          role="columnheader"
+          scope="col"
         >
           Editor
         </th>
@@ -2011,77 +2021,10 @@ exports[`Storyshots Core|DataTable Basic 1`] = `
           className="o-table__cell--numeric"
           data-o-table-data-type="numeric"
         >
-          1945
+          2020
         </td>
-        <td
-          className=""
-        >
-          Hargreaves Parkinson
-        </td>
-      </tr>
-      <tr>
-        <td
-          className="o-table__cell--numeric"
-          data-o-table-data-type="numeric"
-        >
-          1949
-        </td>
-        <td
-          className=""
-        >
-          Sir Gordon Newton
-        </td>
-      </tr>
-      <tr>
-        <td
-          className="o-table__cell--numeric"
-          data-o-table-data-type="numeric"
-        >
-          1973
-        </td>
-        <td
-          className=""
-        >
-          Fredy Fisher
-        </td>
-      </tr>
-      <tr>
-        <td
-          className="o-table__cell--numeric"
-          data-o-table-data-type="numeric"
-        >
-          1981
-        </td>
-        <td
-          className=""
-        >
-          Sir Geoffrey Owen
-        </td>
-      </tr>
-      <tr>
-        <td
-          className="o-table__cell--numeric"
-          data-o-table-data-type="numeric"
-        >
-          1991
-        </td>
-        <td
-          className=""
-        >
-          Richard Lambert
-        </td>
-      </tr>
-      <tr>
-        <td
-          className="o-table__cell--numeric"
-          data-o-table-data-type="numeric"
-        >
-          2001
-        </td>
-        <td
-          className=""
-        >
-          Andrew Gowers
+        <td>
+          Roula Khalaf
         </td>
       </tr>
       <tr>
@@ -2091,10 +2034,1092 @@ exports[`Storyshots Core|DataTable Basic 1`] = `
         >
           2006
         </td>
-        <td
-          className=""
-        >
+        <td>
           Lionel Barber
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          2001
+        </td>
+        <td>
+          Andrew Gowers
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1991
+        </td>
+        <td>
+          Richard Lambert
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1981
+        </td>
+        <td>
+          Sir Geoffrey Owen
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1973
+        </td>
+        <td>
+          Fredy Fisher
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1949
+        </td>
+        <td>
+          Sir Gordon Newton
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1945
+        </td>
+        <td>
+          Hargreaves Parkinson
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Core|DataTable Basic Horizontally Lined 1`] = `
+<div
+  className="g-data-table o-table-scroll-wrapper"
+>
+  <table
+    className="o-table o-table--horizontal-lines"
+    data-o-component="o-table"
+  >
+    <thead>
+      <tr>
+        <th
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+          role="columnheader"
+          scope="col"
+        >
+          Year
+        </th>
+        <th
+          role="columnheader"
+          scope="col"
+        >
+          Editor
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          2020
+        </td>
+        <td>
+          Roula Khalaf
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          2006
+        </td>
+        <td>
+          Lionel Barber
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          2001
+        </td>
+        <td>
+          Andrew Gowers
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1991
+        </td>
+        <td>
+          Richard Lambert
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1981
+        </td>
+        <td>
+          Sir Geoffrey Owen
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1973
+        </td>
+        <td>
+          Fredy Fisher
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1949
+        </td>
+        <td>
+          Sir Gordon Newton
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1945
+        </td>
+        <td>
+          Hargreaves Parkinson
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Core|DataTable Basic Striped 1`] = `
+<div
+  className="g-data-table o-table-scroll-wrapper"
+>
+  <table
+    className="o-table o-table--row-stripes"
+    data-o-component="o-table"
+  >
+    <thead>
+      <tr>
+        <th
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+          role="columnheader"
+          scope="col"
+        >
+          Year
+        </th>
+        <th
+          role="columnheader"
+          scope="col"
+        >
+          Editor
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          2020
+        </td>
+        <td>
+          Roula Khalaf
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          2006
+        </td>
+        <td>
+          Lionel Barber
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          2001
+        </td>
+        <td>
+          Andrew Gowers
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1991
+        </td>
+        <td>
+          Richard Lambert
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1981
+        </td>
+        <td>
+          Sir Geoffrey Owen
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1973
+        </td>
+        <td>
+          Fredy Fisher
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1949
+        </td>
+        <td>
+          Sir Gordon Newton
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1945
+        </td>
+        <td>
+          Hargreaves Parkinson
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Core|DataTable Compact 1`] = `
+<div
+  className="g-data-table o-table-scroll-wrapper"
+>
+  <table
+    className="o-table o-table--compact"
+    data-o-component="o-table"
+  >
+    <thead>
+      <tr>
+        <th
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+          role="columnheader"
+          scope="col"
+        >
+          Year
+        </th>
+        <th
+          role="columnheader"
+          scope="col"
+        >
+          Editor
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          2020
+        </td>
+        <td>
+          Roula Khalaf
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          2006
+        </td>
+        <td>
+          Lionel Barber
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          2001
+        </td>
+        <td>
+          Andrew Gowers
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1991
+        </td>
+        <td>
+          Richard Lambert
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1981
+        </td>
+        <td>
+          Sir Geoffrey Owen
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1973
+        </td>
+        <td>
+          Fredy Fisher
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1949
+        </td>
+        <td>
+          Sir Gordon Newton
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1945
+        </td>
+        <td>
+          Hargreaves Parkinson
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Core|DataTable Responsive Flat 1`] = `
+<div
+  className="o-table-container"
+>
+  <div
+    className="o-table-overlay-wrapper"
+  >
+    <div
+      className="g-data-table o-table-scroll-wrapper"
+    >
+      <table
+        className="o-table o-table--responsive-flat"
+        data-o-component="o-table"
+        data-o-table-responsive="flat"
+      >
+        <thead>
+          <tr>
+            <th
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+              role="columnheader"
+              scope="col"
+            >
+              Year
+            </th>
+            <th
+              role="columnheader"
+              scope="col"
+            >
+              Editor
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              2020
+            </td>
+            <td>
+              Roula Khalaf
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              2006
+            </td>
+            <td>
+              Lionel Barber
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              2001
+            </td>
+            <td>
+              Andrew Gowers
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1991
+            </td>
+            <td>
+              Richard Lambert
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1981
+            </td>
+            <td>
+              Sir Geoffrey Owen
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1973
+            </td>
+            <td>
+              Fredy Fisher
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1949
+            </td>
+            <td>
+              Sir Gordon Newton
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1945
+            </td>
+            <td>
+              Hargreaves Parkinson
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|DataTable Responsive Overflow 1`] = `
+<div
+  className="o-table-container"
+>
+  <div
+    className="o-table-overlay-wrapper"
+  >
+    <div
+      className="g-data-table o-table-scroll-wrapper"
+    >
+      <table
+        className="o-table o-table--responsive-overflow"
+        data-o-component="o-table"
+        data-o-table-responsive="overflow"
+      >
+        <thead>
+          <tr>
+            <th
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+              role="columnheader"
+              scope="col"
+            >
+              Year
+            </th>
+            <th
+              role="columnheader"
+              scope="col"
+            >
+              Editor
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              2020
+            </td>
+            <td>
+              Roula Khalaf
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              2006
+            </td>
+            <td>
+              Lionel Barber
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              2001
+            </td>
+            <td>
+              Andrew Gowers
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1991
+            </td>
+            <td>
+              Richard Lambert
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1981
+            </td>
+            <td>
+              Sir Geoffrey Owen
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1973
+            </td>
+            <td>
+              Fredy Fisher
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1949
+            </td>
+            <td>
+              Sir Gordon Newton
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1945
+            </td>
+            <td>
+              Hargreaves Parkinson
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|DataTable Responsive Scroll 1`] = `
+<div
+  className="o-table-container"
+>
+  <div
+    className="o-table-overlay-wrapper"
+  >
+    <div
+      className="g-data-table o-table-scroll-wrapper"
+    >
+      <table
+        className="o-table o-table--responsive-scroll"
+        data-o-component="o-table"
+        data-o-table-responsive="scroll"
+      >
+        <thead>
+          <tr>
+            <th
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+              role="columnheader"
+              scope="col"
+            >
+              Year
+            </th>
+            <th
+              role="columnheader"
+              scope="col"
+            >
+              Editor
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              2020
+            </td>
+            <td>
+              Roula Khalaf
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              2006
+            </td>
+            <td>
+              Lionel Barber
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              2001
+            </td>
+            <td>
+              Andrew Gowers
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1991
+            </td>
+            <td>
+              Richard Lambert
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1981
+            </td>
+            <td>
+              Sir Geoffrey Owen
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1973
+            </td>
+            <td>
+              Fredy Fisher
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1949
+            </td>
+            <td>
+              Sir Gordon Newton
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1945
+            </td>
+            <td>
+              Hargreaves Parkinson
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|DataTable Sorting Disabled 1`] = `
+<div
+  className="o-table-container"
+>
+  <div
+    className="o-table-overlay-wrapper"
+  >
+    <div
+      className="g-data-table o-table-scroll-wrapper"
+    >
+      <table
+        className="o-table o-table--responsive-flat"
+        data-o-component="o-table"
+        data-o-table-responsive="flat"
+        data-o-table-sortable={false}
+      >
+        <thead>
+          <tr>
+            <th
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+              data-o-table-heading-disable-sort=""
+              role="columnheader"
+              scope="col"
+            >
+              Year
+            </th>
+            <th
+              data-o-table-heading-disable-sort=""
+              role="columnheader"
+              scope="col"
+            >
+              Editor
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              2020
+            </td>
+            <td>
+              Roula Khalaf
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              2006
+            </td>
+            <td>
+              Lionel Barber
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              2001
+            </td>
+            <td>
+              Andrew Gowers
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1991
+            </td>
+            <td>
+              Richard Lambert
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1981
+            </td>
+            <td>
+              Sir Geoffrey Owen
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1973
+            </td>
+            <td>
+              Fredy Fisher
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1949
+            </td>
+            <td>
+              Sir Gordon Newton
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="o-table__cell--numeric"
+              data-o-table-data-type="numeric"
+            >
+              1945
+            </td>
+            <td>
+              Hargreaves Parkinson
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core|DataTable With Caption And Footnote 1`] = `
+<div
+  className="g-data-table o-table-scroll-wrapper"
+>
+  <table
+    className="o-table"
+    data-o-component="o-table"
+  >
+    <caption
+      className="o-table__caption"
+    >
+      <h2
+        className="o-typography-heading-level-2"
+      >
+        captionTop
+      </h2>
+    </caption>
+    <tfoot>
+      <tr>
+        <td
+          className="o-table-footnote"
+          colSpan={2}
+        >
+          captionBottom
+        </td>
+      </tr>
+    </tfoot>
+    <thead>
+      <tr>
+        <th
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+          role="columnheader"
+          scope="col"
+        >
+          Year
+        </th>
+        <th
+          role="columnheader"
+          scope="col"
+        >
+          Editor
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          2020
+        </td>
+        <td>
+          Roula Khalaf
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          2006
+        </td>
+        <td>
+          Lionel Barber
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          2001
+        </td>
+        <td>
+          Andrew Gowers
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1991
+        </td>
+        <td>
+          Richard Lambert
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1981
+        </td>
+        <td>
+          Sir Geoffrey Owen
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1973
+        </td>
+        <td>
+          Fredy Fisher
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1949
+        </td>
+        <td>
+          Sir Gordon Newton
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="o-table__cell--numeric"
+          data-o-table-data-type="numeric"
+        >
+          1945
+        </td>
+        <td>
+          Hargreaves Parkinson
         </td>
       </tr>
     </tbody>
@@ -4785,57 +5810,70 @@ exports[`Storyshots Core|Share Basic 1`] = `
         >
           <a
             className="o-share__icon o-share__icon--twitter"
+            data-trackable="twitter"
             href="https://twitter.com/intent/tweet?url=https://www.aendrew.com&amp;text=FT article: &amp;related=&amp;via=FinancialTimes"
             rel="noopener"
           >
             <span
               className="o-share__text"
             >
-              Share on Twitter. Opens in a new window.
+              Share on 
+              Twitter
+              . Opens in a new window.
             </span>
           </a>
         </li>
         <li
-          className="o-share__action o-share__icon--facebook"
+          className="o-share__action o-share__action--facebook"
         >
           <a
+            className="o-share__icon o-share__icon--facebook"
+            data-trackable="facebook"
             href="http://www.facebook.com/sharer.php?u=https://www.aendrew.com"
             rel="noopener"
           >
             <span
               className="o-share__text"
             >
-              Share on Facebook. Opens in a new window.
+              Share on 
+              Facebook
+              . Opens in a new window.
             </span>
           </a>
         </li>
         <li
-          className="o-share__action o-share__icon--linkedin"
+          className="o-share__action o-share__action--linkedin"
         >
           <a
+            className="o-share__icon o-share__icon--linkedin"
+            data-trackable="linkedin"
             href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.aendrew.com&amp;source=Financial%20Times"
             rel="noopener"
           >
             <span
               className="o-share__text"
             >
-              Share on LinkedIn. Opens in a new window.
+              Share on 
+              LinkedIn
+              . Opens in a new window.
             </span>
           </a>
         </li>
         <li
-          className="o-share__action o-share__icon--whatsapp"
+          className="o-share__action o-share__action--whatsapp"
         >
           <a
+            className="o-share__icon o-share__icon--whatsapp"
             data-trackable="whatsapp"
             href="whatsapp://send?text=%20-%20https://www.aendrew.com"
-            rel="noopener noreferrer"
-            target="_blank"
+            rel="noopener"
           >
             <span
               className="o-share__text"
             >
-              Share on Whatsapp. Opens in a new window.
+              Share on 
+              WhatsApp
+              . Opens in a new window.
             </span>
           </a>
         </li>
@@ -10395,27 +11433,27 @@ Array [
           >
             <div>
               <a
-                className="o-typography-topic"
+                className="o-editorial-typography-topic"
                 href="https://local.ft.com/"
               >
                 Testing
               </a>
             </div>
             <h1
-              className="o-typography-headline"
+              className="o-editorial-layout-heading-1"
               itemProp="headline"
             >
               New Starter Kit site
             </h1>
-            <div
-              className="o-typography-standfirst"
+            <p
+              className="o-editorial-typography-standfirst"
             >
               
                
               <a
                 className="o-typography-link"
               />
-            </div>
+            </p>
             <meta
               content="2019-01-31T00:00:00.000Z"
               itemProp="dateModified"
@@ -10448,57 +11486,70 @@ Array [
                     >
                       <a
                         className="o-share__icon o-share__icon--twitter"
+                        data-trackable="twitter"
                         href="https://twitter.com/intent/tweet?url=https://local.ft.com/&amp;text=FT article: &amp;related=&amp;via=FinancialTimes"
                         rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on Twitter. Opens in a new window.
+                          Share on 
+                          Twitter
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
                     <li
-                      className="o-share__action o-share__icon--facebook"
+                      className="o-share__action o-share__action--facebook"
                     >
                       <a
+                        className="o-share__icon o-share__icon--facebook"
+                        data-trackable="facebook"
                         href="http://www.facebook.com/sharer.php?u=https://local.ft.com/"
                         rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on Facebook. Opens in a new window.
+                          Share on 
+                          Facebook
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
                     <li
-                      className="o-share__action o-share__icon--linkedin"
+                      className="o-share__action o-share__action--linkedin"
                     >
                       <a
+                        className="o-share__icon o-share__icon--linkedin"
+                        data-trackable="linkedin"
                         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://local.ft.com/&amp;source=Financial%20Times"
                         rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on LinkedIn. Opens in a new window.
+                          Share on 
+                          LinkedIn
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
                     <li
-                      className="o-share__action o-share__icon--whatsapp"
+                      className="o-share__action o-share__action--whatsapp"
                     >
                       <a
+                        className="o-share__icon o-share__icon--whatsapp"
                         data-trackable="whatsapp"
                         href="whatsapp://send?text=New Starter Kit site%20-%20https://local.ft.com/"
-                        rel="noopener noreferrer"
-                        target="_blank"
+                        rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on Whatsapp. Opens in a new window.
+                          Share on 
+                          WhatsApp
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
@@ -10509,21 +11560,30 @@ Array [
             <div
               className="byline"
             >
-               
+              
               <span
-                className="o-date o-typography-timestamp"
+                className="o-editorial-typography-author"
+              >
+                FT Staff
+              </span>
+               in 
+               
+              London
+               
+              <time
+                className="o-date o-editorial-typography-byline-timestamp"
                 data-o-component="o-date"
                 dateTime="2019-01-31T00:00:00.000Z"
                 suppressHydrationWarning={true}
               >
                 Thursday, 31 January 2019
-              </span>
+              </time>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="article-body o-typography-wrapper"
+        className="article-body o-editorial-typography-body"
         itemProp="articleBody"
       >
         <div
@@ -10535,13 +11595,1254 @@ Array [
             <div
               data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
             >
-              <div>
+              <div
+                className="o-editorial-layout-wrapper"
+              >
                 <p
                   breakpoint="default"
                   buildTime="2019-01-31T00:00:00.000Z"
                   headline="New Starter Kit site"
                   id="3a499586-b2e0-11e4-a058-00144feab7de"
                   publishedDate="2019-01-31T00:00:00.000Z"
+                  title="New Starter Kit site"
+                  topic={
+                    Object {
+                      "name": "Testing",
+                      "url": "https://local.ft.com/",
+                    }
+                  }
+                  url="https://local.ft.com/"
+                  wrapArticleHead={true}
+                >
+                  Lorem ipsum dolor sit amet, esse mediocritatem et eos, ex cum nostrum singulis inciderint.
+Error vitae molestie ea sit, cu usu facilis deleniti, nec ea novum solet. No pro labores
+omnesque, duo ut tractatos accusamus. Usu vitae mollis ut, cetero detraxit cu qui. Et elitr
+dolore praesent est.
+Ex his oratio perpetua expetendis, commune suscipiantur nec at, vel lorem atqui option ne.
+Habeo congue vel te. Ex quo summo principes. Eu dicta solet molestiae eam, eu ius primis
+consectetuer. Ei dicant numquam omittam qui. Vim dicunt nostrud volutpat ex, cu mel
+gubergren constituto.
+Ad qui wisi minimum cotidieque, ea vis esse discere intellegam. Et omnium inimicus vim. Ea
+sale dicam homero ius. Impedit eligendi delicata in mel, vis soluta temporibus an, ex vis
+vide laoreet. No per hinc ferri mediocritatem, eam modus ubique atomorum ne. Iudico offendit
+ut his.
+Mel fastidii eleifend no, ut oratio intellegam cum. Iudico dignissim sadipscing ei mel. At
+laudem legendos erroribus eos. Aliquid dolorem dissentiunt eos cu. Eros suscipiantur mea ei,
+tantas vituperata vis ad. Pri et dicunt regione, ut quando volutpat abhorreant eos.
+Ad cum saperet docendi, ex habeo nemore euismod vix, usu semper instructior cu. Natum
+salutatus consetetur sit cu. Ad erroribus complectitur vis. Ne possim similique vis. Ne enim
+soluta vix, quis natum ne qui, ei vidit latine partiendo mei. Mel ea duis essent vivendo.
+                </p>
+                <div
+                  aria-hidden="true"
+                  className="o-ads o-ads--center o-ads--background o-ads--reserve-250"
+                  data-o-ads-formats-default="Responsive"
+                  data-o-ads-formats-extra="MediumRectangle,Responsive"
+                  data-o-ads-formats-large="MediumRectangle,Responsive"
+                  data-o-ads-formats-medium="MediumRectangle,Responsive"
+                  data-o-ads-formats-small="MediumRectangle,Responsive"
+                  data-o-ads-name="mid-ad"
+                  data-o-ads-targeting="pos=mid;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer
+        className="o-typography-footer"
+        itemProp="publisher"
+        itemScope={true}
+        itemType="https://schema.org/Organization"
+      >
+        <div
+          className="o-grid-container"
+        >
+          <div
+            className="o-grid-row"
+          >
+            <div
+              data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+            >
+              <small>
+                <a
+                  data-trackable="link-copyright"
+                  href="http://www.ft.com/servicestools/help/copyright"
+                >
+                  Copyright
+                </a>
+                 
+                <span
+                  itemProp="name"
+                >
+                  The Financial Times
+                </span>
+                 Limited
+                 
+                2019
+                . All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.
+              </small>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>,
+  <div
+    className="o-grid-container"
+  >
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-component="o-comments"
+        data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+        id="comments"
+      >
+        <div
+          className="o--if-no-js"
+        >
+          To participate in this chat, you need to upgrade to a newer web browser.
+           
+          <a
+            href="http://help.ft.com/tools-services/browser-compatibility/"
+          >
+            Learn more.
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <footer
+    className="o-footer o-footer--theme-dark"
+    data-o-component="o-footer"
+    data-o-footer--no-js=""
+  >
+    <div
+      className="o-footer__container"
+    >
+      <div
+        className="o-footer__row"
+      >
+        <nav
+          aria-label="Useful links"
+          className="o-footer__matrix"
+        >
+          <div
+            className="o-footer__matrix-group o-footer__matrix-group--1"
+          >
+            <div
+              className="o-footer__matrix-title"
+            >
+              Support
+            </div>
+            <div
+              className="o-footer__matrix-content"
+              id="o-footer-section-0"
+            >
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/help"
+                >
+                  Help
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/aboutus"
+                >
+                  About Us
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="o-footer__matrix-group o-footer__matrix-group--1"
+          >
+            <div
+              className="o-footer__matrix-title"
+            >
+              Legal & Privacy
+            </div>
+            <div
+              className="o-footer__matrix-content"
+              id="o-footer-section-1"
+            >
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/servicestools/help/terms"
+                >
+                  Terms & Conditions
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/servicestools/help/privacy"
+                >
+                  Privacy
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/cookiepolicy"
+                >
+                  Cookies
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/servicestools/help/copyright"
+                >
+                  Copyright
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="o-footer__matrix-group o-footer__matrix-group--2"
+          >
+            <div
+              aria-controls="o-footer-section-2"
+              className="o-footer__matrix-title"
+            >
+              Services
+            </div>
+            <div
+              className="o-footer__matrix-content"
+              id="o-footer-section-2"
+            >
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//sub.ft.com/spa_5"
+                >
+                  Individual Subscriptions
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//enterprise.ft.com/en-gb/services/group-subscriptions/"
+                >
+                  Group Subscriptions
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//enterprise.ft.com/en-gb/services/republishing/"
+                >
+                  Republishing
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.businessesforsale.com/ft2/notices"
+                >
+                  Contracts & Tenders
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//commerce.uk.reuters.com/purchase/mostPopular.do?rpc&#x3D;471"
+                >
+                  Analysts Research
+                </a>
+              </div>
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.exec-appointments.com/"
+                >
+                  Executive Job Search
+                </a>
+                <a
+                  aria-label="Advertise with the F T"
+                  className="o-footer__matrix-link"
+                  href="//fttoolkit.co.uk/d/"
+                >
+                  Advertise with the FT
+                </a>
+                <a
+                  aria-label="Follow the F T on Twitter"
+                  className="o-footer__matrix-link"
+                  href="//twitter.com/ft"
+                >
+                  Follow the FT on Twitter
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="o-footer__matrix-group o-footer__matrix-group--2"
+          >
+            <div
+              aria-controls="o-footer-section-3"
+              className="o-footer__matrix-title"
+            >
+              Tools
+            </div>
+            <div
+              className="o-footer__matrix-content"
+              id="o-footer-section-3"
+            >
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//markets.ft.com/data/portfolio/dashboard"
+                >
+                  Portfolio
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//ftepaper.ft.com"
+                >
+                  Today's Paper
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//markets.ft.com/data/alerts/"
+                >
+                  Alerts Hub
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//rankings.ft.com/businessschoolrankings/global-mba-ranking-2016"
+                >
+                  MBA Rankings
+                </a>
+              </div>
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//markets.ft.com/Research/Economic-Calendar"
+                >
+                  Economic Calendar
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//nbe.ft.com/nbe/profile.cfm"
+                >
+                  Newsletters
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//markets.ft.com/research/Markets/Currencies?segid&#x3D;70113"
+                >
+                  Currency Converter
+                </a>
+                <a
+                  aria-label="E-books"
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/ebooks"
+                >
+                  Ebooks
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div
+          className="o-footer__external-link o-footer__matrix-title"
+        >
+          <a
+            className="o-footer__more-from-ft o-footer__matrix-title"
+            href="http://ft.com/more-from-ft-group"
+          >
+            More from the FT Group
+          </a>
+        </div>
+      </div>
+      <div
+        className="o-footer__copyright"
+        role="contentinfo"
+      >
+        <small>
+          Markets data delayed by at least 15 minutes. © THE FINANCIAL TIMES LTD
+           
+          2019
+          . 
+          <abbr
+            aria-label="F T"
+            title="Financial Times"
+          >
+            FT
+          </abbr>
+           
+          and ‘Financial Times’ are trademarks of The Financial Times Ltd.
+          <br />
+          The Financial Times and its journalism are subject to a self-regulation regime under the
+           
+          <a
+            aria-label="F T Editorial Code of Practice"
+            href="http://aboutus.ft.com/en-gb/ft-editorial-code/"
+          >
+            FT Editorial Code of Practice
+          </a>
+          .
+        </small>
+      </div>
+    </div>
+    <div
+      className="o-footer__brand"
+    >
+      <div
+        className="o-footer__container"
+      >
+        <div
+          className="o-footer__brand-logo"
+        />
+      </div>
+    </div>
+  </footer>,
+]
+`;
+
+exports[`Storyshots Layouts|Article Basic No Image 1`] = `
+Array [
+  <header
+    className="o-header o-header--simple"
+    data-o-component="o-header"
+    data-o-header--no-js=""
+  >
+    <div
+      className="o-header__row o-header__top"
+    >
+      <div
+        className="o-header__container"
+      >
+        <div
+          className="o-header__top-wrapper"
+        >
+          <div
+            className="o-header__top-column o-header__top-column--center"
+          >
+            <a
+              className="o-header__top-logo"
+              href="http://www.ft.com/"
+              title="Go to Financial Times homepage"
+            >
+              <span
+                className="o-header__visually-hidden"
+              >
+                Financial Times
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>,
+  <main
+    role="main"
+  >
+    <article
+      className="article"
+      itemScope={true}
+      itemType="http://schema.org/Article"
+    >
+      <div
+        className="article-head o-grid-container"
+      >
+        <div
+          className="o-grid-row"
+        >
+          <div
+            data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+          >
+            <div>
+              <a
+                className="o-editorial-typography-topic"
+                href="https://local.ft.com/"
+              >
+                Testing
+              </a>
+            </div>
+            <h1
+              className="o-editorial-layout-heading-1"
+              itemProp="headline"
+            >
+              New Starter Kit site
+            </h1>
+            <p
+              className="o-editorial-typography-standfirst"
+            >
+              This is a standfirst
+               
+              <a
+                className="o-typography-link"
+              />
+            </p>
+            <meta
+              content="2019-01-31T00:00:00.000Z"
+              itemProp="dateModified"
+              suppressHydrationWarning={true}
+            />
+            <div
+              className="article__share article__share--top n-util-clearfix"
+              data-trackable="share | top"
+            >
+              <div
+                className="container"
+              >
+                <div
+                  className="o-share"
+                  data-o-component="o-share"
+                >
+                  <ul>
+                    <li
+                      className="o-share__action o-share__action--twitter"
+                    >
+                      <a
+                        className="o-share__icon o-share__icon--twitter"
+                        data-trackable="twitter"
+                        href="https://twitter.com/intent/tweet?url=https://local.ft.com/&amp;text=FT article: &amp;related=&amp;via=FinancialTimes"
+                        rel="noopener"
+                      >
+                        <span
+                          className="o-share__text"
+                        >
+                          Share on 
+                          Twitter
+                          . Opens in a new window.
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      className="o-share__action o-share__action--facebook"
+                    >
+                      <a
+                        className="o-share__icon o-share__icon--facebook"
+                        data-trackable="facebook"
+                        href="http://www.facebook.com/sharer.php?u=https://local.ft.com/"
+                        rel="noopener"
+                      >
+                        <span
+                          className="o-share__text"
+                        >
+                          Share on 
+                          Facebook
+                          . Opens in a new window.
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      className="o-share__action o-share__action--linkedin"
+                    >
+                      <a
+                        className="o-share__icon o-share__icon--linkedin"
+                        data-trackable="linkedin"
+                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://local.ft.com/&amp;source=Financial%20Times"
+                        rel="noopener"
+                      >
+                        <span
+                          className="o-share__text"
+                        >
+                          Share on 
+                          LinkedIn
+                          . Opens in a new window.
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      className="o-share__action o-share__action--whatsapp"
+                    >
+                      <a
+                        className="o-share__icon o-share__icon--whatsapp"
+                        data-trackable="whatsapp"
+                        href="whatsapp://send?text=New Starter Kit site%20-%20https://local.ft.com/"
+                        rel="noopener"
+                      >
+                        <span
+                          className="o-share__text"
+                        >
+                          Share on 
+                          WhatsApp
+                          . Opens in a new window.
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              className="byline"
+            >
+              
+              <span
+                className="o-editorial-typography-author"
+              >
+                FT Staff
+              </span>
+               in 
+               
+              London
+               
+              <time
+                className="o-date o-editorial-typography-byline-timestamp"
+                data-o-component="o-date"
+                dateTime="2019-01-31T00:00:00.000Z"
+                suppressHydrationWarning={true}
+              >
+                Thursday, 31 January 2019
+              </time>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="article-body o-editorial-typography-body"
+        itemProp="articleBody"
+      >
+        <div
+          className="o-grid-container"
+        >
+          <div
+            className="o-grid-row"
+          >
+            <div
+              data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+            >
+              <div
+                className="o-editorial-layout-wrapper"
+              >
+                <p
+                  breakpoint="default"
+                  buildTime="2019-01-31T00:00:00.000Z"
+                  headline="New Starter Kit site"
+                  id="3a499586-b2e0-11e4-a058-00144feab7de"
+                  mainImage={false}
+                  publishedDate="2019-01-31T00:00:00.000Z"
+                  summary="This is a standfirst"
+                  title="New Starter Kit site"
+                  topic={
+                    Object {
+                      "name": "Testing",
+                      "url": "https://local.ft.com/",
+                    }
+                  }
+                  url="https://local.ft.com/"
+                  wrapArticleHead={true}
+                >
+                  Lorem ipsum dolor sit amet, esse mediocritatem et eos, ex cum nostrum singulis inciderint.
+Error vitae molestie ea sit, cu usu facilis deleniti, nec ea novum solet. No pro labores
+omnesque, duo ut tractatos accusamus. Usu vitae mollis ut, cetero detraxit cu qui. Et elitr
+dolore praesent est.
+Ex his oratio perpetua expetendis, commune suscipiantur nec at, vel lorem atqui option ne.
+Habeo congue vel te. Ex quo summo principes. Eu dicta solet molestiae eam, eu ius primis
+consectetuer. Ei dicant numquam omittam qui. Vim dicunt nostrud volutpat ex, cu mel
+gubergren constituto.
+Ad qui wisi minimum cotidieque, ea vis esse discere intellegam. Et omnium inimicus vim. Ea
+sale dicam homero ius. Impedit eligendi delicata in mel, vis soluta temporibus an, ex vis
+vide laoreet. No per hinc ferri mediocritatem, eam modus ubique atomorum ne. Iudico offendit
+ut his.
+Mel fastidii eleifend no, ut oratio intellegam cum. Iudico dignissim sadipscing ei mel. At
+laudem legendos erroribus eos. Aliquid dolorem dissentiunt eos cu. Eros suscipiantur mea ei,
+tantas vituperata vis ad. Pri et dicunt regione, ut quando volutpat abhorreant eos.
+Ad cum saperet docendi, ex habeo nemore euismod vix, usu semper instructior cu. Natum
+salutatus consetetur sit cu. Ad erroribus complectitur vis. Ne possim similique vis. Ne enim
+soluta vix, quis natum ne qui, ei vidit latine partiendo mei. Mel ea duis essent vivendo.
+                </p>
+                <div
+                  aria-hidden="true"
+                  className="o-ads o-ads--center o-ads--background o-ads--reserve-250"
+                  data-o-ads-formats-default="Responsive"
+                  data-o-ads-formats-extra="MediumRectangle,Responsive"
+                  data-o-ads-formats-large="MediumRectangle,Responsive"
+                  data-o-ads-formats-medium="MediumRectangle,Responsive"
+                  data-o-ads-formats-small="MediumRectangle,Responsive"
+                  data-o-ads-name="mid-ad"
+                  data-o-ads-targeting="pos=mid;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer
+        className="o-typography-footer"
+        itemProp="publisher"
+        itemScope={true}
+        itemType="https://schema.org/Organization"
+      >
+        <div
+          className="o-grid-container"
+        >
+          <div
+            className="o-grid-row"
+          >
+            <div
+              data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+            >
+              <small>
+                <a
+                  data-trackable="link-copyright"
+                  href="http://www.ft.com/servicestools/help/copyright"
+                >
+                  Copyright
+                </a>
+                 
+                <span
+                  itemProp="name"
+                >
+                  The Financial Times
+                </span>
+                 Limited
+                 
+                2019
+                . All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.
+              </small>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>,
+  <div
+    className="o-grid-container"
+  >
+    <div
+      className="o-grid-row"
+    >
+      <div
+        data-o-component="o-comments"
+        data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+        id="comments"
+      >
+        <div
+          className="o--if-no-js"
+        >
+          To participate in this chat, you need to upgrade to a newer web browser.
+           
+          <a
+            href="http://help.ft.com/tools-services/browser-compatibility/"
+          >
+            Learn more.
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <footer
+    className="o-footer o-footer--theme-dark"
+    data-o-component="o-footer"
+    data-o-footer--no-js=""
+  >
+    <div
+      className="o-footer__container"
+    >
+      <div
+        className="o-footer__row"
+      >
+        <nav
+          aria-label="Useful links"
+          className="o-footer__matrix"
+        >
+          <div
+            className="o-footer__matrix-group o-footer__matrix-group--1"
+          >
+            <div
+              className="o-footer__matrix-title"
+            >
+              Support
+            </div>
+            <div
+              className="o-footer__matrix-content"
+              id="o-footer-section-0"
+            >
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/help"
+                >
+                  Help
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/aboutus"
+                >
+                  About Us
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="o-footer__matrix-group o-footer__matrix-group--1"
+          >
+            <div
+              className="o-footer__matrix-title"
+            >
+              Legal & Privacy
+            </div>
+            <div
+              className="o-footer__matrix-content"
+              id="o-footer-section-1"
+            >
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/servicestools/help/terms"
+                >
+                  Terms & Conditions
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/servicestools/help/privacy"
+                >
+                  Privacy
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/cookiepolicy"
+                >
+                  Cookies
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/servicestools/help/copyright"
+                >
+                  Copyright
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="o-footer__matrix-group o-footer__matrix-group--2"
+          >
+            <div
+              aria-controls="o-footer-section-2"
+              className="o-footer__matrix-title"
+            >
+              Services
+            </div>
+            <div
+              className="o-footer__matrix-content"
+              id="o-footer-section-2"
+            >
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//sub.ft.com/spa_5"
+                >
+                  Individual Subscriptions
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//enterprise.ft.com/en-gb/services/group-subscriptions/"
+                >
+                  Group Subscriptions
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//enterprise.ft.com/en-gb/services/republishing/"
+                >
+                  Republishing
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.businessesforsale.com/ft2/notices"
+                >
+                  Contracts & Tenders
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//commerce.uk.reuters.com/purchase/mostPopular.do?rpc&#x3D;471"
+                >
+                  Analysts Research
+                </a>
+              </div>
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//www.exec-appointments.com/"
+                >
+                  Executive Job Search
+                </a>
+                <a
+                  aria-label="Advertise with the F T"
+                  className="o-footer__matrix-link"
+                  href="//fttoolkit.co.uk/d/"
+                >
+                  Advertise with the FT
+                </a>
+                <a
+                  aria-label="Follow the F T on Twitter"
+                  className="o-footer__matrix-link"
+                  href="//twitter.com/ft"
+                >
+                  Follow the FT on Twitter
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="o-footer__matrix-group o-footer__matrix-group--2"
+          >
+            <div
+              aria-controls="o-footer-section-3"
+              className="o-footer__matrix-title"
+            >
+              Tools
+            </div>
+            <div
+              className="o-footer__matrix-content"
+              id="o-footer-section-3"
+            >
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//markets.ft.com/data/portfolio/dashboard"
+                >
+                  Portfolio
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//ftepaper.ft.com"
+                >
+                  Today's Paper
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//markets.ft.com/data/alerts/"
+                >
+                  Alerts Hub
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//rankings.ft.com/businessschoolrankings/global-mba-ranking-2016"
+                >
+                  MBA Rankings
+                </a>
+              </div>
+              <div
+                className="o-footer__matrix-column"
+              >
+                <a
+                  className="o-footer__matrix-link"
+                  href="//markets.ft.com/Research/Economic-Calendar"
+                >
+                  Economic Calendar
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//nbe.ft.com/nbe/profile.cfm"
+                >
+                  Newsletters
+                </a>
+                <a
+                  className="o-footer__matrix-link"
+                  href="//markets.ft.com/research/Markets/Currencies?segid&#x3D;70113"
+                >
+                  Currency Converter
+                </a>
+                <a
+                  aria-label="E-books"
+                  className="o-footer__matrix-link"
+                  href="//www.ft.com/ebooks"
+                >
+                  Ebooks
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div
+          className="o-footer__external-link o-footer__matrix-title"
+        >
+          <a
+            className="o-footer__more-from-ft o-footer__matrix-title"
+            href="http://ft.com/more-from-ft-group"
+          >
+            More from the FT Group
+          </a>
+        </div>
+      </div>
+      <div
+        className="o-footer__copyright"
+        role="contentinfo"
+      >
+        <small>
+          Markets data delayed by at least 15 minutes. © THE FINANCIAL TIMES LTD
+           
+          2019
+          . 
+          <abbr
+            aria-label="F T"
+            title="Financial Times"
+          >
+            FT
+          </abbr>
+           
+          and ‘Financial Times’ are trademarks of The Financial Times Ltd.
+          <br />
+          The Financial Times and its journalism are subject to a self-regulation regime under the
+           
+          <a
+            aria-label="F T Editorial Code of Practice"
+            href="http://aboutus.ft.com/en-gb/ft-editorial-code/"
+          >
+            FT Editorial Code of Practice
+          </a>
+          .
+        </small>
+      </div>
+    </div>
+    <div
+      className="o-footer__brand"
+    >
+      <div
+        className="o-footer__container"
+      >
+        <div
+          className="o-footer__brand-logo"
+        />
+      </div>
+    </div>
+  </footer>,
+]
+`;
+
+exports[`Storyshots Layouts|Article Basic With Standfirst 1`] = `
+Array [
+  <header
+    className="o-header o-header--simple"
+    data-o-component="o-header"
+    data-o-header--no-js=""
+  >
+    <div
+      className="o-header__row o-header__top"
+    >
+      <div
+        className="o-header__container"
+      >
+        <div
+          className="o-header__top-wrapper"
+        >
+          <div
+            className="o-header__top-column o-header__top-column--center"
+          >
+            <a
+              className="o-header__top-logo"
+              href="http://www.ft.com/"
+              title="Go to Financial Times homepage"
+            >
+              <span
+                className="o-header__visually-hidden"
+              >
+                Financial Times
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>,
+  <main
+    role="main"
+  >
+    <article
+      className="article"
+      itemScope={true}
+      itemType="http://schema.org/Article"
+    >
+      <div
+        className="article-head o-grid-container"
+      >
+        <div
+          className="o-grid-row"
+        >
+          <div
+            data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+          >
+            <div>
+              <a
+                className="o-editorial-typography-topic"
+                href="https://local.ft.com/"
+              >
+                Testing
+              </a>
+            </div>
+            <h1
+              className="o-editorial-layout-heading-1"
+              itemProp="headline"
+            >
+              New Starter Kit site
+            </h1>
+            <p
+              className="o-editorial-typography-standfirst"
+            >
+              This is a standfirst
+               
+              <a
+                className="o-typography-link"
+              />
+            </p>
+            <meta
+              content="2019-01-31T00:00:00.000Z"
+              itemProp="dateModified"
+              suppressHydrationWarning={true}
+            />
+            <figure
+              className="graphic graphic-b-1 graphic-pad-1"
+            >
+              <img
+                src="https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Af07ccec8-7ded-11e8-af48-190d103e32a4?source=ig"
+              />
+              <figcaption
+                className="o-typography-caption"
+              />
+            </figure>
+            <div
+              className="article__share article__share--top n-util-clearfix"
+              data-trackable="share | top"
+            >
+              <div
+                className="container"
+              >
+                <div
+                  className="o-share"
+                  data-o-component="o-share"
+                >
+                  <ul>
+                    <li
+                      className="o-share__action o-share__action--twitter"
+                    >
+                      <a
+                        className="o-share__icon o-share__icon--twitter"
+                        data-trackable="twitter"
+                        href="https://twitter.com/intent/tweet?url=https://local.ft.com/&amp;text=FT article: &amp;related=&amp;via=FinancialTimes"
+                        rel="noopener"
+                      >
+                        <span
+                          className="o-share__text"
+                        >
+                          Share on 
+                          Twitter
+                          . Opens in a new window.
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      className="o-share__action o-share__action--facebook"
+                    >
+                      <a
+                        className="o-share__icon o-share__icon--facebook"
+                        data-trackable="facebook"
+                        href="http://www.facebook.com/sharer.php?u=https://local.ft.com/"
+                        rel="noopener"
+                      >
+                        <span
+                          className="o-share__text"
+                        >
+                          Share on 
+                          Facebook
+                          . Opens in a new window.
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      className="o-share__action o-share__action--linkedin"
+                    >
+                      <a
+                        className="o-share__icon o-share__icon--linkedin"
+                        data-trackable="linkedin"
+                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://local.ft.com/&amp;source=Financial%20Times"
+                        rel="noopener"
+                      >
+                        <span
+                          className="o-share__text"
+                        >
+                          Share on 
+                          LinkedIn
+                          . Opens in a new window.
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      className="o-share__action o-share__action--whatsapp"
+                    >
+                      <a
+                        className="o-share__icon o-share__icon--whatsapp"
+                        data-trackable="whatsapp"
+                        href="whatsapp://send?text=New Starter Kit site%20-%20https://local.ft.com/"
+                        rel="noopener"
+                      >
+                        <span
+                          className="o-share__text"
+                        >
+                          Share on 
+                          WhatsApp
+                          . Opens in a new window.
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              className="byline"
+            >
+              
+              <span
+                className="o-editorial-typography-author"
+              >
+                FT Staff
+              </span>
+               in 
+               
+              London
+               
+              <time
+                className="o-date o-editorial-typography-byline-timestamp"
+                data-o-component="o-date"
+                dateTime="2019-01-31T00:00:00.000Z"
+                suppressHydrationWarning={true}
+              >
+                Thursday, 31 January 2019
+              </time>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="article-body o-editorial-typography-body"
+        itemProp="articleBody"
+      >
+        <div
+          className="o-grid-container"
+        >
+          <div
+            className="o-grid-row"
+          >
+            <div
+              data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
+            >
+              <div
+                className="o-editorial-layout-wrapper"
+              >
+                <p
+                  breakpoint="default"
+                  buildTime="2019-01-31T00:00:00.000Z"
+                  headline="New Starter Kit site"
+                  id="3a499586-b2e0-11e4-a058-00144feab7de"
+                  publishedDate="2019-01-31T00:00:00.000Z"
+                  summary="This is a standfirst"
                   title="New Starter Kit site"
                   topic={
                     Object {
@@ -10994,27 +13295,27 @@ Array [
           >
             <div>
               <a
-                className="o-typography-topic"
+                className="o-editorial-typography-topic"
                 href="https://local.ft.com/"
               >
                 Testing
               </a>
             </div>
             <h1
-              className="o-typography-headline"
+              className="o-editorial-layout-heading-1"
               itemProp="headline"
             >
               New Starter Kit site
             </h1>
-            <div
-              className="o-typography-standfirst"
+            <p
+              className="o-editorial-typography-standfirst"
             >
-              
+              This is a standfirst
                
               <a
                 className="o-typography-link"
               />
-            </div>
+            </p>
             <meta
               content="2019-01-31T00:00:00.000Z"
               itemProp="dateModified"
@@ -11047,57 +13348,70 @@ Array [
                     >
                       <a
                         className="o-share__icon o-share__icon--twitter"
+                        data-trackable="twitter"
                         href="https://twitter.com/intent/tweet?url=https://local.ft.com/&amp;text=FT article: &amp;related=&amp;via=FinancialTimes"
                         rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on Twitter. Opens in a new window.
+                          Share on 
+                          Twitter
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
                     <li
-                      className="o-share__action o-share__icon--facebook"
+                      className="o-share__action o-share__action--facebook"
                     >
                       <a
+                        className="o-share__icon o-share__icon--facebook"
+                        data-trackable="facebook"
                         href="http://www.facebook.com/sharer.php?u=https://local.ft.com/"
                         rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on Facebook. Opens in a new window.
+                          Share on 
+                          Facebook
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
                     <li
-                      className="o-share__action o-share__icon--linkedin"
+                      className="o-share__action o-share__action--linkedin"
                     >
                       <a
+                        className="o-share__icon o-share__icon--linkedin"
+                        data-trackable="linkedin"
                         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://local.ft.com/&amp;source=Financial%20Times"
                         rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on LinkedIn. Opens in a new window.
+                          Share on 
+                          LinkedIn
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
                     <li
-                      className="o-share__action o-share__icon--whatsapp"
+                      className="o-share__action o-share__action--whatsapp"
                     >
                       <a
+                        className="o-share__icon o-share__icon--whatsapp"
                         data-trackable="whatsapp"
                         href="whatsapp://send?text=New Starter Kit site%20-%20https://local.ft.com/"
-                        rel="noopener noreferrer"
-                        target="_blank"
+                        rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on Whatsapp. Opens in a new window.
+                          Share on 
+                          WhatsApp
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
@@ -11108,21 +13422,30 @@ Array [
             <div
               className="byline"
             >
-               
+              
               <span
-                className="o-date o-typography-timestamp"
+                className="o-editorial-typography-author"
+              >
+                FT Staff
+              </span>
+               in 
+               
+              London
+               
+              <time
+                className="o-date o-editorial-typography-byline-timestamp"
                 data-o-component="o-date"
                 dateTime="2019-01-31T00:00:00.000Z"
                 suppressHydrationWarning={true}
               >
                 Thursday, 31 January 2019
-              </span>
+              </time>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="article-body o-typography-wrapper"
+        className="article-body o-editorial-typography-body"
         itemProp="articleBody"
       >
         <div
@@ -11134,13 +13457,16 @@ Array [
             <div
               data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
             >
-              <div>
+              <div
+                className="o-editorial-layout-wrapper"
+              >
                 <p
                   breakpoint="default"
                   buildTime="2019-01-31T00:00:00.000Z"
                   headline="New Starter Kit site"
                   id="3a499586-b2e0-11e4-a058-00144feab7de"
                   publishedDate="2019-01-31T00:00:00.000Z"
+                  summary="This is a standfirst"
                   title="New Starter Kit site"
                   topic={
                     Object {
@@ -11597,27 +13923,27 @@ Array [
           >
             <div>
               <a
-                className="o-typography-topic"
+                className="o-editorial-typography-topic"
                 href="https://local.ft.com/"
               >
                 Testing
               </a>
             </div>
             <h1
-              className="o-typography-headline"
+              className="o-editorial-layout-heading-1"
               itemProp="headline"
             >
               New Starter Kit site
             </h1>
-            <div
-              className="o-typography-standfirst"
+            <p
+              className="o-editorial-typography-standfirst"
             >
-              
+              This is a standfirst
                
               <a
                 className="o-typography-link"
               />
-            </div>
+            </p>
             <meta
               content="2019-01-31T00:00:00.000Z"
               itemProp="dateModified"
@@ -11650,57 +13976,70 @@ Array [
                     >
                       <a
                         className="o-share__icon o-share__icon--twitter"
+                        data-trackable="twitter"
                         href="https://twitter.com/intent/tweet?url=https://local.ft.com/&amp;text=FT article: &amp;related=&amp;via=FinancialTimes"
                         rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on Twitter. Opens in a new window.
+                          Share on 
+                          Twitter
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
                     <li
-                      className="o-share__action o-share__icon--facebook"
+                      className="o-share__action o-share__action--facebook"
                     >
                       <a
+                        className="o-share__icon o-share__icon--facebook"
+                        data-trackable="facebook"
                         href="http://www.facebook.com/sharer.php?u=https://local.ft.com/"
                         rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on Facebook. Opens in a new window.
+                          Share on 
+                          Facebook
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
                     <li
-                      className="o-share__action o-share__icon--linkedin"
+                      className="o-share__action o-share__action--linkedin"
                     >
                       <a
+                        className="o-share__icon o-share__icon--linkedin"
+                        data-trackable="linkedin"
                         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://local.ft.com/&amp;source=Financial%20Times"
                         rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on LinkedIn. Opens in a new window.
+                          Share on 
+                          LinkedIn
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
                     <li
-                      className="o-share__action o-share__icon--whatsapp"
+                      className="o-share__action o-share__action--whatsapp"
                     >
                       <a
+                        className="o-share__icon o-share__icon--whatsapp"
                         data-trackable="whatsapp"
                         href="whatsapp://send?text=New Starter Kit site%20-%20https://local.ft.com/"
-                        rel="noopener noreferrer"
-                        target="_blank"
+                        rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on Whatsapp. Opens in a new window.
+                          Share on 
+                          WhatsApp
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
@@ -11711,21 +14050,30 @@ Array [
             <div
               className="byline"
             >
-               
+              
               <span
-                className="o-date o-typography-timestamp"
+                className="o-editorial-typography-author"
+              >
+                FT Staff
+              </span>
+               in 
+               
+              London
+               
+              <time
+                className="o-date o-editorial-typography-byline-timestamp"
                 data-o-component="o-date"
                 dateTime="2019-01-31T00:00:00.000Z"
                 suppressHydrationWarning={true}
               >
                 Thursday, 31 January 2019
-              </span>
+              </time>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="article-body o-typography-wrapper"
+        className="article-body o-editorial-typography-body"
         itemProp="articleBody"
       >
         <div
@@ -11737,7 +14085,9 @@ Array [
             <div
               data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
             >
-              <div>
+              <div
+                className="o-editorial-layout-wrapper"
+              >
                 <p
                   breakpoint="default"
                   buildTime="2019-01-31T00:00:00.000Z"
@@ -11745,6 +14095,7 @@ Array [
                   id="3a499586-b2e0-11e4-a058-00144feab7de"
                   publishedDate="2019-01-31T00:00:00.000Z"
                   span="full-width"
+                  summary="This is a standfirst"
                   title="New Starter Kit site"
                   topic={
                     Object {
@@ -12201,27 +14552,27 @@ Array [
           >
             <div>
               <a
-                className="o-typography-topic"
+                className="o-editorial-typography-topic"
                 href="https://local.ft.com/"
               >
                 Testing
               </a>
             </div>
             <h1
-              className="o-typography-headline"
+              className="o-editorial-layout-heading-1"
               itemProp="headline"
             >
               New Starter Kit site
             </h1>
-            <div
-              className="o-typography-standfirst"
+            <p
+              className="o-editorial-typography-standfirst"
             >
               This is a standfirst
                
               <a
                 className="o-typography-link"
               />
-            </div>
+            </p>
             <meta
               content="2019-01-31T00:00:00.000Z"
               itemProp="dateModified"
@@ -12254,57 +14605,70 @@ Array [
                     >
                       <a
                         className="o-share__icon o-share__icon--twitter"
+                        data-trackable="twitter"
                         href="https://twitter.com/intent/tweet?url=https://local.ft.com/&amp;text=FT article: &amp;related=&amp;via=FinancialTimes"
                         rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on Twitter. Opens in a new window.
+                          Share on 
+                          Twitter
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
                     <li
-                      className="o-share__action o-share__icon--facebook"
+                      className="o-share__action o-share__action--facebook"
                     >
                       <a
+                        className="o-share__icon o-share__icon--facebook"
+                        data-trackable="facebook"
                         href="http://www.facebook.com/sharer.php?u=https://local.ft.com/"
                         rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on Facebook. Opens in a new window.
+                          Share on 
+                          Facebook
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
                     <li
-                      className="o-share__action o-share__icon--linkedin"
+                      className="o-share__action o-share__action--linkedin"
                     >
                       <a
+                        className="o-share__icon o-share__icon--linkedin"
+                        data-trackable="linkedin"
                         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://local.ft.com/&amp;source=Financial%20Times"
                         rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on LinkedIn. Opens in a new window.
+                          Share on 
+                          LinkedIn
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
                     <li
-                      className="o-share__action o-share__icon--whatsapp"
+                      className="o-share__action o-share__action--whatsapp"
                     >
                       <a
+                        className="o-share__icon o-share__icon--whatsapp"
                         data-trackable="whatsapp"
                         href="whatsapp://send?text=New Starter Kit site%20-%20https://local.ft.com/"
-                        rel="noopener noreferrer"
-                        target="_blank"
+                        rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on Whatsapp. Opens in a new window.
+                          Share on 
+                          WhatsApp
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
@@ -12317,26 +14681,28 @@ Array [
             >
               
               <a
-                className="o-typography-author"
+                className="o-editorial-typography-author"
                 href="https://ft.com/ændrew-rininsland"
               >
                 Ændrew Rininsland
               </a>
                
-              <span
-                className="o-date o-typography-timestamp"
+              in 
+               
+              <time
+                className="o-date o-editorial-typography-byline-timestamp"
                 data-o-component="o-date"
                 dateTime="2019-01-31T00:00:00.000Z"
                 suppressHydrationWarning={true}
               >
                 Thursday, 31 January 2019
-              </span>
+              </time>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="article-body o-typography-wrapper"
+        className="article-body o-editorial-typography-body"
         itemProp="articleBody"
       >
         <div
@@ -12348,7 +14714,9 @@ Array [
             <div
               data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
             >
-              <div>
+              <div
+                className="o-editorial-layout-wrapper"
+              >
                 <div
                   breakpoint="default"
                   buildTime="2019-01-31T00:00:00.000Z"
@@ -12388,7 +14756,7 @@ Array [
                   This should resemble config: 
                   <br />
                   <pre>
-                    {"flags":{"prod":false,"errorReporting":true,"analytics":false,"googleAnalytics":false,"ads":false,"onwardjourney":true,"shareButtons":true,"header":true,"footer":true,"comments":true,"data":false,"dark":false},"ads":{"gptSite":"test.5887.origami","gptZone":false,"dfpTargeting":false},"defaultContainer":true,"customArticleHead":null,"breakpoint":"default","url":"https://local.ft.com/","summary":"This is a standfirst","topic":{"url":"https://local.ft.com/","name":"Testing"},"bylines":[{"name":"Ændrew Rininsland","url":"https://ft.com/ændrew-rininsland"}],"image":{"uuid":"f07ccec8-7ded-11e8-af48-190d103e32a4"},"headline":"New Starter Kit site","title":"New Starter Kit site","id":"3a499586-b2e0-11e4-a058-00144feab7de","pubdate":"2019-01-31T00:00:00.000Z","buildTime":"2019-01-31T00:00:00.000Z","wrapArticleHead":true}
+                    {"flags":{"prod":false,"errorReporting":true,"analytics":false,"googleAnalytics":false,"ads":false,"onwardjourney":true,"shareButtons":true,"header":true,"footer":true,"comments":true,"data":false,"dark":false},"ads":{"gptSite":"test.5887.origami","gptZone":false,"targeting":false},"defaultContainer":true,"customArticleHead":null,"breakpoint":"default","url":"https://local.ft.com/","summary":"This is a standfirst","topic":{"url":"https://local.ft.com/","name":"Testing"},"bylines":[{"name":"Ændrew Rininsland","url":"https://ft.com/ændrew-rininsland"}],"image":{"uuid":"f07ccec8-7ded-11e8-af48-190d103e32a4"},"headline":"New Starter Kit site","title":"New Starter Kit site","id":"3a499586-b2e0-11e4-a058-00144feab7de","pubdate":"2019-01-31T00:00:00.000Z","buildTime":"2019-01-31T00:00:00.000Z","wrapArticleHead":true}
                   </pre>
                 </div>
               </div>
@@ -12808,7 +15176,7 @@ Array [
         </div>
       </div>
       <div
-        className="article-body o-typography-wrapper"
+        className="article-body o-editorial-typography-body"
         itemProp="articleBody"
       >
         <div
@@ -12820,13 +15188,16 @@ Array [
             <div
               data-o-grid-colspan="12 S11 Scenter M9 L8 XL7"
             >
-              <div>
+              <div
+                className="o-editorial-layout-wrapper"
+              >
                 <p
                   breakpoint="default"
                   buildTime="2019-01-31T00:00:00.000Z"
                   headline="New Starter Kit site"
                   id="3a499586-b2e0-11e4-a058-00144feab7de"
                   publishedDate="2019-01-31T00:00:00.000Z"
+                  summary="This is a standfirst"
                   title="New Starter Kit site"
                   topic={
                     Object {
@@ -13279,27 +15650,27 @@ Array [
           >
             <div>
               <a
-                className="o-typography-topic"
+                className="o-editorial-typography-topic"
                 href="https://local.ft.com/"
               >
                 Testing
               </a>
             </div>
             <h1
-              className="o-typography-headline"
+              className="o-editorial-layout-heading-1"
               itemProp="headline"
             >
               New Starter Kit site
             </h1>
-            <div
-              className="o-typography-standfirst"
+            <p
+              className="o-editorial-typography-standfirst"
             >
-              
+              This is a standfirst
                
               <a
                 className="o-typography-link"
               />
-            </div>
+            </p>
             <meta
               content="2019-01-31T00:00:00.000Z"
               itemProp="dateModified"
@@ -13332,57 +15703,70 @@ Array [
                     >
                       <a
                         className="o-share__icon o-share__icon--twitter"
+                        data-trackable="twitter"
                         href="https://twitter.com/intent/tweet?url=https://local.ft.com/&amp;text=FT article: &amp;related=&amp;via=FinancialTimes"
                         rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on Twitter. Opens in a new window.
+                          Share on 
+                          Twitter
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
                     <li
-                      className="o-share__action o-share__icon--facebook"
+                      className="o-share__action o-share__action--facebook"
                     >
                       <a
+                        className="o-share__icon o-share__icon--facebook"
+                        data-trackable="facebook"
                         href="http://www.facebook.com/sharer.php?u=https://local.ft.com/"
                         rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on Facebook. Opens in a new window.
+                          Share on 
+                          Facebook
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
                     <li
-                      className="o-share__action o-share__icon--linkedin"
+                      className="o-share__action o-share__action--linkedin"
                     >
                       <a
+                        className="o-share__icon o-share__icon--linkedin"
+                        data-trackable="linkedin"
                         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://local.ft.com/&amp;source=Financial%20Times"
                         rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on LinkedIn. Opens in a new window.
+                          Share on 
+                          LinkedIn
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
                     <li
-                      className="o-share__action o-share__icon--whatsapp"
+                      className="o-share__action o-share__action--whatsapp"
                     >
                       <a
+                        className="o-share__icon o-share__icon--whatsapp"
                         data-trackable="whatsapp"
                         href="whatsapp://send?text=New Starter Kit site%20-%20https://local.ft.com/"
-                        rel="noopener noreferrer"
-                        target="_blank"
+                        rel="noopener"
                       >
                         <span
                           className="o-share__text"
                         >
-                          Share on Whatsapp. Opens in a new window.
+                          Share on 
+                          WhatsApp
+                          . Opens in a new window.
                         </span>
                       </a>
                     </li>
@@ -13393,21 +15777,30 @@ Array [
             <div
               className="byline"
             >
-               
+              
               <span
-                className="o-date o-typography-timestamp"
+                className="o-editorial-typography-author"
+              >
+                FT Staff
+              </span>
+               in 
+               
+              London
+               
+              <time
+                className="o-date o-editorial-typography-byline-timestamp"
                 data-o-component="o-date"
                 dateTime="2019-01-31T00:00:00.000Z"
                 suppressHydrationWarning={true}
               >
                 Thursday, 31 January 2019
-              </span>
+              </time>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="article-body o-typography-wrapper"
+        className="article-body o-editorial-typography-body"
         itemProp="articleBody"
       >
         <div
@@ -13875,7 +16268,7 @@ exports[`Storyshots Layouts|Feature Basic 1`] = `
       />
     </nav>
     <main
-      className="g-feature__main article o-typography-wrapper"
+      className="g-feature__main article"
       role="main"
     >
       <div

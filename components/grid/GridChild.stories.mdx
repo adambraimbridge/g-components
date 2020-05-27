@@ -1,8 +1,5 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 import { GridContainer, GridRow, GridChild } from './';
-import demoStylesModule from '!!style-loader?injectType=lazyStyleTag!css-loader!sass-loader!o-grid/demos/src/scss/_demos.scss?story';
-
-export const demoStyles = Promise.resolve(demoStylesModule);
 
 <Meta title="Core|Grid/GridChild" component={GridChild} />
 
@@ -40,9 +37,7 @@ You supply it a `colspan` prop in one of the following formats:
 <Preview>
   <Story
     name="Default unresponsive columns"
-    parameters={{
-      styles: [demoStyles],
-    }}
+    parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}
   >
     <GridContainer>
       <GridRow>
@@ -112,9 +107,7 @@ You supply it a `colspan` prop in one of the following formats:
 <Preview>
   <Story
     name="Overridability of default and layout specific styles by other layouts"
-    parameters={{
-      styles: [demoStyles],
-    }}
+    parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}
   >
     <GridContainer>
       <GridRow>
@@ -187,7 +180,10 @@ You supply it a `colspan` prop in one of the following formats:
 </Preview>
 
 <Preview>
-  <Story name="Overriding of default width" parameters={{ styles: [demoStyles] }}>
+  <Story
+    name="Overriding of default width"
+    parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}
+  >
     <GridContainer>
       <GridRow>
         <GridChild colspan="0 M12 L11 XL10">
@@ -214,7 +210,10 @@ You supply it a `colspan` prop in one of the following formats:
 </Preview>
 
 <Preview>
-  <Story name="Flexbox interaction" parameters={{ styles: [demoStyles] }}>
+  <Story
+    name="Flexbox interaction"
+    parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}
+  >
     <GridContainer>
       <GridRow>
         <GridChild className="demo-flex" colspan="12 S12 M12 L4 XL4">
@@ -263,7 +262,7 @@ You supply it a `colspan` prop in one of the following formats:
 </Preview>
 
 <Preview>
-  <Story name="Nested grids" parameters={{ styles: [demoStyles] }}>
+  <Story name="Nested grids" parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}>
     <GridContainer>
       <GridRow>
         <GridChild colspan="8 S12 M11 L10 XL9">
@@ -307,7 +306,7 @@ You supply it a `colspan` prop in one of the following formats:
 </Preview>
 
 <Preview>
-  <Story name="Keywords" parameters={{ styles: [demoStyles] }}>
+  <Story name="Keywords" parameters={{ styles: [Promise.resolve(require('./_stories.scss'))] }}>
     <GridContainer>
       <GridRow>
         <GridChild colspan="one-half">

@@ -5,7 +5,7 @@
 
 import React, { Fragment, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import ODate from 'o-date/main.js';
+import ODate from '@financial-times/o-date';
 import { ftdate } from '../../shared/helpers';
 
 export const BylinesPropType = PropTypes.oneOfType([
@@ -26,15 +26,14 @@ const NamesElement = ({ namesList }) =>
     const location = name.location && <Fragment> {name.location}</Fragment>;
     const author = name.url ? (
       <Fragment key={`author-${name.name}`}>
-        <a href={name.url} className="o-typography-author">
+        <a href={name.url} className="o-editorial-typography-author">
           {name.name}
-        </a>
-        {location}
+        </a>{' '}
+        in {location}
       </Fragment>
     ) : (
       <Fragment key={`author-${name.name}`}>
-        <span>{name.name}</span>
-        {location}
+        <span className="o-editorial-typography-author">{name.name}</span> in {location}
       </Fragment>
     );
     return a.concat(separator, author);
@@ -43,15 +42,15 @@ const NamesElement = ({ namesList }) =>
 const DateElement = ({ dateRef, date }) => (
   <Fragment>
     {' '}
-    <span
+    <time
       ref={dateRef}
       data-o-component="o-date"
-      className="o-date o-typography-timestamp"
+      className="o-date o-editorial-typography-byline-timestamp"
       dateTime={date}
       suppressHydrationWarning
     >
       {ftdate(new Date(date))}
-    </span>
+    </time>
   </Fragment>
 );
 
@@ -70,7 +69,11 @@ const Byline = ({ names, date }) => {
 
   return (
     <div className="byline">
-      {names && <NamesElement namesList={namesList} />}
+      {names && (
+        <NamesElement
+          namesList={namesList.length ? namesList : [{ name: 'FT Staff', location: 'London' }]}
+        />
+      )}
       {date && <DateElement dateRef={dateRef} date={date} />}
     </div>
   );

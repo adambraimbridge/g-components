@@ -5,7 +5,7 @@
 
 import React, { Fragment, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import OTracking from 'o-tracking/main.js';
+import OTracking from '@financial-times/o-tracking';
 import { flagsPropType } from '../../shared/proptypes';
 import { spoorTrackingPixel } from '../../shared/helpers';
 

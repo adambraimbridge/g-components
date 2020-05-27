@@ -5,7 +5,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import OComments from 'o-comments/main.js';
+import OComments from '@financial-times/o-comments';
 import { flagsPropType } from '../../shared/proptypes';
 import './styles.scss';
 
@@ -16,7 +16,8 @@ const Comments = ({ id, url, linkPageUrl, flags }) => {
 
   useEffect(() => {
     if ((id && linkPageUrl) || (id && url)) {
-      new OComments(ref.current, { // eslint-disable-line no-new
+      new OComments(ref.current, {
+        // eslint-disable-line no-new
         articleUrl: linkPageUrl || url,
         articleId: id,
       });

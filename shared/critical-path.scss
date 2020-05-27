@@ -1,8 +1,19 @@
+$o-typography-is-silent: false;
+$o-editorial-typography-is-silent: false;
+$o-editorial-layout-is-silent: false;
+
+@import './_globals.scss';
+@import 'o-normalise/main.scss';
 @import 'o-colors/main.scss';
 @import 'o-grid/main.scss';
+@import 'o-typography/main';
+@import 'o-editorial-typography/main';
+@import 'o-editorial-layout/main';
 
 @include oGridSurfaceLayoutSizes;
+@include oNormalise();
 
+// @TODO change to using o-fonts
 $font-sans: MetricWeb, sans-serif;
 $font-serif: Georgia, serif;
 $font-display: FinancierDisplayWeb, Georgia, serif;
@@ -54,7 +65,7 @@ main {
 }
 
 body {
-  @include oColorsFor(page, background);
+  background: oColorsByUsecase('page', 'background');
   margin: 0;
   border: 0;
   font-family: $font-sans;

@@ -4,7 +4,7 @@
  */
 
 import { useRef, useEffect, useState } from 'react';
-import OAds from 'o-ads/main.js';
+import OAds from '@financial-times/o-ads';
 import { isElement, registerLayoutChangeEvents, unregisterLayoutChangeEvents } from './helpers';
 
 /**
@@ -71,7 +71,7 @@ export const useAds = (config, enabled = true) => {
               site: config.gptSite || 'ft.com',
               zone: config.gptZone || 'unclassified',
             },
-            dfp_targeting: config.dfpTargeting,
+            targeting: config.targeting,
           });
 
           const slots = Array.from(document.querySelectorAll('.o-ads, [data-o-ads-name]'));

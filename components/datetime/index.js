@@ -4,7 +4,7 @@
  */
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import ODate from 'o-date/main.js';
+import ODate from '@financial-times/o-date';
 
 const DateTime = ({ datestamp }) => {
   const elRef = useRef(null);

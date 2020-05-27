@@ -19,7 +19,16 @@
     background-color: #cc0000;
     color: white;
 
-    @include oTeaser(('timestamp'), ('small'));
+    @include oTeaser(
+      $opts: (
+        'elements': (
+          'timestamp',
+        ),
+        'themes': (
+          'small',
+        ),
+      )
+    );
 
     .o-teaser {
       margin-bottom: 0;
@@ -34,11 +43,16 @@
 
       &__timestamp {
         margin-left: 0;
+        padding-top: 0;
       }
 
       &__timestamp-prefix:before,
       &__timestamp--inprogress:before {
         background-color: white;
+      }
+
+      &__timestamp--inprogress:before {
+        top: 3px;
       }
     }
   }

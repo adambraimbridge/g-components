@@ -1,11 +1,8 @@
 .storybook
-bower_components
 docs
 stories
-.bowerrc
 .eslintignore
 .eslintrc.yml
-bower.json
 jest.*
 webpack.config.js
 node_modules
