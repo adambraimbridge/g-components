@@ -45,13 +45,10 @@ jobs:
       - run:
           name: Upgrade npm
           command: npm i -g npm
-      - run:
-          name: Bower install
-          command: npx bower install --allow-root
       - *restore_node_modules
       - run:
           name: Install dependencies
-          command: npm ci --unsafe-perm
+          command: npm ci
       - *cache_node_modules
       - persist_to_workspace:
           root: .

@@ -4,7 +4,7 @@
  */
 
 import { useRef, useEffect, useState } from 'react';
-import OAds from 'o-ads/main.js';
+import OAds from '@financial-times/o-ads';
 import { isElement, registerLayoutChangeEvents, unregisterLayoutChangeEvents } from './helpers';
 
 /**

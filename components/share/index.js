@@ -4,7 +4,7 @@
  */
 
 import React, { useEffect, useRef } from 'react';
-import OShare from 'o-share/main.js';
+import OShare from '@financial-times/o-share';
 import PropTypes from 'prop-types';
 import { flagsPropType } from '../../shared/proptypes';
 import './styles.scss';

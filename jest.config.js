@@ -60,7 +60,7 @@ module.exports = {
   // globals: {},
 
   // An array of directory names to be searched recursively up from the requiring module's location
-  moduleDirectories: ['node_modules', 'bower_components'],
+  moduleDirectories: ['node_modules'],
 
   // An array of file extensions your modules use
   // moduleFileExtensions: [
@@ -73,21 +73,10 @@ module.exports = {
   // A map from regular expressions to module names that allow to stub out resources with a single module
   moduleNameMapper: {
     '\\.(css|sass|scss)$': 'identity-obj-proxy',
-    'dom-delegate': resolve(__dirname, 'bower_components', 'dom-delegate/lib/delegate.js'),
-    'o-comment-utilities': resolve(__dirname, 'bower_components', 'o-comment-utilities/main.js'),
-    'o-comment-api': resolve(__dirname, 'bower_components', 'o-comment-api/main.js'),
-    'o-comment-ui': resolve(__dirname, 'bower_components', 'o-comment-ui/main.js'),
-    'o-overlay': resolve(__dirname, 'bower_components', 'o-overlay/main.js'),
-    'o-viewport': resolve(__dirname, 'bower_components', 'o-viewport/main.js'),
-    'o-utils': resolve(__dirname, 'bower_components', 'o-utils/main.js'),
-    'o-layers': resolve(__dirname, 'bower_components', 'o-layers/main.js'),
-    'o-dom': resolve(__dirname, 'bower_components', 'o-dom/main.js'),
-    'o-toggle': resolve(__dirname, 'bower_components', 'o-toggle/main.js'),
-    'o-grid': resolve(__dirname, 'bower_components', 'o-grid/main.js'),
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
-  modulePathIgnorePatterns: ['/ftdomdelegate/'],
+  modulePathIgnorePatterns: [],
 
   // Activates notifications for test results
   // notify: false,
@@ -152,7 +141,7 @@ module.exports = {
   // ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  testPathIgnorePatterns: ['/node_modules/', '/bower_components/'],
+  testPathIgnorePatterns: ['/node_modules/'],
 
   // The regexp pattern Jest uses to detect test files
   // testRegex: "",

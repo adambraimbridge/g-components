@@ -5,7 +5,7 @@
 
 import React, { Fragment, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import ODate from 'o-date/main.js';
+import ODate from '@financial-times/o-date';
 import { ftdate } from '../../shared/helpers';
 
 export const BylinesPropType = PropTypes.oneOfType([

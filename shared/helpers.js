@@ -6,7 +6,7 @@
 import React from 'react';
 import removeMarkdown from 'remove-markdown';
 import { utcFormat } from 'd3-time-format';
-import { getGridBreakpoints } from 'o-grid';
+import { getGridBreakpoints } from '@financial-times/o-grid';
 
 const formatterCache = new Map();
 const defaultFTDateFormat = '%A, %-e %B %Y';
