@@ -11,7 +11,7 @@ module.exports = {
   // bail: false,
 
   // Respect "browser" field in package.json when resolving modules
-  // browser: false,
+  browser: true,
 
   // The directory where Jest should store its cached dependency information
   // cacheDirectory: "/var/folders/mm/px7xm9zd4cbchtf5r8cvmtq0kkvmzp/T/jest_abdcl2",

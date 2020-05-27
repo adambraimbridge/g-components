@@ -37,6 +37,7 @@ module.exports = (mode = 'production') => {
       index: './index.js',
     },
     resolve: {
+      mainFields: ['browser', 'main'],
       alias: {
         react: path.resolve(__dirname, './node_modules/react'),
         'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
@@ -111,25 +112,25 @@ module.exports = (mode = 'production') => {
 
   return [
     BASECONFIG,
-    mode === 'production' && {
-      ...BASECONFIG,
-      entry: {
-        ...glob.sync(path.join(__dirname, 'components', '*')).reduce(
-          (a, c) => ({
-            ...a,
-            [path.basename(c)]: c,
-          }),
-          {},
-        ),
-      },
-      output: {
-        libraryTarget: 'umd',
-        path: __dirname,
-        filename: 'dist/[name]/index.js',
-        library: 'G[name]',
-        umdNamedDefine: true,
-        sourceMapFilename: 'dist/[name]/index.map',
-      },
-    },
+    // mode === 'production' && {
+    //   ...BASECONFIG,
+    //   entry: {
+    //     ...glob.sync(path.join(__dirname, 'components', '*')).reduce(
+    //       (a, c) => ({
+    //         ...a,
+    //         [path.basename(c)]: c,
+    //       }),
+    //       {},
+    //     ),
+    //   },
+    //   output: {
+    //     libraryTarget: 'umd',
+    //     path: __dirname,
+    //     filename: 'dist/[name]/index.js',
+    //     library: 'G[name]',
+    //     umdNamedDefine: true,
+    //     sourceMapFilename: 'dist/[name]/index.map',
+    //   },
+    // },
   ];
 };

@@ -9,6 +9,9 @@ const webpackMerge = require('webpack-merge');
 
 module.exports = ({ config }) => {
   const overrides = {
+    resolve: {
+      mainFields: ['browser', 'main'],
+    },
     module: {
       rules: [
         {
