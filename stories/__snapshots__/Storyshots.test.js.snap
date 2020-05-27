@@ -187,9 +187,173 @@ Array [
 ]
 `;
 
-exports[`Storyshots Core|Autosuggest Search Mp Lookup Example 1`] = `
+exports[`Storyshots Core|Autosuggest Search Country Lookup Example With Selected Values Large 1`] = `
 <form
-  className="g-autosuggest-search"
+  onClick={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "width": 600,
+    }
+  }
+>
+  <div
+    className="g-autosuggest-search"
+  >
+    <div
+      className="g-autosuggest-search__selected-values"
+    >
+      <div
+        className="g-autosuggest-search__selected-value"
+      >
+        <span>
+          US
+        </span>
+        <button
+          className="g-autosuggest-search__selected-value-close-button"
+          onClick={[Function]}
+          type="button"
+        >
+          <i
+            className="remove-from-selection g-icon"
+            style={
+              Object {
+                "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:cross?source=o-icons&tint=%23ffffff,%23ffffff&format=svg')",
+                "height": 20,
+                "width": 20,
+              }
+            }
+          />
+        </button>
+      </div>
+      <div
+        className="g-autosuggest-search__selected-value"
+      >
+        <span>
+          UK
+        </span>
+        <button
+          className="g-autosuggest-search__selected-value-close-button"
+          onClick={[Function]}
+          type="button"
+        >
+          <i
+            className="remove-from-selection g-icon"
+            style={
+              Object {
+                "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:cross?source=o-icons&tint=%23ffffff,%23ffffff&format=svg')",
+                "height": 20,
+                "width": 20,
+              }
+            }
+          />
+        </button>
+      </div>
+      <div
+        className="g-autosuggest-search__selected-value"
+      >
+        <span>
+          France
+        </span>
+        <button
+          className="g-autosuggest-search__selected-value-close-button"
+          onClick={[Function]}
+          type="button"
+        >
+          <i
+            className="remove-from-selection g-icon"
+            style={
+              Object {
+                "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:cross?source=o-icons&tint=%23ffffff,%23ffffff&format=svg')",
+                "height": 20,
+                "width": 20,
+              }
+            }
+          />
+        </button>
+      </div>
+      <div
+        className="g-autosuggest-search__selected-value"
+      >
+        <span>
+          Germany
+        </span>
+        <button
+          className="g-autosuggest-search__selected-value-close-button"
+          onClick={[Function]}
+          type="button"
+        >
+          <i
+            className="remove-from-selection g-icon"
+            style={
+              Object {
+                "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:cross?source=o-icons&tint=%23ffffff,%23ffffff&format=svg')",
+                "height": 20,
+                "width": 20,
+              }
+            }
+          />
+        </button>
+      </div>
+      <div
+        className="g-autosuggest-search__selected-value"
+      >
+        <span>
+          Spain
+        </span>
+        <button
+          className="g-autosuggest-search__selected-value-close-button"
+          onClick={[Function]}
+          type="button"
+        >
+          <i
+            className="remove-from-selection g-icon"
+            style={
+              Object {
+                "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:cross?source=o-icons&tint=%23ffffff,%23ffffff&format=svg')",
+                "height": 20,
+                "width": 20,
+              }
+            }
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-owns="react-autowhatever-1"
+      className="react-autosuggest__container"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls="react-autowhatever-1"
+        autoComplete="off"
+        className="react-autosuggest__input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search here..."
+        type="text"
+        value=""
+      />
+      <div
+        className="react-autosuggest__suggestions-container"
+        id="react-autowhatever-1"
+        role="listbox"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Core|Autosuggest Search Country Lookup Example With Selected Values Small 1`] = `
+<form
+  onClick={[Function]}
   onSubmit={[Function]}
   style={
     Object {
@@ -198,38 +362,217 @@ exports[`Storyshots Core|Autosuggest Search Mp Lookup Example 1`] = `
   }
 >
   <div
-    aria-expanded={false}
-    aria-haspopup="listbox"
-    aria-owns="react-autowhatever-1"
-    className="react-autosuggest__container"
-    role="combobox"
+    className="g-autosuggest-search"
   >
-    <input
-      aria-activedescendant={null}
-      aria-autocomplete="list"
-      aria-controls="react-autowhatever-1"
-      autoComplete="off"
-      className="react-autosuggest__input"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      placeholder="Search here..."
-      type="text"
-      value=""
+    <div
+      className="g-autosuggest-search__selected-values"
+    >
+      <div
+        className="g-autosuggest-search__selected-value"
+      >
+        <span>
+          US
+        </span>
+        <button
+          className="g-autosuggest-search__selected-value-close-button"
+          onClick={[Function]}
+          type="button"
+        >
+          <i
+            className="remove-from-selection g-icon"
+            style={
+              Object {
+                "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:cross?source=o-icons&tint=%23ffffff,%23ffffff&format=svg')",
+                "height": 20,
+                "width": 20,
+              }
+            }
+          />
+        </button>
+      </div>
+      <div
+        className="g-autosuggest-search__selected-value"
+      >
+        <span>
+          UK
+        </span>
+        <button
+          className="g-autosuggest-search__selected-value-close-button"
+          onClick={[Function]}
+          type="button"
+        >
+          <i
+            className="remove-from-selection g-icon"
+            style={
+              Object {
+                "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:cross?source=o-icons&tint=%23ffffff,%23ffffff&format=svg')",
+                "height": 20,
+                "width": 20,
+              }
+            }
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-owns="react-autowhatever-1"
+      className="react-autosuggest__container"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls="react-autowhatever-1"
+        autoComplete="off"
+        className="react-autosuggest__input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search here..."
+        type="text"
+        value=""
+      />
+      <div
+        className="react-autosuggest__suggestions-container"
+        id="react-autowhatever-1"
+        role="listbox"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Core|Autosuggest Search Mp Lookup Example 1`] = `
+<form
+  onClick={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "width": 300,
+    }
+  }
+>
+  <div
+    className="g-autosuggest-search"
+  >
+    <div
+      className="g-autosuggest-search__search-icon"
+    >
+      <i
+        className="g-icon"
+        style={
+          Object {
+            "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:search?source=o-icons&tint=%2366605C,%2366605C&format=svg')",
+            "height": 30,
+            "width": 30,
+          }
+        }
+      />
+    </div>
+    <div
+      className="g-autosuggest-search__selected-values"
     />
     <div
-      className="react-autosuggest__suggestions-container"
-      id="react-autowhatever-1"
-      role="listbox"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-owns="react-autowhatever-1"
+      className="react-autosuggest__container"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls="react-autowhatever-1"
+        autoComplete="off"
+        className="react-autosuggest__input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search here..."
+        type="text"
+        value=""
+      />
+      <div
+        className="react-autosuggest__suggestions-container"
+        id="react-autowhatever-1"
+        role="listbox"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Core|Autosuggest Search Mp Lookup Example Input Disabled 1`] = `
+<form
+  onClick={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "width": 300,
+    }
+  }
+>
+  <div
+    className="g-autosuggest-search"
+  >
+    <div
+      className="g-autosuggest-search__search-icon"
+    >
+      <i
+        className="g-icon"
+        style={
+          Object {
+            "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:search?source=o-icons&tint=%2366605C,%2366605C&format=svg')",
+            "height": 30,
+            "width": 30,
+          }
+        }
+      />
+    </div>
+    <div
+      className="g-autosuggest-search__selected-values"
     />
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-owns="react-autowhatever-1"
+      className="react-autosuggest__container"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls="react-autowhatever-1"
+        autoComplete="off"
+        className="react-autosuggest__input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search here..."
+        type="text"
+        value=""
+      />
+      <div
+        className="react-autosuggest__suggestions-container"
+        id="react-autowhatever-1"
+        role="listbox"
+      />
+    </div>
   </div>
 </form>
 `;
 
 exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With Default 1`] = `
 <form
-  className="g-autosuggest-search"
+  onClick={[Function]}
   onSubmit={[Function]}
   style={
     Object {
@@ -238,53 +581,138 @@ exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With Default 1`] =
   }
 >
   <div
-    aria-expanded={false}
-    aria-haspopup="listbox"
-    aria-owns="react-autowhatever-1"
-    className="react-autosuggest__container"
-    role="combobox"
+    className="g-autosuggest-search"
   >
-    <input
-      aria-activedescendant={null}
-      aria-autocomplete="list"
-      aria-controls="react-autowhatever-1"
-      autoComplete="off"
-      className="react-autosuggest__input"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      placeholder="Search here..."
-      type="text"
-      value="Jeremy Corbyn"
+    <div
+      className="g-autosuggest-search__search-icon"
+    >
+      <i
+        className="g-icon"
+        style={
+          Object {
+            "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:search?source=o-icons&tint=%2366605C,%2366605C&format=svg')",
+            "height": 30,
+            "width": 30,
+          }
+        }
+      />
+    </div>
+    <div
+      className="g-autosuggest-search__selected-values"
     />
     <div
-      className="react-autosuggest__suggestions-container"
-      id="react-autowhatever-1"
-      role="listbox"
-    />
-  </div>
-  <button
-    className="g-autosuggest-search__clear-button"
-    onClick={[Function]}
-    type="button"
-  >
-    <i
-      className="icon"
-      style={
-        Object {
-          "height": 20,
-          "width": 20,
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-owns="react-autowhatever-1"
+      className="react-autosuggest__container"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls="react-autowhatever-1"
+        autoComplete="off"
+        className="react-autosuggest__input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search here..."
+        type="text"
+        value="Jeremy Corbyn"
+      />
+      <div
+        className="react-autosuggest__suggestions-container"
+        id="react-autowhatever-1"
+        role="listbox"
+      />
+    </div>
+    <button
+      className="g-autosuggest-search__clear-button"
+      onClick={[Function]}
+      type="button"
+    >
+      <i
+        className="g-icon"
+        style={
+          Object {
+            "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:cross?source=o-icons&tint=%2333302e,%2333302e&format=svg')",
+            "height": 20,
+            "width": 20,
+          }
         }
-      }
+      />
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With Disabled Option 1`] = `
+<form
+  onClick={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "width": 300,
+    }
+  }
+>
+  <div
+    className="g-autosuggest-search"
+  >
+    <div
+      className="g-autosuggest-search__search-icon"
+    >
+      <i
+        className="g-icon"
+        style={
+          Object {
+            "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:search?source=o-icons&tint=%2366605C,%2366605C&format=svg')",
+            "height": 30,
+            "width": 30,
+          }
+        }
+      />
+    </div>
+    <div
+      className="g-autosuggest-search__selected-values"
     />
-  </button>
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-owns="react-autowhatever-1"
+      className="react-autosuggest__container"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls="react-autowhatever-1"
+        autoComplete="off"
+        className="react-autosuggest__input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search here..."
+        type="text"
+        value=""
+      />
+      <div
+        className="react-autosuggest__suggestions-container"
+        id="react-autowhatever-1"
+        role="listbox"
+      />
+    </div>
+  </div>
 </form>
 `;
 
 exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With Error Message Override 1`] = `
 <form
-  className="g-autosuggest-search"
+  onClick={[Function]}
   onSubmit={[Function]}
   style={
     Object {
@@ -293,38 +721,375 @@ exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With Error Message
   }
 >
   <div
-    aria-expanded={false}
-    aria-haspopup="listbox"
-    aria-owns="react-autowhatever-1"
-    className="react-autosuggest__container"
-    role="combobox"
+    className="g-autosuggest-search g-autosuggest-search--error"
   >
-    <input
-      aria-activedescendant={null}
-      aria-autocomplete="list"
-      aria-controls="react-autowhatever-1"
-      autoComplete="off"
-      className="react-autosuggest__input"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      placeholder="Search here..."
-      type="text"
-      value=""
+    <div
+      className="g-autosuggest-search__search-icon"
+    >
+      <i
+        className="g-icon"
+        style={
+          Object {
+            "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:search?source=o-icons&tint=%2366605C,%2366605C&format=svg')",
+            "height": 30,
+            "width": 30,
+          }
+        }
+      />
+    </div>
+    <div
+      className="g-autosuggest-search__selected-values"
     />
     <div
-      className="react-autosuggest__suggestions-container"
-      id="react-autowhatever-1"
-      role="listbox"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-owns="react-autowhatever-1"
+      className="react-autosuggest__container"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls="react-autowhatever-1"
+        autoComplete="off"
+        className="react-autosuggest__input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search here..."
+        type="text"
+        value=""
+      />
+      <div
+        className="react-autosuggest__suggestions-container"
+        id="react-autowhatever-1"
+        role="listbox"
+      />
+    </div>
+  </div>
+  <div
+    className="g-autosuggest-search__error-message"
+  >
+    THIS IS AN ERROR OVERRIDE!
+  </div>
+</form>
+`;
+
+exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With No Input Blur On Suggestion Selection 1`] = `
+<form
+  onClick={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "width": 300,
+    }
+  }
+>
+  <div
+    className="g-autosuggest-search"
+  >
+    <div
+      className="g-autosuggest-search__search-icon"
+    >
+      <i
+        className="g-icon"
+        style={
+          Object {
+            "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:search?source=o-icons&tint=%2366605C,%2366605C&format=svg')",
+            "height": 30,
+            "width": 30,
+          }
+        }
+      />
+    </div>
+    <div
+      className="g-autosuggest-search__selected-values"
     />
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-owns="react-autowhatever-1"
+      className="react-autosuggest__container"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls="react-autowhatever-1"
+        autoComplete="off"
+        className="react-autosuggest__input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search here..."
+        type="text"
+        value=""
+      />
+      <div
+        className="react-autosuggest__suggestions-container"
+        id="react-autowhatever-1"
+        role="listbox"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With On Click Callback 1`] = `
+<form
+  onClick={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "width": 300,
+    }
+  }
+>
+  <div
+    className="g-autosuggest-search"
+  >
+    <div
+      className="g-autosuggest-search__search-icon"
+    >
+      <i
+        className="g-icon"
+        style={
+          Object {
+            "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:search?source=o-icons&tint=%2366605C,%2366605C&format=svg')",
+            "height": 30,
+            "width": 30,
+          }
+        }
+      />
+    </div>
+    <div
+      className="g-autosuggest-search__selected-values"
+    />
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-owns="react-autowhatever-1"
+      className="react-autosuggest__container"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls="react-autowhatever-1"
+        autoComplete="off"
+        className="react-autosuggest__input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search here..."
+        type="text"
+        value=""
+      />
+      <div
+        className="react-autosuggest__suggestions-container"
+        id="react-autowhatever-1"
+        role="listbox"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With On Empty Input Backspace Function 1`] = `
+<form
+  onClick={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "width": 300,
+    }
+  }
+>
+  <div
+    className="g-autosuggest-search"
+  >
+    <div
+      className="g-autosuggest-search__search-icon"
+    >
+      <i
+        className="g-icon"
+        style={
+          Object {
+            "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:search?source=o-icons&tint=%2366605C,%2366605C&format=svg')",
+            "height": 30,
+            "width": 30,
+          }
+        }
+      />
+    </div>
+    <div
+      className="g-autosuggest-search__selected-values"
+    />
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-owns="react-autowhatever-1"
+      className="react-autosuggest__container"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls="react-autowhatever-1"
+        autoComplete="off"
+        className="react-autosuggest__input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search here..."
+        type="text"
+        value=""
+      />
+      <div
+        className="react-autosuggest__suggestions-container"
+        id="react-autowhatever-1"
+        role="listbox"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With Right Positioned Icon 1`] = `
+<form
+  onClick={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "width": 300,
+    }
+  }
+>
+  <div
+    className="g-autosuggest-search g-autosuggest-search--with-search-icon-right"
+  >
+    <div
+      className="g-autosuggest-search__selected-values"
+    />
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-owns="react-autowhatever-1"
+      className="react-autosuggest__container"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls="react-autowhatever-1"
+        autoComplete="off"
+        className="react-autosuggest__input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search here..."
+        type="text"
+        value=""
+      />
+      <div
+        className="react-autosuggest__suggestions-container"
+        id="react-autowhatever-1"
+        role="listbox"
+      />
+    </div>
+    <div
+      className="g-autosuggest-search__search-icon-right"
+    >
+      <i
+        className="g-icon"
+        style={
+          Object {
+            "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:search?source=o-icons&tint=%2366605C,%2366605C&format=svg')",
+            "height": 30,
+            "width": 30,
+          }
+        }
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With Right Positioned Icon And No Clear Button 1`] = `
+<form
+  onClick={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "width": 300,
+    }
+  }
+>
+  <div
+    className="g-autosuggest-search g-autosuggest-search--with-search-icon-right"
+  >
+    <div
+      className="g-autosuggest-search__selected-values"
+    />
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-owns="react-autowhatever-1"
+      className="react-autosuggest__container"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls="react-autowhatever-1"
+        autoComplete="off"
+        className="react-autosuggest__input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search here..."
+        type="text"
+        value=""
+      />
+      <div
+        className="react-autosuggest__suggestions-container"
+        id="react-autowhatever-1"
+        role="listbox"
+      />
+    </div>
+    <div
+      className="g-autosuggest-search__search-icon-right"
+    >
+      <i
+        className="g-icon"
+        style={
+          Object {
+            "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:search?source=o-icons&tint=%2366605C,%2366605C&format=svg')",
+            "height": 30,
+            "width": 30,
+          }
+        }
+      />
+    </div>
   </div>
 </form>
 `;
 
 exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With Select Callback That Errors 1`] = `
 <form
-  className="g-autosuggest-search"
+  onClick={[Function]}
   onSubmit={[Function]}
   style={
     Object {
@@ -333,31 +1098,101 @@ exports[`Storyshots Core|Autosuggest Search Mp Lookup Example With Select Callba
   }
 >
   <div
-    aria-expanded={false}
-    aria-haspopup="listbox"
-    aria-owns="react-autowhatever-1"
-    className="react-autosuggest__container"
-    role="combobox"
+    className="g-autosuggest-search"
   >
-    <input
-      aria-activedescendant={null}
-      aria-autocomplete="list"
-      aria-controls="react-autowhatever-1"
-      autoComplete="off"
-      className="react-autosuggest__input"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      placeholder="Search here..."
-      type="text"
-      value=""
+    <div
+      className="g-autosuggest-search__search-icon"
+    >
+      <i
+        className="g-icon"
+        style={
+          Object {
+            "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:search?source=o-icons&tint=%2366605C,%2366605C&format=svg')",
+            "height": 30,
+            "width": 30,
+          }
+        }
+      />
+    </div>
+    <div
+      className="g-autosuggest-search__selected-values"
     />
     <div
-      className="react-autosuggest__suggestions-container"
-      id="react-autowhatever-1"
-      role="listbox"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-owns="react-autowhatever-1"
+      className="react-autosuggest__container"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls="react-autowhatever-1"
+        autoComplete="off"
+        className="react-autosuggest__input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search here..."
+        type="text"
+        value=""
+      />
+      <div
+        className="react-autosuggest__suggestions-container"
+        id="react-autowhatever-1"
+        role="listbox"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Core|Autosuggest Search Mp Lookup Example Without Icon 1`] = `
+<form
+  onClick={[Function]}
+  onSubmit={[Function]}
+  style={
+    Object {
+      "width": 300,
+    }
+  }
+>
+  <div
+    className="g-autosuggest-search"
+  >
+    <div
+      className="g-autosuggest-search__selected-values"
     />
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-owns="react-autowhatever-1"
+      className="react-autosuggest__container"
+      role="combobox"
+    >
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls="react-autowhatever-1"
+        autoComplete="off"
+        className="react-autosuggest__input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search here..."
+        type="text"
+        value=""
+      />
+      <div
+        className="react-autosuggest__suggestions-container"
+        id="react-autowhatever-1"
+        role="listbox"
+      />
+    </div>
   </div>
 </form>
 `;
@@ -4276,6 +5111,108 @@ exports[`Storyshots Core|Header Basic 1`] = `
 </header>
 `;
 
+exports[`Storyshots Core|Icon Basic 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1em",
+    }
+  }
+>
+  <i
+    className="g-icon"
+    style={
+      Object {
+        "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-down?source=o-icons&tint=%23000000,%23000000&format=svg')",
+        "height": 20,
+        "width": 20,
+      }
+    }
+  />
+  <i
+    className="g-icon"
+    style={
+      Object {
+        "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23000000,%23000000&format=svg')",
+        "height": 20,
+        "width": 20,
+      }
+    }
+  />
+  <i
+    className="g-icon"
+    style={
+      Object {
+        "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23000000,%23000000&format=svg')",
+        "height": 20,
+        "width": 20,
+      }
+    }
+  />
+  <i
+    className="g-icon"
+    style={
+      Object {
+        "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-up?source=o-icons&tint=%23000000,%23000000&format=svg')",
+        "height": 20,
+        "width": 20,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Core|Icon Basic With Tint And Custom Size 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1em",
+    }
+  }
+>
+  <i
+    className="g-icon"
+    style={
+      Object {
+        "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-down?source=o-icons&tint=%23990F3D,%23990F3D&format=svg')",
+        "height": 50,
+        "width": 50,
+      }
+    }
+  />
+  <i
+    className="g-icon"
+    style={
+      Object {
+        "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%230F5499,%230F5499&format=svg')",
+        "height": 50,
+        "width": 50,
+      }
+    }
+  />
+  <i
+    className="g-icon"
+    style={
+      Object {
+        "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%230D7680,%230D7680&format=svg')",
+        "height": 50,
+        "width": 50,
+      }
+    }
+  />
+  <i
+    className="g-icon"
+    style={
+      Object {
+        "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-up?source=o-icons&tint=%23593380,%23593380&format=svg')",
+        "height": 50,
+        "width": 50,
+      }
+    }
+  />
+</div>
+`;
+
 exports[`Storyshots Core|Image Set Basic 1`] = `
 <div
   className="g-imageset"
@@ -5252,7 +6189,7 @@ exports[`Storyshots Elections|GE2019/Constituency Lookup Basic 1`] = `
   className="g-constituency-lookup"
 >
   <form
-    className="g-autosuggest-search"
+    onClick={[Function]}
     onSubmit={[Function]}
     style={
       Object {
@@ -5261,31 +6198,53 @@ exports[`Storyshots Elections|GE2019/Constituency Lookup Basic 1`] = `
     }
   >
     <div
-      aria-expanded={false}
-      aria-haspopup="listbox"
-      aria-owns="react-autowhatever-1"
-      className="react-autosuggest__container"
-      role="combobox"
+      className="g-autosuggest-search"
     >
-      <input
-        aria-activedescendant={null}
-        aria-autocomplete="list"
-        aria-controls="react-autowhatever-1"
-        autoComplete="off"
-        className="react-autosuggest__input"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        placeholder="Search"
-        type="text"
-        value=""
+      <div
+        className="g-autosuggest-search__search-icon"
+      >
+        <i
+          className="g-icon"
+          style={
+            Object {
+              "backgroundImage": "url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:search?source=o-icons&tint=%2366605C,%2366605C&format=svg')",
+              "height": 30,
+              "width": 30,
+            }
+          }
+        />
+      </div>
+      <div
+        className="g-autosuggest-search__selected-values"
       />
       <div
-        className="react-autosuggest__suggestions-container"
-        id="react-autowhatever-1"
-        role="listbox"
-      />
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        aria-owns="react-autowhatever-1"
+        className="react-autosuggest__container"
+        role="combobox"
+      >
+        <input
+          aria-activedescendant={null}
+          aria-autocomplete="list"
+          aria-controls="react-autowhatever-1"
+          autoComplete="off"
+          className="react-autosuggest__input"
+          disabled={false}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+        <div
+          className="react-autosuggest__suggestions-container"
+          id="react-autowhatever-1"
+          role="listbox"
+        />
+      </div>
     </div>
   </form>
 </div>
