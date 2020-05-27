@@ -38,7 +38,7 @@ export const DEFAULTS = {
   ads: {
     gptSite: 'test.5887.origami', // Ad unit hierarchy makes ads more granular.
     gptZone: false, // Start with ft.com and /companies /markets /world as appropriate to your story
-    dfpTargeting: false, // granular targeting is optional and will be specified by the ads team
+    targeting: false, // granular targeting is optional and will be specified by the ads team
   },
 };
 
@@ -70,10 +70,10 @@ layout on mobile.
 <Preview>
   <Story name="Basic">
     <Feature {...DEFAULTS} background={ExampleBackground} foreground={ExampleForeground}>
-     <div>
-          <h1>Slide 1!</h1>
-          <h3>Another line on slide 1!</h3>
-     </div>
+      <div>
+        <h1>Slide 1!</h1>
+        <h3>Another line on slide 1!</h3>
+      </div>
       <h1>Slide 2!</h1>
       <h1>Slide 3!</h1>
       <h1>Slide 4!</h1>

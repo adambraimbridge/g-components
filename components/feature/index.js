@@ -134,7 +134,7 @@ Feature.propTypes = {
   ads: PropTypes.shape({
     gptSite: PropTypes.string.isRequired,
     gptZone: StringBoolPropType.isRequired,
-    dfpTargeting: StringBoolPropType.isRequired,
+    targeting: StringBoolPropType.isRequired,
   }),
   flags: flagsPropType,
   children: PropTypes.node,
@@ -146,7 +146,7 @@ Feature.defaultProps = {
   ads: {
     gptSite: 'test.5887.origami', // Ad unit hierarchy makes ads more granular.
     gptZone: false, // Start with ft.com and /companies /markets /world as appropriate to your story
-    dfpTargeting: false, // granular targeting is optional and will be specified by the ads team
+    targeting: false, // granular targeting is optional and will be specified by the ads team
   },
   flags: {
     dark: true,
