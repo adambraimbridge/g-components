@@ -3,33 +3,41 @@
 // Container styles
 .g-autosuggest-search {
   position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 
-  // Add error styles
+  // Default border styles
+  border: solid 1px #ccc1b7;
+  background-color: #ffffff;
+  transition: 0.15s box-shadow ease-in, 0.15s -webkit-box-shadow ease-in;
+
+  // Focus styles
+  &:focus-within {
+    border-color: #999189;
+    box-shadow: 0 0 0 2px #1aecff;
+  }
+
+  // Error styles
   &--error {
-    .react-autosuggest__input {
-      border: solid 1px #cc0000;
-      color: #cc0000;
-    }
+    border: solid 1px #cc0000;
+    color: #cc0000;
+  }
+
+  &--with-search-icon-right {
+    padding-right: 30px;
   }
 
   &__clear-button {
-    height: 44px;
+    height: 42px;
     position: absolute;
     right: 8px;
     top: 0;
     padding: 0;
     background: none;
     border: none;
-
-    i.icon {
-      vertical-align: middle;
-      background-image: url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:cross?source=o-icons&format=svg');
-      display: inline-block;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: 50%;
-      background-color: transparent;
-    }
   }
 
   &__error-message {
@@ -38,56 +46,83 @@
     color: #cc0000;
     margin-top: 5px;
   }
+
+  &__search-icon {
+    height: 42px;
+    padding-left: 4px;
+    margin-right: -6px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__search-icon-right {
+    height: 42px;
+    position: absolute;
+    right: 4px;
+    top: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+  }
+
+  &__selected-values {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__selected-value {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding-left: 9px;
+    padding-right: 6px;
+    box-sizing: border-box;
+    line-height: 32px;
+    border-radius: 3px;
+    background-color: #0d7680;
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: 4px;
+    margin-top: 4px;
+
+    span {
+      margin-right: 2px;
+    }
+  }
+
+  &__selected-value-close-button {
+    border: none;
+    background-color: transparent;
+    width: min-content;
+    padding: 0;
+  }
 }
 
 // Override react autosuggest defaults
 .react-autosuggest {
   &__container {
-    position: relative;
-    width: 100%;
-
-    ul li {
-      font-family: MetricWeb, sans-serif !important;
-      line-height: normal !important;
-    }
-
-    ul li:before {
-      content: '';
-    }
+    flex: 1 0 120px;
   }
 
   &__input {
+    width: 100%;
     font-family: MetricWeb, sans-serif;
+    display: inline-block;
     font-size: 16px;
     line-height: 24px;
     color: #33302e;
-    background-color: #ffffff;
-    margin-top: 0;
     border: 0 none;
     box-sizing: border-box;
-    width: 100%;
     min-height: 40px;
     padding: 9px 9px 9px;
     border-radius: 0;
-    background-clip: padding-box;
     outline: none;
     appearance: none;
-    border: 1px solid #b3a9a0;
-    transition: 0.15s box-shadow ease-in, 0.15s -webkit-box-shadow ease-in;
-
-    background-image: url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:search?source=o-icons&tint=%2366605C,%2366605C&format=svg');
-    background-repeat: no-repeat;
-    background-position: 4px;
-    padding-left: 36px;
-    background-size: 30px;
 
     &::placeholder {
       text-transform: none;
-    }
-
-    &:focus {
-      border-color: #999189;
-      box-shadow: 0 0 0 2px #1aecff;
     }
 
     &--open {
@@ -98,16 +133,41 @@
 
   &__suggestions-container {
     display: none;
+    min-width: 100px;
 
     &--open {
       display: block;
       position: absolute;
+      left: 0;
       width: 100%;
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px;
       z-index: 2;
       max-height: 193px;
       overflow-y: auto;
+      margin-top: 1px;
+    }
+
+    // Suggestions list element style overrides
+    ul li {
+      font-family: MetricWeb, sans-serif !important;
+      line-height: normal !important;
+
+      cursor: default;
+      pointer-events: none;
+
+      & > div[class*='disabled'] {
+        color: #999999;
+      }
+
+      & > div:not([class*='disabled']) {
+        cursor: pointer;
+        pointer-events: all;
+      }
+
+      &:before {
+        content: '';
+      }
     }
   }
 
@@ -125,11 +185,13 @@
   }
 
   &__suggestion {
-    cursor: pointer;
-    padding: 10px 20px;
-
     &--highlighted {
       background-color: #f2f2f2;
     }
   }
+}
+
+// Default suggestion element (inside ul/li)
+.suggestion {
+  padding: 10px 20px;
 }
