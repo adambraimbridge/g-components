@@ -34,16 +34,12 @@ Accordion.propTypes = {
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.arrayOf(PropTypes.node)]).isRequired,
 };
 
-Accordion.defaultProps = {};
-
 Accordion.displayName = 'GAccordion';
 
 AccordionSection.propTypes = {
   isExpanded: PropTypes.boolean,
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.arrayOf(PropTypes.node)]).isRequired,
 };
-
-AccordionSection.defaultProps = {};
 
 AccordionSection.displayName = 'GAccordionSection';
 
