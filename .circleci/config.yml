@@ -45,9 +45,6 @@ jobs:
       - run:
           name: Upgrade npm
           command: npm i -g npm
-      - run:
-          name: Bower install
-          command: npx bower install --allow-root
       - *restore_node_modules
       - run:
           name: Install dependencies
