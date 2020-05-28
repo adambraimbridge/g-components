@@ -4,7 +4,6 @@
  * This isn't used for any actual bundling; we use Rollup for that.
  */
 
-const BowerResolvePlugin = require('bower-resolve-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -32,9 +31,8 @@ module.exports = (mode = 'production') => ({
   },
   entry: ['./index.js'],
   resolve: {
-    modules: ['bower_components', 'node_modules'],
-    plugins: [new BowerResolvePlugin()],
-    descriptionFiles: ['bower.json', 'package.json'],
+    modules: ['node_modules'],
+    descriptionFiles: ['package.json'],
     mainFields: ['browser', 'main'],
     alias: {
       react: path.resolve(__dirname, './node_modules/react'),
