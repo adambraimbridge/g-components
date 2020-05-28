@@ -21,6 +21,7 @@ const AccordionSection = ({ isExpanded = false, children: [title, ...body] }) =>
     <div className="g-accordion-section">
       <button
         className={`g-accordion-section__header ${expanded ? 'g-accordion-section__header--expanded' : ''}`}
+        ariaExpanded={expanded}
         onClick={() => setExpanded(!expanded)}
       >
         {title}
