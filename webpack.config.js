@@ -99,7 +99,7 @@ module.exports = (mode = 'production') => ({
             loader: 'sass-loader',
             options: {
               sourceMap: true,
-              includePaths: ['bower_components'],
+              includePaths: ['node_modules', 'node_modules/@financial-times'],
             },
           },
         ],
