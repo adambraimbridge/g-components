@@ -95,7 +95,7 @@
     "gh-pages": "^2.1.1",
     "glob": "^7.1.6",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.9.0",
+    "jest": "^25.5.4",
     "jest-fetch-mock": "^1.6.5",
     "jest-raw-loader": "^1.0.1",
     "jest-specific-snapshot": "^1.0.0",
