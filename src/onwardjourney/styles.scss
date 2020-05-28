@@ -1,0 +1,9 @@
+$o-teaser-is-silent: false;
+
+@import '../shared/_globals.scss';
+@import 'o-teaser/main';
+
+.onward-journey__link {
+  color: #333;
+  text-decoration: none;
+}
