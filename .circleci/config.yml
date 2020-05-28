@@ -48,7 +48,7 @@ jobs:
       - *restore_node_modules
       - run:
           name: Install dependencies
-          command: npm ci
+          command: npm ci --unsafe-perm
       - *cache_node_modules
       - persist_to_workspace:
           root: .
