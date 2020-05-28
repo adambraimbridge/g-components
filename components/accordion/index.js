@@ -19,12 +19,12 @@ const AccordionSection = ({ isExpanded = false, children: [title, ...body] }) =>
   const [expanded, setExpanded] = useState(isExpanded);
   return (
     <div className="g-accordion-section">
-      <div
+      <button
         className={`g-accordion-section__header ${expanded ? 'g-accordion-section__header--expanded' : ''}`}
         onClick={() => setExpanded(!expanded)}
       >
         {title}
-      </div>
+      </button>
       {expanded && (<div className="g-accordion-section__body">{body}</div>)}
     </div>
   );
