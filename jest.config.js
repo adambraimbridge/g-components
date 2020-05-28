@@ -76,7 +76,7 @@ module.exports = {
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
-  modulePathIgnorePatterns: [],
+  // modulePathIgnorePatterns: ['/ftdomdelegate/'],
 
   // Activates notifications for test results
   // notify: false,
@@ -117,7 +117,7 @@ module.exports = {
   // runner: "jest-runner",
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
-  setupFiles: ['<rootDir>/.jest/setup.js', '<rootDir>/.jest/register-context.js'],
+  setupFiles: ['<rootDir>/.jest/register-context.js', '<rootDir>/.jest/setup.js'],
 
   // The path to a module that runs some code to configure or set up the testing framework before each test
   // setupTestFrameworkScriptFile: null,
