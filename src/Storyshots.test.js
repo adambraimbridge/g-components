@@ -1,5 +1,5 @@
 import initStoryshots, { snapshotWithOptions } from '@storybook/addon-storyshots';
-import '../shared/critical-path.scss';
+import './shared/critical-path.scss';
 
 const mockedDate = new Date(2019, 1, 0);
 const originalDate = Date;

@@ -62,6 +62,9 @@ jobs:
       - run:
           name: Run tests
           command: npm test
+      - run:
+          name: Run Chromatic visual testing
+          command: npx chromatic --project-token=ml6p4601uf --exit-zero-on-changes
 
   build_docs:
     <<: *default_container_config
