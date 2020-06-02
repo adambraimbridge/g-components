@@ -63,17 +63,17 @@ module.exports = {
   moduleDirectories: ['node_modules'],
 
   // An array of file extensions your modules use
-  // moduleFileExtensions: [
-  //   "js",
-  //   "json",
-  //   "jsx",
-  //   "node"
-  // ],
+  moduleFileExtensions: [
+    "js",
+    "json",
+    "jsx",
+    "mdx"
+  ],
 
   // A map from regular expressions to module names that allow to stub out resources with a single module
-  moduleNameMapper: {
-    '\\.(css|sass|scss)$': 'identity-obj-proxy',
-  },
+  // moduleNameMapper: {
+  //   '\\.(css|sass|scss)$': 'identity-obj-proxy',
+  // },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: ['/ftdomdelegate/'],
@@ -117,7 +117,7 @@ module.exports = {
   // runner: "jest-runner",
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
-  setupFiles: ['<rootDir>/.jest/register-context.js', '<rootDir>/.jest/setup.js'],
+  setupFiles: ['<rootDir>/.jest/setup.js'],
 
   // The path to a module that runs some code to configure or set up the testing framework before each test
   // setupTestFrameworkScriptFile: null,
@@ -162,7 +162,7 @@ module.exports = {
   transform: {
     '\\.txt$': 'jest-raw-loader',
     '^.+\\.jsx?$': 'babel-jest',
-    '^.+\\.mdx?$': '<rootDir>/.jest/transform-mdx.js',
+    "^.+\\.mdx?$": "@storybook/addon-docs/jest-transform-mdx"
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation

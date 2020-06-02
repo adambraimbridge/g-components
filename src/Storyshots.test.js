@@ -1,5 +1,5 @@
 import initStoryshots, { snapshotWithOptions } from '@storybook/addon-storyshots';
-import './shared/critical-path.scss';
+// import './shared/critical-path.scss';
 
 const mockedDate = new Date(2019, 1, 0);
 const originalDate = Date;
@@ -14,6 +14,7 @@ global.IntersectionObserver = jest.fn().mockImplementation(() => ({
 }));
 
 initStoryshots({
+  framework: 'react',
   test: snapshotWithOptions({
     createNodeMock: el => {
       const ref = document.createElement(el.type);

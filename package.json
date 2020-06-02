@@ -2,13 +2,6 @@
   "name": "@financial-times/g-components",
   "version": "7.0.0",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
     "@financial-times/o-ads": "^18.0.0",
     "@financial-times/o-buttons": "^6.0.13",
     "@financial-times/o-comments": "^7.5.2",
@@ -30,9 +23,17 @@
     "@financial-times/o-tracking": "^2.0.8",
     "@financial-times/o-typography": "^6.3.5",
     "@financial-times/politics": "^1.2.3",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
     "classnames": "^2.2.6",
     "d3-time-format": "^2.2.3",
+    "jest-raw-loader": "^1.0.1",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
     "react-autosuggest": "^9.4.3",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
     "react-scroll-percentage": "^2.0.0",
     "remove-accents": "^0.4.2",
     "remove-markdown": "^0.3.0"
@@ -40,10 +41,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "chromatic"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -78,10 +80,12 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.0",
+    "jest-fetch-mock": "^3.0.3",
     "prettier": "^2.0.5",
+    "react-app-rewired": "^2.1.6",
     "react-test-renderer": "^16.13.1"
   },
   "exports": {
-    "./": "./src" 
+    "./": "./src"
   }
 }

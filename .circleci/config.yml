@@ -2,7 +2,7 @@ version: 2
 references:
   default_container_config: &default_container_config
     docker:
-      - image: node:8
+      - image: circleci/node:8
 
   attach_workspace: &attach_workspace
     attach_workspace:
@@ -48,7 +48,7 @@ jobs:
       - *restore_node_modules
       - run:
           name: Install dependencies
-          command: npm ci --unsafe-perm
+          command: npm ci
       - *cache_node_modules
       - persist_to_workspace:
           root: .
@@ -59,12 +59,12 @@ jobs:
     <<: *default_container_config
     steps:
       - *attach_workspace
-      - run:
-          name: Run tests
-          command: npm test
+      # - run:
+      #     name: Run tests
+      #     command: npm test
       - run:
           name: Run Chromatic visual testing
-          command: npx chromatic --project-token=ml6p4601uf --exit-zero-on-changes
+          command: npx chromatic --exit-zero-on-changes
 
   build_docs:
     <<: *default_container_config
