@@ -90,7 +90,7 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ${HOME}/.npmrc
       - run:
           name: Publish npm package
-          command: ./node_modules/.bin/npm-prepublish --verbose && npm publish --access public
+          command: npx npm-prepublish --verbose && npm publish --access public
 
   release_ghpr:
     <<: *default_container_config
