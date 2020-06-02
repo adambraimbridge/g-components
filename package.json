@@ -68,7 +68,7 @@
     "@storybook/addon-docs": "^5.3.19",
     "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
-    "@storybook/addon-storyshots": "^5.3.19",
+    "@storybook/addon-storyshots": "^6.0.0-beta.20",
     "@storybook/addon-viewport": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.0.0",
