@@ -2,7 +2,7 @@ version: 2
 references:
   default_container_config: &default_container_config
     docker:
-      - image: circleci/node:8
+      - image: circleci/node:12
 
   attach_workspace: &attach_workspace
     attach_workspace:
@@ -42,9 +42,6 @@ jobs:
           key: *ssh_cache_key
           paths:
             - ~/.ssh
-      - run:
-          name: Upgrade npm
-          command: npm i -g npm
       - *restore_node_modules
       - run:
           name: Install dependencies
