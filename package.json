@@ -41,6 +41,7 @@
     "d3-time-format": "^2.2.3",
     "jest-raw-loader": "^1.0.1",
     "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
     "react-autosuggest": "^9.4.3",
     "react-scripts": "3.4.1",
     "react-scroll-percentage": "^2.0.0",
