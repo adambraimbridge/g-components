@@ -3,26 +3,67 @@ import LastUpdated from './';
 
 <Meta title="Core|Last Updated" component={LastUpdated} />
 
-# Last Updated timer component component
-
-This disappears if not provided a date object.
+# Last Updated component
 
 <Preview>
-  <Story name="Default (live) variant">
-    <LastUpdated lastUpdated={new Date('1987-01-05T00:00:00.00')} />
-  </Story>
-  <Story name="Light variant">
-    <LastUpdated live={false} lastUpdated={new Date('1987-01-05T00:00:00.00')} />
+  <Story name="Standard">
+    <LastUpdated date={new Date('1987-01-05T00:00:00.00')} />
   </Story>
 </Preview>
 
-If you don't provide a date to the `lastUpdated` prop, you won't see anything.
+With throbber:
 
 <Preview>
-  <Story name="No date provided (live)">
+  <Story name="Standard, throbbing">
+    <LastUpdated throbbing date={new Date('1987-01-05T00:00:00.00')} />
+  </Story>
+</Preview>
+
+Only throbber:
+
+<Preview>
+  <Story name="Standard, throbbing without date">
+    <LastUpdated throbbing />
+  </Story>
+</Preview>
+
+If you don't provide a date, you won't see anything:
+
+<Preview>
+  <Story name="Standard, without date">
     <LastUpdated />
   </Story>
-  <Story name="No date provided (not live; invisible)">
-    <LastUpdated live={false} />
+</Preview>
+
+
+The live version has a red background:
+
+<Preview>
+  <Story name="Live">
+    <LastUpdated live date={new Date('1987-01-05T00:00:00.00')} />
+  </Story>
+</Preview>
+
+Live, with throbber:
+
+<Preview>
+  <Story name="Live, throbbing">
+    <LastUpdated live throbbing date={new Date('1987-01-05T00:00:00.00')} />
+  </Story>
+</Preview>
+
+Live, only throbber:
+
+<Preview>
+  <Story name="Live, throbbing without date">
+    <LastUpdated live throbbing />
+  </Story>
+</Preview>
+
+Live, without a date provided:
+
+<Preview>
+  <Story name="Live, without date">
+    <LastUpdated live />
   </Story>
 </Preview>
