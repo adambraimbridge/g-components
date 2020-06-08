@@ -8,12 +8,12 @@ import PropTypes from 'prop-types';
 import DateTime from '../datetime';
 import './styles.scss';
 
-const LastUpdated = ({ date, live, throbbing }) => (
+const LastUpdated = ({ live, dot, date }) => (
   <div className={`last-updated${live ? ' last-updated--live' : ''}`}>
     {live ? (
       <div className="o-teaser o-teaser--small" data-o-component="o-teaser">
         <div className="o-teaser__content">
-          {throbbing && (
+          {dot && (
             <div
               className="o-teaser__timestamp o-teaser__timestamp--inprogress"
               style={{ display: 'inline-block' }}
@@ -32,7 +32,7 @@ const LastUpdated = ({ date, live, throbbing }) => (
       </div>
     ) : (
       <div>
-        {throbbing && (
+        {dot && (
           <div
             className="o-teaser__timestamp"
             style={{ display: 'inline-block' }}
@@ -49,13 +49,15 @@ const LastUpdated = ({ date, live, throbbing }) => (
 );
 
 LastUpdated.propTypes = {
-  date: PropTypes.instanceOf(Date),
   live: PropTypes.bool,
+  dot: PropTypes.bool,
+  date: PropTypes.instanceOf(Date),
 };
 
 LastUpdated.defaultProps = {
-  date: false,
   live: false,
+  dot: false,
+  date: false,
 };
 
 export default LastUpdated;
