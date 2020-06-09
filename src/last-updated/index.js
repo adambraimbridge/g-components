@@ -8,20 +8,22 @@ import PropTypes from 'prop-types';
 import DateTime from '../datetime';
 import './styles.scss';
 
-const LastUpdated = ({ lastUpdated, live }) => (
+const LastUpdated = ({ live, dot, date }) => (
   <div className={`last-updated${live ? ' last-updated--live' : ''}`}>
     {live ? (
       <div className="o-teaser o-teaser--small" data-o-component="o-teaser">
         <div className="o-teaser__content">
-          <div
-            className="o-teaser__timestamp o-teaser__timestamp--inprogress"
-            style={{ display: 'inline-block' }}
-          >
-            <span className="o-teaser__timestamp-prefix" />
-          </div>
-          {lastUpdated ? (
+          {dot && (
+            <div
+              className="o-teaser__timestamp o-teaser__timestamp--inprogress"
+              style={{ display: 'inline-block' }}
+            >
+              <span className="o-teaser__timestamp-prefix" />
+            </div>
+          )}
+          {date ? (
             <React.Fragment>
-              Last updated <DateTime datestamp={lastUpdated} />
+              Last updated <DateTime datestamp={date} />
             </React.Fragment>
           ) : (
             'Live'
@@ -29,22 +31,33 @@ const LastUpdated = ({ lastUpdated, live }) => (
         </div>
       </div>
     ) : (
-      lastUpdated && (
-        <span>
-          Last updated <DateTime datestamp={lastUpdated} />
-        </span>
-      )
+      <div>
+        {dot && (
+          <div
+            className="o-teaser__timestamp"
+            style={{ display: 'inline-block' }}
+          >
+            <span className="o-teaser__timestamp-prefix" />
+          </div>
+        )}
+        {date && (
+          <span>Last updated <DateTime datestamp={date} /></span>
+        )}
+      </div>
     )}
   </div>
 );
 
 LastUpdated.propTypes = {
-  lastUpdated: PropTypes.instanceOf(Date),
   live: PropTypes.bool,
+  dot: PropTypes.bool,
+  date: PropTypes.instanceOf(Date),
 };
+
 LastUpdated.defaultProps = {
-  lastUpdated: false,
-  live: true,
+  live: false,
+  dot: false,
+  date: false,
 };
 
 export default LastUpdated;

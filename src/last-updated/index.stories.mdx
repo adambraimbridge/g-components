@@ -3,26 +3,67 @@ import LastUpdated from './';
 
 <Meta title="Core|Last Updated" component={LastUpdated} />
 
-# Last Updated timer component component
-
-This disappears if not provided a date object.
+# Last Updated component
 
 <Preview>
-  <Story name="Default (live) variant">
-    <LastUpdated lastUpdated={new Date('1987-01-05T00:00:00.00')} />
-  </Story>
-  <Story name="Light variant">
-    <LastUpdated live={false} lastUpdated={new Date('1987-01-05T00:00:00.00')} />
+  <Story name="Standard">
+    <LastUpdated date={new Date('1987-01-05T00:00:00.00')} />
   </Story>
 </Preview>
 
-If you don't provide a date to the `lastUpdated` prop, you won't see anything.
+With dot:
 
 <Preview>
-  <Story name="No date provided (live)">
+  <Story name="Standard, dot">
+    <LastUpdated dot date={new Date('1987-01-05T00:00:00.00')} />
+  </Story>
+</Preview>
+
+Only dot:
+
+<Preview>
+  <Story name="Standard, dot without date">
+    <LastUpdated dot />
+  </Story>
+</Preview>
+
+If you don't provide a date, you won't see anything:
+
+<Preview>
+  <Story name="Standard, without date">
     <LastUpdated />
   </Story>
-  <Story name="No date provided (not live; invisible)">
-    <LastUpdated live={false} />
+</Preview>
+
+
+The live version has a red background:
+
+<Preview>
+  <Story name="Live">
+    <LastUpdated live date={new Date('1987-01-05T00:00:00.00')} />
+  </Story>
+</Preview>
+
+Live, with dot:
+
+<Preview>
+  <Story name="Live, dot">
+    <LastUpdated live dot date={new Date('1987-01-05T00:00:00.00')} />
+  </Story>
+</Preview>
+
+Live, only dot:
+
+<Preview>
+  <Story name="Live, dot without date">
+    <LastUpdated live dot />
+  </Story>
+</Preview>
+
+Live, without a date provided:
+
+<Preview>
+  <Story name="Live, without date">
+    <LastUpdated live />
   </Story>
 </Preview>
