@@ -12,12 +12,17 @@ import { mainImagePropType, bylinesPropType, topicPropType, flagsPropType } from
 import './styles.scss';
 
 const StoryTopper = ({
+  url,
   topic,
   headline,
   summary,
   relatedArticle,
   mainImage,
   bylines,
+  socialHeadline,
+  twitterHeadline,
+  facebookHeadline,
+  tweetText,
   flags,
   ...props
 }) => {
@@ -63,7 +68,15 @@ const StoryTopper = ({
         </figure>
       )}
 
-      <Share headline={headline} {...{ ...props, flags }} />
+      {flags.shareButtons && (
+        <Share
+          url={url}
+          text={socialHeadline || headline}
+          textTwitter={tweetText || twitterHeadline}
+          textFacebook={facebookHeadline}
+          dark={flags.dark}
+        />
+      )}
 
       {flags.bylines && bylines && (
         <Bylines names={bylines} date={publishedDate} />
@@ -73,6 +86,7 @@ const StoryTopper = ({
 };
 
 StoryTopper.propTypes = {
+  url: PropTypes.string.isRequired,
   topic: topicPropType,
   headline: PropTypes.string.isRequired,
   summary: PropTypes.string,
@@ -82,6 +96,10 @@ StoryTopper.propTypes = {
   }),
   mainImage: mainImagePropType,
   bylines: bylinesPropType,
+  socialHeadline: PropTypes.string,
+  twitterHeadline: PropTypes.string,
+  facebookHeadline: PropTypes.string,
+  tweetText: PropTypes.string,
   flags: flagsPropType.isRequired,
   publishedDate: PropTypes.string.isRequired,
   buildTime: PropTypes.string.isRequired,

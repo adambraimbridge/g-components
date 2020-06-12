@@ -12,12 +12,17 @@ import { mainImagePropType, topicPropType, bylinesPropType, flagsPropType } from
 import './styles.scss';
 
 const BigTopper = ({
+  url,
   topic,
   headline,
   summary,
   relatedArticle,
   mainImage,
   bylines,
+  socialHeadline,
+  twitterHeadline,
+  facebookHeadline,
+  tweetText,
   flags,
   ...props
 }) => {
@@ -54,7 +59,15 @@ const BigTopper = ({
         <Bylines prefix="By" names={bylines} date={publishedDate} />
       )}
 
-      <Share headline={headline} {...{ ...props, flags }} />
+      {flags.shareButtons && (
+        <Share
+          url={url}
+          text={socialHeadline || headline}
+          textTwitter={tweetText || twitterHeadline}
+          textFacebook={facebookHeadline}
+          dark={flags.dark}
+        />
+      )}
 
       {flags.summary && summary && (
         <p className="o-editorial-typography-standfirst">
@@ -73,6 +86,7 @@ const BigTopper = ({
 };
 
 BigTopper.propTypes = {
+  url: PropTypes.string.isRequired,
   topic: topicPropType,
   headline: PropTypes.string.isRequired,
   summary: PropTypes.string,
@@ -82,6 +96,10 @@ BigTopper.propTypes = {
   }),
   mainImage: mainImagePropType,
   bylines: bylinesPropType,
+  socialHeadline: PropTypes.string,
+  twitterHeadline: PropTypes.string,
+  facebookHeadline: PropTypes.string,
+  tweetText: PropTypes.string,
   flags: flagsPropType.isRequired,
   publishedDate: PropTypes.string.isRequired,
   buildTime: PropTypes.string.isRequired,
