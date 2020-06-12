@@ -13,6 +13,9 @@ export const flagsPropType = PropTypes.shape({
   analytics: StringBoolPropType.isRequired,
   googleAnalytics: StringBoolPropType.isRequired,
   ads: StringBoolPropType.isRequired,
+  mainImage: StringBoolPropType.isRequired,
+  summary: StringBoolPropType.isRequired,
+  bylines: StringBoolPropType.isRequired,
   onwardjourney: StringBoolPropType.isRequired,
   shareButtons: StringBoolPropType.isRequired,
   header: StringBoolPropType.isRequired,
@@ -29,7 +32,7 @@ export const mainImagePropType = PropTypes.oneOfType([
   PropTypes.shape({
     url: PropTypes.string.isRequired,
   }),
-]);
+]).isRequired;
 
 export const trackingPropType = PropTypes.shape({
   micrositeName: PropTypes.string,

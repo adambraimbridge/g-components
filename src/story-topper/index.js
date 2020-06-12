@@ -5,7 +5,6 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { GridChild, GridRow, GridContainer } from '../grid';
 import Share from '../share';
 import Bylines from '../bylines';
 import { getMainImage } from '../shared/helpers';
@@ -53,7 +52,7 @@ const StoryTopper = ({
 
       <meta itemProp="dateModified" content={buildTime} suppressHydrationWarning />
 
-      {mainImage && (mainImage.url || mainImage.uuid) && (
+      {flags.mainImage && (mainImage.url || mainImage.uuid) && (
         <figure className="graphic graphic-b-1 graphic-pad-1">
           <img alt={mainImage.description} src={getMainImage(mainImage)} />
           <figcaption className="o-typography-caption">
@@ -66,7 +65,9 @@ const StoryTopper = ({
 
       <Share headline={headline} {...{ ...props, flags }} />
 
-      <Bylines names={bylines} date={publishedDate} />
+      {flags.bylines && bylines && (
+        <Bylines names={bylines} date={publishedDate} />
+      )}
     </div>
   );
 };
