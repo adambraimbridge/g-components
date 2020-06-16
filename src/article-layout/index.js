@@ -18,12 +18,7 @@ import { useAds, useLayoutChangeEvents } from '../shared/hooks';
 
 export const Context = createContext({});
 
-const ArticleLayout = ({
-  flags,
-  ads,
-  children: [topper, ...body],
-  ...props
-}) => {
+const ArticleLayout = ({ flags, ads, children, ...props }) => {
   const breakpoint = useLayoutChangeEvents();
   useAds(ads, flags.ads);
 
@@ -39,15 +34,7 @@ const ArticleLayout = ({
       {flags.analytics && <Analytics {...{ ...props, flags, breakpoint }} />}
       {flags.ads && <TopAd />}
       {flags.header && <Header key="header" {...{ ...props, flags, breakpoint }} />}
-      <main key="main" role="main">
-        <article className="article" itemScope itemType="http://schema.org/Article">
-          {topper}
-          <div className="article-body o-editorial-typography-body" itemProp="articleBody">
-            {body}
-          </div>
-          <Epilogue />
-        </article>
-      </main>
+      {children}
       {flags.onwardjourney && <OnwardJourney key="oj" {...{ ...props, breakpoint }} />}
       {flags.comments && <Comments key="comments" {...{ ...props, flags, breakpoint }} />}
       {flags.footer && <Footer key="footer" {...{ ...props, flags, breakpoint }} />}
@@ -64,7 +51,6 @@ ArticleLayout.propTypes = {
     gptZone: StringBoolPropType.isRequired,
     targeting: StringBoolPropType.isRequired,
   }),
-  children: PropTypes.node,
 };
 
 ArticleLayout.defaultProps = {
