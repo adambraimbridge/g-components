@@ -131,11 +131,11 @@ workflows:
             <<: *only_version_tags
             branches:
               ignore: /.*/
-      - release_ghpr:
-          requires:
-            - install
-            - test
-          filters:
-            <<: *only_version_tags
-            branches:
-              ignore: /.*/
+      # - release_ghpr:
+      #     requires:
+      #       - install
+      #       - test
+      #     filters:
+      #       <<: *only_version_tags
+      #       branches:
+      #         ignore: /.*/
