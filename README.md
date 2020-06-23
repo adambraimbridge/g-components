@@ -1,8 +1,8 @@
 # `g-components`
 
-Reusable React components for building graphics pages. [See how to use them in the component library.](https://financial-times.github.io/g-components)
+Reusable React components for building graphics pages. [See how to use them in the component library.](https://www.chromatic.com/library?appId=5ed109c1375ce20022267089)
 
-## Contents
+## Contents (these might be out of date)
 
 ### Data rendering
 

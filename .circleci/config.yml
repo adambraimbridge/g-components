@@ -63,23 +63,23 @@ jobs:
           name: Run Chromatic visual testing
           command: npx chromatic --exit-zero-on-changes
 
-  build_docs:
-    <<: *default_container_config
-    steps:
-      - *attach_workspace
-      - *restore_ssh
-      - add_ssh_keys:
-          fingerprints:
-            - 7d:cb:6b:f3:a3:0a:6b:11:54:70:30:ca:d7:f7:a3:00
-      - run:
-          name: Set Git config
-          command: git config --global user.email "data.journalism.development+ci@ft.com" && git config --global user.name DJD-CircleCI
-      - run:
-          name: Build storybook
-          command: npm run build:storybook
-      - run:
-          name: Publish to gh-pages
-          command: npm run publish-storybook
+  # build_docs:
+  #   <<: *default_container_config
+  #   steps:
+  #     - *attach_workspace
+  #     - *restore_ssh
+  #     - add_ssh_keys:
+  #         fingerprints:
+  #           - 7d:cb:6b:f3:a3:0a:6b:11:54:70:30:ca:d7:f7:a3:00
+  #     - run:
+  #         name: Set Git config
+  #         command: git config --global user.email "data.journalism.development+ci@ft.com" && git config --global user.name DJD-CircleCI
+  #     - run:
+  #         name: Build storybook
+  #         command: npm run build:storybook
+  #     - run:
+  #         name: Publish to gh-pages
+  #         command: npm run publish-storybook
 
   release_npm:
     <<: *default_container_config

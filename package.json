@@ -38,20 +38,14 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "classnames": "^2.2.6",
-    "jest-raw-loader": "^1.0.1",
-    "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react-autosuggest": "^9.4.3",
-    "react-scripts": "3.4.1",
     "react-scroll-percentage": "^2.0.0",
     "remove-accents": "^0.4.2",
     "remove-markdown": "^0.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "chromatic": "chromatic"
@@ -59,19 +53,10 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
+    "jest-raw-loader": "^1.0.1",
+    "node-sass": "^4.14.1",
+    "react-scripts": "3.4.1",
     "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-docs": "^5.3.19",
