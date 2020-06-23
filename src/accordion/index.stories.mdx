@@ -1,0 +1,28 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Accordion, AccordionSection } from './';
+
+<Meta title="core|Accordion" />
+
+# Accordion
+
+An accordion. First element in each section becomes the title, subsequent elements become the body.
+
+<Preview>
+  <Story name="Example">
+    <Accordion>
+      <AccordionSection>
+        <h3>First section</h3>
+        <p>some text for the first section</p>
+      </AccordionSection>
+      <AccordionSection isExpanded>
+        <h3>Second section</h3>
+        <p>some text for the second section</p>
+      </AccordionSection>
+      <AccordionSection>
+        <h3>Third section</h3>
+        <p>some text for the third section</p>
+        <p>even more text!</p>
+      </AccordionSection>
+    </Accordion>
+  </Story>
+</Preview>

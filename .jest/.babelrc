@@ -1,8 +1,0 @@
-{
-  "presets": ["@babel/preset-env", "@emotion/babel-preset-css-prop"]
-  // "plugins": [
-  //   "@babel/proposal-class-properties",
-  //   "@babel/syntax-dynamic-import",
-  //   "@babel/proposal-object-rest-spread"
-  // ]
-}

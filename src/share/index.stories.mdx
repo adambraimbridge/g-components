@@ -1,0 +1,29 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import Share from './';
+
+<Meta title="Core|Share" component={Share} />
+
+# Share component
+
+<Preview>
+  <Story name="Examples">
+    <>
+      Default:
+      <Share text="My favourite website" url="https://www.ft.com/visual-and-data-journalism" />
+      Separated:
+      <Share
+        text="My favourite website"
+        url="https://www.ft.com/visual-and-data-journalism"
+        separated
+      />
+      Dark (white icons):
+      <div className="dark">
+        <Share
+          text="My favourite website"
+          url="https://www.ft.com/visual-and-data-journalism"
+          dark
+        />
+      </div>
+    </>
+  </Story>
+</Preview>

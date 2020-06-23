@@ -2,7 +2,7 @@ version: 2
 references:
   default_container_config: &default_container_config
     docker:
-      - image: node:8
+      - image: circleci/node:12
 
   attach_workspace: &attach_workspace
     attach_workspace:
@@ -42,13 +42,10 @@ jobs:
           key: *ssh_cache_key
           paths:
             - ~/.ssh
-      - run:
-          name: Upgrade npm
-          command: npm i -g npm
       - *restore_node_modules
       - run:
           name: Install dependencies
-          command: npm ci --unsafe-perm
+          command: npm ci
       - *cache_node_modules
       - persist_to_workspace:
           root: .
@@ -59,9 +56,12 @@ jobs:
     <<: *default_container_config
     steps:
       - *attach_workspace
+      # - run:
+      #     name: Run tests
+      #     command: npm test
       - run:
-          name: Run tests
-          command: npm test
+          name: Run Chromatic visual testing
+          command: npx chromatic --exit-zero-on-changes
 
   build_docs:
     <<: *default_container_config
@@ -90,7 +90,7 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ${HOME}/.npmrc
       - run:
           name: Publish npm package
-          command: ./node_modules/.bin/npm-prepublish --verbose && npm publish --access public
+          command: npx npm-prepublish --verbose && npm publish --access public
 
   release_ghpr:
     <<: *default_container_config
@@ -101,7 +101,7 @@ jobs:
           command: printf "registry=https://npm.pkg.github.com/\n//npm.pkg.github.com/:_authToken=${GHPR_AUTH_TOKEN}" > ${HOME}/.npmrc
       - run:
           name: Publish npm package
-          command: ./node_modules/.bin/npm-prepublish --verbose && npm publish
+          command: npx npm-prepublish --verbose && npm publish
 
 workflows:
   version: 2

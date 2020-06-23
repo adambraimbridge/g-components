@@ -1,0 +1,32 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import Loading from './';
+
+<Meta title="Core|Loading" component={Loading} />
+
+# Loading component
+
+Spinner for loading. Uses o-loading. The default size is `small`
+and the default theme is `dark`.
+
+<Preview>
+  <Story name="Examples">
+    <>
+      Default, without props:
+      <div>
+        <Loading />
+      </div>
+      Dark variant:
+      <div>
+        <Loading size="small" />
+        <Loading size="medium" />
+        <Loading size="large" />
+      </div>
+      Light variant:
+      <div style={{ background: '#262a33' }}>
+        <Loading theme="light" size="small" />
+        <Loading theme="light" size="medium" />
+        <Loading theme="light" size="large" />
+      </div>
+    </>
+  </Story>
+</Preview>
