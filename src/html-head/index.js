@@ -94,11 +94,11 @@ const HtmlHead = ({
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            '@context': 'http://schema.org',
+            '@context': 'https://schema.org',
             '@type': 'WebSite',
             name: 'Financial Times',
             alternateName: 'FT.com',
-            url: 'http://www.ft.com',
+            url: 'https://www.ft.com',
           }),
         }}
       />
@@ -107,7 +107,7 @@ const HtmlHead = ({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              '@context': 'http://schema.org',
+              '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
                 {

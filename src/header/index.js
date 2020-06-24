@@ -31,7 +31,7 @@ const Header = ({ flags, ...props }) => {
             <div className="o-header__top-column o-header__top-column--center">
               <a
                 className="o-header__top-logo"
-                href="http://www.ft.com/"
+                href="https://www.ft.com/"
                 title="Go to Financial Times homepage"
               >
                 <span className="o-header__visually-hidden">Financial Times</span>

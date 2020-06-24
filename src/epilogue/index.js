@@ -14,7 +14,7 @@ const Epilogue = () => {
       <GridRow>
         <GridChild colspan="12 S11 Scenter M10 L9 XL8">
           <footer className="g-epilogue-copyright">
-            <a href="http://help.ft.com/help/legal-privacy/copyright/copyright-policy/" data-trackable="link-copyright">Copyright</a> The Financial Times Limited {year}. All rights reserved.
+            <a href="https://help.ft.com/help/legal-privacy/copyright/copyright-policy/" data-trackable="link-copyright">Copyright</a> The Financial Times Limited {year}. All rights reserved.
           </footer>
         </GridChild>
       </GridRow>
