@@ -45,7 +45,7 @@ export const topicPropType = PropTypes.shape({
 });
 
 export const dataMetaPropType = PropTypes.shape({
-  '@context': PropTypes.oneOf(['http://schema.org/']),
+  '@context': PropTypes.oneOf(['https://schema.org/']),
   '@type': PropTypes.oneOf(['Dataset']),
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
