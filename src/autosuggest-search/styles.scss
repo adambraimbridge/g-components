@@ -73,6 +73,8 @@
   }
 
   &__selected-value {
+    font-family: MetricWeb, sans-serif;
+    font-size: 16px;
     display: flex;
     align-items: center;
     height: 32px;
@@ -123,6 +125,11 @@
 
     &::placeholder {
       text-transform: none;
+    }
+
+    &--focused {
+      outline: none !important;
+      box-shadow: none !important;
     }
 
     &--open {
