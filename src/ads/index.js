@@ -39,7 +39,18 @@ export const Ad = ({
 
 Ad.displayName = 'GAd';
 
-export const TopAd = () => <Ad />;
+export const TopAd = () => (
+  <Ad
+    name="top-ad"
+    targeting="pos=top;"
+    reserve="90"
+    defaultFormat={false}
+    smallFormat={false}
+    mediumFormat="Leaderboard,Responsive"
+    largeFormat="SuperLeaderboard,Leaderboard,Responsive"
+    extraFormat="Billboard,SuperLeaderboard,Leaderboard,Responsive"
+  />
+);
 
 TopAd.displayName = 'GTopAd';
 

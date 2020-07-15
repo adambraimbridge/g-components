@@ -11,9 +11,10 @@ There are several ad types:
   <Story name="GenericAd" parameters={{ chromatic: { disable: true } }}>
     <Ad
       name="generic-ad"
-      targeting="pos=mid;"
-      defaultFormat="Responsive"
-      smallFormat="MediumRectangle,Responsive"
+      targeting="pos=top;version=1"
+      reserve="90"
+      defaultFormat={false}
+      smallFormat={false}
       mediumFormat="Leaderboard,Responsive"
       largeFormat="SuperLeaderboard,Leaderboard,Responsive"
       extraFormat="Billboard,SuperLeaderboard,Leaderboard,Responsive"
