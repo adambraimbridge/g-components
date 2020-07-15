@@ -13,6 +13,7 @@ export const Ad = ({
   targeting,
   background,
   reserve,
+  showAdsLabel,
   defaultFormat,
   smallFormat,
   mediumFormat,
@@ -23,7 +24,7 @@ export const Ad = ({
     <div
       className={`o-ads o-ads--center o-ads--${
         background === 'slate' ? 'slate-' : ''
-      }background o-ads--reserve-${reserve}`}
+      }background o-ads--reserve-${reserve} ${showAdsLabel ? 'o-ads--label-left' : ''}`}
       data-o-ads-name={name}
       data-o-ads-targeting={targeting}
       data-o-ads-formats-default={defaultFormat}
@@ -47,6 +48,7 @@ export const MiddleAd = () => (
     name="mid-ad"
     targeting="pos=mid;"
     reserve="250"
+    showAdsLabel
     defaultFormat="Responsive"
     smallFormat="MediumRectangle,Responsive"
     mediumFormat="MediumRectangle,Responsive"
@@ -57,27 +59,29 @@ export const MiddleAd = () => (
 
 MiddleAd.displayName = 'GMiddleAd';
 
+Ad.propTypes = {
+  name: PropTypes.string,
+  targeting: PropTypes.string,
+  background: PropTypes.oneOf(['default', 'slate']),
+  reserve: PropTypes.oneOf(['90', '250']), // creates placeholder of height to prevent page from jumping when ad loads
+  showAdsLabel: PropTypes.bool,
+  defaultFormat: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  smallFormat: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  mediumFormat: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  largeFormat: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  extraFormat: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+};
+
 // defaults to top ad configuration
 Ad.defaultProps = {
   name: 'top-ad',
   targeting: 'pos=top',
   background: 'default',
   reserve: '90',
+  showAdsLabel: false,
   defaultFormat: false,
   smallFormat: false,
   mediumFormat: 'Leaderboard,Responsive',
   largeFormat: 'SuperLeaderboard,Leaderboard,Responsive',
   extraFormat: 'Billboard,SuperLeaderboard,Leaderboard,Responsive',
-};
-
-Ad.propTypes = {
-  name: PropTypes.string,
-  targeting: PropTypes.string,
-  background: PropTypes.oneOf(['default', 'slate']),
-  reserve: PropTypes.oneOf(['90', '250']), // creates placeholder of height to prevent page from jumping when ad loads
-  defaultFormat: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  smallFormat: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  mediumFormat: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  largeFormat: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  extraFormat: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
 };
