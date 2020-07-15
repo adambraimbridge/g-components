@@ -5,8 +5,13 @@ import { Ad, TopAd, MiddleAd } from './';
 
 # Ads component
 
+This component wraps [Origami's o-ads](https://github.com/Financial-Times/o-ads). The default props for `<Ad />` mimic the top ad.
+
+Related files/configs for ads are also found in `useAds` in `shared/hooks.js` (sets lazy loading, for example).
+
 There are several ad types:
 
+### Generic ad
 <Preview>
   <Story name="GenericAd" parameters={{ chromatic: { disable: true } }}>
     <Ad
@@ -22,12 +27,14 @@ There are several ad types:
   </Story>
 </Preview>
 
+### Top ad
 <Preview>
   <Story name="TopAd" parameters={{ chromatic: { disable: true } }}>
     <TopAd />
   </Story>
 </Preview>
 
+### MPU (mid-page unit) ad
 <Preview>
   <Story name="MiddleAd" parameters={{ chromatic: { disable: true } }}>
     <MiddleAd />
