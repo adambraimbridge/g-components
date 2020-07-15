@@ -4,36 +4,80 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
+import OAds from '@financial-times/o-ads';
 import './styles.scss';
 
-export const TopAd = () => (
-  <div
-    className="o-ads o-ads--center o-ads--background o-ads--reserve-90"
-    data-o-ads-name="top-ad"
-    data-o-ads-targeting="pos=top;"
-    data-o-ads-formats-default="false"
-    data-o-ads-formats-small="false"
-    data-o-ads-formats-medium="Leaderboard,Responsive"
-    data-o-ads-formats-large="SuperLeaderboard,Leaderboard,Responsive"
-    data-o-ads-formats-extra="Billboard,SuperLeaderboard,Leaderboard,Responsive"
-    aria-hidden="true"
-  />
-);
+export const Ad = ({
+  name,
+  targeting,
+  background,
+  reserve,
+  defaultFormat,
+  smallFormat,
+  mediumFormat,
+  largeFormat,
+  extraFormat,
+}) => {
+  return (
+    <div
+      className={`o-ads o-ads--center o-ads--${
+        background === 'slate' ? 'slate-' : ''
+      }background o-ads--reserve-${reserve}`}
+      data-o-ads-name={name}
+      data-o-ads-targeting={targeting}
+      data-o-ads-formats-default={defaultFormat}
+      data-o-ads-formats-small={smallFormat}
+      data-o-ads-formats-medium={mediumFormat}
+      data-o-ads-formats-large={largeFormat}
+      data-o-ads-formats-extra={extraFormat}
+      aria-hidden="true"
+    />
+  );
+};
+
+Ad.displayName = 'GAd';
+
+export const TopAd = () => <Ad />;
 
 TopAd.displayName = 'GTopAd';
 
 export const MiddleAd = () => (
-  <div
-    className="o-ads o-ads--center o-ads--background o-ads--reserve-250"
-    data-o-ads-name="mid-ad"
-    data-o-ads-targeting="pos=mid;"
-    data-o-ads-formats-default="Responsive"
-    data-o-ads-formats-small="MediumRectangle,Responsive"
-    data-o-ads-formats-medium="MediumRectangle,Responsive"
-    data-o-ads-formats-large="MediumRectangle,Responsive"
-    data-o-ads-formats-extra="MediumRectangle,Responsive"
-    aria-hidden="true"
+  <Ad
+    name="mid-ad"
+    targeting="pos=mid;"
+    reserve="250"
+    defaultFormat="Responsive"
+    smallFormat="MediumRectangle,Responsive"
+    mediumFormat="MediumRectangle,Responsive"
+    largeFormat="MediumRectangle,Responsive"
+    extraFormat="MediumRectangle,Responsive"
   />
 );
 
 MiddleAd.displayName = 'GMiddleAd';
+
+// defaults to top ad configuration
+Ad.defaultProps = {
+  name: 'top-ad',
+  targeting: 'pos=top',
+  background: 'default',
+  reserve: '90',
+  defaultFormat: false,
+  smallFormat: false,
+  mediumFormat: 'Leaderboard,Responsive',
+  largeFormat: 'SuperLeaderboard,Leaderboard,Responsive',
+  extraFormat: 'Billboard,SuperLeaderboard,Leaderboard,Responsive',
+};
+
+Ad.propTypes = {
+  name: PropTypes.string,
+  targeting: PropTypes.string,
+  background: PropTypes.oneOf(['default', 'slate']),
+  reserve: PropTypes.oneOf(['90', '250']), // creates placeholder of height to prevent page from jumping when ad loads
+  defaultFormat: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  smallFormat: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  mediumFormat: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  largeFormat: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  extraFormat: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+};
