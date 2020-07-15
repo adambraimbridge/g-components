@@ -1,11 +1,25 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
-import { TopAd, MiddleAd } from './';
+import { Ad, TopAd, MiddleAd } from './';
 
 <Meta title="Core|Ads" />
 
 # Ads component
 
 There are several ad types:
+
+<Preview>
+  <Story name="GenericAd" parameters={{ chromatic: { disable: true } }}>
+    <Ad
+      name="generic-ad"
+      targeting="pos=mid;"
+      defaultFormat="Responsive"
+      smallFormat="MediumRectangle,Responsive"
+      mediumFormat="Leaderboard,Responsive"
+      largeFormat="SuperLeaderboard,Leaderboard,Responsive"
+      extraFormat="Billboard,SuperLeaderboard,Leaderboard,Responsive"
+    />
+  </Story>
+</Preview>
 
 <Preview>
   <Story name="TopAd" parameters={{ chromatic: { disable: true } }}>
