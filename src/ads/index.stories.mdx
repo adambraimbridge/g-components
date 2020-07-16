@@ -1,18 +1,51 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
-import { TopAd, MiddleAd } from './';
+import { Ad, TopAd, MiddleAd } from './';
 
 <Meta title="Core|Ads" />
 
 # Ads component
 
+This component wraps [Origami's o-ads](https://github.com/Financial-Times/o-ads). The default props for `<Ad />` mimic the top ad.
+
+Related files/configs for ads are also found in `useAds` in `shared/hooks.js` (sets lazy loading, for example).
+
 There are several ad types:
 
+### Generic ad
+<Preview>
+  <Story name="GenericAd" parameters={{ chromatic: { disable: true } }}>
+    <Ad
+      name="generic-ad"
+      targeting="pos=top;version=1"
+      reserve="90"
+      defaultFormat={false}
+      smallFormat={false}
+      mediumFormat="Leaderboard,Responsive"
+      largeFormat="SuperLeaderboard,Leaderboard,Responsive"
+      extraFormat="Billboard,SuperLeaderboard,Leaderboard,Responsive"
+    />
+  </Story>
+</Preview>
+
+### Generic ad on slate
+<Preview>
+  <Story name="GenericAdSlate" parameters={{ chromatic: { disable: true } }}>
+    <Ad
+      name="generic-ad"
+      targeting="pos=top;version=1"
+      background="slate"
+    />
+  </Story>
+</Preview>
+
+### Top ad
 <Preview>
   <Story name="TopAd" parameters={{ chromatic: { disable: true } }}>
     <TopAd />
   </Story>
 </Preview>
 
+### MPU (mid-page unit) ad
 <Preview>
   <Story name="MiddleAd" parameters={{ chromatic: { disable: true } }}>
     <MiddleAd />

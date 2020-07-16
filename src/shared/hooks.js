@@ -72,6 +72,7 @@ export const useAds = (config, enabled = true) => {
               zone: config.gptZone || 'unclassified',
             },
             targeting: config.targeting,
+            lazyLoad: true,
           });
 
           const slots = Array.from(document.querySelectorAll('.o-ads, [data-o-ads-name]'));
