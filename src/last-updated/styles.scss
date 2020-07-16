@@ -11,6 +11,16 @@
   text-transform: uppercase;
   color: #c00;
 
+  // Add these explicitly because otherwise overwritten by o-labels colours, pulled in by onward journey
+  .o-teaser__timestamp--closed,
+  .o-teaser__timestamp--inprogress,
+  .o-teaser__timestamp--live,
+  .o-teaser__timestamp--updated,
+  .o-teaser__timestamp--new,
+  .o-teaser__timestamp {
+    color: #c00;
+  }
+
   &--live {
     letter-spacing: normal;
     font-family: MetricWeb, sans-serif;
